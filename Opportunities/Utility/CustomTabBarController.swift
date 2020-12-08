@@ -9,6 +9,13 @@
 import UIKit
 
 class CustomTabBarController: UITabBarController {
+    
+    enum TabBarItems {
+        case Home
+        case Active
+        case Search
+        case Profile
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,15 +23,11 @@ class CustomTabBarController: UITabBarController {
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    func setUpTabBarUI() {
+        tabBar.tintColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+        tabBar.unselectedItemTintColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+        
     }
-    */
 
 }

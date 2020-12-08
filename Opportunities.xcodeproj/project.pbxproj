@@ -7,7 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E838E916257D18E900E95553 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E838E914257D18E900E95553 /* NotificationViewController.swift */; };
+		E838E917257D18E900E95553 /* NotificationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E838E915257D18E900E95553 /* NotificationViewController.xib */; };
+		E838E91B257D1B4400E95553 /* NotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E838E919257D1B4400E95553 /* NotificationTableViewCell.swift */; };
+		E838E91C257D1B4400E95553 /* NotificationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E838E91A257D1B4400E95553 /* NotificationTableViewCell.xib */; };
 		E83AA8CE2576F85200F8317E /* UIview+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83AA8CD2576F85200F8317E /* UIview+Extensions.swift */; };
+		E83D7190257CEC1700716860 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83D718E257CEC1700716860 /* HomeTableViewCell.swift */; };
+		E83D7191257CEC1700716860 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E83D718F257CEC1700716860 /* HomeTableViewCell.xib */; };
+		E83EFAB3257D62CB0075CDF1 /* CustomAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83EFAB1257D62CB0075CDF1 /* CustomAlertVC.swift */; };
+		E83EFAB4257D62CB0075CDF1 /* CustomAlertVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E83EFAB2257D62CB0075CDF1 /* CustomAlertVC.xib */; };
+		E83EFAB6257D65E30075CDF1 /* Extension+ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83EFAB5257D65E30075CDF1 /* Extension+ViewController.swift */; };
+		E83EFABA257D6DC60075CDF1 /* AllOpportunitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83EFAB8257D6DC60075CDF1 /* AllOpportunitiesViewController.swift */; };
+		E83EFABB257D6DC60075CDF1 /* AllOpportunitiesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E83EFAB9257D6DC60075CDF1 /* AllOpportunitiesViewController.xib */; };
+		E83EFAC0257D77BC0075CDF1 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83EFABE257D77BC0075CDF1 /* SearchViewController.swift */; };
+		E83EFAC1257D77BC0075CDF1 /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E83EFABF257D77BC0075CDF1 /* SearchViewController.xib */; };
 		E8B287622576CB0B00326E02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B287612576CB0B00326E02 /* AppDelegate.swift */; };
 		E8B287642576CB0B00326E02 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B287632576CB0B00326E02 /* SceneDelegate.swift */; };
 		E8B287662576CB0B00326E02 /* LanguageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B287652576CB0B00326E02 /* LanguageViewController.swift */; };
@@ -28,6 +41,15 @@
 		E8B287AC2576E46E00326E02 /* Cairo-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E8B287A52576E46E00326E02 /* Cairo-Black.ttf */; };
 		E8B287AD2576E46E00326E02 /* Cairo-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E8B287A62576E46E00326E02 /* Cairo-Bold.ttf */; };
 		E8B287AE2576E46E00326E02 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = E8B287A72576E46E00326E02 /* OFL.txt */; };
+		E8EC0DCB257CD4200024D395 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EC0DCA257CD4200024D395 /* SignUpViewController.swift */; };
+		E8EC0DD2257CDAE20024D395 /* Gilroy-Heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E8EC0DCD257CDAE00024D395 /* Gilroy-Heavy.ttf */; };
+		E8EC0DD3257CDAE20024D395 /* Gilroy-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E8EC0DCE257CDAE10024D395 /* Gilroy-Light.ttf */; };
+		E8EC0DD4257CDAE20024D395 /* Gilroy-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E8EC0DCF257CDAE10024D395 /* Gilroy-Regular.ttf */; };
+		E8EC0DD5257CDAE20024D395 /* Gilroy-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E8EC0DD0257CDAE20024D395 /* Gilroy-Medium.ttf */; };
+		E8EC0DD6257CDAE20024D395 /* Gilroy-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E8EC0DD1257CDAE20024D395 /* Gilroy-Bold.ttf */; };
+		E8EC0DDA257CDCEF0024D395 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EC0DD8257CDCEF0024D395 /* HomeViewController.swift */; };
+		E8EC0DDB257CDCEF0024D395 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8EC0DD9257CDCEF0024D395 /* HomeViewController.xib */; };
+		E8EC0DE0257CE04A0024D395 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EC0DDF257CE04A0024D395 /* CustomTabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +70,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E838E914257D18E900E95553 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		E838E915257D18E900E95553 /* NotificationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationViewController.xib; sourceTree = "<group>"; };
+		E838E919257D1B4400E95553 /* NotificationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTableViewCell.swift; sourceTree = "<group>"; };
+		E838E91A257D1B4400E95553 /* NotificationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationTableViewCell.xib; sourceTree = "<group>"; };
 		E83AA8CD2576F85200F8317E /* UIview+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIview+Extensions.swift"; sourceTree = "<group>"; };
+		E83D718E257CEC1700716860 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		E83D718F257CEC1700716860 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
+		E83EFAB1257D62CB0075CDF1 /* CustomAlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertVC.swift; sourceTree = "<group>"; };
+		E83EFAB2257D62CB0075CDF1 /* CustomAlertVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomAlertVC.xib; sourceTree = "<group>"; };
+		E83EFAB5257D65E30075CDF1 /* Extension+ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+ViewController.swift"; sourceTree = "<group>"; };
+		E83EFAB8257D6DC60075CDF1 /* AllOpportunitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllOpportunitiesViewController.swift; sourceTree = "<group>"; };
+		E83EFAB9257D6DC60075CDF1 /* AllOpportunitiesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AllOpportunitiesViewController.xib; sourceTree = "<group>"; };
+		E83EFABE257D77BC0075CDF1 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		E83EFABF257D77BC0075CDF1 /* SearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
+		E85BC27A2577C034003D84C0 /* Opportunities.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Opportunities.entitlements; sourceTree = "<group>"; };
 		E8B2875E2576CB0B00326E02 /* Opportunities.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Opportunities.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8B287612576CB0B00326E02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E8B287632576CB0B00326E02 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +111,15 @@
 		E8B287A52576E46E00326E02 /* Cairo-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cairo-Black.ttf"; sourceTree = "<group>"; };
 		E8B287A62576E46E00326E02 /* Cairo-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cairo-Bold.ttf"; sourceTree = "<group>"; };
 		E8B287A72576E46E00326E02 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		E8EC0DCA257CD4200024D395 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		E8EC0DCD257CDAE00024D395 /* Gilroy-Heavy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Heavy.ttf"; sourceTree = "<group>"; };
+		E8EC0DCE257CDAE10024D395 /* Gilroy-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Light.ttf"; sourceTree = "<group>"; };
+		E8EC0DCF257CDAE10024D395 /* Gilroy-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Regular.ttf"; sourceTree = "<group>"; };
+		E8EC0DD0257CDAE20024D395 /* Gilroy-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Medium.ttf"; sourceTree = "<group>"; };
+		E8EC0DD1257CDAE20024D395 /* Gilroy-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Bold.ttf"; sourceTree = "<group>"; };
+		E8EC0DD8257CDCEF0024D395 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		E8EC0DD9257CDCEF0024D395 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		E8EC0DDF257CE04A0024D395 /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +147,62 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E838E913257D18BE00E95553 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				E838E918257D1B1900E95553 /* Cell */,
+				E838E914257D18E900E95553 /* NotificationViewController.swift */,
+				E838E915257D18E900E95553 /* NotificationViewController.xib */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
+		E838E918257D1B1900E95553 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				E838E919257D1B4400E95553 /* NotificationTableViewCell.swift */,
+				E838E91A257D1B4400E95553 /* NotificationTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		E83D718D257CEBEE00716860 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				E83D718E257CEC1700716860 /* HomeTableViewCell.swift */,
+				E83D718F257CEC1700716860 /* HomeTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		E83EFAB7257D6D770075CDF1 /* AllOpportunities */ = {
+			isa = PBXGroup;
+			children = (
+				E83EFAB8257D6DC60075CDF1 /* AllOpportunitiesViewController.swift */,
+				E83EFAB9257D6DC60075CDF1 /* AllOpportunitiesViewController.xib */,
+			);
+			path = AllOpportunities;
+			sourceTree = "<group>";
+		};
+		E83EFABC257D776E0075CDF1 /* Sign */ = {
+			isa = PBXGroup;
+			children = (
+				E8B287672576CB0B00326E02 /* Main.storyboard */,
+				E8B287652576CB0B00326E02 /* LanguageViewController.swift */,
+				E8EC0DCA257CD4200024D395 /* SignUpViewController.swift */,
+			);
+			path = Sign;
+			sourceTree = "<group>";
+		};
+		E83EFABD257D77A30075CDF1 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				E83EFABE257D77BC0075CDF1 /* SearchViewController.swift */,
+				E83EFABF257D77BC0075CDF1 /* SearchViewController.xib */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
 		E8B287552576CB0B00326E02 = {
 			isa = PBXGroup;
 			children = (
@@ -125,12 +226,11 @@
 		E8B287602576CB0B00326E02 /* Opportunities */ = {
 			isa = PBXGroup;
 			children = (
-				E83AA8CD2576F85200F8317E /* UIview+Extensions.swift */,
 				E8B287962576D64D00326E02 /* Commen */,
 				E8B287912576D5F000326E02 /* DesignSystem */,
-				E8B287652576CB0B00326E02 /* LanguageViewController.swift */,
-				E8B287672576CB0B00326E02 /* Main.storyboard */,
-				E8B2876F2576CB1100326E02 /* Info.plist */,
+				E8EC0DDD257CDE8F0024D395 /* Extensions */,
+				E8EC0DDC257CDE840024D395 /* Utility */,
+				E8EC0DDE257CDF280024D395 /* Screens */,
 			);
 			path = Opportunities;
 			sourceTree = "<group>";
@@ -166,6 +266,8 @@
 		E8B287962576D64D00326E02 /* Commen */ = {
 			isa = PBXGroup;
 			children = (
+				E8B2876F2576CB1100326E02 /* Info.plist */,
+				E85BC27A2577C034003D84C0 /* Opportunities.entitlements */,
 				E8B287612576CB0B00326E02 /* AppDelegate.swift */,
 				E8B287632576CB0B00326E02 /* SceneDelegate.swift */,
 				E8B2876C2576CB1100326E02 /* LaunchScreen.storyboard */,
@@ -196,6 +298,7 @@
 		E8B2879F2576E37900326E02 /* MyCustomFont */ = {
 			isa = PBXGroup;
 			children = (
+				E8EC0DCC257CDABD0024D395 /* Gilroy */,
 				E8B287A02576E46E00326E02 /* cairo */,
 			);
 			path = MyCustomFont;
@@ -213,6 +316,59 @@
 				E8B287A72576E46E00326E02 /* OFL.txt */,
 			);
 			path = cairo;
+			sourceTree = "<group>";
+		};
+		E8EC0DCC257CDABD0024D395 /* Gilroy */ = {
+			isa = PBXGroup;
+			children = (
+				E8EC0DD1257CDAE20024D395 /* Gilroy-Bold.ttf */,
+				E8EC0DCD257CDAE00024D395 /* Gilroy-Heavy.ttf */,
+				E8EC0DCE257CDAE10024D395 /* Gilroy-Light.ttf */,
+				E8EC0DD0257CDAE20024D395 /* Gilroy-Medium.ttf */,
+				E8EC0DCF257CDAE10024D395 /* Gilroy-Regular.ttf */,
+			);
+			path = Gilroy;
+			sourceTree = "<group>";
+		};
+		E8EC0DD7257CDCDA0024D395 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E83D718D257CEBEE00716860 /* Cell */,
+				E8EC0DD8257CDCEF0024D395 /* HomeViewController.swift */,
+				E8EC0DD9257CDCEF0024D395 /* HomeViewController.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		E8EC0DDC257CDE840024D395 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				E8EC0DDF257CE04A0024D395 /* CustomTabBarController.swift */,
+				E83EFAB1257D62CB0075CDF1 /* CustomAlertVC.swift */,
+				E83EFAB2257D62CB0075CDF1 /* CustomAlertVC.xib */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		E8EC0DDD257CDE8F0024D395 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E83AA8CD2576F85200F8317E /* UIview+Extensions.swift */,
+				E83EFAB5257D65E30075CDF1 /* Extension+ViewController.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E8EC0DDE257CDF280024D395 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				E83EFABD257D77A30075CDF1 /* Search */,
+				E83EFABC257D776E0075CDF1 /* Sign */,
+				E83EFAB7257D6D770075CDF1 /* AllOpportunities */,
+				E838E913257D18BE00E95553 /* Notification */,
+				E8EC0DD7257CDCDA0024D395 /* Home */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -319,16 +475,28 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E838E91C257D1B4400E95553 /* NotificationTableViewCell.xib in Resources */,
 				E8B287AE2576E46E00326E02 /* OFL.txt in Resources */,
+				E83EFAB4257D62CB0075CDF1 /* CustomAlertVC.xib in Resources */,
+				E8EC0DD5257CDAE20024D395 /* Gilroy-Medium.ttf in Resources */,
 				E8B287AA2576E46E00326E02 /* Cairo-Regular.ttf in Resources */,
+				E8EC0DD4257CDAE20024D395 /* Gilroy-Regular.ttf in Resources */,
 				E8B2876E2576CB1100326E02 /* LaunchScreen.storyboard in Resources */,
+				E8EC0DD3257CDAE20024D395 /* Gilroy-Light.ttf in Resources */,
 				E8B2876B2576CB1100326E02 /* Assets.xcassets in Resources */,
 				E8B287AC2576E46E00326E02 /* Cairo-Black.ttf in Resources */,
 				E8B287A92576E46E00326E02 /* Cairo-SemiBold.ttf in Resources */,
 				E8B287692576CB0B00326E02 /* Main.storyboard in Resources */,
 				E8B287A82576E46E00326E02 /* Cairo-ExtraLight.ttf in Resources */,
+				E83D7191257CEC1700716860 /* HomeTableViewCell.xib in Resources */,
+				E8EC0DD2257CDAE20024D395 /* Gilroy-Heavy.ttf in Resources */,
+				E8EC0DD6257CDAE20024D395 /* Gilroy-Bold.ttf in Resources */,
 				E8B287AD2576E46E00326E02 /* Cairo-Bold.ttf in Resources */,
+				E838E917257D18E900E95553 /* NotificationViewController.xib in Resources */,
+				E83EFAC1257D77BC0075CDF1 /* SearchViewController.xib in Resources */,
 				E8B287AB2576E46E00326E02 /* Cairo-Light.ttf in Resources */,
+				E8EC0DDB257CDCEF0024D395 /* HomeViewController.xib in Resources */,
+				E83EFABB257D6DC60075CDF1 /* AllOpportunitiesViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,11 +523,21 @@
 			files = (
 				E83AA8CE2576F85200F8317E /* UIview+Extensions.swift in Sources */,
 				E8B2879C2576E0A600326E02 /* CustomFontDiscriptor.swift in Sources */,
+				E83D7190257CEC1700716860 /* HomeTableViewCell.swift in Sources */,
+				E8EC0DE0257CE04A0024D395 /* CustomTabBarController.swift in Sources */,
+				E83EFAC0257D77BC0075CDF1 /* SearchViewController.swift in Sources */,
 				E8B287952576D62D00326E02 /* Color.swift in Sources */,
 				E8B2879E2576E19F00326E02 /* Typography.swift in Sources */,
+				E838E91B257D1B4400E95553 /* NotificationTableViewCell.swift in Sources */,
+				E8EC0DCB257CD4200024D395 /* SignUpViewController.swift in Sources */,
 				E8B287932576D60D00326E02 /* DesignSystem.swift in Sources */,
 				E8B2879A2576DFE700326E02 /* Font.swift in Sources */,
+				E83EFAB3257D62CB0075CDF1 /* CustomAlertVC.swift in Sources */,
+				E8EC0DDA257CDCEF0024D395 /* HomeViewController.swift in Sources */,
+				E838E916257D18E900E95553 /* NotificationViewController.swift in Sources */,
 				E8B287662576CB0B00326E02 /* LanguageViewController.swift in Sources */,
+				E83EFAB6257D65E30075CDF1 /* Extension+ViewController.swift in Sources */,
+				E83EFABA257D6DC60075CDF1 /* AllOpportunitiesViewController.swift in Sources */,
 				E8B287622576CB0B00326E02 /* AppDelegate.swift in Sources */,
 				E8B287642576CB0B00326E02 /* SceneDelegate.swift in Sources */,
 			);
@@ -534,9 +712,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Opportunities/Opportunities.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y6A9D83764;
-				INFOPLIST_FILE = Opportunities/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Opportunities/Commen/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -552,9 +731,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Opportunities/Opportunities.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y6A9D83764;
-				INFOPLIST_FILE = Opportunities/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Opportunities/Commen/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -16,6 +16,8 @@ extension DesignSystem {
         case Difination = "Difination"
         case backGroundButton = "backGroundButton"
         case MainbuttonColor = "MainbuttonColor"
+        case LabelColor = "LabelColor"
+        case textFieldColorBackGround = "textFieldColorBackGround"
         var color : UIColor {
             switch self {
             case .Title:
@@ -29,6 +31,10 @@ extension DesignSystem {
                 return UIColor(named : self.rawValue)!
             case .MainbuttonColor:
                 return UIColor(named : self.rawValue)!
+            case .LabelColor:
+                return UIColor(named : self.rawValue)!
+            case .textFieldColorBackGround:
+                 return UIColor(named : self.rawValue)!
             }
         }
         

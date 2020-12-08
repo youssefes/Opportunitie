@@ -10,13 +10,11 @@ import Foundation
 
 
 enum Font : String {
-    case Bold = "Cairo-Bold"
-    case Light = "Cairo-Light"
-    case SemiBold = "Cairo-SemiBold"
-    case ExtralLight = "Cairo-ExtraLight"
-    case Black = "Cairo-Black"
-    case Regular = "Cairo-Regular"
-    
+    case Bold = "Gilroy-Bold"
+    case Light = "Gilroy-Light"
+    case Regular = "Gilroy-Regular"
+    case Medium = "Gilroy-Medium"
+    case Heavy = "Gilroy-Heavy"
     var name : String {
         return self.rawValue
     }

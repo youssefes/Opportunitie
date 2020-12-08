@@ -18,9 +18,9 @@ extension DesignSystem {
         private var fontDiscriptor : CustomFontDiscriptor {
             switch self {
             case .Title:
-                return CustomFontDiscriptor(font: .Bold, size: 32, Style: .body)
+                return CustomFontDiscriptor(font: .Bold, size: 20, Style: .body)
             case .Title2:
-                return CustomFontDiscriptor(font: .SemiBold, size: 25, Style: .title2)
+                return CustomFontDiscriptor(font: .Medium, size: 25, Style: .title2)
             case .Discription:
                 return CustomFontDiscriptor(font: .Light, size: 18, Style: .title2)
             }
