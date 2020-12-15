@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gilroy-Bold.ttf">
+            <string>Gilroy-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="103" id="KGk-i7-Jjw" customClass="TransactionTableViewCell" customModule="Opportunities" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="396" height="103"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="396" height="103"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="6af-PP-TzU">
+                        <rect key="frame" x="0.0" y="20" width="396" height="63"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fWM-OY-DQ5">
+                                <rect key="frame" x="0.0" y="0.0" width="132" height="63"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profit" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="frd-hR-9Ty">
+                                        <rect key="frame" x="0.0" y="0.0" width="92" height="63"/>
+                                        <color key="backgroundColor" red="0.3411764706" green="0.88235294119999996" blue="0.69019607839999997" alpha="0.097640196917808203" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="15"/>
+                                        <color key="textColor" red="0.3411764706" green="0.88235294119999996" blue="0.69019607839999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="frd-hR-9Ty" firstAttribute="leading" secondItem="fWM-OY-DQ5" secondAttribute="leading" id="2Mv-s2-yEx"/>
+                                    <constraint firstAttribute="trailing" secondItem="frd-hR-9Ty" secondAttribute="trailing" constant="40" id="Cm7-tw-T6P"/>
+                                    <constraint firstItem="frd-hR-9Ty" firstAttribute="top" secondItem="fWM-OY-DQ5" secondAttribute="top" id="ZD4-pu-Sof"/>
+                                    <constraint firstAttribute="bottom" secondItem="frd-hR-9Ty" secondAttribute="bottom" id="eI3-UN-kOF"/>
+                                    <constraint firstItem="frd-hR-9Ty" firstAttribute="leading" secondItem="fWM-OY-DQ5" secondAttribute="leading" id="sYq-Rk-l2U"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vodavoda" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ka-5k-GXS">
+                                <rect key="frame" x="132" y="0.0" width="132" height="63"/>
+                                <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="250KD" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5eX-5J-XsG">
+                                <rect key="frame" x="264" y="0.0" width="132" height="63"/>
+                                <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="6af-PP-TzU" secondAttribute="bottom" constant="20" id="6ie-fZ-HZS"/>
+                    <constraint firstItem="6af-PP-TzU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="VrF-EZ-JxS"/>
+                    <constraint firstItem="6af-PP-TzU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="aLe-qn-MKk"/>
+                    <constraint firstAttribute="trailing" secondItem="6af-PP-TzU" secondAttribute="trailing" id="hDb-h1-emS"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="185.50724637681162" y="135.60267857142856"/>
+        </tableViewCell>
+    </objects>
+</document>

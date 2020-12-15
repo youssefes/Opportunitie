@@ -8,17 +8,21 @@
 
 import UIKit
 
-class NotificationViewController: UIViewController {
-
+class NotificationViewController: BaseWireFrame<NotificationViewModel> {
+    
     @IBOutlet weak var NotificationTableView: UITableView!
     
     let CellIdentifier = "NotificationTableViewCell"
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         setUpUI()
         registerCell()
+        
+    }
+    
+    override func bind(ViewModel: NotificationViewModel) {
         
     }
     @IBAction func backBtn(_ sender: Any) {
@@ -30,16 +34,20 @@ class NotificationViewController: UIViewController {
     }
     
     func registerCell(){
-           NotificationTableView.register(UINib(nibName: CellIdentifier, bundle: nil), forCellReuseIdentifier: CellIdentifier)
-       }
-       
-       func setUpUI(){
-           NotificationTableView.delegate = self
-           NotificationTableView.dataSource = self
-           NotificationTableView.separatorStyle = .none
-       }
+        NotificationTableView.register(UINib(nibName: CellIdentifier, bundle: nil), forCellReuseIdentifier: CellIdentifier)
+    }
     
-
+    func setUpUI(){
+        NotificationTableView.delegate = self
+        NotificationTableView.dataSource = self
+        NotificationTableView.separatorStyle = .none
+        
+    }
+    
+    @IBAction func CloseBtn(_ sender: Any) {
+        navigationController?.popViewController(animated: true)
+    }
+    
 }
 
 extension NotificationViewController : UITableViewDataSource{
@@ -48,17 +56,6 @@ extension NotificationViewController : UITableViewDataSource{
         return 2
     }
     
-    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        
-        let viewSection = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: 50))
-        let lable = UILabel(frame: CGRect(x: 20, y: 5, width: viewSection.frame.size.width, height: 50))
-        lable.text = "yesterday"
-        lable.font = DesignSystem.Typography.Title.font
-        lable.textColor = DesignSystem.Colors.LabelColor.color
-        lable.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0)
-        viewSection.addSubview(lable)
-        return viewSection
-    }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 5
     }
@@ -70,11 +67,37 @@ extension NotificationViewController : UITableViewDataSource{
     }
     
     
+    
+    
 }
 
 extension NotificationViewController : UITableViewDelegate{
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 140
+    }
+    
+    func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+        let headerView = view as! UITableViewHeaderFooterView
+        headerView.backgroundColor = DesignSystem.Colors.Title.color
+        headerView.textLabel?.text = "youssef"
+        headerView.textLabel?.font = DesignSystem.Typography.Title.font
+        
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 50
+    }
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+
+        
+        let retaionAngelInRadian = 90 * CGFloat(Double.pi / 180)
+        let rotationTransform = CATransform3DMakeRotation(retaionAngelInRadian, 0, 0, 1)
+        cell.layer.transform = rotationTransform
+        
+        UIView.animate(withDuration: 1) {
+            cell.layer.transform = CATransform3DTranslate(CATransform3DIdentity, 500, 100, 0)
+        }
     }
     
     

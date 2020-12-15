@@ -18,6 +18,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchViewController" customModule="Opportunities" customModuleProvider="target">
             <connections>
+                <outlet property="ContainerOfResultSearch" destination="phu-Pz-zSh" id="E4U-LK-vu5"/>
+                <outlet property="numberOfResulte" destination="M9J-le-Q05" id="caG-BG-7k3"/>
+                <outlet property="resulteTableView" destination="iBf-e1-66g" id="N0c-ql-ofi"/>
+                <outlet property="searchTextField" destination="Wqa-9P-8He" id="xe1-Ns-lyi"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -34,7 +38,7 @@
                     </constraints>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                            <real key="value" value="20"/>
+                            <real key="value" value="25"/>
                         </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                             <real key="value" value="0.5"/>
@@ -45,10 +49,13 @@
                     </userDefinedRuntimeAttributes>
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UWM-t0-a1o">
-                    <rect key="frame" x="325" y="74" width="69" height="30"/>
+                    <rect key="frame" x="325" y="72.5" width="69" height="33"/>
                     <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy-Regular" pointSize="18"/>
                     <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <state key="normal" title="Cancel"/>
+                    <connections>
+                        <action selector="cancelBtn:" destination="-1" eventType="touchUpInside" id="2xO-Eu-zdf"/>
+                    </connections>
                 </button>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Search" translatesAutoresizingMaskIntoConstraints="NO" id="Map-Ti-52x">
                     <rect key="frame" x="36" y="79" width="20" height="20"/>
@@ -83,8 +90,38 @@
                         </label>
                     </subviews>
                 </stackView>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="phu-Pz-zSh">
+                    <rect key="frame" x="0.0" y="134" width="414" height="748"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iBf-e1-66g">
+                            <rect key="frame" x="20" y="61" width="374" height="667"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </tableView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="13 Results" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M9J-le-Q05">
+                            <rect key="frame" x="20" y="20" width="394" height="21"/>
+                            <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="18"/>
+                            <color key="textColor" name="LabelColor"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                    <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="iBf-e1-66g" secondAttribute="trailing" constant="20" id="2Eb-GY-CIH"/>
+                        <constraint firstItem="M9J-le-Q05" firstAttribute="leading" secondItem="phu-Pz-zSh" secondAttribute="leading" constant="20" id="9AK-V0-gMI"/>
+                        <constraint firstAttribute="bottom" secondItem="iBf-e1-66g" secondAttribute="bottom" constant="20" id="JkN-pv-Hvf"/>
+                        <constraint firstItem="iBf-e1-66g" firstAttribute="leading" secondItem="phu-Pz-zSh" secondAttribute="leading" constant="20" id="Yva-sl-ufR"/>
+                        <constraint firstItem="M9J-le-Q05" firstAttribute="top" secondItem="phu-Pz-zSh" secondAttribute="top" constant="20" id="ZFr-2O-9mO"/>
+                        <constraint firstAttribute="trailing" secondItem="M9J-le-Q05" secondAttribute="trailing" id="aRt-IA-1Ds"/>
+                        <constraint firstItem="iBf-e1-66g" firstAttribute="top" secondItem="M9J-le-Q05" secondAttribute="bottom" constant="20" id="j0t-NY-aGE"/>
+                    </constraints>
+                </view>
             </subviews>
-            <color key="backgroundColor" red="0.97647058823529409" green="0.98431372549019602" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
                 <constraint firstItem="aZk-gq-ose" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="2px-Rd-a5q"/>
                 <constraint firstItem="RdA-sN-ubp" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="1:3" id="72G-k1-xfp"/>
@@ -95,8 +132,12 @@
                 <constraint firstItem="UWM-t0-a1o" firstAttribute="leading" secondItem="aZk-gq-ose" secondAttribute="trailing" constant="10" id="GzB-fV-6uF"/>
                 <constraint firstItem="O14-Eq-7bI" firstAttribute="top" secondItem="RdA-sN-ubp" secondAttribute="bottom" constant="25" id="MGp-sb-kaK"/>
                 <constraint firstItem="RdA-sN-ubp" firstAttribute="top" secondItem="aZk-gq-ose" secondAttribute="bottom" constant="50" id="QLz-Vz-NHE"/>
+                <constraint firstAttribute="bottom" secondItem="phu-Pz-zSh" secondAttribute="bottom" constant="14" id="Qab-vw-qaD"/>
                 <constraint firstItem="UWM-t0-a1o" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.5:3" id="Uzz-r0-VLk"/>
+                <constraint firstItem="phu-Pz-zSh" firstAttribute="top" secondItem="aZk-gq-ose" secondAttribute="bottom" constant="20" id="V3q-Ef-lcH"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="phu-Pz-zSh" secondAttribute="trailing" id="Xys-sk-vTM"/>
                 <constraint firstItem="aZk-gq-ose" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="gVc-H4-OVQ"/>
+                <constraint firstItem="phu-Pz-zSh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="iiP-sv-3EB"/>
                 <constraint firstItem="O14-Eq-7bI" firstAttribute="trailing" secondItem="RdA-sN-ubp" secondAttribute="trailing" constant="-20" id="ivn-dN-sTO"/>
                 <constraint firstItem="Map-Ti-52x" firstAttribute="centerY" secondItem="Wqa-9P-8He" secondAttribute="centerY" id="l43-AM-fzk"/>
                 <constraint firstItem="Wqa-9P-8He" firstAttribute="leading" secondItem="Map-Ti-52x" secondAttribute="trailing" constant="10" id="lWq-9q-VIZ"/>

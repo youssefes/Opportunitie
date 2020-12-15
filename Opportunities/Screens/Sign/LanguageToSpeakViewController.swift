@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LanguageViewController: UIViewController {
+class LanguageToSpeakViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

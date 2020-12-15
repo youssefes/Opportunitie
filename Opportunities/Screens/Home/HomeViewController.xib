@@ -27,37 +27,30 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OBK-h0-7Ze">
-                    <rect key="frame" x="20" y="44" width="374" height="44"/>
-                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <color key="barTintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    <items>
-                        <navigationItem id="UeM-cD-eRh">
-                            <barButtonItem key="leftBarButtonItem" image="Group 139" id="PSJ-uz-hUr">
-                                <color key="tintColor" name="Title"/>
-                                <connections>
-                                    <action selector="showMenu:" destination="-1" id="D1a-VF-mJ2"/>
-                                </connections>
-                            </barButtonItem>
-                            <barButtonItem key="rightBarButtonItem" image="Group 140" id="0jK-LW-WG4">
-                                <color key="tintColor" name="Title"/>
-                                <connections>
-                                    <action selector="Shownotifcation:" destination="-1" id="pBK-c5-fEK"/>
-                                </connections>
-                            </barButtonItem>
-                        </navigationItem>
-                    </items>
-                </navigationBar>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XpW-Ba-rdy">
+                    <rect key="frame" x="20" y="64" width="40" height="22"/>
+                    <state key="normal" image="Group 139"/>
+                    <connections>
+                        <action selector="showMenu:" destination="-1" eventType="touchUpInside" id="Oe2-f5-ea9"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yxN-bi-zhw">
+                    <rect key="frame" x="348" y="64" width="46" height="46"/>
+                    <state key="normal" image="Group 140"/>
+                    <connections>
+                        <action selector="Shownotifcation:" destination="-1" eventType="touchUpInside" id="xVK-gR-pRH"/>
+                    </connections>
+                </button>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="c0f-iN-seU">
-                    <rect key="frame" x="20" y="108" width="374" height="119"/>
+                    <rect key="frame" x="20" y="130" width="374" height="103"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AyA-X1-jus">
-                            <rect key="frame" x="0.0" y="0.0" width="374" height="85"/>
+                            <rect key="frame" x="0.0" y="0.0" width="374" height="71.5"/>
                             <attributedString key="attributedText">
                                 <fragment content="Get your investment opportunity now!">
                                     <attributes>
                                         <color key="NSColor" red="0.13333333333333333" green="0.20000000000000001" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <font key="NSFont" size="30" name="AvenirNext-Bold"/>
+                                        <font key="NSFont" size="25" name="AvenirNext-Bold"/>
                                         <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="3" tighteningFactorForTruncation="0.0"/>
                                     </attributes>
                                 </fragment>
@@ -65,15 +58,15 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grow with us or double it." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RjX-fy-HkR">
-                            <rect key="frame" x="0.0" y="100" width="374" height="19"/>
-                            <fontDescription key="fontDescription" name="Gilroy-Medium" family="Gilroy-Medium" pointSize="16"/>
+                            <rect key="frame" x="0.0" y="86.5" width="374" height="16.5"/>
+                            <fontDescription key="fontDescription" name="Gilroy-Medium" family="Gilroy-Medium" pointSize="14"/>
                             <color key="textColor" name="SubTitle"/>
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>
                 </stackView>
                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="uxj-EJ-fvq">
-                    <rect key="frame" x="20" y="277" width="374" height="31"/>
+                    <rect key="frame" x="20" y="283" width="374" height="31"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Opportunities" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xXO-ZM-eWm">
                             <rect key="frame" x="0.0" y="0.0" width="187" height="31"/>
@@ -93,25 +86,27 @@
                         </button>
                     </subviews>
                 </stackView>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="MUI-2j-C8E">
-                    <rect key="frame" x="20" y="338" width="374" height="524"/>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="MUI-2j-C8E">
+                    <rect key="frame" x="20" y="344" width="374" height="518"/>
+                    <color key="backgroundColor" name="BackGround"/>
                     <inset key="scrollIndicatorInsets" minX="0.0" minY="10" maxX="0.0" maxY="10"/>
+                    <color key="separatorColor" name="BackGround"/>
                 </tableView>
             </subviews>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" name="BackGround"/>
             <constraints>
+                <constraint firstItem="XpW-Ba-rdy" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="2EO-go-vQ0"/>
+                <constraint firstItem="c0f-iN-seU" firstAttribute="trailing" secondItem="yxN-bi-zhw" secondAttribute="trailing" id="3cc-rC-gEE"/>
                 <constraint firstItem="MUI-2j-C8E" firstAttribute="top" secondItem="uxj-EJ-fvq" secondAttribute="bottom" constant="30" id="4fx-Y7-7bW"/>
-                <constraint firstItem="OBK-h0-7Ze" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="EIm-31-XVM"/>
-                <constraint firstItem="c0f-iN-seU" firstAttribute="trailing" secondItem="OBK-h0-7Ze" secondAttribute="trailing" id="KXT-UA-4cS"/>
-                <constraint firstItem="c0f-iN-seU" firstAttribute="leading" secondItem="OBK-h0-7Ze" secondAttribute="leading" id="WRl-HX-wYZ"/>
+                <constraint firstItem="yxN-bi-zhw" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="JWS-u7-nF4"/>
+                <constraint firstItem="c0f-iN-seU" firstAttribute="leading" secondItem="XpW-Ba-rdy" secondAttribute="leading" id="Lq8-V1-5jz"/>
                 <constraint firstItem="MUI-2j-C8E" firstAttribute="trailing" secondItem="uxj-EJ-fvq" secondAttribute="trailing" id="XRR-um-S75"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="OBK-h0-7Ze" secondAttribute="trailing" constant="20" id="a1B-Ak-Yt6"/>
-                <constraint firstItem="OBK-h0-7Ze" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="bW9-Mh-vln"/>
+                <constraint firstItem="XpW-Ba-rdy" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="bHl-pF-lW1"/>
                 <constraint firstItem="uxj-EJ-fvq" firstAttribute="top" secondItem="c0f-iN-seU" secondAttribute="bottom" constant="50" id="bch-Ry-n0P"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="yxN-bi-zhw" secondAttribute="trailing" constant="20" id="hUY-qo-Abx"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="MUI-2j-C8E" secondAttribute="bottom" id="hbL-h7-lP8"/>
-                <constraint firstItem="c0f-iN-seU" firstAttribute="top" secondItem="OBK-h0-7Ze" secondAttribute="bottom" constant="20" id="jyc-aQ-0g5"/>
                 <constraint firstItem="uxj-EJ-fvq" firstAttribute="leading" secondItem="c0f-iN-seU" secondAttribute="leading" id="mXb-HR-vK8"/>
+                <constraint firstItem="c0f-iN-seU" firstAttribute="top" secondItem="yxN-bi-zhw" secondAttribute="bottom" constant="20" id="mfk-ma-iqt"/>
                 <constraint firstItem="MUI-2j-C8E" firstAttribute="leading" secondItem="uxj-EJ-fvq" secondAttribute="leading" id="x5h-7u-OVu"/>
                 <constraint firstItem="uxj-EJ-fvq" firstAttribute="trailing" secondItem="c0f-iN-seU" secondAttribute="trailing" id="zZX-hB-Vwm"/>
             </constraints>
@@ -122,6 +117,9 @@
     <resources>
         <image name="Group 139" width="20" height="10"/>
         <image name="Group 140" width="23" height="23"/>
+        <namedColor name="BackGround">
+            <color red="0.97600001096725464" green="0.98400002717971802" blue="0.99199998378753662" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="MainbuttonColor">
             <color red="0.47499999403953552" green="0.0" blue="0.93300002813339233" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -25,7 +26,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15 Opportunites" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N9M-lZ-2qc">
-                    <rect key="frame" x="20" y="155" width="394" height="15"/>
+                    <rect key="frame" x="20" y="155" width="394" height="17.5"/>
                     <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="15"/>
                     <color key="textColor" red="0.3411764705882353" green="0.88235294117647056" blue="0.69019607843137254" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
@@ -40,19 +41,25 @@
                         <navigationItem title="All Opportunities" id="5dY-7e-Idp">
                             <barButtonItem key="leftBarButtonItem" image="ArrowLeft 2" id="vfw-Fd-u0r">
                                 <color key="tintColor" red="0.1333333333" green="0.20000000000000001" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="dismissBtn:" destination="-1" id="mg0-jA-ODC"/>
+                                </connections>
                             </barButtonItem>
                             <barButtonItem key="rightBarButtonItem" title="Item" image="Search" id="SVV-55-YXf">
                                 <color key="tintColor" red="0.1333333333" green="0.20000000000000001" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="searchBtn:" destination="-1" id="AQB-lg-rOE"/>
+                                </connections>
                             </barButtonItem>
                         </navigationItem>
                     </items>
                 </navigationBar>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="IcF-JK-3Au">
-                    <rect key="frame" x="20" y="190" width="374" height="672"/>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="IcF-JK-3Au">
+                    <rect key="frame" x="20" y="192.5" width="374" height="669.5"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </tableView>
             </subviews>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" name="BackGround"/>
             <constraints>
                 <constraint firstItem="N9M-lZ-2qc" firstAttribute="top" secondItem="ESV-3b-Ufq" secondAttribute="bottom" constant="15" id="1we-rA-sMo"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="IcF-JK-3Au" secondAttribute="bottom" id="IAg-lh-Jdt"/>
@@ -72,5 +79,8 @@
     <resources>
         <image name="ArrowLeft 2" width="10" height="16"/>
         <image name="Search" width="24" height="24"/>
+        <namedColor name="BackGround">
+            <color red="0.97600001096725464" green="0.98400002717971802" blue="0.99199998378753662" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>

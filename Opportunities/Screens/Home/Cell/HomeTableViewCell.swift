@@ -11,4 +11,13 @@ import UIKit
 class HomeTableViewCell: UITableViewCell {
 
     
+    var goToDetaielsOfOppertunite : (()->Void)?
+    
+    
+    @IBAction func ViewOppertuniteBtn(_ sender: Any) {
+        
+        goToDetaielsOfOppertunite?()
+    }
+    
+    
 }

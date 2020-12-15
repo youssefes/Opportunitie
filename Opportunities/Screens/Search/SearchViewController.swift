@@ -8,13 +8,52 @@
 
 import UIKit
 
-class SearchViewController: UIViewController {
+class SearchViewController: BaseWireFrame<searchViewModel> {
 
+    @IBOutlet weak var numberOfResulte: UILabel!
+    @IBOutlet weak var resulteTableView: UITableView!
+    @IBOutlet weak var ContainerOfResultSearch: UIView!
+    @IBOutlet weak var searchTextField: UITextField!
+    
+    let cellIdentifier = "HomeTableViewCell"
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        
+        resulteTableView.register(UINib(nibName: cellIdentifier, bundle: nil), forCellReuseIdentifier: cellIdentifier)
+        resulteTableView.dataSource = self
+        resulteTableView.delegate = self
     }
 
+    
+    override func bind(ViewModel: searchViewModel) {
+        
+    }
+    
+    
+    @IBAction func cancelBtn(_ sender: Any) {
+        
+        navigationController?.popViewController(animated: true)
+    }
+    
+}
 
+extension SearchViewController : UITableViewDataSource{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 5
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! HomeTableViewCell
+        return cell
+    }
+    
+    
+}
+
+extension SearchViewController :  UITableViewDelegate{
+
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 285
+    }
 }

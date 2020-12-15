@@ -30,7 +30,7 @@
                             <barButtonItem key="leftBarButtonItem" image="ArrowLeft 2" id="lNe-qn-DII">
                                 <color key="tintColor" red="0.1333333333" green="0.20000000000000001" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
-                                    <action selector="backBtn:" destination="-1" id="CEp-FU-Fz2"/>
+                                    <action selector="CloseBtn:" destination="-1" id="I3n-2l-2Al"/>
                                 </connections>
                             </barButtonItem>
                             <barButtonItem key="rightBarButtonItem" image="Delete" id="Qhw-4j-vEC">
@@ -45,6 +45,7 @@
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" sectionIndexMinimumDisplayRowCount="1" allowsMultipleSelection="YES" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="52C-jX-CIo">
                     <rect key="frame" x="0.0" y="140" width="414" height="722"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <color key="sectionIndexColor" red="0.1333333333" green="0.20000000000000001" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <color key="sectionIndexBackgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 </tableView>
