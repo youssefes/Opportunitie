@@ -8,7 +8,6 @@
 
 import UIKit
 import IQKeyboardManagerSwift
-
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
@@ -16,13 +15,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     var Coordinator : AppCoordinator!
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
        
-        IQKeyboardManager.shared.enable = true
+        
         
         guard let windowScene = (scene as? UIWindowScene) else { return }
 
+        IQKeyboardManager.shared.enable = true
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
-        window?.rootViewController = SignUpViewController()
         window?.makeKeyAndVisible()
         Coordinator = AppCoordinator(Window: window!)
         Coordinator.start()
@@ -58,5 +57,22 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
 
 
+}
+
+extension UIApplication {
+    class func topViewController(base: UIViewController? = UIApplication.shared.keyWindow?.rootViewController) -> UIViewController? {
+        if let nav = base as? UINavigationController {
+            return topViewController(base: nav.visibleViewController)
+        }
+        if let tab = base as? UITabBarController {
+            if let selected = tab.selectedViewController {
+                return topViewController(base: selected)
+            }
+        }
+        if let presented = base?.presentedViewController {
+            return topViewController(base: presented)
+        }
+        return base
+    }
 }
 

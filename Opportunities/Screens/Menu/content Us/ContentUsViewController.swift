@@ -22,7 +22,7 @@ class ContentUsViewController: BaseWireFrame<ContectUsViewModel> {
 
  
     @IBAction func DismissBtn(_ sender: Any) {
-        navigationController?.popViewController(animated: true)
+        coordinator.dismiss()
     }
     
 }

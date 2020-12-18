@@ -42,7 +42,7 @@ class ActiveViewController: BaseWireFrame<ActiveViewModel> {
     }
     
     @IBAction func backBtn(_ sender: Any) {
-        navigationController?.popViewController(animated: true)
+        coordinator.dismiss()
     }
 }
 

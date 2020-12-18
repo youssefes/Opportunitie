@@ -35,7 +35,7 @@ class AllOpportunitiesViewController: BaseWireFrame<AllOppertunitesViewModel> {
         OppertunitieTableview.separatorStyle = .none
     }
     @IBAction func dismissBtn(_ sender: Any) {
-        navigationController?.popViewController(animated: true)
+        coordinator.dismiss()
     }
     
     @IBAction func searchBtn(_ sender: Any) {
@@ -52,7 +52,7 @@ extension AllOpportunitiesViewController : UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "HomeTableViewCell", for: indexPath) as! HomeTableViewCell
-        
+        cell.selectionStyle = UITableViewCell.SelectionStyle.none
         return cell
     }
     

@@ -24,6 +24,9 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blurBackGrund" translatesAutoresizingMaskIntoConstraints="NO" id="cZC-XI-F0P">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                </imageView>
                 <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aZj-4f-sOe">
                     <rect key="frame" x="346" y="75" width="38" height="38"/>
                     <state key="normal" image="close"/>
@@ -50,7 +53,7 @@
                 </stackView>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="k3R-rj-xZU">
                     <rect key="frame" x="20" y="144" width="374" height="625"/>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </tableView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qjh-VZ-iiP">
                     <rect key="frame" x="20" y="789" width="374" height="53"/>
@@ -63,9 +66,11 @@
                     </connections>
                 </button>
             </subviews>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="aZj-4f-sOe" secondAttribute="trailing" constant="30" id="19f-bZ-oBt"/>
+                <constraint firstItem="cZC-XI-F0P" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="79A-1m-Kn6"/>
+                <constraint firstAttribute="top" secondItem="cZC-XI-F0P" secondAttribute="top" id="AdT-S2-5U5"/>
+                <constraint firstItem="cZC-XI-F0P" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="Aui-Z8-BK2"/>
                 <constraint firstItem="hw4-hb-xvP" firstAttribute="centerY" secondItem="aZj-4f-sOe" secondAttribute="centerY" id="Fiz-E0-IPU"/>
                 <constraint firstItem="hw4-hb-xvP" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="HSH-9V-nzY"/>
                 <constraint firstItem="k3R-rj-xZU" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Ksr-Fj-zBc"/>
@@ -74,6 +79,7 @@
                 <constraint firstItem="qjh-VZ-iiP" firstAttribute="trailing" secondItem="k3R-rj-xZU" secondAttribute="trailing" id="WTK-xp-K1u"/>
                 <constraint firstItem="k3R-rj-xZU" firstAttribute="top" secondItem="hw4-hb-xvP" secondAttribute="bottom" constant="20" id="XZ5-nS-zYM"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="qjh-VZ-iiP" secondAttribute="bottom" constant="20" id="Yxy-PH-9nO"/>
+                <constraint firstItem="cZC-XI-F0P" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottom" id="beR-TZ-ihY"/>
                 <constraint firstItem="qjh-VZ-iiP" firstAttribute="top" secondItem="k3R-rj-xZU" secondAttribute="bottom" constant="20" id="i4r-yf-9v5"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="k3R-rj-xZU" secondAttribute="trailing" constant="20" id="r0I-lB-x99"/>
             </constraints>
@@ -83,6 +89,7 @@
     </objects>
     <resources>
         <image name="1 294" width="73" height="73"/>
+        <image name="blurBackGrund" width="375" height="812"/>
         <image name="close" width="19" height="19"/>
         <namedColor name="Title">
             <color red="0.13300000131130219" green="0.20000000298023224" blue="0.2669999897480011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

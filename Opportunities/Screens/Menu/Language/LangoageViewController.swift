@@ -20,7 +20,7 @@ class LangoageViewController: BaseWireFrame<LanguageViewModel> {
     }
 
     @IBAction func dismissBtn(_ sender: Any) {
-        navigationController?.popViewController(animated: true)
+        coordinator.dismiss()
     }
     
 }

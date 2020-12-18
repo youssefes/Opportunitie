@@ -45,7 +45,7 @@ class NotificationViewController: BaseWireFrame<NotificationViewModel> {
     }
     
     @IBAction func CloseBtn(_ sender: Any) {
-        navigationController?.popViewController(animated: true)
+        coordinator.dismiss()
     }
     
 }
@@ -62,6 +62,7 @@ extension NotificationViewController : UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: CellIdentifier, for: indexPath) as! NotificationTableViewCell
+        cell.selectionStyle = UITableViewCell.SelectionStyle.none
         
         return cell
     }
@@ -95,7 +96,7 @@ extension NotificationViewController : UITableViewDelegate{
         let rotationTransform = CATransform3DMakeRotation(retaionAngelInRadian, 0, 0, 1)
         cell.layer.transform = rotationTransform
         
-        UIView.animate(withDuration: 1) {
+        UIView.animate(withDuration: 1.2) {
             cell.layer.transform = CATransform3DTranslate(CATransform3DIdentity, 500, 100, 0)
         }
     }

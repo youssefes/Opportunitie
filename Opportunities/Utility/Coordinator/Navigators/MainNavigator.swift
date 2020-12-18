@@ -16,7 +16,6 @@ class MainNavigator : Navigator {
     enum Destination {
         case home
         case Search
-        case Profile
         case Active
         case menu
         case Notification
@@ -34,9 +33,6 @@ class MainNavigator : Navigator {
         self.coordinator = coordintor
     }
     
-    
-   
-    
     func viewController(for destination: MainNavigator.Destination) -> UIViewController {
         
         switch destination {
@@ -47,11 +43,6 @@ class MainNavigator : Navigator {
         case .Search:
             let viewModel = searchViewModel()
             let view = SearchViewController(ViewModel: viewModel, coordinator: coordinator)
-            return view
-        case .Profile:
-            let storyBoard = UIStoryboard(name: "Profile", bundle: nil)
-            let Active = storyBoard.instantiateViewController(identifier: "ProfileVC") as! ProfileVC
-            let view = Active
             return view
         case .Active:
             let viewModel = ActiveViewModel()

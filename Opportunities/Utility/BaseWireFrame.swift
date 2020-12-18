@@ -8,16 +8,17 @@
 
 import Foundation
 import UIKit
-//import RxCocoa
-//import RxSwift
+import RxSwift
+import RxCocoa
+
 
 class BaseWireFrame <T>: UIViewController {
     
-    var vieeModel : T
-    var coordinator : Coordinator
-//  lazy var disposePag : DisposeBag = {
-//        return DisposeBag()
-//    }()
+    var vieeModel : T!
+    var coordinator : Coordinator!
+  lazy var disposePag : DisposeBag = {
+        return DisposeBag()
+    }()
     init(ViewModel : T, coordinator : Coordinator) {
         self.vieeModel = ViewModel
         self.coordinator = coordinator
@@ -33,16 +34,9 @@ class BaseWireFrame <T>: UIViewController {
         super.viewDidLoad()
         bind(ViewModel: vieeModel)
     }
-    
-//    static func createFromStoryboard(storyboard: AppStoryboard, viewModel: T, coordinator: Coordinator) -> Self<T>{
-//           let view = Self.instantiate(fromAppStoryboard: storyboard) as Self<T>
-//           view.coordinator = coordinator
-//           view.viewModel = viewModel
-//           return view
-//       }
-    
+
     required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        super.init(coder: coder)
     }
     
     func bind(ViewModel : T) {

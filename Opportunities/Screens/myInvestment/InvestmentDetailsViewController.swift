@@ -32,7 +32,10 @@ class InvestmentDetailsViewController : BaseWireFrame<InvestementViewModel> {
         InvestementcollectionView.delegate = self
         InvestementcollectionView.register(UINib(nibName: cellIdentfier, bundle: nil), forCellWithReuseIdentifier: cellIdentfier)
     }
-
+    @IBAction func backBtn(_ sender: Any) {
+        coordinator.dismiss()
+    }
+    
 }
 
 extension InvestmentDetailsViewController : UICollectionViewDataSource , UICollectionViewDelegate{

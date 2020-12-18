@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cairo-Black.ttf">
+            <string>Cairo-Black</string>
+        </array>
+        <array key="Cairo-Regular.ttf">
+            <string>Cairo-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StartViewOne"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="495" height="683"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 128" translatesAutoresizingMaskIntoConstraints="NO" id="t3F-wP-07d">
+                    <rect key="frame" x="20" y="64" width="455" height="273"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 127-2" translatesAutoresizingMaskIntoConstraints="NO" id="ZT0-GX-sZg">
+                    <rect key="frame" x="176.5" y="357" width="142" height="10"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="10" id="WlK-tZ-PfS"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eNl-Oe-6R3">
+                    <rect key="frame" x="20" y="387" width="455" height="192"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get some nice deals directly to your account!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L5t-lk-nud">
+                            <rect key="frame" x="0.0" y="20" width="455" height="56"/>
+                            <fontDescription key="fontDescription" name="Cairo-Black" family="Cairo" pointSize="24"/>
+                            <color key="textColor" name="Title"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In in faucibus enim vitae elit ipsum netus. Amet lacus id eget vel egestastus. Amet lacus id eget vel egestas." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uG6-9w-gAN">
+                            <rect key="frame" x="0.0" y="86" width="455" height="42"/>
+                            <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="18"/>
+                            <color key="textColor" name="Difination"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="L5t-lk-nud" secondAttribute="trailing" id="0PF-sy-wLB"/>
+                        <constraint firstItem="uG6-9w-gAN" firstAttribute="trailing" secondItem="L5t-lk-nud" secondAttribute="trailing" id="HFZ-Pv-kGn"/>
+                        <constraint firstItem="uG6-9w-gAN" firstAttribute="top" secondItem="L5t-lk-nud" secondAttribute="bottom" constant="10" id="QAF-im-7hz"/>
+                        <constraint firstItem="L5t-lk-nud" firstAttribute="leading" secondItem="eNl-Oe-6R3" secondAttribute="leading" id="bld-4A-WDb"/>
+                        <constraint firstItem="L5t-lk-nud" firstAttribute="top" secondItem="eNl-Oe-6R3" secondAttribute="top" constant="20" symbolic="YES" id="xre-pK-gWn"/>
+                        <constraint firstItem="uG6-9w-gAN" firstAttribute="leading" secondItem="L5t-lk-nud" secondAttribute="leading" id="zMr-Bm-MfP"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="t3F-wP-07d" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="8am-pu-IB9"/>
+                <constraint firstItem="t3F-wP-07d" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="1.2:3" id="IT2-1L-2WM"/>
+                <constraint firstItem="eNl-Oe-6R3" firstAttribute="leading" secondItem="t3F-wP-07d" secondAttribute="leading" id="Lb3-kc-olS"/>
+                <constraint firstItem="eNl-Oe-6R3" firstAttribute="trailing" secondItem="t3F-wP-07d" secondAttribute="trailing" id="f1M-89-n0f"/>
+                <constraint firstItem="eNl-Oe-6R3" firstAttribute="top" secondItem="ZT0-GX-sZg" secondAttribute="bottom" constant="20" id="fRL-XN-Rmo"/>
+                <constraint firstItem="t3F-wP-07d" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="20" id="iLg-bD-qR4"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="eNl-Oe-6R3" secondAttribute="bottom" constant="70" id="ixD-Gv-4sz"/>
+                <constraint firstItem="ZT0-GX-sZg" firstAttribute="top" secondItem="t3F-wP-07d" secondAttribute="bottom" constant="20" id="j9h-K3-USx"/>
+                <constraint firstItem="ZT0-GX-sZg" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="jaq-Ix-6kB"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="t3F-wP-07d" secondAttribute="trailing" constant="20" id="jrS-Hn-qyl"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="190.57971014492756" y="5.0223214285714279"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Group 127-2" width="71" height="8"/>
+        <image name="Group 128" width="224" height="382"/>
+        <namedColor name="Difination">
+            <color red="0.60399997234344482" green="0.6589999794960022" blue="0.72899997234344482" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Title">
+            <color red="0.13300000131130219" green="0.20000000298023224" blue="0.2669999897480011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

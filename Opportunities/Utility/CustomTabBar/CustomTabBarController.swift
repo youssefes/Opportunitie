@@ -62,7 +62,7 @@ class CustomTabBarController: UITabBarController {
             view.tabBarItem = setUpTabBarItemUI(for: Item)
             return view
         case .Profile:
-            let view = Coorinator.mainNavigator.viewController(for: .Profile)
+            let view = Coorinator.MainStoryBordNavigator.viewController(for: .profile)
             view.tabBarItem = setUpTabBarItemUI(for: Item)
             return view
         }

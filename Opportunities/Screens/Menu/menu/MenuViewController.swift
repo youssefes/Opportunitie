@@ -46,7 +46,7 @@ class MenuViewController: BaseWireFrame<MenuViewModel> {
     
     
     @IBAction func clsoeBtn(_ sender: Any) {
-        navigationController?.popViewController(animated: true)
+        coordinator.dismiss()
     }
     @IBAction func logOutBtn(_ sender: Any) {
     }
@@ -80,6 +80,7 @@ extension MenuViewController : UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier:  CellIdentifier, for: indexPath) as! MenuTableViewCell
+        cell.selectionStyle = UITableViewCell.SelectionStyle.none
         cell.textLbl.text = ArrayOfMenue[indexPath.row]
         
         return cell

@@ -33,7 +33,7 @@ class SearchViewController: BaseWireFrame<searchViewModel> {
     
     @IBAction func cancelBtn(_ sender: Any) {
         
-        navigationController?.popViewController(animated: true)
+        coordinator.dismiss()
     }
     
 }
@@ -45,6 +45,7 @@ extension SearchViewController : UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! HomeTableViewCell
+        cell.selectionStyle = UITableViewCell.SelectionStyle.none
         return cell
     }
     

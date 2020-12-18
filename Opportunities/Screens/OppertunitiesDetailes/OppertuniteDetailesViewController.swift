@@ -35,6 +35,7 @@ class OppertuniteDetailesViewController: BaseWireFrame<OppertuniteDetailesViewMo
     @IBAction func playBtn(_ sender: Any) {
     }
     @IBAction func backBtn(_ sender: Any) {
+        coordinator.dismiss()
     }
     
 }

@@ -34,7 +34,7 @@ class AboutViewController: BaseWireFrame<AboutViewModel> {
     }
     @IBAction func Dismiss(_ sender: Any) {
         
-        navigationController?.popViewController(animated: true)
+        coordinator.dismiss()
     }
     
 }

@@ -20,6 +20,7 @@ extension DesignSystem {
         case textFieldColorBackGround = "textFieldColorBackGround"
         case BackGround = "BackGround"
         case white = "White"
+        case SelectedColor = "SelectedColor"
         var color : UIColor {
             switch self {
             case .Title:
@@ -41,6 +42,8 @@ extension DesignSystem {
                 return UIColor(named : self.rawValue)!
             case .BackGround:
                  return UIColor(named : self.rawValue)!
+            case .SelectedColor:
+                return UIColor(named : self.rawValue)!
             }
         }
         

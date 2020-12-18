@@ -21,7 +21,7 @@ class PaymentViewController: BaseWireFrame<PaymentViewModel> {
     }
     
     @IBAction func dismiss(_ sender: Any) {
-        navigationController?.popViewController(animated: true)
+        coordinator.dismiss()
     }
     @IBAction func conform(_ sender: Any) {
         coordinator.mainNavigator.Navigate(to: .CompletePayMentViewController)

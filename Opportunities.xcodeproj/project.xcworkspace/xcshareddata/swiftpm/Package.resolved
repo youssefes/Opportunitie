@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "IQKeyboardManagerSwift",
+        "repositoryURL": "https://github.com/hackiftekhar/IQKeyboardManager.git",
+        "state": {
+          "branch": null,
+          "revision": "4dc6bc7d1c9747bd0c261c8c055903f9fdef91f7",
+          "version": "6.5.6"
+        }
+      },
+      {
+        "package": "UITextView+Placeholder",
+        "repositoryURL": "https://github.com/devxoul/UITextView-Placeholder.git",
+        "state": {
+          "branch": null,
+          "revision": "5a133b7efc4e8dd9de91c9eada48270d90c83ef0",
+          "version": "1.4.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
