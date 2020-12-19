@@ -89,10 +89,7 @@ extension ActiveViewController : UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 150
     }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        coordinator.mainNavigator.Navigate(to: .Language)
-    }
+   
     
     
 }

@@ -55,6 +55,7 @@ class MenuViewController: BaseWireFrame<MenuViewModel> {
 extension MenuViewController : UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
+        
         switch ArrayOfMenue[indexPath.row] {
             case "Language":
                 coordinator.mainNavigator.Navigate(to: .Language)
@@ -70,6 +71,8 @@ extension MenuViewController : UITableViewDelegate{
                 print("no ViewController")
             }
     }
+    
+    
 }
 
 
@@ -80,11 +83,12 @@ extension MenuViewController : UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier:  CellIdentifier, for: indexPath) as! MenuTableViewCell
-        cell.selectionStyle = UITableViewCell.SelectionStyle.none
+//        cell.selectionStyle = UITableViewCell.SelectionStyle.none
         cell.textLbl.text = ArrayOfMenue[indexPath.row]
         
         return cell
     }
+    
     
 
     

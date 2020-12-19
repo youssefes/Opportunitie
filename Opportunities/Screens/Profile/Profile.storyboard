@@ -72,16 +72,16 @@
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="idh-RY-pKb">
-                                <rect key="frame" x="20" y="250" width="374" height="55"/>
+                                <rect key="frame" x="20" y="250" width="374" height="62.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ahmed Ali" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8xx-4Q-MkW">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="35"/>
                                         <fontDescription key="fontDescription" name="Gilroy-Heavy" family="Gilroy-Heavy" pointSize="30"/>
                                         <color key="textColor" name="Title"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ahmed.hello@gmail.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T25-tf-FH7">
-                                        <rect key="frame" x="0.0" y="40" width="374" height="15"/>
+                                        <rect key="frame" x="0.0" y="45" width="374" height="17.5"/>
                                         <fontDescription key="fontDescription" name="Gilroy-Medium" family="Gilroy-Medium" pointSize="15"/>
                                         <color key="textColor" name="Difination"/>
                                         <nil key="highlightedColor"/>
@@ -89,19 +89,19 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="QFB-je-bXV">
-                                <rect key="frame" x="20" y="355" width="374" height="50"/>
+                                <rect key="frame" x="20" y="362.5" width="374" height="57"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="QG2-tm-TnP">
-                                        <rect key="frame" x="0.0" y="0.0" width="187" height="50"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="187" height="57"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1" text="Invested" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0rh-m5-cQd">
-                                                <rect key="frame" x="65.5" y="0.0" width="56" height="14"/>
+                                                <rect key="frame" x="67" y="0.0" width="53.5" height="16.5"/>
                                                 <fontDescription key="fontDescription" name="Gilroy-Heavy" family="Gilroy-Heavy" pointSize="14"/>
                                                 <color key="textColor" name="Title"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1,350KD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sze-Ov-v9M">
-                                                <rect key="frame" x="45.5" y="24" width="96.5" height="26"/>
+                                                <rect key="frame" x="43" y="26.5" width="101" height="30.5"/>
                                                 <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="26"/>
                                                 <color key="textColor" name="LabelColor"/>
                                                 <nil key="highlightedColor"/>
@@ -109,16 +109,16 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="IXK-aU-399">
-                                        <rect key="frame" x="187" y="0.0" width="187" height="50"/>
+                                        <rect key="frame" x="187" y="0.0" width="187" height="57"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1" text="Profit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QX4-QP-IpY">
-                                                <rect key="frame" x="76" y="0.0" width="35.5" height="14"/>
+                                                <rect key="frame" x="77" y="0.0" width="33.5" height="16.5"/>
                                                 <fontDescription key="fontDescription" name="Gilroy-Heavy" family="Gilroy-Heavy" pointSize="14"/>
                                                 <color key="textColor" name="Title"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1,350KD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TWt-pQ-btN">
-                                                <rect key="frame" x="45.5" y="24" width="96.5" height="26"/>
+                                                <rect key="frame" x="43" y="26.5" width="101" height="30.5"/>
                                                 <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="26"/>
                                                 <color key="textColor" name="LabelColor"/>
                                                 <nil key="highlightedColor"/>
@@ -134,16 +134,16 @@
                                         <rect key="frame" x="20" y="20" width="334" height="60"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 179" translatesAutoresizingMaskIntoConstraints="NO" id="g4v-S1-IS5">
-                                                <rect key="frame" x="0.0" y="0.0" width="42" height="60"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="84" height="60"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Transactions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yGW-Uy-fyY">
-                                                <rect key="frame" x="72" y="0.0" width="112" height="60"/>
+                                                <rect key="frame" x="114" y="0.0" width="107.5" height="60"/>
                                                 <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="19"/>
                                                 <color key="textColor" name="Title"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EKX-PG-WJb">
-                                                <rect key="frame" x="214" y="0.0" width="120" height="60"/>
+                                                <rect key="frame" x="251.5" y="0.0" width="82.5" height="60"/>
                                                 <state key="normal" image="Arrow   Left 2-2"/>
                                                 <connections>
                                                     <action selector="TransactionsBtn:" destination="5HE-U5-qcj" eventType="touchUpInside" id="UJh-8P-JEb"/>
@@ -212,7 +212,7 @@
             <objects>
                 <viewController storyboardIdentifier="SettingViewController" modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="6Hf-rb-Qqh" customClass="SettingViewController" customModule="Opportunities" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="h1R-Ke-DYF">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="1120"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" keyboardDismissMode="onDrag" translatesAutoresizingMaskIntoConstraints="NO" id="Oth-yf-r8q">
@@ -272,19 +272,19 @@
                                                 </items>
                                             </navigationBar>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="7Rb-ZR-DO7">
-                                                <rect key="frame" x="20" y="236" width="366" height="591"/>
+                                                <rect key="frame" x="20" y="246" width="366" height="526"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="yJx-F6-gce">
-                                                        <rect key="frame" x="0.0" y="0.0" width="366" height="99"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="366" height="86"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Full Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oNC-M4-oxo">
-                                                                <rect key="frame" x="0.0" y="0.0" width="366" height="34"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="366" height="21"/>
                                                                 <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="18"/>
                                                                 <color key="textColor" name="LabelColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nkq-k8-pJ6" customClass="TextField" customModule="Opportunities" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="39" width="366" height="60"/>
+                                                                <rect key="frame" x="0.0" y="26" width="366" height="60"/>
                                                                 <color key="backgroundColor" name="backGroundButton"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="60" id="fdB-eb-ywx"/>
@@ -300,16 +300,16 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="WYd-4B-t3a">
-                                                        <rect key="frame" x="0.0" y="123" width="366" height="99"/>
+                                                        <rect key="frame" x="0.0" y="110" width="366" height="86"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wnt-gQ-OLJ">
-                                                                <rect key="frame" x="0.0" y="0.0" width="366" height="34"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="366" height="21"/>
                                                                 <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="18"/>
                                                                 <color key="textColor" name="LabelColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="j1Q-xP-GmR">
-                                                                <rect key="frame" x="0.0" y="39" width="366" height="60"/>
+                                                                <rect key="frame" x="0.0" y="26" width="366" height="60"/>
                                                                 <subviews>
                                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="exE-xN-sda" customClass="TextField" customModule="Opportunities" customModuleProvider="target">
                                                                         <rect key="frame" x="0.0" y="0.0" width="100" height="60"/>
@@ -341,16 +341,16 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="hwd-41-4Um">
-                                                        <rect key="frame" x="0.0" y="246" width="366" height="99"/>
+                                                        <rect key="frame" x="0.0" y="220" width="366" height="86"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fPk-Y2-swb">
-                                                                <rect key="frame" x="0.0" y="0.0" width="366" height="34"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="366" height="21"/>
                                                                 <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="18"/>
                                                                 <color key="textColor" name="LabelColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LZk-P0-y1Q" customClass="TextField" customModule="Opportunities" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="39" width="366" height="60"/>
+                                                                <rect key="frame" x="0.0" y="26" width="366" height="60"/>
                                                                 <color key="backgroundColor" name="backGroundButton"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits"/>
@@ -363,16 +363,16 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="GMM-M2-apF">
-                                                        <rect key="frame" x="0.0" y="369" width="366" height="99"/>
+                                                        <rect key="frame" x="0.0" y="330" width="366" height="86"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ZK-pm-ijE">
-                                                                <rect key="frame" x="0.0" y="0.0" width="366" height="34"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="366" height="21"/>
                                                                 <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="18"/>
                                                                 <color key="textColor" name="LabelColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hrY-xY-JUL" customClass="TextField" customModule="Opportunities" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="39" width="366" height="60"/>
+                                                                <rect key="frame" x="0.0" y="26" width="366" height="60"/>
                                                                 <color key="backgroundColor" name="backGroundButton"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits"/>
@@ -385,16 +385,16 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="8qC-4N-DOb">
-                                                        <rect key="frame" x="0.0" y="492" width="366" height="99"/>
+                                                        <rect key="frame" x="0.0" y="440" width="366" height="86"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirm Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mJJ-M6-s2w">
-                                                                <rect key="frame" x="0.0" y="0.0" width="366" height="34"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="366" height="21"/>
                                                                 <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="18"/>
                                                                 <color key="textColor" name="LabelColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JfT-eU-Ygj" customClass="TextField" customModule="Opportunities" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="39" width="366" height="60"/>
+                                                                <rect key="frame" x="0.0" y="26" width="366" height="60"/>
                                                                 <color key="backgroundColor" name="backGroundButton"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits"/>
@@ -562,16 +562,16 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="388.5"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="vH8-gc-k2h">
-                                <rect key="frame" x="20" y="452.5" width="374" height="121"/>
+                                <rect key="frame" x="20" y="452.5" width="374" height="137"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your card has been added successfully." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vxc-Kp-IQx">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="50.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="58.5"/>
                                         <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="25"/>
                                         <color key="textColor" red="0.1333333333" green="0.20000000000000001" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In in faucibus enim vitae elit ipsum netus. Amet lacus id eget vel egestas." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qT5-Gx-0U5">
-                                        <rect key="frame" x="0.0" y="70.5" width="374" height="50.5"/>
+                                        <rect key="frame" x="0.0" y="78.5" width="374" height="58.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" name="Difination"/>
                                         <nil key="highlightedColor"/>

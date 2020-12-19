@@ -39,13 +39,13 @@
                                 <rect key="frame" x="85" y="54.5" width="366" height="89.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1" text="You just joined VODAVODA opportunity with 1,500 KD." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vJb-mx-uYF">
-                                        <rect key="frame" x="0.0" y="0.0" width="366" height="72"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="366" height="74.5"/>
                                         <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="15"/>
                                         <color key="textColor" name="Title"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="05:24 PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nxd-hQ-hFj">
-                                        <rect key="frame" x="0.0" y="72" width="366" height="17.5"/>
+                                        <rect key="frame" x="0.0" y="74.5" width="366" height="15"/>
                                         <fontDescription key="fontDescription" name="Gilroy-Medium" family="Gilroy-Medium" pointSize="15"/>
                                         <color key="textColor" name="SubTitle"/>
                                         <nil key="highlightedColor"/>

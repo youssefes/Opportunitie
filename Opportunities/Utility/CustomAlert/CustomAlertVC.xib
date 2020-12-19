@@ -8,14 +8,14 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Gilroy-Bold.ttf">
-            <string>Gilroy-Bold</string>
+        <array key="Gilroy-Medium.ttf">
+            <string>Gilroy-Medium</string>
         </array>
     </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomAlertVC" customModule="Opportunities" customModuleProvider="target">
             <connections>
-                <outlet property="massageLbl" destination="i6u-2G-Si6" id="UaZ-ke-Zcm"/>
+                <outlet property="massageLbl" destination="nm6-DL-1mg" id="z1D-09-dYi"/>
                 <outlet property="titleBtn1" destination="VVI-di-Gm7" id="0kt-lM-dsX"/>
                 <outlet property="titleBtn2" destination="maQ-aJ-kBb" id="Czh-v4-XbT"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -29,10 +29,10 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QFT-4Z-2RP">
                     <rect key="frame" x="20" y="348" width="374" height="200"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i6u-2G-Si6">
-                            <rect key="frame" x="20" y="30" width="334" height="70"/>
-                            <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="19"/>
-                            <color key="textColor" red="0.1333333333" green="0.20000000000000001" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nm6-DL-1mg">
+                            <rect key="frame" x="20" y="20" width="334" height="80"/>
+                            <fontDescription key="fontDescription" name="Gilroy-Medium" family="Gilroy-Medium" pointSize="19"/>
+                            <color key="textColor" name="Title"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="zaP-LB-yA5">
@@ -74,14 +74,14 @@
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     <constraints>
-                        <constraint firstItem="zaP-LB-yA5" firstAttribute="leading" secondItem="i6u-2G-Si6" secondAttribute="leading" id="1cT-cz-eK1"/>
-                        <constraint firstItem="i6u-2G-Si6" firstAttribute="top" secondItem="QFT-4Z-2RP" secondAttribute="top" constant="30" id="2O8-CI-fQP"/>
-                        <constraint firstItem="zaP-LB-yA5" firstAttribute="top" secondItem="i6u-2G-Si6" secondAttribute="bottom" constant="20" id="AmW-xW-3Qv"/>
-                        <constraint firstItem="zaP-LB-yA5" firstAttribute="trailing" secondItem="i6u-2G-Si6" secondAttribute="trailing" id="EqN-oD-vdn"/>
-                        <constraint firstAttribute="trailing" secondItem="i6u-2G-Si6" secondAttribute="trailing" constant="20" id="JbS-fv-uqA"/>
-                        <constraint firstItem="i6u-2G-Si6" firstAttribute="leading" secondItem="QFT-4Z-2RP" secondAttribute="leading" constant="20" id="NFN-mq-XbL"/>
+                        <constraint firstItem="nm6-DL-1mg" firstAttribute="leading" secondItem="QFT-4Z-2RP" secondAttribute="leading" constant="20" id="6Lw-mP-vhM"/>
+                        <constraint firstItem="zaP-LB-yA5" firstAttribute="leading" secondItem="nm6-DL-1mg" secondAttribute="leading" id="Dvc-VS-Vyt"/>
+                        <constraint firstItem="zaP-LB-yA5" firstAttribute="trailing" secondItem="nm6-DL-1mg" secondAttribute="trailing" id="QOf-zq-lRp"/>
                         <constraint firstAttribute="bottom" secondItem="zaP-LB-yA5" secondAttribute="bottom" constant="30" id="Qtv-qi-5fM"/>
                         <constraint firstAttribute="height" constant="200" id="SDS-fG-YDd"/>
+                        <constraint firstAttribute="trailing" secondItem="nm6-DL-1mg" secondAttribute="trailing" constant="20" id="b4l-Xh-2W9"/>
+                        <constraint firstItem="zaP-LB-yA5" firstAttribute="top" secondItem="nm6-DL-1mg" secondAttribute="bottom" constant="20" id="sev-bL-8ns"/>
+                        <constraint firstItem="nm6-DL-1mg" firstAttribute="top" secondItem="QFT-4Z-2RP" secondAttribute="top" constant="20" id="xKR-Am-0pq"/>
                     </constraints>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -107,6 +107,9 @@
         </namedColor>
         <namedColor name="MainbuttonColor">
             <color red="0.47499999403953552" green="0.0" blue="0.93300002813339233" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Title">
+            <color red="0.13300000131130219" green="0.20000000298023224" blue="0.2669999897480011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

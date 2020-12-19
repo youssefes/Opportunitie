@@ -13,7 +13,7 @@ class NotificationViewController: BaseWireFrame<NotificationViewModel> {
     @IBOutlet weak var NotificationTableView: UITableView!
     
     let CellIdentifier = "NotificationTableViewCell"
-    
+    let CellIdentifierHeader = "NotificationHeaderTableViewCell"
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -29,12 +29,12 @@ class NotificationViewController: BaseWireFrame<NotificationViewModel> {
         
     }
     @IBAction func DeletAll(_ sender: Any) {
-        self.presentAlertOnMainThread(message: "Are you sure you want to clear all notifications?", buttontitle: "Cancel", buttonTitle2: "Delete")
-        
+        self.presentAlertOnMainThread(message: "Are you sure you want to clear all notifications?" , buttontitle: "Cancel", buttonTitle2: "Delete")
     }
     
     func registerCell(){
         NotificationTableView.register(UINib(nibName: CellIdentifier, bundle: nil), forCellReuseIdentifier: CellIdentifier)
+        NotificationTableView.register(UINib(nibName: CellIdentifierHeader, bundle: nil), forCellReuseIdentifier: CellIdentifierHeader)
     }
     
     func setUpUI(){
@@ -63,12 +63,8 @@ extension NotificationViewController : UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: CellIdentifier, for: indexPath) as! NotificationTableViewCell
         cell.selectionStyle = UITableViewCell.SelectionStyle.none
-        
         return cell
     }
-    
-    
-    
     
 }
 
@@ -77,20 +73,17 @@ extension NotificationViewController : UITableViewDelegate{
         return 140
     }
     
-    func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
-        let headerView = view as! UITableViewHeaderFooterView
-        headerView.backgroundColor = DesignSystem.Colors.Title.color
-        headerView.textLabel?.text = "youssef"
-        headerView.textLabel?.font = DesignSystem.Typography.Title.font
-        
-    }
-    
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 50
     }
     
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let cell = tableView.dequeueReusableCell(withIdentifier: CellIdentifierHeader) as! NotificationHeaderTableViewCell
+        cell.titleLbl.text = "Today"
+        return cell
+    }
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-
+        
         
         let retaionAngelInRadian = 90 * CGFloat(Double.pi / 180)
         let rotationTransform = CATransform3DMakeRotation(retaionAngelInRadian, 0, 0, 1)
