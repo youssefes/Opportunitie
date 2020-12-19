@@ -122,6 +122,7 @@
 		E8B287AC2576E46E00326E02 /* Cairo-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E8B287A52576E46E00326E02 /* Cairo-Black.ttf */; };
 		E8B287AD2576E46E00326E02 /* Cairo-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E8B287A62576E46E00326E02 /* Cairo-Bold.ttf */; };
 		E8B287AE2576E46E00326E02 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = E8B287A72576E46E00326E02 /* OFL.txt */; };
+		E8C37153258D77EC00C4FA52 /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C37152258D77EC00C4FA52 /* UITextField+Extension.swift */; };
 		E8E18C11258D142E008CB2AD /* ForgetPassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E18C10258D142E008CB2AD /* ForgetPassViewController.swift */; };
 		E8E18C13258D1445008CB2AD /* ForgetPassViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E18C12258D1445008CB2AD /* ForgetPassViewModel.swift */; };
 		E8E8FDFD25810B7200FBF9C4 /* OppertuniteDetailesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E8FDFB25810B7200FBF9C4 /* OppertuniteDetailesViewController.swift */; };
@@ -279,6 +280,7 @@
 		E8B287A52576E46E00326E02 /* Cairo-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cairo-Black.ttf"; sourceTree = "<group>"; };
 		E8B287A62576E46E00326E02 /* Cairo-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cairo-Bold.ttf"; sourceTree = "<group>"; };
 		E8B287A72576E46E00326E02 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		E8C37152258D77EC00C4FA52 /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
 		E8E18C10258D142E008CB2AD /* ForgetPassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPassViewController.swift; sourceTree = "<group>"; };
 		E8E18C12258D1445008CB2AD /* ForgetPassViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPassViewModel.swift; sourceTree = "<group>"; };
 		E8E8FDFB25810B7200FBF9C4 /* OppertuniteDetailesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OppertuniteDetailesViewController.swift; sourceTree = "<group>"; };
@@ -932,6 +934,7 @@
 			children = (
 				E83AA8CD2576F85200F8317E /* UIview+Extensions.swift */,
 				E83EFAB5257D65E30075CDF1 /* Extension+ViewController.swift */,
+				E8C37152258D77EC00C4FA52 /* UITextField+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -1234,6 +1237,7 @@
 				E8B2879C2576E0A600326E02 /* CustomFontDiscriptor.swift in Sources */,
 				E852D4D92586C51600A643AA /* TransactionsViewController.swift in Sources */,
 				E83A54F4258762DA0076BDCE /* InvestementViewModel.swift in Sources */,
+				E8C37153258D77EC00C4FA52 /* UITextField+Extension.swift in Sources */,
 				E83A670A258A3AC00068DC22 /* MainRouter.swift in Sources */,
 				E85770BE258154FE00F6130F /* MainNavigator.swift in Sources */,
 				E83D7190257CEC1700716860 /* HomeTableViewCell.swift in Sources */,

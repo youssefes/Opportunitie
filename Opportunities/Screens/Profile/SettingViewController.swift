@@ -10,10 +10,11 @@ import UIKit
 
 class SettingViewController: UIViewController {
     
+    @IBOutlet weak var SelectedImage: UIImageView!
     @IBOutlet weak var ToSelectImage: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        SetupUI()
         // Do any additional setup after loading the view.
     }
     
@@ -55,7 +56,7 @@ extension SettingViewController : UIImagePickerControllerDelegate,UINavigationCo
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         if let editImage = info[UIImagePickerController.InfoKey.editedImage] as? UIImage{
-            self.ToSelectImage.image = editImage
+            self.SelectedImage.image = editImage
             
             print(editImage)
             if  let imageUrl = info[UIImagePickerController.InfoKey.imageURL] as? NSURL {
@@ -66,7 +67,7 @@ extension SettingViewController : UIImagePickerControllerDelegate,UINavigationCo
             
         }else{
             let original = info[UIImagePickerController.InfoKey.originalImage] as? UIImage
-            self.ToSelectImage.image = original
+            self.SelectedImage.image = original
             if let image = original{
                 print(image)
             }
