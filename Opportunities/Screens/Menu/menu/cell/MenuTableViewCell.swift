@@ -19,9 +19,9 @@ class MenuTableViewCell: UITableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
         if isSelected {
+            self.selectionStyle = .default
+            self.contentView.backgroundColor = DesignSystem.Colors.BackGround.color
             textLabel?.highlightedTextColor = DesignSystem.Colors.SelectedColor.color
-          
-            self.selectedBackgroundView = .none
         }else{
             textLabel?.highlightedTextColor = DesignSystem.Colors.SelectedColor.color
         }

@@ -29,7 +29,7 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController restorationIdentifier="LanguageToSpeakViewController" storyboardIdentifier="LanguageToSpeakViewController" id="BYZ-38-t0r" customClass="LanguageToSpeakViewController" customModule="Opportunities" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleAspectFit" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -65,47 +65,101 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="bFs-aU-bm4">
                                 <rect key="frame" x="12" y="365.5" width="390" height="165"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZWF-hO-tAt">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cdw-Fg-jYe">
                                         <rect key="frame" x="0.0" y="0.0" width="390" height="70"/>
-                                        <color key="backgroundColor" name="backGroundButton"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZWF-hO-tAt">
+                                                <rect key="frame" x="0.0" y="0.0" width="390" height="70"/>
+                                                <color key="backgroundColor" name="backGroundButton"/>
+                                                <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="30"/>
+                                                <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="15" maxY="0.0"/>
+                                                <state key="normal" title="English" image="Flag_of_the_United_Kingdom 1">
+                                                    <color key="titleColor" name="Title"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="16"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="EnglishBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xkx-2y-ie4"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bb4-Kw-KVt">
+                                                <rect key="frame" x="344" y="27" width="16" height="16"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="16" id="7EB-6q-KhI"/>
+                                                    <constraint firstAttribute="width" constant="16" id="wl0-dh-j5Y"/>
+                                                </constraints>
+                                                <state key="normal" image="arrow right alt"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="70" id="JQk-TZ-nv2"/>
+                                            <constraint firstItem="ZWF-hO-tAt" firstAttribute="leading" secondItem="Cdw-Fg-jYe" secondAttribute="leading" id="6M9-Ek-ZCz"/>
+                                            <constraint firstItem="ZWF-hO-tAt" firstAttribute="top" secondItem="Cdw-Fg-jYe" secondAttribute="top" id="C3e-xF-bXf"/>
+                                            <constraint firstItem="bb4-Kw-KVt" firstAttribute="centerY" secondItem="ZWF-hO-tAt" secondAttribute="centerY" id="Dj3-c6-N9m"/>
+                                            <constraint firstAttribute="height" constant="70" id="Edv-MO-x1a"/>
+                                            <constraint firstAttribute="trailing" secondItem="bb4-Kw-KVt" secondAttribute="trailing" constant="30" id="Vn8-7K-yuu"/>
+                                            <constraint firstAttribute="trailing" secondItem="ZWF-hO-tAt" secondAttribute="trailing" id="ZXH-cp-vbc"/>
+                                            <constraint firstAttribute="bottom" secondItem="ZWF-hO-tAt" secondAttribute="bottom" id="elS-C1-XzR"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="25"/>
-                                        <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="15" maxY="0.0"/>
-                                        <state key="normal" title="English" image="Flag_of_the_United_Kingdom 1">
-                                            <color key="titleColor" name="Title"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="16"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="EnglishBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xkx-2y-ie4"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ABB-cv-QHV">
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cd1-9m-hIk">
                                         <rect key="frame" x="0.0" y="95" width="390" height="70"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" name="backGroundButton"/>
-                                        <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="25"/>
-                                        <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="15" maxY="0.0"/>
-                                        <state key="normal" title="العربية" image="saudi-arabia-flag-icon-free-download 1">
-                                            <color key="titleColor" name="Title"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="16"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="arbicBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="P5K-Mf-3kZ"/>
-                                        </connections>
-                                    </button>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VRa-N5-FX3">
+                                                <rect key="frame" x="0.0" y="0.0" width="390" height="70"/>
+                                                <color key="backgroundColor" name="backGroundButton"/>
+                                                <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="30"/>
+                                                <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="15" maxY="0.0"/>
+                                                <state key="normal" title="العربية" image="saudi-arabia-flag-icon-free-download 1">
+                                                    <color key="titleColor" name="Title"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="16"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="arbicBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g0Y-IJ-PEI"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MFf-RE-fgM">
+                                                <rect key="frame" x="344" y="27" width="16" height="16"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="16" id="IB8-he-3IU"/>
+                                                    <constraint firstAttribute="width" constant="16" id="lo5-M7-Oed"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstItem="VRa-N5-FX3" firstAttribute="leading" secondItem="cd1-9m-hIk" secondAttribute="leading" id="0Es-P8-uqm"/>
+                                            <constraint firstItem="VRa-N5-FX3" firstAttribute="top" secondItem="cd1-9m-hIk" secondAttribute="top" id="tbt-yv-tBW"/>
+                                            <constraint firstAttribute="bottom" secondItem="VRa-N5-FX3" secondAttribute="bottom" id="tzX-bg-lz6"/>
+                                            <constraint firstAttribute="trailing" secondItem="VRa-N5-FX3" secondAttribute="trailing" id="uuc-gi-Bcg"/>
+                                            <constraint firstItem="MFf-RE-fgM" firstAttribute="centerY" secondItem="VRa-N5-FX3" secondAttribute="centerY" id="xFb-ya-kHv"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="MFf-RE-fgM" firstAttribute="trailing" secondItem="bb4-Kw-KVt" secondAttribute="trailing" id="e9T-io-H0v"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -123,20 +177,24 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="chechBtnEnglish" destination="bb4-Kw-KVt" id="Om1-iN-3H4"/>
+                        <outlet property="checkBtnArbic" destination="MFf-RE-fgM" id="w9U-X7-bVu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1496" y="1"/>
+            <point key="canvasLocation" x="1495.6521739130435" y="0.6696428571428571"/>
         </scene>
         <!--Introdaction View Controller-->
         <scene sceneID="sgy-fI-usB">
             <objects>
                 <viewController storyboardIdentifier="IntrodactionViewController" modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="bMS-wk-MKb" customClass="IntrodactionViewController" customModule="Opportunities" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="FPX-fa-wL0">
+                    <view key="view" contentMode="scaleToFill" id="FPX-fa-wL0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E1k-bu-acU">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E1k-bu-acU">
                                 <rect key="frame" x="0.0" y="44" width="414" height="713"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </view>
@@ -1262,6 +1320,7 @@
         <image name="Saly-14" width="228" height="406"/>
         <image name="Saly-8" width="334" height="334"/>
         <image name="Vector" width="11" height="8"/>
+        <image name="arrow right alt" width="25" height="16"/>
         <image name="saudi-arabia-flag-icon-free-download 1" width="31" height="20"/>
         <namedColor name="Difination">
             <color red="0.60399997234344482" green="0.6589999794960022" blue="0.72899997234344482" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

@@ -21,6 +21,7 @@ extension DesignSystem {
         case BackGround = "BackGround"
         case white = "White"
         case SelectedColor = "SelectedColor"
+        case Colorclear = "Colorclear"
         var color : UIColor {
             switch self {
             case .Title:
@@ -44,6 +45,8 @@ extension DesignSystem {
                  return UIColor(named : self.rawValue)!
             case .SelectedColor:
                 return UIColor(named : self.rawValue)!
+            case .Colorclear:
+                 return UIColor(named : self.rawValue)!
             }
         }
         
