@@ -9,7 +9,8 @@
 import UIKit
 
 class InvestmentDetailsViewController : BaseWireFrame<InvestementViewModel> {
-
+    
+    @IBOutlet weak var containerView: UIView!
     
     let cellIdentfier = "PhotoCollectionViewCell"
     
@@ -17,17 +18,17 @@ class InvestmentDetailsViewController : BaseWireFrame<InvestementViewModel> {
     @IBOutlet weak var InvestementcollectionView: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         registerCell()
         
     }
-
+    
     override func bind(ViewModel: InvestementViewModel) {
         
     }
-
+    
     func registerCell(){
-        
+        configrationCollectionViewToThreeColum()
         InvestementcollectionView.dataSource = self
         InvestementcollectionView.delegate = self
         InvestementcollectionView.register(UINib(nibName: cellIdentfier, bundle: nil), forCellWithReuseIdentifier: cellIdentfier)
@@ -36,9 +37,15 @@ class InvestmentDetailsViewController : BaseWireFrame<InvestementViewModel> {
         coordinator.dismiss()
     }
     
+    func configrationCollectionViewToThreeColum(){
+//        InvestementcollectionView.collectionViewLayout = createThreeColumnFlowLayout(in: containerView)
+    }
+    
 }
 
 extension InvestmentDetailsViewController : UICollectionViewDataSource , UICollectionViewDelegate{
+    
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 5
     }
@@ -49,13 +56,31 @@ extension InvestmentDetailsViewController : UICollectionViewDataSource , UIColle
         
         return cell
     }
-
-
+    
+    
 }
 
 extension InvestmentDetailsViewController: UICollectionViewDelegateFlowLayout {
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width:100 , height:100 )
     }
+    
+//    func createThreeColumnFlowLayout(in view: UIView) -> UICollectionViewFlowLayout {
+//        let width = view.bounds.width
+//        let padding: CGFloat = 20
+//        let minimumItemSpacing: CGFloat = 10
+//        
+//        let availableWidth =  width - (padding * 2) - (minimumItemSpacing * 2) 
+//        print(availableWidth)
+//        let itemWidth = availableWidth / 3
+//        
+//        let flowLayout = UICollectionViewFlowLayout()
+//        flowLayout.sectionInset = UIEdgeInsets(top: padding, left: padding, bottom: padding, right: padding)
+//        
+//      flowLayout.itemSize = CGSize(width: itemWidth, height: itemWidth)
+//        print(flowLayout.itemSize)
+//        return flowLayout
+//    }
 }
 
