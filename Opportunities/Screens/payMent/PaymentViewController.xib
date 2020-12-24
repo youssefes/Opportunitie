@@ -21,6 +21,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PaymentViewController" customModule="Opportunities" customModuleProvider="target">
             <connections>
+                <outlet property="knetBtn" destination="Our-Gb-i4x" id="8KW-yq-nSZ"/>
+                <outlet property="masterCardBtn" destination="BNF-Cy-ISj" id="val-Tv-o3h"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -68,15 +70,17 @@
                                             <real key="value" value="16"/>
                                         </userDefinedRuntimeAttribute>
                                     </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="selectedKnet:" destination="-1" eventType="touchUpInside" id="TqY-eB-Xp3"/>
+                                    </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Our-Gb-i4x">
                                     <rect key="frame" x="338" y="20" width="16" height="16"/>
-                                    <color key="backgroundColor" red="0.3411764706" green="0.88235294119999996" blue="0.69019607839999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="16" id="GN5-OP-Zd6"/>
                                         <constraint firstAttribute="height" constant="16" id="UjR-TM-mfc"/>
                                     </constraints>
-                                    <state key="normal" image="Vector"/>
+                                    <state key="normal" image="unselectedCheck"/>
                                     <userDefinedRuntimeAttributes>
                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                             <real key="value" value="5"/>
@@ -112,15 +116,17 @@
                                             <real key="value" value="16"/>
                                         </userDefinedRuntimeAttribute>
                                     </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="selectedmasterCard:" destination="-1" eventType="touchUpInside" id="Uck-3F-gA6"/>
+                                    </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BNF-Cy-ISj">
                                     <rect key="frame" x="338" y="20" width="16" height="16"/>
-                                    <color key="backgroundColor" red="0.3411764706" green="0.88235294119999996" blue="0.69019607839999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="16" id="u6K-n1-9LX"/>
                                         <constraint firstAttribute="width" constant="16" id="xIw-Z6-jIn"/>
                                     </constraints>
-                                    <state key="normal" image="Vector"/>
+                                    <state key="normal" image="unselectedCheck"/>
                                     <userDefinedRuntimeAttributes>
                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                             <real key="value" value="5"/>
@@ -183,8 +189,8 @@
     </objects>
     <resources>
         <image name="ArrowLeft 2" width="10" height="16"/>
-        <image name="Vector" width="11" height="8"/>
         <image name="download 1" width="49" height="37"/>
+        <image name="unselectedCheck" width="16" height="16"/>
         <image name="visa-mastercard-400x-q75 1" width="80" height="25"/>
         <namedColor name="MainbuttonColor">
             <color red="0.47499999403953552" green="0.0" blue="0.93300002813339233" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

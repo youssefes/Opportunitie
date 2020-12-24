@@ -24,8 +24,36 @@ class ForgetPassViewController: BaseWireFrame<ForgetPassViewModel> {
         dismiss(animated: true, completion: nil)
     }
     @IBAction func conformBtn(_ sender: Any) {
-        let viewc = coordinator.MainStoryBordNavigator.viewController(for: .RestPassView)
-         present(viewc, animated: true, completion: nil)
+        SendRequest()
+        navigateTo()
+        
     }
+    
+    func  navigateTo(){
+           vieeModel.SeccessSignUp.asObserver().subscribe(onNext: { [weak self](resulte) in
+            print(resulte)
+               if  resulte.value == true{
+                guard let viewc = self?.coordinator.MainStoryBordNavigator.viewController(for: .RestPassView) else  { print("error to navigation")
+                       return
+                   }
+                   self?.present(viewc, animated: true, completion: nil)
+               }else{
+                   print(resulte.msg)
+               }
+               
+               }, onError: { (error) in
+                   print(error)
+           }).disposed(by: disposePag)
+       }
+       
+       func SendRequest(){
+           
+//           guard let email = emailTf.text , !email.isEmpty else {return}
+           
+           let paramerter : [String : Any] = [
+               "email" : "youssef.esmailelfeky@gmail.com",
+           ]
+           vieeModel.ForgetPassRequest(parameters: paramerter)
+       }
     
 }

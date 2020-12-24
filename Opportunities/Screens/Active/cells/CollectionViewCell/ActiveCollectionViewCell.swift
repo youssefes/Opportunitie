@@ -9,10 +9,15 @@
 import UIKit
 
 class ActiveCollectionViewCell: UICollectionViewCell {
-
+    @IBOutlet weak var selectedCellImage: UIImageView!
+    
+    @IBOutlet weak var priceLbl: UILabel!
+    @IBOutlet weak var titel: UILabel!
+    @IBOutlet weak var imageCell: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
-
+    
+    
 }

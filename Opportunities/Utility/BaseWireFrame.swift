@@ -10,10 +10,9 @@ import Foundation
 import UIKit
 import RxSwift
 import RxCocoa
-
+import Alamofire
 
 class BaseWireFrame <T>: UIViewController {
-    
     var vieeModel : T!
     var coordinator : Coordinator!
   lazy var disposePag : DisposeBag = {
@@ -35,11 +34,15 @@ class BaseWireFrame <T>: UIViewController {
         bind(ViewModel: vieeModel)
     }
 
+
     required init?(coder: NSCoder) {
         super.init(coder: coder)
     }
     
     func bind(ViewModel : T) {
         fatalError("please Override the bind Function")
+        
     }
+    
+    
 }

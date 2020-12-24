@@ -31,8 +31,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O5v-vO-ZYj">
                                 <rect key="frame" x="284" y="20" width="20" height="20"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CircelBtn" translatesAutoresizingMaskIntoConstraints="NO" id="qbZ-Qg-tqY">
-                                        <rect key="frame" x="4" y="4" width="12" height="12"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="CircelBtn" translatesAutoresizingMaskIntoConstraints="NO" id="qbZ-Qg-tqY">
+                                        <rect key="frame" x="4" y="4" width="12" height="101"/>
                                     </imageView>
                                 </subviews>
                                 <constraints>
@@ -125,6 +125,12 @@
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="344" height="253"/>
+            <connections>
+                <outlet property="imageCell" destination="m5b-U1-Y25" id="Y2X-dP-W12"/>
+                <outlet property="priceLbl" destination="wBo-WB-of7" id="khq-Fx-sGx"/>
+                <outlet property="selectedCellImage" destination="qbZ-Qg-tqY" id="Xwl-H9-yMO"/>
+                <outlet property="titel" destination="m3T-7T-PzG" id="OHy-wR-lau"/>
+            </connections>
             <point key="canvasLocation" x="128.98550724637681" y="67.96875"/>
         </collectionViewCell>
     </objects>

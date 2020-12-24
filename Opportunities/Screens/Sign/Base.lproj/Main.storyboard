@@ -23,6 +23,9 @@
         <array key="Gilroy-Bold.ttf">
             <string>Gilroy-Bold</string>
         </array>
+        <array key="Gilroy-Regular.ttf">
+            <string>Gilroy-Regular</string>
+        </array>
     </customFonts>
     <scenes>
         <!--Language To Speak View Controller-->
@@ -71,7 +74,7 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZWF-hO-tAt">
                                                 <rect key="frame" x="0.0" y="0.0" width="390" height="70"/>
                                                 <color key="backgroundColor" name="backGroundButton"/>
-                                                <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="30"/>
+                                                <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="25"/>
                                                 <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="15" maxY="0.0"/>
                                                 <state key="normal" title="English" image="Flag_of_the_United_Kingdom 1">
@@ -184,7 +187,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1495.6521739130435" y="0.6696428571428571"/>
+            <point key="canvasLocation" x="1670" y="1"/>
         </scene>
         <!--Introdaction View Controller-->
         <scene sceneID="sgy-fI-usB">
@@ -284,24 +287,24 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome back!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KcF-LR-6Bi">
                                 <rect key="frame" x="20" y="94" width="374" height="40"/>
-                                <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="40"/>
+                                <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy-Regular" pointSize="40"/>
                                 <color key="textColor" name="SubTitle"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="deX-QK-JnS">
-                                <rect key="frame" x="20" y="164" width="374" height="228"/>
+                                <rect key="frame" x="20" y="164" width="374" height="216"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="qvT-en-BeD">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="99"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="qvT-en-BeD">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="93"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hEj-hg-UP8">
-                                                <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
-                                                <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="18"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="18"/>
+                                                <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="18"/>
                                                 <color key="textColor" name="LabelColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KUG-9W-Rhu" customClass="TextField" customModule="Opportunities" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="34" width="374" height="65"/>
+                                                <rect key="frame" x="0.0" y="28" width="374" height="65"/>
                                                 <color key="backgroundColor" name="backGroundButton"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="65" id="gs6-7S-BhE"/>
@@ -316,17 +319,17 @@
                                             </textField>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="uqY-74-Shr">
-                                        <rect key="frame" x="0.0" y="129" width="374" height="99"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="uqY-74-Shr">
+                                        <rect key="frame" x="0.0" y="123" width="374" height="93"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6EU-Sh-dRw">
-                                                <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
-                                                <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="18"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="18"/>
+                                                <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="18"/>
                                                 <color key="textColor" name="LabelColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kiX-gJ-byg" customClass="TextField" customModule="Opportunities" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="34" width="374" height="65"/>
+                                                <rect key="frame" x="0.0" y="28" width="374" height="65"/>
                                                 <color key="backgroundColor" name="backGroundButton"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -341,7 +344,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="xyk-KW-T21">
-                                <rect key="frame" x="20" y="402" width="374" height="30"/>
+                                <rect key="frame" x="20" y="390" width="374" height="30"/>
                                 <subviews>
                                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Incorrect Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HuG-Xa-eTG">
                                         <rect key="frame" x="0.0" y="0.0" width="0.0" height="30"/>
@@ -351,7 +354,7 @@
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yOQ-JO-jrQ">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="30"/>
-                                        <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="15"/>
+                                        <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="15"/>
                                         <color key="tintColor" name="MainbuttonColor"/>
                                         <state key="normal" title="Forgot Password?"/>
                                         <connections>
@@ -364,7 +367,7 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LNS-EZ-wk8">
-                                <rect key="frame" x="20" y="482" width="374" height="65"/>
+                                <rect key="frame" x="20" y="470" width="374" height="65"/>
                                 <color key="backgroundColor" name="MainbuttonColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="65" id="ZHi-B7-PxA"/>
@@ -382,17 +385,17 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Yzp-Na-7o7">
-                                <rect key="frame" x="106.5" y="832" width="201" height="30"/>
+                                <rect key="frame" x="95" y="832" width="224.5" height="30"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don’t have an account?" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uhS-dz-l4Q">
-                                        <rect key="frame" x="0.0" y="0.0" width="146" height="30"/>
-                                        <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="15"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="165.5" height="30"/>
+                                        <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy-Regular" pointSize="15"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qvv-4i-qrQ">
-                                        <rect key="frame" x="151" y="0.0" width="50" height="30"/>
-                                        <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="15"/>
+                                        <rect key="frame" x="170.5" y="0.0" width="54" height="30"/>
+                                        <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="15"/>
                                         <color key="tintColor" name="MainbuttonColor"/>
                                         <state key="normal" title="Sign Up"/>
                                         <connections>
@@ -426,6 +429,10 @@
                         <viewLayoutGuide key="safeArea" id="6dS-hu-xLg"/>
                     </view>
                     <navigationItem key="navigationItem" id="4q1-uz-L0j"/>
+                    <connections>
+                        <outlet property="emailTf" destination="KUG-9W-Rhu" id="VrT-60-lWq"/>
+                        <outlet property="password" destination="kiX-gJ-byg" id="zDP-d6-2zx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uvs-3F-KRA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" id="UfT-JH-DOB">
@@ -509,7 +516,7 @@
             </objects>
             <point key="canvasLocation" x="4665" y="-39"/>
         </scene>
-        <!--Sign UP-->
+        <!--Sign Up View Controller-->
         <scene sceneID="pbz-DZ-1Ip">
             <objects>
                 <viewController storyboardIdentifier="SignUpViewController" modalPresentationStyle="fullScreen" id="yXl-hV-KbY" customClass="SignUpViewController" customModule="Opportunities" customModuleProvider="target" sceneMemberID="viewController">
@@ -523,181 +530,123 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dNJ-iT-644">
                                         <rect key="frame" x="0.0" y="0.0" width="406" height="1150"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="WqY-WU-J5v">
-                                                <rect key="frame" x="20" y="241" width="366" height="714"/>
-                                                <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="FuY-UX-4Ig">
-                                                        <rect key="frame" x="0.0" y="0.0" width="366" height="99"/>
-                                                        <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Full Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XKY-Wt-qYQ">
-                                                                <rect key="frame" x="0.0" y="0.0" width="366" height="34"/>
-                                                                <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="18"/>
-                                                                <color key="textColor" name="LabelColor"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NHP-hX-umV" customClass="TextField" customModule="Opportunities" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="39" width="366" height="60"/>
-                                                                <color key="backgroundColor" name="backGroundButton"/>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="height" constant="60" id="HZd-48-Rs9"/>
-                                                                </constraints>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                                <textInputTraits key="textInputTraits"/>
-                                                                <userDefinedRuntimeAttributes>
-                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                                        <real key="value" value="16"/>
-                                                                    </userDefinedRuntimeAttribute>
-                                                                </userDefinedRuntimeAttributes>
-                                                            </textField>
-                                                        </subviews>
-                                                    </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="9Xz-9Y-YwQ">
-                                                        <rect key="frame" x="0.0" y="123" width="366" height="99"/>
-                                                        <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SnA-44-a19">
-                                                                <rect key="frame" x="0.0" y="0.0" width="366" height="34"/>
-                                                                <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="18"/>
-                                                                <color key="textColor" name="LabelColor"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="PWV-CV-okw">
-                                                                <rect key="frame" x="0.0" y="39" width="366" height="60"/>
-                                                                <subviews>
-                                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rdO-6B-dFl" customClass="TextField" customModule="Opportunities" customModuleProvider="target">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="100" height="60"/>
-                                                                        <color key="backgroundColor" name="backGroundButton"/>
-                                                                        <constraints>
-                                                                            <constraint firstAttribute="width" constant="100" id="fZI-4y-IWV"/>
-                                                                        </constraints>
-                                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                                        <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
-                                                                        <userDefinedRuntimeAttributes>
-                                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                                                <real key="value" value="16"/>
-                                                                            </userDefinedRuntimeAttribute>
-                                                                        </userDefinedRuntimeAttributes>
-                                                                    </textField>
-                                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AhQ-JL-d97" customClass="TextField" customModule="Opportunities" customModuleProvider="target">
-                                                                        <rect key="frame" x="110" y="0.0" width="256" height="60"/>
-                                                                        <color key="backgroundColor" name="backGroundButton"/>
-                                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                                        <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
-                                                                        <userDefinedRuntimeAttributes>
-                                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                                                <real key="value" value="16"/>
-                                                                            </userDefinedRuntimeAttribute>
-                                                                        </userDefinedRuntimeAttributes>
-                                                                    </textField>
-                                                                </subviews>
-                                                            </stackView>
-                                                        </subviews>
-                                                    </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Vj0-FS-FFG">
-                                                        <rect key="frame" x="0.0" y="246" width="366" height="99"/>
-                                                        <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GPx-mO-swy">
-                                                                <rect key="frame" x="0.0" y="0.0" width="366" height="34"/>
-                                                                <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="18"/>
-                                                                <color key="textColor" name="LabelColor"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vjE-3Z-unS" customClass="TextField" customModule="Opportunities" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="39" width="366" height="60"/>
-                                                                <color key="backgroundColor" name="backGroundButton"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                                <textInputTraits key="textInputTraits"/>
-                                                                <userDefinedRuntimeAttributes>
-                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                                        <real key="value" value="16"/>
-                                                                    </userDefinedRuntimeAttribute>
-                                                                </userDefinedRuntimeAttributes>
-                                                            </textField>
-                                                        </subviews>
-                                                    </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="iLw-tw-3Gd">
-                                                        <rect key="frame" x="0.0" y="369" width="366" height="99"/>
-                                                        <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pz4-Vf-EDP">
-                                                                <rect key="frame" x="0.0" y="0.0" width="366" height="34"/>
-                                                                <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="18"/>
-                                                                <color key="textColor" name="LabelColor"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="08M-rH-Vkl" customClass="TextField" customModule="Opportunities" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="39" width="366" height="60"/>
-                                                                <color key="backgroundColor" name="backGroundButton"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                                <textInputTraits key="textInputTraits"/>
-                                                                <userDefinedRuntimeAttributes>
-                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                                        <real key="value" value="16"/>
-                                                                    </userDefinedRuntimeAttribute>
-                                                                </userDefinedRuntimeAttributes>
-                                                            </textField>
-                                                        </subviews>
-                                                    </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="D1x-Fh-97S">
-                                                        <rect key="frame" x="0.0" y="492" width="366" height="99"/>
-                                                        <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mwe-fJ-txZ">
-                                                                <rect key="frame" x="0.0" y="0.0" width="366" height="34"/>
-                                                                <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="18"/>
-                                                                <color key="textColor" name="LabelColor"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZB3-Iw-eDu" customClass="TextField" customModule="Opportunities" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="39" width="366" height="60"/>
-                                                                <color key="backgroundColor" name="backGroundButton"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                                <textInputTraits key="textInputTraits"/>
-                                                                <userDefinedRuntimeAttributes>
-                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                                        <real key="value" value="16"/>
-                                                                    </userDefinedRuntimeAttribute>
-                                                                </userDefinedRuntimeAttributes>
-                                                            </textField>
-                                                        </subviews>
-                                                    </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Dz0-Gd-T1q">
-                                                        <rect key="frame" x="0.0" y="615" width="366" height="99"/>
-                                                        <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirm Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M9h-ab-hIv">
-                                                                <rect key="frame" x="0.0" y="0.0" width="366" height="34"/>
-                                                                <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="18"/>
-                                                                <color key="textColor" name="LabelColor"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1Oh-Ts-4t5" customClass="TextField" customModule="Opportunities" customModuleProvider="target">
-                                                                <rect key="frame" x="0.0" y="39" width="366" height="60"/>
-                                                                <color key="backgroundColor" name="backGroundButton"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                                <textInputTraits key="textInputTraits"/>
-                                                                <userDefinedRuntimeAttributes>
-                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                                        <real key="value" value="16"/>
-                                                                    </userDefinedRuntimeAttribute>
-                                                                </userDefinedRuntimeAttributes>
-                                                            </textField>
-                                                        </subviews>
-                                                    </stackView>
-                                                </subviews>
-                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="smj-f4-jeP">
+                                                <rect key="frame" x="20" y="20" width="30" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="30" id="Scu-Z7-Fic"/>
+                                                    <constraint firstAttribute="height" constant="30" id="wKz-8X-LMd"/>
+                                                </constraints>
+                                                <state key="normal" image="ArrowLeft 2"/>
+                                                <connections>
+                                                    <action selector="backBtn:" destination="yXl-hV-KbY" eventType="touchUpInside" id="AQo-Wp-bKX"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Full Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XKY-Wt-qYQ">
+                                                <rect key="frame" x="20" y="190" width="366" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="Qe6-SF-QiU"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="18"/>
+                                                <color key="textColor" name="LabelColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NHP-hX-umV" customClass="TextField" customModule="Opportunities" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="240" width="366" height="60"/>
+                                                <color key="backgroundColor" name="backGroundButton"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="pV0-aS-7Uf"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="16"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SnA-44-a19">
+                                                <rect key="frame" x="20" y="320" width="366" height="18.5"/>
+                                                <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="18"/>
+                                                <color key="textColor" name="LabelColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GPx-mO-swy">
+                                                <rect key="frame" x="20" y="433.5" width="366" height="19"/>
+                                                <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="18"/>
+                                                <color key="textColor" name="LabelColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pz4-Vf-EDP">
+                                                <rect key="frame" x="20" y="552.5" width="366" height="18.5"/>
+                                                <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="18"/>
+                                                <color key="textColor" name="LabelColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="08M-rH-Vkl" customClass="TextField" customModule="Opportunities" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="591" width="366" height="60"/>
+                                                <color key="backgroundColor" name="backGroundButton"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="16"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mwe-fJ-txZ">
+                                                <rect key="frame" x="20" y="671" width="366" height="18.5"/>
+                                                <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="18"/>
+                                                <color key="textColor" name="LabelColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZB3-Iw-eDu" customClass="TextField" customModule="Opportunities" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="709.5" width="366" height="60"/>
+                                                <color key="backgroundColor" name="backGroundButton"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="16"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirm Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M9h-ab-hIv">
+                                                <rect key="frame" x="20" y="789.5" width="366" height="22"/>
+                                                <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="18"/>
+                                                <color key="textColor" name="LabelColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1Oh-Ts-4t5" customClass="TextField" customModule="Opportunities" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="831.5" width="366" height="60"/>
+                                                <color key="backgroundColor" name="backGroundButton"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="16"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vIb-yb-APf">
-                                                <rect key="frame" x="20" y="979" width="366" height="60"/>
+                                                <rect key="frame" x="20" y="911.5" width="366" height="60"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2zM-JA-iKo">
-                                                        <rect key="frame" x="0.0" y="4" width="16" height="16"/>
-                                                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <rect key="frame" x="0.0" y="3" width="16" height="18"/>
+                                                        <color key="backgroundColor" name="White"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="16" id="BAd-Ty-CNs"/>
                                                             <constraint firstAttribute="width" constant="16" id="GHf-5s-IvZ"/>
                                                         </constraints>
-                                                        <state key="normal" image="Vector"/>
+                                                        <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy-Regular" pointSize="18"/>
+                                                        <state key="normal" image="unselectedCheck"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                                 <real key="value" value="3"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="accuptOurTeermsBtn:" destination="yXl-hV-KbY" eventType="touchUpInside" id="8sb-iS-6SB"/>
+                                                        </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Accept our Terms &amp; Conditions to complete registeration." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Udw-AY-jNs">
                                                         <rect key="frame" x="26" y="4" width="320" height="36"/>
@@ -710,14 +659,14 @@
                                                 <constraints>
                                                     <constraint firstAttribute="trailing" secondItem="Udw-AY-jNs" secondAttribute="trailing" constant="20" symbolic="YES" id="2Z7-Zv-uiI"/>
                                                     <constraint firstItem="2zM-JA-iKo" firstAttribute="leading" secondItem="vIb-yb-APf" secondAttribute="leading" id="3Ew-60-M3w"/>
+                                                    <constraint firstAttribute="bottom" secondItem="2zM-JA-iKo" secondAttribute="bottom" constant="40" id="HmK-La-Uga"/>
                                                     <constraint firstItem="Udw-AY-jNs" firstAttribute="top" secondItem="2zM-JA-iKo" secondAttribute="top" id="O7A-am-FcL"/>
-                                                    <constraint firstAttribute="bottom" secondItem="Udw-AY-jNs" secondAttribute="bottom" constant="20" symbolic="YES" id="Wgx-1l-i3Z"/>
                                                     <constraint firstItem="Udw-AY-jNs" firstAttribute="leading" secondItem="2zM-JA-iKo" secondAttribute="trailing" constant="10" id="gOs-kK-ddk"/>
                                                     <constraint firstAttribute="height" constant="60" id="oHb-0X-Nbd"/>
                                                 </constraints>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZiE-oX-rp7">
-                                                <rect key="frame" x="20" y="1063" width="366" height="65"/>
+                                                <rect key="frame" x="20" y="995.5" width="366" height="65"/>
                                                 <color key="backgroundColor" name="MainbuttonColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="65" id="t2i-GT-UCM"/>
@@ -734,47 +683,134 @@
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let’s sign you up!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b3e-nP-TG0">
-                                                <rect key="frame" x="20" y="116" width="366" height="75"/>
-                                                <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="40"/>
+                                                <rect key="frame" x="20" y="130" width="366" height="40"/>
+                                                <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy-Regular" pointSize="40"/>
                                                 <color key="textColor" name="SubTitle"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <navigationBar contentMode="scaleToFill" largeTitles="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TVM-U1-epm">
-                                                <rect key="frame" x="0.0" y="0.0" width="406" height="96"/>
-                                                <textAttributes key="largeTitleTextAttributes">
-                                                    <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="45"/>
-                                                </textAttributes>
-                                                <items>
-                                                    <navigationItem title="Sign Up" id="bSF-O3-Kgr">
-                                                        <barButtonItem key="leftBarButtonItem" style="plain" id="9Xk-t1-8tH">
-                                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="bi3-zS-PLH">
-                                                                <rect key="frame" x="20" y="6" width="20" height="32"/>
-                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                <state key="normal" image="ArrowLeft 2"/>
-                                                            </button>
-                                                        </barButtonItem>
-                                                    </navigationItem>
-                                                </items>
-                                            </navigationBar>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign Up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ES5-6O-nTw">
+                                                <rect key="frame" x="20" y="70" width="366" height="40"/>
+                                                <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="40"/>
+                                                <color key="textColor" name="Title"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wpl-8a-ezj" customClass="TextField" customModule="Opportunities" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="472.5" width="366" height="60"/>
+                                                <color key="backgroundColor" name="backGroundButton"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="16"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="btc-YJ-Klz">
+                                                <rect key="frame" x="-8" y="364" width="406" height="55"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rdO-6B-dFl" customClass="TextField" customModule="Opportunities" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="100" height="55"/>
+                                                        <color key="backgroundColor" name="backGroundButton"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="100" id="fZI-4y-IWV"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="16"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AhQ-JL-d97" customClass="TextField" customModule="Opportunities" customModuleProvider="target">
+                                                        <rect key="frame" x="110" y="0.0" width="256" height="55"/>
+                                                        <color key="backgroundColor" name="backGroundButton"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="16"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="AhQ-JL-d97" firstAttribute="leading" secondItem="rdO-6B-dFl" secondAttribute="trailing" constant="10" id="Isc-AM-kln"/>
+                                                    <constraint firstItem="rdO-6B-dFl" firstAttribute="top" secondItem="btc-YJ-Klz" secondAttribute="top" id="NHH-bM-yPv"/>
+                                                    <constraint firstItem="rdO-6B-dFl" firstAttribute="height" secondItem="AhQ-JL-d97" secondAttribute="height" id="aBU-Gi-ZTa"/>
+                                                    <constraint firstAttribute="bottom" secondItem="rdO-6B-dFl" secondAttribute="bottom" id="bNI-3W-ihX"/>
+                                                    <constraint firstAttribute="trailing" secondItem="AhQ-JL-d97" secondAttribute="trailing" id="jtP-Kl-LmQ"/>
+                                                    <constraint firstItem="rdO-6B-dFl" firstAttribute="leading" secondItem="btc-YJ-Klz" secondAttribute="leading" id="m9n-FB-WfR"/>
+                                                    <constraint firstItem="rdO-6B-dFl" firstAttribute="centerY" secondItem="AhQ-JL-d97" secondAttribute="centerY" id="vdC-Zm-QOy"/>
+                                                </constraints>
+                                            </view>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
+                                            <constraint firstItem="1Oh-Ts-4t5" firstAttribute="height" secondItem="ZB3-Iw-eDu" secondAttribute="height" id="136-9T-cgM"/>
+                                            <constraint firstItem="M9h-ab-hIv" firstAttribute="height" secondItem="mwe-fJ-txZ" secondAttribute="height" multiplier="1.15385" id="2hf-0B-kL6"/>
+                                            <constraint firstItem="Wpl-8a-ezj" firstAttribute="height" secondItem="NHP-hX-umV" secondAttribute="height" id="3Hb-gg-89u"/>
                                             <constraint firstItem="ZiE-oX-rp7" firstAttribute="trailing" secondItem="vIb-yb-APf" secondAttribute="trailing" id="5r8-uy-ofF"/>
+                                            <constraint firstItem="b3e-nP-TG0" firstAttribute="trailing" secondItem="ES5-6O-nTw" secondAttribute="trailing" id="6ht-qh-P3X"/>
+                                            <constraint firstItem="GPx-mO-swy" firstAttribute="top" secondItem="btc-YJ-Klz" secondAttribute="bottom" constant="20" id="6i8-bf-K59"/>
+                                            <constraint firstItem="08M-rH-Vkl" firstAttribute="height" secondItem="Wpl-8a-ezj" secondAttribute="height" id="6u0-h2-PJN"/>
                                             <constraint firstItem="ZiE-oX-rp7" firstAttribute="top" secondItem="vIb-yb-APf" secondAttribute="bottom" constant="24" id="AFy-Ln-Uep"/>
-                                            <constraint firstItem="WqY-WU-J5v" firstAttribute="top" secondItem="b3e-nP-TG0" secondAttribute="bottom" constant="50" id="EH4-LD-5u2"/>
-                                            <constraint firstItem="vIb-yb-APf" firstAttribute="leading" secondItem="WqY-WU-J5v" secondAttribute="leading" id="Hvl-Wn-ZGf"/>
-                                            <constraint firstItem="vIb-yb-APf" firstAttribute="trailing" secondItem="WqY-WU-J5v" secondAttribute="trailing" id="LYd-Oy-Glm"/>
-                                            <constraint firstAttribute="trailing" secondItem="TVM-U1-epm" secondAttribute="trailing" id="OKA-x0-StO"/>
-                                            <constraint firstItem="TVM-U1-epm" firstAttribute="leading" secondItem="dNJ-iT-644" secondAttribute="leading" id="Phf-Zs-UrB"/>
+                                            <constraint firstItem="mwe-fJ-txZ" firstAttribute="top" secondItem="08M-rH-Vkl" secondAttribute="bottom" constant="20" id="AmN-Al-SnP"/>
+                                            <constraint firstItem="ES5-6O-nTw" firstAttribute="top" secondItem="smj-f4-jeP" secondAttribute="bottom" constant="20" id="DS5-NE-mI1"/>
+                                            <constraint firstItem="XKY-Wt-qYQ" firstAttribute="top" secondItem="b3e-nP-TG0" secondAttribute="bottom" constant="20" id="DgC-7i-BfX"/>
+                                            <constraint firstItem="1Oh-Ts-4t5" firstAttribute="leading" secondItem="08M-rH-Vkl" secondAttribute="leading" id="FuV-FE-e8r"/>
+                                            <constraint firstItem="ES5-6O-nTw" firstAttribute="leading" secondItem="smj-f4-jeP" secondAttribute="leading" id="GEd-HQ-VPS"/>
+                                            <constraint firstItem="ZB3-Iw-eDu" firstAttribute="trailing" secondItem="08M-rH-Vkl" secondAttribute="trailing" id="HPh-LR-DYi"/>
+                                            <constraint firstItem="Pz4-Vf-EDP" firstAttribute="height" secondItem="GPx-mO-swy" secondAttribute="height" id="KDz-NY-e79"/>
+                                            <constraint firstItem="btc-YJ-Klz" firstAttribute="height" secondItem="NHP-hX-umV" secondAttribute="height" multiplier="0.916667" id="M5s-XJ-ULe"/>
+                                            <constraint firstItem="08M-rH-Vkl" firstAttribute="trailing" secondItem="Wpl-8a-ezj" secondAttribute="trailing" id="MwL-fk-qWx"/>
+                                            <constraint firstItem="NHP-hX-umV" firstAttribute="leading" secondItem="XKY-Wt-qYQ" secondAttribute="leading" id="NM6-2w-nra"/>
+                                            <constraint firstItem="1Oh-Ts-4t5" firstAttribute="trailing" secondItem="08M-rH-Vkl" secondAttribute="trailing" id="PNX-uW-GFh"/>
+                                            <constraint firstItem="M9h-ab-hIv" firstAttribute="leading" secondItem="mwe-fJ-txZ" secondAttribute="leading" id="Pob-ZV-5UN"/>
+                                            <constraint firstItem="Pz4-Vf-EDP" firstAttribute="leading" secondItem="GPx-mO-swy" secondAttribute="leading" id="RRm-q9-4Pk"/>
+                                            <constraint firstItem="vIb-yb-APf" firstAttribute="leading" secondItem="1Oh-Ts-4t5" secondAttribute="leading" id="THO-AJ-VU1"/>
                                             <constraint firstAttribute="height" constant="1150" id="TUO-KI-ewg"/>
                                             <constraint firstItem="b3e-nP-TG0" firstAttribute="leading" secondItem="dNJ-iT-644" secondAttribute="leading" constant="20" id="U1N-G7-j9T"/>
+                                            <constraint firstItem="btc-YJ-Klz" firstAttribute="trailing" secondItem="SnA-44-a19" secondAttribute="trailing" id="Vfk-Xi-yuE"/>
+                                            <constraint firstItem="mwe-fJ-txZ" firstAttribute="trailing" secondItem="Pz4-Vf-EDP" secondAttribute="trailing" id="WZS-0j-FYl"/>
+                                            <constraint firstItem="btc-YJ-Klz" firstAttribute="leading" secondItem="SnA-44-a19" secondAttribute="leading" id="Wem-zn-oCn"/>
+                                            <constraint firstItem="Pz4-Vf-EDP" firstAttribute="trailing" secondItem="GPx-mO-swy" secondAttribute="trailing" id="X2v-zx-9fE"/>
+                                            <constraint firstItem="Wpl-8a-ezj" firstAttribute="top" secondItem="GPx-mO-swy" secondAttribute="bottom" constant="20" id="XQS-bE-j0I"/>
+                                            <constraint firstItem="GPx-mO-swy" firstAttribute="height" secondItem="SnA-44-a19" secondAttribute="height" id="XfF-lM-UcQ"/>
+                                            <constraint firstItem="ZB3-Iw-eDu" firstAttribute="leading" secondItem="08M-rH-Vkl" secondAttribute="leading" id="Xn6-85-Hj3"/>
                                             <constraint firstItem="ZiE-oX-rp7" firstAttribute="leading" secondItem="vIb-yb-APf" secondAttribute="leading" id="Ydp-xI-f1h"/>
-                                            <constraint firstItem="b3e-nP-TG0" firstAttribute="top" secondItem="TVM-U1-epm" secondAttribute="bottom" constant="20" id="eAO-Wo-DMt"/>
-                                            <constraint firstItem="vIb-yb-APf" firstAttribute="top" secondItem="WqY-WU-J5v" secondAttribute="bottom" constant="24" id="fda-uK-jjg"/>
-                                            <constraint firstItem="WqY-WU-J5v" firstAttribute="trailing" secondItem="b3e-nP-TG0" secondAttribute="trailing" id="kuR-Vm-4hP"/>
+                                            <constraint firstItem="SnA-44-a19" firstAttribute="top" secondItem="NHP-hX-umV" secondAttribute="bottom" constant="20" id="agm-ja-bNR"/>
+                                            <constraint firstItem="XKY-Wt-qYQ" firstAttribute="leading" secondItem="dNJ-iT-644" secondAttribute="leading" constant="20" id="cKJ-z6-oYX"/>
+                                            <constraint firstItem="mwe-fJ-txZ" firstAttribute="leading" secondItem="Pz4-Vf-EDP" secondAttribute="leading" id="cSZ-a6-GPN"/>
+                                            <constraint firstItem="vIb-yb-APf" firstAttribute="trailing" secondItem="1Oh-Ts-4t5" secondAttribute="trailing" id="csT-v4-eCL"/>
+                                            <constraint firstItem="NHP-hX-umV" firstAttribute="trailing" secondItem="XKY-Wt-qYQ" secondAttribute="trailing" id="dba-A0-njy"/>
+                                            <constraint firstItem="SnA-44-a19" firstAttribute="trailing" secondItem="XKY-Wt-qYQ" secondAttribute="trailing" id="dde-QS-XrZ"/>
+                                            <constraint firstItem="SnA-44-a19" firstAttribute="height" secondItem="XKY-Wt-qYQ" secondAttribute="height" multiplier="0.622642" id="dgh-fz-xjY"/>
+                                            <constraint firstItem="smj-f4-jeP" firstAttribute="top" secondItem="dNJ-iT-644" secondAttribute="top" constant="20" id="f10-Jg-dcF"/>
+                                            <constraint firstItem="smj-f4-jeP" firstAttribute="leading" secondItem="dNJ-iT-644" secondAttribute="leading" constant="20" id="f4w-6W-R6h"/>
+                                            <constraint firstItem="vIb-yb-APf" firstAttribute="top" secondItem="1Oh-Ts-4t5" secondAttribute="bottom" constant="20" id="hzN-yK-bLW"/>
+                                            <constraint firstItem="mwe-fJ-txZ" firstAttribute="height" secondItem="Pz4-Vf-EDP" secondAttribute="height" id="iqC-pF-urn"/>
+                                            <constraint firstItem="GPx-mO-swy" firstAttribute="leading" secondItem="SnA-44-a19" secondAttribute="leading" id="jnX-u3-yje"/>
+                                            <constraint firstItem="b3e-nP-TG0" firstAttribute="top" secondItem="ES5-6O-nTw" secondAttribute="bottom" constant="20" id="k0F-0J-283"/>
+                                            <constraint firstItem="b3e-nP-TG0" firstAttribute="leading" secondItem="ES5-6O-nTw" secondAttribute="leading" id="l7A-6j-RrA"/>
+                                            <constraint firstAttribute="trailing" secondItem="ES5-6O-nTw" secondAttribute="trailing" constant="20" id="lUN-3J-UKY"/>
+                                            <constraint firstItem="M9h-ab-hIv" firstAttribute="trailing" secondItem="mwe-fJ-txZ" secondAttribute="trailing" id="mes-df-sk0"/>
+                                            <constraint firstItem="Wpl-8a-ezj" firstAttribute="trailing" secondItem="NHP-hX-umV" secondAttribute="trailing" id="mpE-Bl-Fsa"/>
+                                            <constraint firstItem="1Oh-Ts-4t5" firstAttribute="top" secondItem="M9h-ab-hIv" secondAttribute="bottom" constant="20" id="nIe-gR-fXI"/>
+                                            <constraint firstAttribute="trailing" secondItem="XKY-Wt-qYQ" secondAttribute="trailing" constant="20" id="npx-Oa-iIL"/>
+                                            <constraint firstItem="GPx-mO-swy" firstAttribute="trailing" secondItem="SnA-44-a19" secondAttribute="trailing" id="oTK-cM-fjg"/>
                                             <constraint firstAttribute="trailing" secondItem="b3e-nP-TG0" secondAttribute="trailing" constant="20" id="oza-UE-Zcv"/>
-                                            <constraint firstItem="TVM-U1-epm" firstAttribute="top" secondItem="dNJ-iT-644" secondAttribute="top" id="raB-lV-qg2"/>
-                                            <constraint firstItem="WqY-WU-J5v" firstAttribute="leading" secondItem="b3e-nP-TG0" secondAttribute="leading" id="wUO-by-ADo"/>
+                                            <constraint firstItem="ZB3-Iw-eDu" firstAttribute="top" secondItem="mwe-fJ-txZ" secondAttribute="bottom" constant="20" id="p1G-CW-fgv"/>
+                                            <constraint firstItem="ZB3-Iw-eDu" firstAttribute="height" secondItem="08M-rH-Vkl" secondAttribute="height" id="pag-at-yfK"/>
+                                            <constraint firstItem="SnA-44-a19" firstAttribute="leading" secondItem="XKY-Wt-qYQ" secondAttribute="leading" id="qWA-pB-B3Q"/>
+                                            <constraint firstItem="btc-YJ-Klz" firstAttribute="top" secondItem="SnA-44-a19" secondAttribute="bottom" constant="20" id="tC9-wO-n1p"/>
+                                            <constraint firstItem="Pz4-Vf-EDP" firstAttribute="top" secondItem="Wpl-8a-ezj" secondAttribute="bottom" constant="20" id="trV-Cr-tLf"/>
+                                            <constraint firstItem="Wpl-8a-ezj" firstAttribute="leading" secondItem="NHP-hX-umV" secondAttribute="leading" id="v3c-bI-mq8"/>
+                                            <constraint firstItem="M9h-ab-hIv" firstAttribute="top" secondItem="ZB3-Iw-eDu" secondAttribute="bottom" constant="20" id="vfO-Ae-wEU"/>
+                                            <constraint firstItem="08M-rH-Vkl" firstAttribute="top" secondItem="Pz4-Vf-EDP" secondAttribute="bottom" constant="20" id="vxJ-Jj-sAd"/>
+                                            <constraint firstItem="08M-rH-Vkl" firstAttribute="leading" secondItem="Wpl-8a-ezj" secondAttribute="leading" id="w2i-Ec-CdR"/>
+                                            <constraint firstItem="NHP-hX-umV" firstAttribute="top" secondItem="XKY-Wt-qYQ" secondAttribute="bottom" constant="20" id="wbS-rm-aOH"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -798,14 +834,20 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="HWy-k2-1uh"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Sign UP" id="oiI-l5-f1O">
-                        <barButtonItem key="backBarButtonItem" title="Item" id="SmS-jB-yOz"/>
-                    </navigationItem>
                     <size key="freeformSize" width="414" height="1120"/>
+                    <connections>
+                        <outlet property="accountNumberTf" destination="08M-rH-Vkl" id="5cg-79-1AW"/>
+                        <outlet property="conformPassTf" destination="1Oh-Ts-4t5" id="yF6-bO-Cwt"/>
+                        <outlet property="emailTf" destination="Wpl-8a-ezj" id="8eJ-H3-DL5"/>
+                        <outlet property="fullNameTf" destination="NHP-hX-umV" id="sh0-IR-Mtk"/>
+                        <outlet property="passwordTf" destination="ZB3-Iw-eDu" id="CGN-Km-KH3"/>
+                        <outlet property="phoneNumberCodeTf" destination="rdO-6B-dFl" id="COq-9r-EgY"/>
+                        <outlet property="phoneNumberTf" destination="AhQ-JL-d97" id="Wfq-Da-GVc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NrX-Ws-Sx1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5761" y="43"/>
+            <point key="canvasLocation" x="5760.8695652173919" y="42.857142857142854"/>
         </scene>
         <!--Confram Code View Controller-->
         <scene sceneID="4Vh-iC-Q22">
@@ -1319,9 +1361,9 @@
         <image name="Flag_of_the_United_Kingdom 1" width="31" height="20"/>
         <image name="Saly-14" width="228" height="406"/>
         <image name="Saly-8" width="334" height="334"/>
-        <image name="Vector" width="11" height="8"/>
         <image name="arrow right alt" width="25" height="16"/>
         <image name="saudi-arabia-flag-icon-free-download 1" width="31" height="20"/>
+        <image name="unselectedCheck" width="16" height="16"/>
         <namedColor name="Difination">
             <color red="0.60399997234344482" green="0.6589999794960022" blue="0.72899997234344482" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
@@ -1336,6 +1378,9 @@
         </namedColor>
         <namedColor name="Title">
             <color red="0.13300000131130219" green="0.20000000298023224" blue="0.2669999897480011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="White">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="backGroundButton">
             <color red="0.94099998474121094" green="0.9649999737739563" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

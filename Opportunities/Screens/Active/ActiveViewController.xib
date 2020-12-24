@@ -30,7 +30,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="OmF-I8-mjd">
-                    <rect key="frame" x="20" y="171" width="374" height="269"/>
+                    <rect key="frame" x="20" y="171" width="374" height="251"/>
                     <color key="backgroundColor" red="0.97647058823529409" green="0.98431372549019602" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="XZh-5A-lJp">
                         <size key="itemSize" width="50" height="50"/>
@@ -40,19 +40,19 @@
                     </collectionViewFlowLayout>
                 </collectionView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All Investments" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wYA-fM-I51">
-                    <rect key="frame" x="20" y="470" width="374" height="35"/>
+                    <rect key="frame" x="20" y="442" width="374" height="35"/>
                     <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="30"/>
                     <color key="textColor" name="Title"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9 Investments" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9uu-mX-MGV">
-                    <rect key="frame" x="20" y="515" width="374" height="23.5"/>
+                    <rect key="frame" x="20" y="487" width="374" height="23.5"/>
                     <fontDescription key="fontDescription" name="Gilroy-Medium" family="Gilroy-Medium" pointSize="20"/>
                     <color key="textColor" red="0.3411764706" green="0.88235294119999996" blue="0.69019607839999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xFE-jp-Xw6">
-                    <rect key="frame" x="20" y="558.5" width="374" height="323.5"/>
+                    <rect key="frame" x="20" y="520.5" width="374" height="361.5"/>
                     <color key="backgroundColor" red="0.97647058819999999" green="0.98431372549999996" blue="0.99215686270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 </tableView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Active" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="feF-b0-Nqo">
@@ -98,9 +98,9 @@
                 <constraint firstItem="xFE-jp-Xw6" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" constant="20" id="ZPJ-tC-CFJ"/>
                 <constraint firstItem="feF-b0-Nqo" firstAttribute="trailing" secondItem="EBj-I2-jdw" secondAttribute="trailing" id="bgr-83-LtH"/>
                 <constraint firstItem="feF-b0-Nqo" firstAttribute="leading" secondItem="ehk-iP-izk" secondAttribute="leading" id="cek-fV-MaS"/>
-                <constraint firstItem="OmF-I8-mjd" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.3" priority="250" id="j7k-af-h0E"/>
-                <constraint firstItem="wYA-fM-I51" firstAttribute="top" secondItem="OmF-I8-mjd" secondAttribute="bottom" constant="30" id="lU2-Gc-Aay"/>
-                <constraint firstItem="xFE-jp-Xw6" firstAttribute="top" secondItem="9uu-mX-MGV" secondAttribute="bottom" constant="20" id="muO-lS-3W3"/>
+                <constraint firstItem="OmF-I8-mjd" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.28" priority="250" id="j7k-af-h0E"/>
+                <constraint firstItem="wYA-fM-I51" firstAttribute="top" secondItem="OmF-I8-mjd" secondAttribute="bottom" constant="20" id="lU2-Gc-Aay"/>
+                <constraint firstItem="xFE-jp-Xw6" firstAttribute="top" secondItem="9uu-mX-MGV" secondAttribute="bottom" constant="10" id="muO-lS-3W3"/>
                 <constraint firstItem="wYA-fM-I51" firstAttribute="leading" secondItem="OmF-I8-mjd" secondAttribute="leading" id="nnd-pr-aBF"/>
                 <constraint firstItem="9uu-mX-MGV" firstAttribute="trailing" secondItem="wYA-fM-I51" secondAttribute="trailing" id="pcR-IH-BCM"/>
                 <constraint firstItem="EBj-I2-jdw" firstAttribute="centerY" secondItem="ehk-iP-izk" secondAttribute="centerY" id="pch-OA-JRU"/>

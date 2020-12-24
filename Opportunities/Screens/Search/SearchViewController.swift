@@ -23,6 +23,7 @@ class SearchViewController: BaseWireFrame<searchViewModel> {
         resulteTableView.register(UINib(nibName: cellIdentifier, bundle: nil), forCellReuseIdentifier: cellIdentifier)
         resulteTableView.dataSource = self
         resulteTableView.delegate = self
+        searchTextField.delegate = self
     }
 
     
@@ -56,5 +57,11 @@ extension SearchViewController :  UITableViewDelegate{
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 285
+    }
+}
+
+extension SearchViewController : UITextFieldDelegate {
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        ContainerOfResultSearch.isHidden = false
     }
 }

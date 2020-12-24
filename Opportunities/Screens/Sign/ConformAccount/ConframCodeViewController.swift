@@ -38,13 +38,45 @@ class ConframCodeViewController: BaseWireFrame<comformViewModel> {
         
     }
     @IBAction func verifyBtn(_ sender: Any) {
-        guard let text = textViewNumber1.text, text.isEmpty ,let text2 = textViewNumber2.text, text2.isEmpty,let text3 = textViewNumber3.text, text3.isEmpty,let text4 = textviewNumber4.text, text4.isEmpty else {
-            return
-        }
-        let viewc = coordinator.MainStoryBordNavigator.viewController(for: .haveAcountView)
-        present(viewc, animated: true, completion: nil)
+//        guard let text = textViewNumber1.text, text.isEmpty ,let text2 = textViewNumber2.text, text2.isEmpty,let text3 = textViewNumber3.text, text3.isEmpty,let text4 = textviewNumber4.text, text4.isEmpty else {
+//            return
+//        }
+//
+        navigateTo()
         
     }
+    
+    
+    func  navigateTo(){
+        sendCode()
+        vieeModel.SeccessSignUp.asObserver().subscribe(onNext: { [weak self](resulte) in
+            if  resulte.value == true{
+                guard let viewc = self?.coordinator.MainStoryBordNavigator.viewController(for: .haveAcountView) else  { print("error to navigation")
+                    return
+                }
+                self?.present(viewc, animated: true, completion: nil)
+            }else{
+                print(resulte.msg)
+            }
+            
+            }, onError: { (error) in
+                print(error)
+        }).disposed(by: disposePag)
+    }
+    
+    func sendCode(){
+        
+        guard let number1 = textViewNumber1.text , !number1.isEmpty,let number2 = textViewNumber2.text , !number2.isEmpty,let number3 = textViewNumber3.text , !number3.isEmpty,let number4 = textviewNumber4.text , !number4.isEmpty else {return}
+        
+        let code = number1 + number2 + number3 + number4
+        print(code)
+        let paramerter : [String : Any] = [
+            "email" : "youssef.esmailelfeky@gmail.com",
+            "codeActive" : "123456"
+        ]
+        vieeModel.sendCode(parameters: paramerter)
+    }
+    
     
 }
 

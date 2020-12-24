@@ -9,18 +9,74 @@
 import UIKit
 
 class SignUpViewController: BaseWireFrame<SignUpViewModel> {
-
+    
+    var isSelested = false
+    @IBOutlet weak var emailTf: UITextField!
+    @IBOutlet weak var accountNumberTf: TextField!
+    @IBOutlet weak var phoneNumberCodeTf: TextField!
+    @IBOutlet weak var passwordTf: TextField!
+    @IBOutlet weak var conformPassTf: TextField!
+    @IBOutlet weak var phoneNumberTf: TextField!
+    @IBOutlet weak var fullNameTf: TextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        vieeModel.ViewDidLoad()
+        
     }
     override func bind(ViewModel: SignUpViewModel) {
         
     }
-
+    @IBAction func accuptOurTeermsBtn(_ sender: UIButton) {
+        isSelested.toggle()
+        if isSelested{
+            sender.setImage(#imageLiteral(resourceName: "Vector"), for: .normal)
+            sender.backgroundColor = DesignSystem.Colors.SelectedColor.color
+        }else{
+            sender.setImage(#imageLiteral(resourceName: "unselectedCheck"), for: .normal)
+            sender.backgroundColor = DesignSystem.Colors.white.color
+        }
+        
+    }
+    
     @IBAction func getStartBtn(_ sender: Any) {
-        let viewc = coordinator.MainStoryBordNavigator.viewController(for: .ConframCodeView)
-        present(viewc, animated: true, completion: nil)
+        signUp()
+        navigateToConformCode()
+    }
+    
+    @IBAction func backBtn(_ sender: Any) {
+       dismiss(animated: true, completion: nil)
+    }
+    
+    func  navigateToConformCode(){
+        vieeModel.SeccessSignUp.asObserver().subscribe(onNext: { [weak self](resulte) in
+            if  resulte.value == true{
+                guard let viewc = self?.coordinator.MainStoryBordNavigator.viewController(for: .ConframCodeView) else  { print("error to navigation")
+                    return
+                }
+                self?.present(viewc, animated: true, completion: nil)
+            }else{
+                print(resulte.msg)
+            }
+            
+            }, onError: { (error) in
+                print(error)
+        }).disposed(by: disposePag)
+    }
+    
+    func signUp(){
+        
+        guard let email = emailTf.text , !email.isEmpty,let password = passwordTf.text , !password.isEmpty,let passwordconform = conformPassTf.text , !passwordconform.isEmpty,let phone = phoneNumberTf.text , !phone.isEmpty,let name = fullNameTf.text , !name.isEmpty
+            ,let accountNumber = accountNumberTf.text ,!accountNumber.isEmpty, let codeNumder = phoneNumberCodeTf.text ,!codeNumder.isEmpty else {return}
+        
+        let paramerter : [String : Any] = [
+            "name" : name,
+            "mobile" : codeNumder + phone,
+            "email" : email,
+            "account_bank" : accountNumber,
+            "password_confirmation" : passwordconform,
+            "password" : password,
+        ]
+        vieeModel.SignUp(parameters: paramerter)
     }
     
 }

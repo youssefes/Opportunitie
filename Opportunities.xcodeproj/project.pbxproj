@@ -42,7 +42,7 @@
 		E83A54F8258763C30076BDCE /* MenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83A54F7258763C30076BDCE /* MenuViewModel.swift */; };
 		E83A54FA258763F40076BDCE /* searchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83A54F9258763F40076BDCE /* searchViewModel.swift */; };
 		E83A54FC258764460076BDCE /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83A54FB258764460076BDCE /* HomeViewModel.swift */; };
-		E83A670A258A3AC00068DC22 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83A6709258A3AC00068DC22 /* MainRouter.swift */; };
+		E83A670A258A3AC00068DC22 /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83A6709258A3AC00068DC22 /* APIRouter.swift */; };
 		E83AA8CE2576F85200F8317E /* UIview+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83AA8CD2576F85200F8317E /* UIview+Extensions.swift */; };
 		E83C454B258EB104003E1E1B /* NotificationHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83C4549258EB104003E1E1B /* NotificationHeaderTableViewCell.swift */; };
 		E83C454C258EB104003E1E1B /* NotificationHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E83C454A258EB104003E1E1B /* NotificationHeaderTableViewCell.xib */; };
@@ -76,6 +76,12 @@
 		E83EFABB257D6DC60075CDF1 /* AllOpportunitiesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E83EFAB9257D6DC60075CDF1 /* AllOpportunitiesViewController.xib */; };
 		E83EFAC0257D77BC0075CDF1 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83EFABE257D77BC0075CDF1 /* SearchViewController.swift */; };
 		E83EFAC1257D77BC0075CDF1 /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E83EFABF257D77BC0075CDF1 /* SearchViewController.xib */; };
+		E84EE043259137D8009FEAD3 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = E84EE042259137D8009FEAD3 /* Alamofire */; };
+		E84EE0452591381D009FEAD3 /* NetworkConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84EE0442591381D009FEAD3 /* NetworkConstant.swift */; };
+		E84EE047259138D1009FEAD3 /* SignRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84EE046259138D1009FEAD3 /* SignRouter.swift */; };
+		E84EE049259139FA009FEAD3 /* ClientNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84EE048259139FA009FEAD3 /* ClientNetwork.swift */; };
+		E84EE04C25913A9D009FEAD3 /* MainRespondObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84EE04B25913A9D009FEAD3 /* MainRespondObject.swift */; };
+		E84EE04F25913ED1009FEAD3 /* SignRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84EE04E25913ED1009FEAD3 /* SignRepository.swift */; };
 		E84F8531258D4A5800B8EB7E /* RestPassViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84F8530258D4A5800B8EB7E /* RestPassViewModel.swift */; };
 		E84F8533258D4A7600B8EB7E /* RestPassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84F8532258D4A7600B8EB7E /* RestPassViewController.swift */; };
 		E84F8536258D4C0F00B8EB7E /* SeccessRestPassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84F8535258D4C0F00B8EB7E /* SeccessRestPassViewController.swift */; };
@@ -125,6 +131,7 @@
 		E8B287AD2576E46E00326E02 /* Cairo-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E8B287A62576E46E00326E02 /* Cairo-Bold.ttf */; };
 		E8B287AE2576E46E00326E02 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = E8B287A72576E46E00326E02 /* OFL.txt */; };
 		E8C37153258D77EC00C4FA52 /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C37152258D77EC00C4FA52 /* UITextField+Extension.swift */; };
+		E8DA894025917B6C00B413E1 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8DA893F25917B6C00B413E1 /* UserModel.swift */; };
 		E8E18C11258D142E008CB2AD /* ForgetPassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E18C10258D142E008CB2AD /* ForgetPassViewController.swift */; };
 		E8E18C13258D1445008CB2AD /* ForgetPassViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E18C12258D1445008CB2AD /* ForgetPassViewModel.swift */; };
 		E8E8FDFD25810B7200FBF9C4 /* OppertuniteDetailesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E8FDFB25810B7200FBF9C4 /* OppertuniteDetailesViewController.swift */; };
@@ -202,7 +209,7 @@
 		E83A54F7258763C30076BDCE /* MenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewModel.swift; sourceTree = "<group>"; };
 		E83A54F9258763F40076BDCE /* searchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchViewModel.swift; sourceTree = "<group>"; };
 		E83A54FB258764460076BDCE /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
-		E83A6709258A3AC00068DC22 /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
+		E83A6709258A3AC00068DC22 /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
 		E83AA8CD2576F85200F8317E /* UIview+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIview+Extensions.swift"; sourceTree = "<group>"; };
 		E83C4549258EB104003E1E1B /* NotificationHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationHeaderTableViewCell.swift; sourceTree = "<group>"; };
 		E83C454A258EB104003E1E1B /* NotificationHeaderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationHeaderTableViewCell.xib; sourceTree = "<group>"; };
@@ -236,6 +243,13 @@
 		E83EFAB9257D6DC60075CDF1 /* AllOpportunitiesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AllOpportunitiesViewController.xib; sourceTree = "<group>"; };
 		E83EFABE257D77BC0075CDF1 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		E83EFABF257D77BC0075CDF1 /* SearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
+		E84D1053259009C900E6A80F /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		E84D1054259009CA00E6A80F /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Main.strings; sourceTree = "<group>"; };
+		E84EE0442591381D009FEAD3 /* NetworkConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstant.swift; sourceTree = "<group>"; };
+		E84EE046259138D1009FEAD3 /* SignRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignRouter.swift; sourceTree = "<group>"; };
+		E84EE048259139FA009FEAD3 /* ClientNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientNetwork.swift; sourceTree = "<group>"; };
+		E84EE04B25913A9D009FEAD3 /* MainRespondObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRespondObject.swift; sourceTree = "<group>"; };
+		E84EE04E25913ED1009FEAD3 /* SignRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignRepository.swift; sourceTree = "<group>"; };
 		E84F8530258D4A5800B8EB7E /* RestPassViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestPassViewModel.swift; sourceTree = "<group>"; };
 		E84F8532258D4A7600B8EB7E /* RestPassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestPassViewController.swift; sourceTree = "<group>"; };
 		E84F8535258D4C0F00B8EB7E /* SeccessRestPassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeccessRestPassViewController.swift; sourceTree = "<group>"; };
@@ -285,6 +299,7 @@
 		E8B287A62576E46E00326E02 /* Cairo-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cairo-Bold.ttf"; sourceTree = "<group>"; };
 		E8B287A72576E46E00326E02 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
 		E8C37152258D77EC00C4FA52 /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
+		E8DA893F25917B6C00B413E1 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		E8E18C10258D142E008CB2AD /* ForgetPassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPassViewController.swift; sourceTree = "<group>"; };
 		E8E18C12258D1445008CB2AD /* ForgetPassViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPassViewModel.swift; sourceTree = "<group>"; };
 		E8E8FDFB25810B7200FBF9C4 /* OppertuniteDetailesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OppertuniteDetailesViewController.swift; sourceTree = "<group>"; };
@@ -310,6 +325,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E84EE043259137D8009FEAD3 /* Alamofire in Frameworks */,
 				E85FC6DD258CCCB9007D126E /* RxSwift in Frameworks */,
 				E85FC6EB258CCED9007D126E /* IQKeyboardManagerSwift in Frameworks */,
 				E85FC6E5258CCCB9007D126E /* RxBlocking in Frameworks */,
@@ -466,7 +482,10 @@
 		E83A6708258A3AA30068DC22 /* NetWorkManger */ = {
 			isa = PBXGroup;
 			children = (
-				E83A6709258A3AC00068DC22 /* MainRouter.swift */,
+				E83A6709258A3AC00068DC22 /* APIRouter.swift */,
+				E84EE048259139FA009FEAD3 /* ClientNetwork.swift */,
+				E84EE046259138D1009FEAD3 /* SignRouter.swift */,
+				E84EE0442591381D009FEAD3 /* NetworkConstant.swift */,
 			);
 			path = NetWorkManger;
 			sourceTree = "<group>";
@@ -601,6 +620,23 @@
 				E83A54F9258763F40076BDCE /* searchViewModel.swift */,
 			);
 			path = Search;
+			sourceTree = "<group>";
+		};
+		E84EE04A25913A84009FEAD3 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				E84EE04B25913A9D009FEAD3 /* MainRespondObject.swift */,
+				E8DA893F25917B6C00B413E1 /* UserModel.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		E84EE04D25913E8F009FEAD3 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				E84EE04E25913ED1009FEAD3 /* SignRepository.swift */,
+			);
+			path = Repository;
 			sourceTree = "<group>";
 		};
 		E84F852F258D4A3400B8EB7E /* RestPass */ = {
@@ -799,6 +835,8 @@
 		E8B287962576D64D00326E02 /* Commen */ = {
 			isa = PBXGroup;
 			children = (
+				E84EE04D25913E8F009FEAD3 /* Repository */,
+				E84EE04A25913A84009FEAD3 /* models */,
 				E8B2876F2576CB1100326E02 /* Info.plist */,
 				E85BC27A2577C034003D84C0 /* Opportunities.entitlements */,
 				E8B287612576CB0B00326E02 /* AppDelegate.swift */,
@@ -1008,6 +1046,7 @@
 				E85FC6E4258CCCB9007D126E /* RxBlocking */,
 				E85FC6E7258CCD47007D126E /* UITextView+Placeholder */,
 				E85FC6EA258CCED9007D126E /* IQKeyboardManagerSwift */,
+				E84EE042259137D8009FEAD3 /* Alamofire */,
 			);
 			productName = Opportunities;
 			productReference = E8B2875E2576CB0B00326E02 /* Opportunities.app */;
@@ -1081,12 +1120,14 @@
 			knownRegions = (
 				en,
 				Base,
+				ar,
 			);
 			mainGroup = E8B287552576CB0B00326E02;
 			packageReferences = (
 				E85FC6DB258CCCB9007D126E /* XCRemoteSwiftPackageReference "RxSwift" */,
 				E85FC6E6258CCD47007D126E /* XCRemoteSwiftPackageReference "UITextView-Placeholder" */,
 				E85FC6E9258CCED9007D126E /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+				E84EE041259137D8009FEAD3 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = E8B2875F2576CB0B00326E02 /* Products */;
 			projectDirPath = "";
@@ -1245,7 +1286,7 @@
 				E852D4D92586C51600A643AA /* TransactionsViewController.swift in Sources */,
 				E83A54F4258762DA0076BDCE /* InvestementViewModel.swift in Sources */,
 				E8C37153258D77EC00C4FA52 /* UITextField+Extension.swift in Sources */,
-				E83A670A258A3AC00068DC22 /* MainRouter.swift in Sources */,
+				E83A670A258A3AC00068DC22 /* APIRouter.swift in Sources */,
 				E85770BE258154FE00F6130F /* MainNavigator.swift in Sources */,
 				E83D7190257CEC1700716860 /* HomeTableViewCell.swift in Sources */,
 				E8F0FB65258CEE260036A877 /* SignInViewController.swift in Sources */,
@@ -1262,6 +1303,7 @@
 				E84F8536258D4C0F00B8EB7E /* SeccessRestPassViewController.swift in Sources */,
 				E83C454B258EB104003E1E1B /* NotificationHeaderTableViewCell.swift in Sources */,
 				E87C25A5258280ED00833DB3 /* MenuViewController.swift in Sources */,
+				E84EE049259139FA009FEAD3 /* ClientNetwork.swift in Sources */,
 				E83EFAC0257D77BC0075CDF1 /* SearchViewController.swift in Sources */,
 				E80158412586ADDC003D44C3 /* ProfileVC.swift in Sources */,
 				E8E8FE06258129DF00FBF9C4 /* AppCoordinator.swift in Sources */,
@@ -1273,6 +1315,7 @@
 				E8E18C13258D1445008CB2AD /* ForgetPassViewModel.swift in Sources */,
 				E83A54F8258763C30076BDCE /* MenuViewModel.swift in Sources */,
 				E8F0FB63258CDE9B0036A877 /* BaseViewModel.swift in Sources */,
+				E84EE0452591381D009FEAD3 /* NetworkConstant.swift in Sources */,
 				E85770C02581551B00F6130F /* navigator.swift in Sources */,
 				E8107624258968AA0021E749 /* NibLoadingView.swift in Sources */,
 				E81C3E582588104300A2D9B6 /* PaymentViewModel.swift in Sources */,
@@ -1291,15 +1334,18 @@
 				E83A54FC258764460076BDCE /* HomeViewModel.swift in Sources */,
 				E83A54F02587621F0076BDCE /* BaseWireFrame.swift in Sources */,
 				E8EC0DCB257CD4200024D395 /* SignUpViewController.swift in Sources */,
+				E84EE047259138D1009FEAD3 /* SignRouter.swift in Sources */,
 				E83E6F77258593870017F67A /* InvestmentDetailsViewController.swift in Sources */,
 				E83E529D2587A46C0023CEE3 /* AboutViewModel.swift in Sources */,
 				E83E6F6725857AD40017F67A /* ActiveViewController.swift in Sources */,
 				E83DE197258D103300E51492 /* haveAcountViewController.swift in Sources */,
 				E87EC4B025824DE300003C29 /* ContentUsViewController.swift in Sources */,
 				E8B287932576D60D00326E02 /* DesignSystem.swift in Sources */,
+				E8DA894025917B6C00B413E1 /* UserModel.swift in Sources */,
 				E8B2879A2576DFE700326E02 /* Font.swift in Sources */,
 				E83EFAB3257D62CB0075CDF1 /* CustomAlertVC.swift in Sources */,
 				E83E52962587976D0023CEE3 /* MenuTableViewCell.swift in Sources */,
+				E84EE04C25913A9D009FEAD3 /* MainRespondObject.swift in Sources */,
 				E81C3E63258816F900A2D9B6 /* CompletePayMentViewModel.swift in Sources */,
 				E8EC0DDA257CDCEF0024D395 /* HomeViewController.swift in Sources */,
 				E838E916257D18E900E95553 /* NotificationViewController.swift in Sources */,
@@ -1315,6 +1361,7 @@
 				E8F0FB67258CEE470036A877 /* SignInViewModel.swift in Sources */,
 				E83CC34025829834005163E8 /* PhotoCollectionViewCell.swift in Sources */,
 				E83A54F2258762800076BDCE /* ProfileViewModel.swift in Sources */,
+				E84EE04F25913ED1009FEAD3 /* SignRepository.swift in Sources */,
 				E83E52922587925B0023CEE3 /* NotificationViewModel.swift in Sources */,
 				E83A54FA258763F40076BDCE /* searchViewModel.swift in Sources */,
 				E8B287622576CB0B00326E02 /* AppDelegate.swift in Sources */,
@@ -1359,6 +1406,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				E8B287682576CB0B00326E02 /* Base */,
+				E84D1054259009CA00E6A80F /* ar */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -1367,6 +1415,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				E8B2876D2576CB1100326E02 /* Base */,
+				E84D1053259009C900E6A80F /* ar */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -1378,6 +1427,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -1438,6 +1488,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -1660,6 +1711,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		E84EE041259137D8009FEAD3 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.1;
+			};
+		};
 		E85FC6DB258CCCB9007D126E /* XCRemoteSwiftPackageReference "RxSwift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
@@ -1687,6 +1746,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		E84EE042259137D8009FEAD3 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E84EE041259137D8009FEAD3 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
 		E85FC6DC258CCCB9007D126E /* RxSwift */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = E85FC6DB258CCCB9007D126E /* XCRemoteSwiftPackageReference "RxSwift" */;
