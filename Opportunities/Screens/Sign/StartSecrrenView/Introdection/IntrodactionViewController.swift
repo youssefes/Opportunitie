@@ -44,7 +44,7 @@ class IntrodactionViewController: BaseWireFrame<IntrodectionViewModel> {
     }
     @IBAction func getStartBtnAction(_ sender: Any) {
         let viewc = coordinator.MainStoryBordNavigator.viewController(for: .SignInView)
-        UIApplication.topViewController()?.present(viewc, animated: true, completion: nil)
+        present(viewc, animated: true, completion: nil)
         
     }
     
