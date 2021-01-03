@@ -52,14 +52,15 @@ class SignInViewController: BaseWireFrame<SignInViewModel> {
         vieeModel.SeccessSignIn.subscribe(onNext: { [weak self](resulte) in
             if let resulteSecsuss = resulte as? User{
                 if resulteSecsuss.status == true{
-                    guard let viewc = self?.coordinator.mainNavigator.viewController(for: .MainTabBar) else  { print("error to navigation")
+                    guard let viewc = self?.coordinator.tabBarController else  { print("error to navigation")
                         return
                     }
+                    viewc.modalPresentationStyle = .overFullScreen
                     self?.present(viewc, animated: true, completion: nil)
                 }else{
                     print("error to nevigation")
                 }
-               
+                
             }else if let resulteerrorInSlgnIn = resulte as? User{
                 print(resulteerrorInSlgnIn)
             }
