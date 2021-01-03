@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,8 @@
 		BC63D7C6069F1316B985B441E4D4AF46 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		D855CFC3F89CB9A9565B07F900E9BD68 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		DC76747735EC4DA379851C32AE0EEC85 /* Pods-Opportunities-OpportunitiesUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 13CCD526559EA4084F60C3553D3CC88B /* Pods-Opportunities-OpportunitiesUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E863412C25A20E9D009E0F70 /* NVActivityIndicatorView in Frameworks */ = {isa = PBXBuildFile; productRef = E863412B25A20E9D009E0F70 /* NVActivityIndicatorView */; };
+		E863412E25A20E9D009E0F70 /* NVActivityIndicatorViewExtended in Frameworks */ = {isa = PBXBuildFile; productRef = E863412D25A20E9D009E0F70 /* NVActivityIndicatorViewExtended */; };
 		FB766C8C2C3508D404DDF86214653410 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,7 +34,7 @@
 		0347C7CA9C1635ABC3B024F7F9E90F8E /* Pods-Opportunities-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Opportunities-acknowledgements.plist"; sourceTree = "<group>"; };
 		07C1D9D14DF4FADF19DE56491477511B /* Pods-Opportunities-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Opportunities-acknowledgements.markdown"; sourceTree = "<group>"; };
 		0B3B7BC1446D709F871B327DCEAD5BC6 /* Pods-Opportunities.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Opportunities.modulemap"; sourceTree = "<group>"; };
-		0B71B1268ED5B1100EC9FB4BF010E9F2 /* Pods_Opportunities_OpportunitiesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Opportunities_OpportunitiesUITests.framework; path = "Pods-Opportunities-OpportunitiesUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B71B1268ED5B1100EC9FB4BF010E9F2 /* Pods_Opportunities_OpportunitiesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Opportunities_OpportunitiesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CB025A8591B4FDEB86350226FB34590 /* Pods-Opportunities-OpportunitiesUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Opportunities-OpportunitiesUITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		13CCD526559EA4084F60C3553D3CC88B /* Pods-Opportunities-OpportunitiesUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Opportunities-OpportunitiesUITests-umbrella.h"; sourceTree = "<group>"; };
 		16399B2F21FF41C5BA6B08E6FDB8EFFB /* Pods-OpportunitiesTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OpportunitiesTests-dummy.m"; sourceTree = "<group>"; };
@@ -41,8 +43,8 @@
 		26F461D71968D7421A7BC1AE4BC71EAC /* Pods-Opportunities-OpportunitiesUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Opportunities-OpportunitiesUITests-dummy.m"; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		37254BFB032327D77401CC5F890959BB /* Pods-OpportunitiesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OpportunitiesTests.release.xcconfig"; sourceTree = "<group>"; };
-		3D104E4D60D2E400928E09C90D6B72BF /* Pods_OpportunitiesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_OpportunitiesTests.framework; path = "Pods-OpportunitiesTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4C5846C23707FAB8903CBC78993037C6 /* Pods_Opportunities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Opportunities.framework; path = "Pods-Opportunities.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D104E4D60D2E400928E09C90D6B72BF /* Pods_OpportunitiesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpportunitiesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C5846C23707FAB8903CBC78993037C6 /* Pods_Opportunities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Opportunities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		53AA635ED5ABC3AFBF9A6302B1EDFE1B /* Pods-Opportunities-OpportunitiesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Opportunities-OpportunitiesUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		588120481EC4A0F92DAD6A05942EBC1C /* Pods-Opportunities-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Opportunities-dummy.m"; sourceTree = "<group>"; };
 		5E0D5D20BAE6DCFF494D8EEC0F674010 /* Pods-OpportunitiesTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OpportunitiesTests-Info.plist"; sourceTree = "<group>"; };
@@ -50,7 +52,7 @@
 		8068970E44B006559B978D3D8CBF3B8A /* Pods-Opportunities-OpportunitiesUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Opportunities-OpportunitiesUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		90D32936518514146926D40BE67559AD /* Pods-OpportunitiesTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OpportunitiesTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		99ACD739081621A34B442F4E2039DABC /* Pods-Opportunities-OpportunitiesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Opportunities-OpportunitiesUITests.release.xcconfig"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A693C7CE63431DFB070C9EA47C8C5E9A /* Pods-Opportunities-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Opportunities-umbrella.h"; sourceTree = "<group>"; };
 		BFD6A7A674C8531491D33F455FF6CCC7 /* Pods-OpportunitiesTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-OpportunitiesTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		D55F33B09BB154C791219CA934C3E4CF /* Pods-Opportunities-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Opportunities-Info.plist"; sourceTree = "<group>"; };
@@ -65,6 +67,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E863412E25A20E9D009E0F70 /* NVActivityIndicatorViewExtended in Frameworks */,
+				E863412C25A20E9D009E0F70 /* NVActivityIndicatorView in Frameworks */,
 				BC63D7C6069F1316B985B441E4D4AF46 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -244,6 +248,10 @@
 			dependencies = (
 			);
 			name = "Pods-Opportunities";
+			packageProductDependencies = (
+				E863412B25A20E9D009E0F70 /* NVActivityIndicatorView */,
+				E863412D25A20E9D009E0F70 /* NVActivityIndicatorViewExtended */,
+			);
 			productName = "Pods-Opportunities";
 			productReference = 4C5846C23707FAB8903CBC78993037C6 /* Pods_Opportunities.framework */;
 			productType = "com.apple.product-type.framework";
@@ -285,6 +293,9 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			packageReferences = (
+				E863412A25A20E9D009E0F70 /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */,
+			);
 			productRefGroup = 01A27B4231ABDFEBBDD8218A903431EB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -752,6 +763,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E863412A25A20E9D009E0F70 /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ninjaprox/NVActivityIndicatorView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E863412B25A20E9D009E0F70 /* NVActivityIndicatorView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E863412A25A20E9D009E0F70 /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */;
+			productName = NVActivityIndicatorView;
+		};
+		E863412D25A20E9D009E0F70 /* NVActivityIndicatorViewExtended */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E863412A25A20E9D009E0F70 /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */;
+			productName = NVActivityIndicatorViewExtended;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 }

@@ -8,12 +8,18 @@
 
 import Foundation
 
-struct User : Decodable {
-    var id: Int?
-    var name : String?
-    var email : String?
-    var emailVerifiedAt: String?
-    var status: Int?
+// MARK: - User
+struct User: Codable {
+    let status: Bool
+    let data: DataClass
+    let code: Int
+}
+
+// MARK: - DataClass
+struct DataClass: Codable {
+    let id: Int
+    let name, email, emailVerifiedAt: String
+    let status: Int
 
     enum CodingKeys: String, CodingKey {
         case id, name, email

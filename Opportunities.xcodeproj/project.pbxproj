@@ -243,6 +243,7 @@
 		E83EFAB9257D6DC60075CDF1 /* AllOpportunitiesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AllOpportunitiesViewController.xib; sourceTree = "<group>"; };
 		E83EFABE257D77BC0075CDF1 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		E83EFABF257D77BC0075CDF1 /* SearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
+		E8451CB5259A1303009FA025 /* OpportunitiesDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OpportunitiesDebug.entitlements; sourceTree = "<group>"; };
 		E84D1053259009C900E6A80F /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		E84D1054259009CA00E6A80F /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Main.strings; sourceTree = "<group>"; };
 		E84EE0442591381D009FEAD3 /* NetworkConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstant.swift; sourceTree = "<group>"; };
@@ -795,6 +796,7 @@
 		E8B287602576CB0B00326E02 /* Opportunities */ = {
 			isa = PBXGroup;
 			children = (
+				E8451CB5259A1303009FA025 /* OpportunitiesDebug.entitlements */,
 				E8B287962576D64D00326E02 /* Commen */,
 				E8B287912576D5F000326E02 /* DesignSystem */,
 				E8EC0DDD257CDE8F0024D395 /* Extensions */,
@@ -1544,7 +1546,7 @@
 			baseConfigurationReference = 56380FA92EAEA290AD89A930 /* Pods-Opportunities.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Opportunities/Opportunities.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Opportunities/OpportunitiesDebug.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y6A9D83764;
 				HEADER_SEARCH_PATHS = "$(SOURCE_ROOT)/Pods/**/**";

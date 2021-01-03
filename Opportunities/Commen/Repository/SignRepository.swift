@@ -11,6 +11,7 @@ import RxSwift
 import Alamofire
 protocol SignRepository {
     func SignUp(parameters : Parameters ) -> Observable<signUpDataModel>
+    func SignIn(parameters : Parameters ) -> Observable<Decodable>
 }
 
 class SignRepositoryImp: SignRepository {
@@ -25,8 +26,8 @@ class SignRepositoryImp: SignRepository {
                 switch resulte{
                 case .success(let data):
                      print(data)
-//                    guard let dataresu = data else {return}
-                    items.onNext(data)
+                     guard let dataresu = data.data else {return}
+                     items.onNext(dataresu)
                     items.onCompleted()
                 case .failure(let error):
                     items.onError(error)
@@ -37,18 +38,17 @@ class SignRepositoryImp: SignRepository {
         
     }
     
-    func SignIn(parameters : Parameters ) -> Observable<User> {
-        Observable<User>.create { [weak self] (items) -> Disposable in
-            self?.networkClient.performRequestForSign(User.self, router: SignRouter.SignUp(parameters: parameters)) { (resulte) in
-                switch resulte{
-                case .success(let data):
-//                    guard let dataresu = data.data else {return}
-                    items.onNext(data)
-                    items.onCompleted()
-                case .failure(let error):
-                    items.onError(error)
+    func SignIn(parameters : Parameters ) -> Observable<Decodable> {
+        Observable<Decodable>.create { [weak self] (items) -> Disposable in
+            self?.networkClient.performRequestForSignIn(User.self, ObjectError: signUpDataModel.self, router: SignRouter.SignIn(parameters: parameters), completion: { (dataSeccusLogin, dataFaliarLogin, error) in
+                if dataFaliarLogin != nil{
+                    items.onNext(dataFaliarLogin)
+                }else if dataSeccusLogin != nil{
+                    items.onNext(dataSeccusLogin)
+                }else{
+                    print(error!)
                 }
-            }
+            })
             return Disposables.create()
         }
         
@@ -59,8 +59,8 @@ class SignRepositoryImp: SignRepository {
             self?.networkClient.performRequestForSign(signUpDataModel.self, router: SignRouter.forgetPass(parameters: parameters)) { (resulte) in
                 switch resulte{
                 case .success(let data):
-//                    guard let dataresu = data.data else {return}
-                    items.onNext(data)
+                    guard let dataresu = data.data else {return}
+                    items.onNext(dataresu)
                     items.onCompleted()
                 case .failure(let error):
                     items.onError(error)
@@ -76,8 +76,8 @@ class SignRepositoryImp: SignRepository {
             self?.networkClient.performRequestForSign(signUpDataModel.self, router: SignRouter.ChangePass(parameters: parameters)) { (resulte) in
                 switch resulte{
                 case .success(let data):
-//                    guard let dataresu = data.data else {return}
-                    items.onNext(data)
+                    guard let dataresu = data.data else {return}
+                    items.onNext(dataresu)
                     items.onCompleted()
                 case .failure(let error):
                     items.onError(error)
@@ -94,8 +94,8 @@ class SignRepositoryImp: SignRepository {
                 switch resulte{
                 case .success(let data):
                     print(data)
-//                    guard let dataresu = data.data else {return}
-                    items.onNext(data)
+                    guard let dataresu = data.data else {return}
+                    items.onNext(dataresu)
                     items.onCompleted()
                 case .failure(let error):
                     items.onError(error)

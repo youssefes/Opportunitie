@@ -12,7 +12,7 @@ import RxCocoa
 import Alamofire
 
 class SignInViewModel {
-    var SeccessSignUp : PublishSubject<User> = .init()
+    var SeccessSignIn : PublishSubject<Decodable> = .init()
     var signRepository = SignRepositoryImp()
     let disposedBag = DisposeBag()
     
@@ -21,7 +21,8 @@ class SignInViewModel {
     }
     func Signin(parameters : Parameters) {
         signRepository.SignIn(parameters: parameters).subscribe(onNext: { [weak self](respond) in
-            self?.SeccessSignUp.onNext(respond)
+            self?.SeccessSignIn.onNext(respond)
+            
         },onError: { (error) in
                 print(error)
         },onCompleted: {

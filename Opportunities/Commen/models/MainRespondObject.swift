@@ -14,6 +14,7 @@ struct ResponseObjectOfSign<T : Decodable>: Decodable {
     var  msg : String?
     var  code: Int?
     var  data : T?
+
 }
 
 struct signUpDataModel: Decodable {

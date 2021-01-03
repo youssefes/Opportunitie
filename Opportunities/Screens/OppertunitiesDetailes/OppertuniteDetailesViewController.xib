@@ -126,7 +126,7 @@
                                     <rect key="frame" x="16" y="876.5" width="382" height="220"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="ugB-VD-8ea">
-                                            <rect key="frame" x="-0.5" y="20" width="383" height="180"/>
+                                            <rect key="frame" x="30" y="20" width="383" height="180"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" id="2nE-pG-Jen">
                                                     <rect key="frame" x="0.0" y="0.0" width="383" height="50"/>
@@ -135,13 +135,13 @@
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="518-Sg-75F">
                                                             <rect key="frame" x="0.0" y="0.0" width="121" height="50"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Min" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Phn-0U-V83">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Min" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Phn-0U-V83">
                                                                     <rect key="frame" x="0.0" y="0.0" width="121" height="25"/>
                                                                     <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="15"/>
                                                                     <color key="textColor" name="LabelColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KWD 300" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ZDQ-CA-Flz">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KWD 300" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ZDQ-CA-Flz">
                                                                     <rect key="frame" x="0.0" y="25" width="121" height="25"/>
                                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                     <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="15"/>
@@ -171,13 +171,13 @@
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="qW3-8K-FY3">
                                                             <rect key="frame" x="262" y="0.0" width="121" height="50"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profit" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sOB-lY-Cs0">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profit" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sOB-lY-Cs0">
                                                                     <rect key="frame" x="0.0" y="0.0" width="121" height="25"/>
                                                                     <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="15"/>
                                                                     <color key="textColor" name="LabelColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="NhK-xp-WT1">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30%" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="NhK-xp-WT1">
                                                                     <rect key="frame" x="0.0" y="25" width="121" height="25"/>
                                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                     <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="19"/>
@@ -238,13 +238,13 @@
                                                         <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="1" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="THX-k2-La1">
                                                             <rect key="frame" x="0.0" y="0.0" width="383" height="39"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="69,500 KD sold" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FQn-uX-8qw">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="69,500 KD sold" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FQn-uX-8qw">
                                                                     <rect key="frame" x="0.0" y="0.0" width="191.5" height="39"/>
                                                                     <fontDescription key="fontDescription" name="Gilroy-Medium" family="Gilroy-Medium" pointSize="13"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="300%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dpM-cf-5om">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="300%" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dpM-cf-5om">
                                                                     <rect key="frame" x="191.5" y="0.0" width="191.5" height="39"/>
                                                                     <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="13"/>
                                                                     <color key="textColor" name="LabelColor"/>
@@ -276,6 +276,8 @@
                                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                     <constraints>
                                         <constraint firstAttribute="bottom" secondItem="ugB-VD-8ea" secondAttribute="bottom" constant="20" id="0qx-j7-Ded"/>
+                                        <constraint firstAttribute="trailing" secondItem="ugB-VD-8ea" secondAttribute="trailing" constant="30" id="U11-V9-t5T"/>
+                                        <constraint firstItem="ugB-VD-8ea" firstAttribute="leading" secondItem="jxp-MY-qtr" secondAttribute="leading" constant="30" id="XiM-CU-EL8"/>
                                         <constraint firstItem="ugB-VD-8ea" firstAttribute="top" secondItem="jxp-MY-qtr" secondAttribute="top" constant="20" id="Z4S-we-myO"/>
                                         <constraint firstItem="ugB-VD-8ea" firstAttribute="centerX" secondItem="jxp-MY-qtr" secondAttribute="centerX" id="emp-LL-mcE"/>
                                         <constraint firstAttribute="height" constant="220" id="hcr-YI-b1v"/>

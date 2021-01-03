@@ -53,6 +53,9 @@ extension AllOpportunitiesViewController : UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "HomeTableViewCell", for: indexPath) as! HomeTableViewCell
         cell.selectionStyle = UITableViewCell.SelectionStyle.none
+        cell.goToDetaielsOfOppertunite = { [weak self] in
+            self?.coordinator.mainNavigator.Navigate(to: .OppertuniteDetailesViewController)
+        }
         return cell
     }
     
@@ -67,5 +70,7 @@ extension AllOpportunitiesViewController : UITableViewDelegate{
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 285
     }
+    
+    
     
 }

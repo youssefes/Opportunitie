@@ -49,14 +49,19 @@ class SignInViewController: BaseWireFrame<SignInViewModel> {
     }
     
     func  navigateTohome(){
-        vieeModel.SeccessSignUp.asObserver().subscribe(onNext: { [weak self](resulte) in
-            if resulte.status == 1{
-                guard let viewc = self?.coordinator.mainNavigator.viewController(for: .MainTabBar) else  { print("error to navigation")
-                    return
+        vieeModel.SeccessSignIn.subscribe(onNext: { [weak self](resulte) in
+            if let resulteSecsuss = resulte as? User{
+                if resulteSecsuss.status == true{
+                    guard let viewc = self?.coordinator.mainNavigator.viewController(for: .MainTabBar) else  { print("error to navigation")
+                        return
+                    }
+                    self?.present(viewc, animated: true, completion: nil)
+                }else{
+                    print("error to nevigation")
                 }
-                self?.present(viewc, animated: true, completion: nil)
-            }else{
-                print(resulte)
+               
+            }else if let resulteerrorInSlgnIn = resulte as? User{
+                print(resulteerrorInSlgnIn)
             }
             
             }, onError: { (error) in

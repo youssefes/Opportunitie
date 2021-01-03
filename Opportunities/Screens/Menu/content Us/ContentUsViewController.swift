@@ -9,11 +9,10 @@
 import UIKit
 
 class ContentUsViewController: BaseWireFrame<ContectUsViewModel> {
-
+    @IBOutlet weak var sendBtn: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
 
     override func bind(ViewModel: ContectUsViewModel) {
@@ -23,6 +22,8 @@ class ContentUsViewController: BaseWireFrame<ContectUsViewModel> {
  
     @IBAction func DismissBtn(_ sender: Any) {
         coordinator.dismiss()
+    }
+    @IBAction func SendMassageBtn(_ sender: Any) {
     }
     
 }

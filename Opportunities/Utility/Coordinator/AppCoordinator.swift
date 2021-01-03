@@ -44,7 +44,6 @@ class AppCoordinator : Coordinator {
             return navigationController
         }else{
             return UINavigationController()
-            
         }
     }
     
