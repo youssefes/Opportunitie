@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct ResponseObjectOfSign<T : Decodable>: Decodable {
+struct ResponseObjectModel<T : Decodable>: Decodable {
     var  value: Bool?
     var status : Bool?
     var  msg : String?

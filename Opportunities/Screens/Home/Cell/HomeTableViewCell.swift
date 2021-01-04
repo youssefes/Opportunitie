@@ -7,16 +7,26 @@
 //
 
 import UIKit
+import RxCocoa
+import RxSwift
 
 class HomeTableViewCell: UITableViewCell {
 
     
-    var goToDetaielsOfOppertunite : (()->Void)?
+    @IBOutlet weak var getDeteailesBtn: UIButton!
     
+    let dispos = DisposeBag()
+   var letestOppertunite : PublishSubject<OppertunitesModel> = .init()
     
-    @IBAction func ViewOppertuniteBtn(_ sender: Any) {
-        
-        goToDetaielsOfOppertunite?()
+    @IBOutlet weak var nameLbl: UILabel!
+    
+    @IBOutlet weak var subImage: UIImageView!
+    @IBOutlet weak var MainImage: UIImageView!
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        letestOppertunite.subscribe { (ope) in
+            print(ope)
+        }.disposed(by: dispos)
     }
     
     

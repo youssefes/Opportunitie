@@ -18,11 +18,15 @@ class AllOpportunitiesViewController: BaseWireFrame<AllOppertunitesViewModel> {
         super.viewDidLoad()
         registerCell()
         setUpUI()
-
-        
     }
     override func bind(ViewModel: AllOppertunitesViewModel) {
-        
+        ViewModel.viewDidlead()
+        ViewModel.allOppertunitesObservable.bind(to: OppertunitieTableview.rx.items(cellIdentifier: cellIdentifier, cellType: HomeTableViewCell.self)){[weak self] (index, oppertunites, cell) in
+            cell.letestOppertunite.onNext(oppertunites)
+            cell.getDeteailesBtn.rx.tap.subscribe { [weak self](touch) in
+                self?.coordinator.mainNavigator.Navigate(to: .OppertuniteDetailesViewController)
+            }.disposed(by: self!.disposePag)
+        }.disposed(by: disposePag)
     }
     func registerCell(){
         OppertunitieTableview.backgroundColor = DesignSystem.Colors.BackGround.color
@@ -31,7 +35,6 @@ class AllOpportunitiesViewController: BaseWireFrame<AllOppertunitesViewModel> {
     
     func setUpUI(){
         OppertunitieTableview.delegate = self
-        OppertunitieTableview.dataSource = self
         OppertunitieTableview.separatorStyle = .none
     }
     @IBAction func dismissBtn(_ sender: Any) {
@@ -43,24 +46,6 @@ class AllOpportunitiesViewController: BaseWireFrame<AllOppertunitesViewModel> {
     }
 }
 
-
-
-extension AllOpportunitiesViewController : UITableViewDataSource{
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "HomeTableViewCell", for: indexPath) as! HomeTableViewCell
-        cell.selectionStyle = UITableViewCell.SelectionStyle.none
-        cell.goToDetaielsOfOppertunite = { [weak self] in
-            self?.coordinator.mainNavigator.Navigate(to: .OppertuniteDetailesViewController)
-        }
-        return cell
-    }
-    
-    
-}
 
 extension AllOpportunitiesViewController : UITableViewDelegate{
     

@@ -22,7 +22,7 @@ class SignRepositoryImp: SignRepository {
     
     func SignUp(parameters : Parameters ) -> Observable<signUpDataModel> {
         Observable<signUpDataModel>.create { [weak self] (items) -> Disposable in
-            self?.networkClient.performRequestForSign(signUpDataModel.self, router: SignRouter.SignUp(parameters: parameters)) { (resulte) in
+            self?.networkClient.performRequest(signUpDataModel.self, router: SignRouter.SignUp(parameters: parameters)) { (resulte) in
                 switch resulte{
                 case .success(let data):
                      print(data)
@@ -56,7 +56,7 @@ class SignRepositoryImp: SignRepository {
     
     func forgetPassRequest(parameters : Parameters ) -> Observable<signUpDataModel> {
         Observable<signUpDataModel>.create { [weak self] (items) -> Disposable in
-            self?.networkClient.performRequestForSign(signUpDataModel.self, router: SignRouter.forgetPass(parameters: parameters)) { (resulte) in
+            self?.networkClient.performRequest(signUpDataModel.self, router: SignRouter.forgetPass(parameters: parameters)) { (resulte) in
                 switch resulte{
                 case .success(let data):
                     guard let dataresu = data.data else {return}
@@ -73,7 +73,7 @@ class SignRepositoryImp: SignRepository {
     
     func ChangePassRequest(parameters : Parameters ) -> Observable<signUpDataModel> {
         Observable<signUpDataModel>.create { [weak self] (items) -> Disposable in
-            self?.networkClient.performRequestForSign(signUpDataModel.self, router: SignRouter.ChangePass(parameters: parameters)) { (resulte) in
+            self?.networkClient.performRequest(signUpDataModel.self, router: SignRouter.ChangePass(parameters: parameters)) { (resulte) in
                 switch resulte{
                 case .success(let data):
                     guard let dataresu = data.data else {return}
@@ -90,7 +90,7 @@ class SignRepositoryImp: SignRepository {
     
     func checkCodeActivEmail(parameters : Parameters ) -> Observable<signUpDataModel> {
         Observable<signUpDataModel>.create { [weak self] (items) -> Disposable in
-            self?.networkClient.performRequestForSign(signUpDataModel.self, router: SignRouter.checkCodeActivEmail(parameters: parameters)) { (resulte) in
+            self?.networkClient.performRequest(signUpDataModel.self, router: SignRouter.checkCodeActivEmail(parameters: parameters)) { (resulte) in
                 switch resulte{
                 case .success(let data):
                     print(data)

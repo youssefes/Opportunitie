@@ -11,7 +11,7 @@ import Alamofire
 
 class NetworkClient {
     
-    func performRequestForSign<T : Decodable>(_ object: T.Type , router: APIRouter, completion: @escaping ((Result< ResponseObjectOfSign<T> , Error>) -> Void)) {
+    func performRequest<T : Decodable>(_ object: T.Type , router: APIRouter, completion: @escaping ((Result< ResponseObjectModel<T> , Error>) -> Void)) {
         AF.request(router).responseJSON { (response) in
             
             do {
@@ -19,7 +19,7 @@ class NetworkClient {
                 print(data)
                  let decoder = JSONDecoder()
                  decoder.keyDecodingStrategy = .useDefaultKeys
-                let models = try decoder.decode(ResponseObjectOfSign<T>.self, from: data)
+                let models = try decoder.decode(ResponseObjectModel<T>.self, from: data)
                 completion(.success(models))
             } catch let error {
                 completion(.failure(error))

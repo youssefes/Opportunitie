@@ -113,9 +113,6 @@
                                         <real key="value" value="16"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="ViewOppertuniteBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="eFm-NS-MCi"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -164,6 +161,12 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="MainImage" destination="Yqb-Vm-T5D" id="wGQ-1N-3i2"/>
+                <outlet property="getDeteailesBtn" destination="pxa-lV-IrP" id="WER-Y1-rC6"/>
+                <outlet property="nameLbl" destination="cUs-hz-AAI" id="DpS-WU-YYf"/>
+                <outlet property="subImage" destination="VhK-Jy-6dt" id="VAk-Kv-mmd"/>
+            </connections>
             <point key="canvasLocation" x="89.855072463768124" y="104.12946428571428"/>
         </tableViewCell>
     </objects>

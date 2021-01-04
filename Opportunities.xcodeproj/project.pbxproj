@@ -76,6 +76,7 @@
 		E83EFABB257D6DC60075CDF1 /* AllOpportunitiesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E83EFAB9257D6DC60075CDF1 /* AllOpportunitiesViewController.xib */; };
 		E83EFAC0257D77BC0075CDF1 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83EFABE257D77BC0075CDF1 /* SearchViewController.swift */; };
 		E83EFAC1257D77BC0075CDF1 /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E83EFABF257D77BC0075CDF1 /* SearchViewController.xib */; };
+		E843420E25A3940F00B9E08A /* OppertunitesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E843420D25A3940F00B9E08A /* OppertunitesRouter.swift */; };
 		E84EE043259137D8009FEAD3 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = E84EE042259137D8009FEAD3 /* Alamofire */; };
 		E84EE0452591381D009FEAD3 /* NetworkConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84EE0442591381D009FEAD3 /* NetworkConstant.swift */; };
 		E84EE047259138D1009FEAD3 /* SignRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84EE046259138D1009FEAD3 /* SignRouter.swift */; };
@@ -92,6 +93,8 @@
 		E852D4D92586C51600A643AA /* TransactionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E852D4D82586C51600A643AA /* TransactionsViewController.swift */; };
 		E852D4DF2586C7FF00A643AA /* TransactionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E852D4DD2586C7FF00A643AA /* TransactionTableViewCell.swift */; };
 		E852D4E02586C7FF00A643AA /* TransactionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E852D4DE2586C7FF00A643AA /* TransactionTableViewCell.xib */; };
+		E856217B25A38D14003B8B31 /* OppertunitesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E856217A25A38D14003B8B31 /* OppertunitesRepository.swift */; };
+		E856217D25A3905C003B8B31 /* OppertunitesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E856217C25A3905C003B8B31 /* OppertunitesModel.swift */; };
 		E85770BE258154FE00F6130F /* MainNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85770BD258154FE00F6130F /* MainNavigator.swift */; };
 		E85770C02581551B00F6130F /* navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85770BF2581551B00F6130F /* navigator.swift */; };
 		E85E3C8F258CF2610039160B /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85E3C8E258CF2610039160B /* SignUpViewModel.swift */; };
@@ -243,6 +246,7 @@
 		E83EFAB9257D6DC60075CDF1 /* AllOpportunitiesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AllOpportunitiesViewController.xib; sourceTree = "<group>"; };
 		E83EFABE257D77BC0075CDF1 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		E83EFABF257D77BC0075CDF1 /* SearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
+		E843420D25A3940F00B9E08A /* OppertunitesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OppertunitesRouter.swift; sourceTree = "<group>"; };
 		E8451CB5259A1303009FA025 /* OpportunitiesDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OpportunitiesDebug.entitlements; sourceTree = "<group>"; };
 		E84D1053259009C900E6A80F /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		E84D1054259009CA00E6A80F /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Main.strings; sourceTree = "<group>"; };
@@ -261,6 +265,8 @@
 		E852D4D82586C51600A643AA /* TransactionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsViewController.swift; sourceTree = "<group>"; };
 		E852D4DD2586C7FF00A643AA /* TransactionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionTableViewCell.swift; sourceTree = "<group>"; };
 		E852D4DE2586C7FF00A643AA /* TransactionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransactionTableViewCell.xib; sourceTree = "<group>"; };
+		E856217A25A38D14003B8B31 /* OppertunitesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OppertunitesRepository.swift; sourceTree = "<group>"; };
+		E856217C25A3905C003B8B31 /* OppertunitesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OppertunitesModel.swift; sourceTree = "<group>"; };
 		E85770BD258154FE00F6130F /* MainNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigator.swift; sourceTree = "<group>"; };
 		E85770BF2581551B00F6130F /* navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = navigator.swift; sourceTree = "<group>"; };
 		E85BC27A2577C034003D84C0 /* Opportunities.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Opportunities.entitlements; sourceTree = "<group>"; };
@@ -487,6 +493,7 @@
 				E84EE048259139FA009FEAD3 /* ClientNetwork.swift */,
 				E84EE046259138D1009FEAD3 /* SignRouter.swift */,
 				E84EE0442591381D009FEAD3 /* NetworkConstant.swift */,
+				E843420D25A3940F00B9E08A /* OppertunitesRouter.swift */,
 			);
 			path = NetWorkManger;
 			sourceTree = "<group>";
@@ -628,6 +635,7 @@
 			children = (
 				E84EE04B25913A9D009FEAD3 /* MainRespondObject.swift */,
 				E8DA893F25917B6C00B413E1 /* UserModel.swift */,
+				E856217C25A3905C003B8B31 /* OppertunitesModel.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -636,6 +644,7 @@
 			isa = PBXGroup;
 			children = (
 				E84EE04E25913ED1009FEAD3 /* SignRepository.swift */,
+				E856217A25A38D14003B8B31 /* OppertunitesRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -1298,6 +1307,7 @@
 				E83E529B25879D7B0023CEE3 /* ContectUsViewModel.swift in Sources */,
 				E83E529F2587B2080023CEE3 /* AllOppertunitesViewModel.swift in Sources */,
 				E810762F25896B420021E749 /* StartViewTwo.swift in Sources */,
+				E843420E25A3940F00B9E08A /* OppertunitesRouter.swift in Sources */,
 				E85E3C8F258CF2610039160B /* SignUpViewModel.swift in Sources */,
 				E852D4D22586C06E00A643AA /* SettingViewController.swift in Sources */,
 				E8E8FDFD25810B7200FBF9C4 /* OppertuniteDetailesViewController.swift in Sources */,
@@ -1306,7 +1316,9 @@
 				E83C454B258EB104003E1E1B /* NotificationHeaderTableViewCell.swift in Sources */,
 				E87C25A5258280ED00833DB3 /* MenuViewController.swift in Sources */,
 				E84EE049259139FA009FEAD3 /* ClientNetwork.swift in Sources */,
+				E856217D25A3905C003B8B31 /* OppertunitesModel.swift in Sources */,
 				E83EFAC0257D77BC0075CDF1 /* SearchViewController.swift in Sources */,
+				E856217B25A38D14003B8B31 /* OppertunitesRepository.swift in Sources */,
 				E80158412586ADDC003D44C3 /* ProfileVC.swift in Sources */,
 				E8E8FE06258129DF00FBF9C4 /* AppCoordinator.swift in Sources */,
 				E81C3E5B258812B100A2D9B6 /* PaymentViewController.swift in Sources */,
