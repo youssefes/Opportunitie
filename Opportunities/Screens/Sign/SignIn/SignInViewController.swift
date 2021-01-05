@@ -50,23 +50,29 @@ class SignInViewController: BaseWireFrame<SignInViewModel> {
     
     func  navigateTohome(){
         vieeModel.SeccessSignIn.subscribe(onNext: { [weak self](resulte) in
-            if let resulteSecsuss = resulte as? User{
-                if resulteSecsuss.status == true{
-                    guard let viewc = self?.coordinator.tabBarController else  { print("error to navigation")
-                        return
-                    }
-                    viewc.modalPresentationStyle = .overFullScreen
-                    self?.present(viewc, animated: true, completion: nil)
-                }else{
-                    print("error to nevigation")
-                }
-                
-            }else if let resulteerrorInSlgnIn = resulte as? User{
-                print(resulteerrorInSlgnIn)
+            guard let viewc = self?.coordinator.tabBarController else  { print("error to navigation")
+                return
             }
-            
-            }, onError: { (error) in
-                print(error)
+            viewc.modalPresentationStyle = .overFullScreen
+            self?.present(viewc, animated: true, completion: nil)
+            print(resulte)
+//            if let resulteSecsuss = resulte as? User{
+//                if resulteSecsuss.status == true{
+//                    guard let viewc = self?.coordinator.tabBarController else  { print("error to navigation")
+//                        return
+//                    }
+//                    viewc.modalPresentationStyle = .overFullScreen
+//                    self?.present(viewc, animated: true, completion: nil)
+//                }else{
+//                    print("error to nevigation")
+//                }
+//
+//            }else if let resulteerrorInSlgnIn = resulte as? User{
+//                print(resulteerrorInSlgnIn)
+//            }
+//
+//            }, onError: { (error) in
+//                print(error)
         }).disposed(by: disposePag)
     }
 }

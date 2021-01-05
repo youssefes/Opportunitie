@@ -24,7 +24,7 @@ class AllOpportunitiesViewController: BaseWireFrame<AllOppertunitesViewModel> {
         ViewModel.allOppertunitesObservable.bind(to: OppertunitieTableview.rx.items(cellIdentifier: cellIdentifier, cellType: HomeTableViewCell.self)){[weak self] (index, oppertunites, cell) in
             cell.letestOppertunite.onNext(oppertunites)
             cell.getDeteailesBtn.rx.tap.subscribe { [weak self](touch) in
-                self?.coordinator.mainNavigator.Navigate(to: .OppertuniteDetailesViewController)
+                self?.coordinator.mainNavigator.Navigate(to: .OppertuniteDetailesViewController(id: 5))
             }.disposed(by: self!.disposePag)
         }.disposed(by: disposePag)
     }

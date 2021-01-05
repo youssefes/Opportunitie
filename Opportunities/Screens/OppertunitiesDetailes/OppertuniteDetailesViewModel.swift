@@ -17,13 +17,25 @@ class OppertuniteDetailesViewModel {
        private  var OppertuniteDetailes : PublishSubject<OppertunitesModel> = .init()
        lazy var OppertuniteDetailesObservable : Observable<OppertunitesModel> = OppertuniteDetailes.asObservable()
 
+    var id : Int
+    init(id: Int) {
+        self.id = id
+    }
        func viewDidlead(){
            getLetestoppertunites()
        }
        
        func getLetestoppertunites() {
-           Repository.OppertuniteDetailes(oppertuniteId: 8).subscribe(onNext: {(oppertunites) in
-               self.OppertuniteDetailes.onNext(oppertunites)
+           Repository.OppertuniteDetailes(oppertuniteId: id).subscribe(onNext: {(oppertunites) in
+            guard let statuscode = oppertunites.code else {return}
+            if statuscode == 200{
+                guard let oppertuniteData = oppertunites.data else {return}
+                self.OppertuniteDetailes.onNext(oppertuniteData)
+            }else{
+                print(oppertunites.msg)
+            }
+           },onError: { (error) in
+               print(error)
            }).disposed(by: disposedBag)
        }
 }

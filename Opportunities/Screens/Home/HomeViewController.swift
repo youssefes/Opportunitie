@@ -26,6 +26,9 @@ class HomeViewController: BaseWireFrame<HomeViewModel> {
     override func bind(ViewModel: HomeViewModel) {
         vieeModel.letestOppertunitesObservable.bind(to: HomeTableView.rx.items(cellIdentifier: cellIdentifier, cellType: HomeTableViewCell.self)){ (index,oppertunite, cell) in
             cell.letestOppertunite.onNext(oppertunite)
+            cell.getDeteailesBtn.rx.tap.subscribe(onNext: { [weak self] event in
+                self?.coordinator.mainNavigator.Navigate(to: .OppertuniteDetailesViewController(id: 8) )
+            }).disposed(by: self.disposePag)
         }.disposed(by: disposePag)
     }
     func registerCell(){

@@ -11,7 +11,7 @@ import RxSwift
 import Alamofire
 protocol SignRepository {
     func SignUp(parameters : Parameters ) -> Observable<signUpDataModel>
-    func SignIn(parameters : Parameters ) -> Observable<Decodable>
+//    func SignIn(parameters : Parameters ) -> Observable<Decodable>
 }
 
 class SignRepositoryImp: SignRepository {
@@ -38,15 +38,15 @@ class SignRepositoryImp: SignRepository {
         
     }
     
-    func SignIn(parameters : Parameters ) -> Observable<Decodable> {
-        Observable<Decodable>.create { [weak self] (items) -> Disposable in
-            self?.networkClient.performRequestForSignIn(User.self, ObjectError: signUpDataModel.self, router: SignRouter.SignIn(parameters: parameters), completion: { (dataSeccusLogin, dataFaliarLogin, error) in
-                if dataFaliarLogin != nil{
-                    items.onNext(dataFaliarLogin)
-                }else if dataSeccusLogin != nil{
-                    items.onNext(dataSeccusLogin)
-                }else{
-                    print(error!)
+    func SignIn(parameters : Parameters ) -> Observable<ResponseObjectModel<User>> {
+        Observable<ResponseObjectModel<User>>.create { [weak self] (items) -> Disposable in
+            self?.networkClient.performRequest(User.self, router: SignRouter.SignIn(parameters: parameters), completion: { (result) in
+                switch result{
+                case .success(let data):
+                    items.onNext(data)
+                    
+                case .failure(let error):
+                    items.onError(error)
                 }
             })
             return Disposables.create()
