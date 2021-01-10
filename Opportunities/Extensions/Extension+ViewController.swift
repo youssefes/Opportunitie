@@ -19,6 +19,16 @@ extension UIViewController {
         }
     }
     
+    func cellAnimation(cell : UITableViewCell){
+        let retaionAngelInRadian = 180 * CGFloat(Double.pi / 90)
+        let rotationTransform = CATransform3DMakeRotation(retaionAngelInRadian, 0, 0, 1)
+        cell.layer.transform = rotationTransform
+        
+        UIView.animate(withDuration: 1.2) {
+            cell.layer.transform = CATransform3DTranslate(CATransform3DIdentity, 500, 100, 0)
+        }
+    }
+    
 
 }
 

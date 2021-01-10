@@ -50,6 +50,7 @@
 		E83CC33C258293E5005163E8 /* AboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E83CC33A258293E5005163E8 /* AboutViewController.xib */; };
 		E83CC34025829834005163E8 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83CC33E25829834005163E8 /* PhotoCollectionViewCell.swift */; };
 		E83CC34125829834005163E8 /* PhotoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E83CC33F25829834005163E8 /* PhotoCollectionViewCell.xib */; };
+		E83D0E0525ABB3E8001BB32A /* TransactionsViewMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83D0E0425ABB3E8001BB32A /* TransactionsViewMode.swift */; };
 		E83D7190257CEC1700716860 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83D718E257CEC1700716860 /* HomeTableViewCell.swift */; };
 		E83D7191257CEC1700716860 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E83D718F257CEC1700716860 /* HomeTableViewCell.xib */; };
 		E83DE197258D103300E51492 /* haveAcountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83DE196258D103300E51492 /* haveAcountViewController.swift */; };
@@ -114,6 +115,7 @@
 		E87EC4AB258248A200003C29 /* LangoageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E87EC4A9258248A200003C29 /* LangoageViewController.xib */; };
 		E87EC4B025824DE300003C29 /* ContentUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87EC4AE25824DE300003C29 /* ContentUsViewController.swift */; };
 		E87EC4B125824DE300003C29 /* ContentUsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E87EC4AF25824DE300003C29 /* ContentUsViewController.xib */; };
+		E8A58D7725ABAE8B0098E490 /* settingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A58D7625ABAE8B0098E490 /* settingViewModel.swift */; };
 		E8B287622576CB0B00326E02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B287612576CB0B00326E02 /* AppDelegate.swift */; };
 		E8B287642576CB0B00326E02 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B287632576CB0B00326E02 /* SceneDelegate.swift */; };
 		E8B287662576CB0B00326E02 /* LanguageToSpeakViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B287652576CB0B00326E02 /* LanguageToSpeakViewController.swift */; };
@@ -220,6 +222,7 @@
 		E83CC33A258293E5005163E8 /* AboutViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AboutViewController.xib; sourceTree = "<group>"; };
 		E83CC33E25829834005163E8 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		E83CC33F25829834005163E8 /* PhotoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoCollectionViewCell.xib; sourceTree = "<group>"; };
+		E83D0E0425ABB3E8001BB32A /* TransactionsViewMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsViewMode.swift; sourceTree = "<group>"; };
 		E83D718E257CEC1700716860 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		E83D718F257CEC1700716860 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
 		E83DE196258D103300E51492 /* haveAcountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = haveAcountViewController.swift; sourceTree = "<group>"; };
@@ -280,6 +283,7 @@
 		E87EC4A9258248A200003C29 /* LangoageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LangoageViewController.xib; sourceTree = "<group>"; };
 		E87EC4AE25824DE300003C29 /* ContentUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentUsViewController.swift; sourceTree = "<group>"; };
 		E87EC4AF25824DE300003C29 /* ContentUsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContentUsViewController.xib; sourceTree = "<group>"; };
+		E8A58D7625ABAE8B0098E490 /* settingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = settingViewModel.swift; sourceTree = "<group>"; };
 		E8B2875E2576CB0B00326E02 /* Opportunities.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Opportunities.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8B287612576CB0B00326E02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E8B287632576CB0B00326E02 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -382,8 +386,9 @@
 				E852D4DB2586C79F00A643AA /* transactions */,
 				E801583C2586A87F003D44C3 /* Profile.storyboard */,
 				E80158402586ADDC003D44C3 /* ProfileVC.swift */,
-				E852D4D12586C06E00A643AA /* SettingViewController.swift */,
 				E83A54F1258762800076BDCE /* ProfileViewModel.swift */,
+				E8A58D7625ABAE8B0098E490 /* settingViewModel.swift */,
+				E852D4D12586C06E00A643AA /* SettingViewController.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -690,6 +695,7 @@
 			children = (
 				E852D4D32586C3A000A643AA /* cells */,
 				E852D4D82586C51600A643AA /* TransactionsViewController.swift */,
+				E83D0E0425ABB3E8001BB32A /* TransactionsViewMode.swift */,
 			);
 			path = transactions;
 			sourceTree = "<group>";
@@ -1345,6 +1351,7 @@
 				E81C3E602588162D00A2D9B6 /* CompletePayMentViewController.swift in Sources */,
 				E83E6F70258586FD0017F67A /* ActiveCollectionViewCell.swift in Sources */,
 				E83E6F6C258584420017F67A /* ActiveTableViewCell.swift in Sources */,
+				E8A58D7725ABAE8B0098E490 /* settingViewModel.swift in Sources */,
 				E83A54FC258764460076BDCE /* HomeViewModel.swift in Sources */,
 				E83A54F02587621F0076BDCE /* BaseWireFrame.swift in Sources */,
 				E8EC0DCB257CD4200024D395 /* SignUpViewController.swift in Sources */,
@@ -1360,6 +1367,7 @@
 				E83EFAB3257D62CB0075CDF1 /* CustomAlertVC.swift in Sources */,
 				E83E52962587976D0023CEE3 /* MenuTableViewCell.swift in Sources */,
 				E84EE04C25913A9D009FEAD3 /* MainRespondObject.swift in Sources */,
+				E83D0E0525ABB3E8001BB32A /* TransactionsViewMode.swift in Sources */,
 				E81C3E63258816F900A2D9B6 /* CompletePayMentViewModel.swift in Sources */,
 				E8EC0DDA257CDCEF0024D395 /* HomeViewController.swift in Sources */,
 				E838E916257D18E900E95553 /* NotificationViewController.swift in Sources */,

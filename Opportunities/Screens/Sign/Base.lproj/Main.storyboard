@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yCI-Pw-qdC">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -286,25 +287,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome back!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KcF-LR-6Bi">
-                                <rect key="frame" x="20" y="94" width="374" height="47"/>
+                                <rect key="frame" x="20" y="94" width="374" height="40"/>
                                 <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy-Regular" pointSize="40"/>
                                 <color key="textColor" name="SubTitle"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="deX-QK-JnS">
-                                <rect key="frame" x="20" y="171" width="374" height="222"/>
+                                <rect key="frame" x="20" y="164" width="374" height="216"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="qvT-en-BeD">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="96"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="93"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hEj-hg-UP8">
-                                                <rect key="frame" x="0.0" y="0.0" width="374" height="21"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="18"/>
                                                 <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="18"/>
                                                 <color key="textColor" name="LabelColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KUG-9W-Rhu" customClass="TextField" customModule="Opportunities" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="31" width="374" height="65"/>
+                                                <rect key="frame" x="0.0" y="28" width="374" height="65"/>
                                                 <color key="backgroundColor" name="backGroundButton"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="65" id="gs6-7S-BhE"/>
@@ -320,16 +321,16 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="uqY-74-Shr">
-                                        <rect key="frame" x="0.0" y="126" width="374" height="96"/>
+                                        <rect key="frame" x="0.0" y="123" width="374" height="93"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6EU-Sh-dRw">
-                                                <rect key="frame" x="0.0" y="0.0" width="374" height="21"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="18"/>
                                                 <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="18"/>
                                                 <color key="textColor" name="LabelColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kiX-gJ-byg" customClass="TextField" customModule="Opportunities" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="31" width="374" height="65"/>
+                                                <rect key="frame" x="0.0" y="28" width="374" height="65"/>
                                                 <color key="backgroundColor" name="backGroundButton"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -344,7 +345,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="xyk-KW-T21">
-                                <rect key="frame" x="20" y="403" width="374" height="30"/>
+                                <rect key="frame" x="20" y="390" width="374" height="30"/>
                                 <subviews>
                                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Incorrect Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HuG-Xa-eTG">
                                         <rect key="frame" x="0.0" y="0.0" width="0.0" height="30"/>
@@ -367,7 +368,7 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LNS-EZ-wk8">
-                                <rect key="frame" x="20" y="483" width="374" height="65"/>
+                                <rect key="frame" x="20" y="470" width="374" height="65"/>
                                 <color key="backgroundColor" name="MainbuttonColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="65" id="ZHi-B7-PxA"/>
@@ -385,16 +386,16 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Yzp-Na-7o7">
-                                <rect key="frame" x="97.5" y="832" width="219" height="30"/>
+                                <rect key="frame" x="95" y="832" width="224.5" height="30"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don’t have an account?" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uhS-dz-l4Q">
-                                        <rect key="frame" x="0.0" y="0.0" width="160" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="165.5" height="30"/>
                                         <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy-Regular" pointSize="15"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qvv-4i-qrQ">
-                                        <rect key="frame" x="165" y="0.0" width="54" height="30"/>
+                                        <rect key="frame" x="170.5" y="0.0" width="54" height="30"/>
                                         <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="15"/>
                                         <color key="tintColor" name="MainbuttonColor"/>
                                         <state key="normal" title="Sign Up"/>
@@ -466,13 +467,13 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DVL-lB-6MY">
-                                    <rect key="frame" x="0.0" y="0.0" width="374" height="21"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
                                     <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="18"/>
                                     <color key="textColor" name="LabelColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2zW-Vg-khv">
-                                    <rect key="frame" x="0.0" y="21" width="374" height="64"/>
+                                    <rect key="frame" x="0.0" y="34" width="374" height="51"/>
                                     <color key="backgroundColor" name="backGroundButton"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <textInputTraits key="textInputTraits"/>
@@ -489,13 +490,13 @@
                             <rect key="frame" x="0.0" y="115" width="374" height="85"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jne-Ab-e3u">
-                                    <rect key="frame" x="0.0" y="0.0" width="374" height="21"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
                                     <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="18"/>
                                     <color key="textColor" name="LabelColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vc1-gm-HaH">
-                                    <rect key="frame" x="0.0" y="21" width="374" height="64"/>
+                                    <rect key="frame" x="0.0" y="34" width="374" height="51"/>
                                     <color key="backgroundColor" name="backGroundButton"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <textInputTraits key="textInputTraits"/>
@@ -542,7 +543,7 @@
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Full Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XKY-Wt-qYQ">
-                                                <rect key="frame" x="20" y="204" width="366" height="30"/>
+                                                <rect key="frame" x="20" y="190" width="366" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="Qe6-SF-QiU"/>
                                                 </constraints>
@@ -551,7 +552,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NHP-hX-umV" customClass="TextField" customModule="Opportunities" customModuleProvider="target">
-                                                <rect key="frame" x="20" y="254" width="366" height="60"/>
+                                                <rect key="frame" x="20" y="240" width="366" height="60"/>
                                                 <color key="backgroundColor" name="backGroundButton"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="pV0-aS-7Uf"/>
@@ -565,25 +566,25 @@
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SnA-44-a19">
-                                                <rect key="frame" x="20" y="334" width="366" height="18.5"/>
+                                                <rect key="frame" x="20" y="320" width="366" height="18.5"/>
                                                 <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="18"/>
                                                 <color key="textColor" name="LabelColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GPx-mO-swy">
-                                                <rect key="frame" x="20" y="447.5" width="366" height="19"/>
+                                                <rect key="frame" x="20" y="433.5" width="366" height="19"/>
                                                 <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="18"/>
                                                 <color key="textColor" name="LabelColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pz4-Vf-EDP">
-                                                <rect key="frame" x="20" y="566.5" width="366" height="18.5"/>
+                                                <rect key="frame" x="20" y="552.5" width="366" height="18.5"/>
                                                 <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="18"/>
                                                 <color key="textColor" name="LabelColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="08M-rH-Vkl" customClass="TextField" customModule="Opportunities" customModuleProvider="target">
-                                                <rect key="frame" x="20" y="605" width="366" height="60"/>
+                                                <rect key="frame" x="20" y="591" width="366" height="60"/>
                                                 <color key="backgroundColor" name="backGroundButton"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -594,13 +595,13 @@
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mwe-fJ-txZ">
-                                                <rect key="frame" x="20" y="685" width="366" height="18.5"/>
+                                                <rect key="frame" x="20" y="671" width="366" height="18.5"/>
                                                 <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="18"/>
                                                 <color key="textColor" name="LabelColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZB3-Iw-eDu" customClass="TextField" customModule="Opportunities" customModuleProvider="target">
-                                                <rect key="frame" x="20" y="723.5" width="366" height="60"/>
+                                                <rect key="frame" x="20" y="709.5" width="366" height="60"/>
                                                 <color key="backgroundColor" name="backGroundButton"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
@@ -611,13 +612,13 @@
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirm Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M9h-ab-hIv">
-                                                <rect key="frame" x="20" y="803.5" width="366" height="22"/>
+                                                <rect key="frame" x="20" y="789.5" width="366" height="22"/>
                                                 <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="18"/>
                                                 <color key="textColor" name="LabelColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1Oh-Ts-4t5" customClass="TextField" customModule="Opportunities" customModuleProvider="target">
-                                                <rect key="frame" x="20" y="845.5" width="366" height="60"/>
+                                                <rect key="frame" x="20" y="831.5" width="366" height="60"/>
                                                 <color key="backgroundColor" name="backGroundButton"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
@@ -628,7 +629,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vIb-yb-APf">
-                                                <rect key="frame" x="20" y="925.5" width="366" height="60"/>
+                                                <rect key="frame" x="20" y="911.5" width="366" height="60"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2zM-JA-iKo">
                                                         <rect key="frame" x="0.0" y="4" width="16" height="16"/>
@@ -666,7 +667,7 @@
                                                 </constraints>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZiE-oX-rp7">
-                                                <rect key="frame" x="20" y="1009.5" width="366" height="65"/>
+                                                <rect key="frame" x="20" y="995.5" width="366" height="65"/>
                                                 <color key="backgroundColor" name="MainbuttonColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="65" id="t2i-GT-UCM"/>
@@ -683,19 +684,19 @@
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let’s sign you up!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b3e-nP-TG0">
-                                                <rect key="frame" x="20" y="137" width="366" height="47"/>
+                                                <rect key="frame" x="20" y="130" width="366" height="40"/>
                                                 <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy-Regular" pointSize="40"/>
                                                 <color key="textColor" name="SubTitle"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign Up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ES5-6O-nTw">
-                                                <rect key="frame" x="20" y="70" width="366" height="47"/>
+                                                <rect key="frame" x="20" y="70" width="366" height="40"/>
                                                 <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="40"/>
                                                 <color key="textColor" name="Title"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wpl-8a-ezj" customClass="TextField" customModule="Opportunities" customModuleProvider="target">
-                                                <rect key="frame" x="20" y="486.5" width="366" height="60"/>
+                                                <rect key="frame" x="20" y="472.5" width="366" height="60"/>
                                                 <color key="backgroundColor" name="backGroundButton"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -858,7 +859,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1eb-Cu-Ltn">
-                                <rect key="frame" x="20" y="378" width="374" height="65"/>
+                                <rect key="frame" x="20" y="399" width="374" height="65"/>
                                 <color key="backgroundColor" name="MainbuttonColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="65" id="Sh8-Ix-d8E"/>
@@ -875,13 +876,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter the 4-digit code we’ve sent to your phone number." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uGf-g3-ISj">
-                                <rect key="frame" x="20" y="171" width="374" height="47"/>
+                                <rect key="frame" x="20" y="164" width="374" height="75"/>
                                 <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="20"/>
                                 <color key="textColor" name="SubTitle"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="3Yb-sf-jap">
-                                <rect key="frame" x="20" y="263" width="374" height="65"/>
+                                <rect key="frame" x="20" y="284" width="374" height="65"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="-" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r1U-xc-Irw">
                                         <rect key="frame" x="0.0" y="0.0" width="82.5" height="65"/>
@@ -934,7 +935,7 @@
                                 </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Code Verification" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p7e-So-16N">
-                                <rect key="frame" x="20" y="114" width="374" height="47"/>
+                                <rect key="frame" x="20" y="114" width="374" height="40"/>
                                 <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="40"/>
                                 <color key="textColor" name="Title"/>
                                 <nil key="highlightedColor"/>
@@ -993,13 +994,13 @@
                                 <rect key="frame" x="30" y="44" width="354" height="358.5"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Congratulations, now you have account on Opportunities." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fxj-PG-Zax">
-                                <rect key="frame" x="20" y="402.5" width="374" height="56"/>
+                                <rect key="frame" x="20" y="402.5" width="374" height="90"/>
                                 <fontDescription key="fontDescription" name="Cairo-Black" family="Cairo" pointSize="24"/>
                                 <color key="textColor" name="Title"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In in faucibus enim vitae elit ipsum netus. Amet lacus id eget vel egestas." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h6F-Su-HHS">
-                                <rect key="frame" x="20" y="478.5" width="374" height="42"/>
+                                <rect key="frame" x="20" y="512.5" width="374" height="67.5"/>
                                 <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="18"/>
                                 <color key="textColor" name="Difination"/>
                                 <nil key="highlightedColor"/>
@@ -1054,22 +1055,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your phone number, so we can sent you a verification code." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nW2-x6-vbc">
-                                <rect key="frame" x="20" y="182.5" width="374" height="47"/>
+                                <rect key="frame" x="20" y="174.5" width="374" height="75"/>
                                 <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="20"/>
                                 <color key="textColor" name="SubTitle"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="HU8-3X-0qa">
-                                <rect key="frame" x="20" y="259.5" width="374" height="91"/>
+                                <rect key="frame" x="20" y="279.5" width="374" height="104"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wpd-cw-XMR">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="21"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
                                         <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="18"/>
                                         <color key="textColor" name="LabelColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ciJ-7N-XaW">
-                                        <rect key="frame" x="0.0" y="26" width="374" height="65"/>
+                                        <rect key="frame" x="0.0" y="39" width="374" height="65"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7bQ-9L-BvG" customClass="TextField" customModule="Opportunities" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="100" height="65"/>
@@ -1119,7 +1120,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forget Pass" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B5f-4B-EaZ">
-                                <rect key="frame" x="20" y="114" width="374" height="58.5"/>
+                                <rect key="frame" x="20" y="114" width="374" height="50.5"/>
                                 <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="50"/>
                                 <color key="textColor" name="Title"/>
                                 <nil key="highlightedColor"/>
@@ -1172,13 +1173,13 @@
                                 <rect key="frame" x="30" y="44" width="354" height="358.5"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your password reset successfully," textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CRx-4q-uOD">
-                                <rect key="frame" x="20" y="402.5" width="374" height="61"/>
+                                <rect key="frame" x="20" y="402.5" width="374" height="97.5"/>
                                 <fontDescription key="fontDescription" name="Cairo-Black" family="Cairo" pointSize="26"/>
                                 <color key="textColor" name="Title"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In in faucibus enim vitae elit ipsum netus. Amet lacus id eget vel egestas." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3fX-qe-xtX">
-                                <rect key="frame" x="20" y="483.5" width="374" height="42"/>
+                                <rect key="frame" x="20" y="520" width="374" height="67.5"/>
                                 <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="18"/>
                                 <color key="textColor" name="Difination"/>
                                 <nil key="highlightedColor"/>
@@ -1233,7 +1234,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your new password." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Dm-qG-mZQ">
-                                <rect key="frame" x="20" y="182.5" width="374" height="23.5"/>
+                                <rect key="frame" x="20" y="174.5" width="374" height="37.5"/>
                                 <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="20"/>
                                 <color key="textColor" name="SubTitle"/>
                                 <nil key="highlightedColor"/>
@@ -1256,7 +1257,7 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="r3s-qq-A5Z">
-                                <rect key="frame" x="20" y="256" width="374" height="200"/>
+                                <rect key="frame" x="20" y="262" width="374" height="200"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" id="Xjl-Q1-rA2">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="85"/>
@@ -1289,13 +1290,13 @@
                                         <rect key="frame" x="0.0" y="115" width="374" height="85"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZBE-3d-2IJ">
-                                                <rect key="frame" x="0.0" y="0.0" width="374" height="21"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
                                                 <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="18"/>
                                                 <color key="textColor" name="LabelColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1g9-Mj-Z1k" customClass="TextField" customModule="Opportunities" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="21" width="374" height="64"/>
+                                                <rect key="frame" x="0.0" y="34" width="374" height="51"/>
                                                 <color key="backgroundColor" name="backGroundButton"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -1310,7 +1311,7 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rest Pass" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GUc-YP-6vb">
-                                <rect key="frame" x="20" y="114" width="374" height="58.5"/>
+                                <rect key="frame" x="20" y="114" width="374" height="50.5"/>
                                 <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="50"/>
                                 <color key="textColor" name="Title"/>
                                 <nil key="highlightedColor"/>

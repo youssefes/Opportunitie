@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TransactionsViewController: UIViewController {
+class TransactionsViewController: BaseWireFrame<TransactionsViewMode> {
     
     @IBOutlet weak var TransactionsTableView: UITableView!
     @IBOutlet weak var segmentedControl: UISegmentedControl!
@@ -20,6 +20,9 @@ class TransactionsViewController: UIViewController {
         super.viewDidLoad()
         RegisterCells()
         setUpUI()
+    }
+    override func bind(ViewModel: TransactionsViewMode) {
+        
     }
     
     func RegisterCells() {
@@ -51,7 +54,7 @@ class TransactionsViewController: UIViewController {
     
     @IBAction func backBtn(_ sender: Any) {
         
-        navigationController?.popViewController(animated: true)
+        coordinator.dismiss()
     }
     
     @IBAction func downloadBtn(_ sender: Any) {
@@ -87,12 +90,7 @@ extension TransactionsViewController : UITableViewDelegate{
     }
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        let retaionAngelInRadian = 90 * CGFloat(Double.pi / 180)
-        let rotationTransform = CATransform3DMakeRotation(retaionAngelInRadian, 0, 0, 1)
-        cell.layer.transform = rotationTransform
         
-        UIView.animate(withDuration: 1.2) {
-            cell.layer.transform = CATransform3DTranslate(CATransform3DIdentity, 500, 100, 0)
-        }
+        cellAnimation(cell: cell)
     }
 }

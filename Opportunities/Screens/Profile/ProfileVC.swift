@@ -17,11 +17,6 @@ class ProfileVC : BaseWireFrame<ProfileViewModel> {
 
         // Do any additional setup after loading the view.
     }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        navigationController?.setNavigationBarHidden(true, animated: false)
-    }
 
     override func bind(ViewModel: ProfileViewModel) {
         
@@ -30,18 +25,16 @@ class ProfileVC : BaseWireFrame<ProfileViewModel> {
         dismiss(animated: true, completion: nil)
     }
     
-    @available(iOS 13.0, *)
+    
     @IBAction func settingBtn(_ sender: Any) {
-        let storyBoard = UIStoryboard(name: "Profile", bundle: nil)
-        let Active = storyBoard.instantiateViewController(identifier: "SettingViewController") as! SettingViewController
+        let Active = coordinator.MainStoryBordNavigator.viewController(for: .settingProfile)
         navigationController?.pushViewController(Active, animated: true)
     }
     
     
-    @available(iOS 13.0, *)
+  
     @IBAction func TransactionsBtn(_ sender: Any) {
-        let storyBoard = UIStoryboard(name: "Profile", bundle: nil)
-        let Active = storyBoard.instantiateViewController(identifier: "TransactionsViewController") as! TransactionsViewController
+       let Active = coordinator.MainStoryBordNavigator.viewController(for: .transaction)
         navigationController?.pushViewController(Active, animated: true)
         
     }

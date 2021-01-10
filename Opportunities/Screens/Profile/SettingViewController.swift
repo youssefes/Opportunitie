@@ -8,21 +8,19 @@
 
 import UIKit
 
-class SettingViewController: UIViewController {
+class SettingViewController: BaseWireFrame<settingViewModel> {
     
     @IBOutlet weak var SelectedImage: UIImageView!
     @IBOutlet weak var ToSelectImage: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         SetupUI()
         // Do any additional setup after loading the view.
     }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        navigationController?.setNavigationBarHidden(true, animated: false)
+    override func bind(ViewModel: settingViewModel) {
+        
     }
-    
     func SetupUI(){
         let TapregognizerIm = UITapGestureRecognizer(target: self, action: #selector(showAllImageToChose))
         TapregognizerIm.numberOfTapsRequired = 1
@@ -45,7 +43,7 @@ class SettingViewController: UIViewController {
     }
     
     @IBAction func dissmisBtn(_ sender: Any) {
-        navigationController?.popViewController(animated: true)
+        coordinator.dismiss()
     }
 }
 

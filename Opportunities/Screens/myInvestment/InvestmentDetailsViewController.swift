@@ -58,6 +58,7 @@ extension InvestmentDetailsViewController : UICollectionViewDataSource , UIColle
     }
     
     
+    
 }
 
 extension InvestmentDetailsViewController: UICollectionViewDelegateFlowLayout {

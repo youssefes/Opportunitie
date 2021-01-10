@@ -24,6 +24,8 @@ class MainStoryBordNavigator : Navigator {
         case ConframCodeView
         case  SeccessRestPassView
         case RestPassView
+        case settingProfile
+        case transaction
       
     }
     required init(coordintor: Coordinator) {
@@ -91,6 +93,18 @@ class MainStoryBordNavigator : Navigator {
         case .RestPassView:
             let viewModel = RestPassViewModel()
             let viewc = RestPassViewController.instantiate(fromAppStoryboard: .Main)
+            viewc.vieeModel = viewModel
+            viewc.coordinator = coordinator
+            return viewc
+        case .settingProfile:
+            let viewModel = settingViewModel()
+            let viewc = SettingViewController.instantiate(fromAppStoryboard: .Profile)
+            viewc.vieeModel = viewModel
+            viewc.coordinator = coordinator
+            return viewc
+        case .transaction:
+            let viewModel = TransactionsViewMode()
+            let viewc = TransactionsViewController.instantiate(fromAppStoryboard: .Profile)
             viewc.vieeModel = viewModel
             viewc.coordinator = coordinator
             return viewc
