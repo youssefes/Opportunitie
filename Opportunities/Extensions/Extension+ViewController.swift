@@ -10,9 +10,9 @@ import UIKit
 
 extension UIViewController {
 
-    func presentAlertOnMainThread( message: String,buttontitle: String, buttonTitle2: String) {
+    func presentAlertOnMainThread( message: String,buttontitle: String, buttonTitle2: String, isoneBtn : Bool) {
         DispatchQueue.main.async {
-            let alertVC = CustomAlertVC(Massage: message, titleBtn1: buttontitle, titleBtn2: buttonTitle2)
+            let alertVC = CustomAlertVC(Massage: message, titleBtn1: buttontitle, titleBtn2: buttonTitle2,isoneButton: isoneBtn)
             alertVC.modalPresentationStyle  = .overFullScreen
             alertVC.modalTransitionStyle    = .crossDissolve
             self.present(alertVC, animated: true)

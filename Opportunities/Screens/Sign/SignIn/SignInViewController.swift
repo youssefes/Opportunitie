@@ -10,7 +10,6 @@ import UIKit
 
 class SignInViewController: BaseWireFrame<SignInViewModel> {
     @IBOutlet weak var emailTf: TextField!
-    
     @IBOutlet weak var password: TextField!
     override func viewDidLoad() {
         super.viewDidLoad()

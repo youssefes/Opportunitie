@@ -29,7 +29,7 @@ class NotificationViewController: BaseWireFrame<NotificationViewModel> {
         
     }
     @IBAction func DeletAll(_ sender: Any) {
-        self.presentAlertOnMainThread(message: "Are you sure you want to clear all notifications?" , buttontitle: "Cancel", buttonTitle2: "Delete")
+        self.presentAlertOnMainThread(message: "Are you sure you want to clear all notifications?" , buttontitle: "Cancel", buttonTitle2: "Delete",isoneBtn: false)
     }
     
     func registerCell(){

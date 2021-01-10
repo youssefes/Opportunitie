@@ -67,16 +67,19 @@ class SignUpViewController: BaseWireFrame<SignUpViewModel> {
         
         guard let email = emailTf.text , !email.isEmpty,let password = passwordTf.text , !password.isEmpty,let passwordconform = conformPassTf.text , !passwordconform.isEmpty,let phone = phoneNumberTf.text , !phone.isEmpty,let name = fullNameTf.text , !name.isEmpty
             ,let accountNumber = accountNumberTf.text ,!accountNumber.isEmpty, let codeNumder = phoneNumberCodeTf.text ,!codeNumder.isEmpty else {return}
-        
-        let paramerter : [String : Any] = [
-            "name" : name,
-            "mobile" : codeNumder + phone,
-            "email" : email,
-            "account_bank" : accountNumber,
-            "password_confirmation" : passwordconform,
-            "password" : password,
-        ]
-        vieeModel.SignUp(parameters: paramerter)
+        if isSelested{
+            let paramerter : [String : Any] = [
+                "name" : name,
+                "mobile" : codeNumder + phone,
+                "email" : email,
+                "account_bank" : accountNumber,
+                "password_confirmation" : passwordconform,
+                "password" : password,
+            ]
+            vieeModel.SignUp(parameters: paramerter)
+        }else{
+            presentAlertOnMainThread(message: "you should check Button to accept our trems", buttontitle: "", buttonTitle2: "OK", isoneBtn: true)
+        }
     }
     
 }
