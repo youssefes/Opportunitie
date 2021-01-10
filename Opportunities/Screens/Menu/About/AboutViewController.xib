@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -30,34 +31,35 @@
                     <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2l9-OP-57K">
-                            <rect key="frame" x="0.0" y="0.0" width="406" height="1951.5"/>
+                            <rect key="frame" x="0.0" y="0.0" width="406" height="1024.5"/>
                             <subviews>
-                                <navigationBar contentMode="scaleToFill" translucent="NO" largeTitles="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Ny-AF-Hlr">
-                                    <rect key="frame" x="20" y="0.0" width="366" height="96"/>
-                                    <color key="barTintColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                    <textAttributes key="largeTitleTextAttributes">
-                                        <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="35"/>
-                                        <color key="textColor" name="Title"/>
-                                    </textAttributes>
-                                    <items>
-                                        <navigationItem title="About" id="OIm-jz-QWC">
-                                            <barButtonItem key="leftBarButtonItem" title="Item" image="ArrowLeft 2" style="plain" id="1nA-x7-tW8">
-                                                <color key="tintColor" name="Title"/>
-                                                <connections>
-                                                    <action selector="Dismiss:" destination="-1" id="NP0-Q9-zwE"/>
-                                                </connections>
-                                            </barButtonItem>
-                                        </navigationItem>
-                                    </items>
-                                </navigationBar>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ugb-D3-gD1">
+                                    <rect key="frame" x="20" y="20" width="30" height="30"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="30" id="B91-MH-4FI"/>
+                                        <constraint firstAttribute="height" constant="30" id="USO-fl-bha"/>
+                                    </constraints>
+                                    <state key="normal" image="ArrowLeft 2"/>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mI2-Ys-lj5">
+                                    <rect key="frame" x="20" y="70" width="366" height="45"/>
+                                    <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="45"/>
+                                    <color key="textColor" name="Title"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n6M-k9-udv">
-                                    <rect key="frame" x="20" y="116" width="366" height="683"/>
+                                    <rect key="frame" x="20" y="135" width="366" height="341.5"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="huawei-mediapad-m6-stock-wallpaper-1024x1024_666874-mm-90" translatesAutoresizingMaskIntoConstraints="NO" id="gKc-Ys-xMW">
-                                            <rect key="frame" x="0.0" y="0.0" width="366" height="683"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="366" height="341.5"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="20"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
                                         </imageView>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QxK-ri-bCo">
-                                            <rect key="frame" x="153" y="311.5" width="60" height="60"/>
+                                            <rect key="frame" x="153" y="141" width="60" height="60"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="60" id="cSm-7y-oi5"/>
                                                 <constraint firstAttribute="height" constant="60" id="rsZ-di-84T"/>
@@ -85,16 +87,16 @@
                                     </userDefinedRuntimeAttributes>
                                 </view>
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="f5m-du-QYk">
-                                    <rect key="frame" x="20" y="809" width="366" height="104"/>
+                                    <rect key="frame" x="20" y="496.5" width="366" height="100"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1" text="Mission" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g1h-L5-f6m">
-                                            <rect key="frame" x="0.0" y="0.0" width="366" height="29.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="366" height="25.5"/>
                                             <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="25"/>
                                             <color key="textColor" name="Title"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Pc-zd-scy">
-                                            <rect key="frame" x="0.0" y="49.5" width="366" height="54.5"/>
+                                            <rect key="frame" x="0.0" y="45.5" width="366" height="54.5"/>
                                             <attributedString key="attributedText">
                                                 <fragment content="Massa vel nulla pulvinar adipiscing sed amet.Pulvinar ulla.">
                                                     <attributes>
@@ -109,16 +111,16 @@
                                     </subviews>
                                 </stackView>
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="R5D-gN-T71">
-                                    <rect key="frame" x="20" y="923" width="366" height="133.5"/>
+                                    <rect key="frame" x="20" y="606.5" width="366" height="129.5"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1" text="Vision" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ges-TO-H3B">
-                                            <rect key="frame" x="0.0" y="0.0" width="366" height="29.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="366" height="25.5"/>
                                             <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="25"/>
                                             <color key="textColor" name="Title"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="02W-QA-nRk">
-                                            <rect key="frame" x="0.0" y="49.5" width="366" height="84"/>
+                                            <rect key="frame" x="0.0" y="45.5" width="366" height="84"/>
                                             <attributedString key="attributedText">
                                                 <fragment content="Massa vel nulla pulvinar adipiscing sed amet.Pulvinar ullamcorper duis et sit porta diam lacus, porttitor suspendisse.">
                                                     <attributes>
@@ -133,13 +135,13 @@
                                     </subviews>
                                 </stackView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Photos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rf5-sd-HSe">
-                                    <rect key="frame" x="20" y="1076.5" width="79.5" height="29.5"/>
+                                    <rect key="frame" x="20" y="756" width="79" height="25.5"/>
                                     <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="25"/>
                                     <color key="textColor" name="Title"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="xJ8-MO-Wxx">
-                                    <rect key="frame" x="20" y="1106" width="366" height="840.5"/>
+                                    <rect key="frame" x="20" y="781.5" width="366" height="238"/>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                     <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="uj3-9G-RXr">
                                         <size key="itemSize" width="50" height="50"/>
@@ -153,23 +155,27 @@
                             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             <constraints>
                                 <constraint firstItem="n6M-k9-udv" firstAttribute="leading" secondItem="2l9-OP-57K" secondAttribute="leading" constant="20" id="0Vc-86-6DW"/>
-                                <constraint firstItem="8Ny-AF-Hlr" firstAttribute="top" secondItem="2l9-OP-57K" secondAttribute="top" symbolic="YES" id="3qg-qe-E2C"/>
+                                <constraint firstAttribute="trailing" secondItem="mI2-Ys-lj5" secondAttribute="trailing" constant="20" id="6ss-0u-OsA"/>
                                 <constraint firstAttribute="trailing" secondItem="n6M-k9-udv" secondAttribute="trailing" constant="20" id="H78-Mw-zGt"/>
                                 <constraint firstItem="f5m-du-QYk" firstAttribute="leading" secondItem="n6M-k9-udv" secondAttribute="leading" id="Jc5-5f-mej"/>
                                 <constraint firstItem="xJ8-MO-Wxx" firstAttribute="trailing" secondItem="R5D-gN-T71" secondAttribute="trailing" id="MaH-EQ-0g0"/>
                                 <constraint firstItem="xJ8-MO-Wxx" firstAttribute="top" secondItem="Rf5-sd-HSe" secondAttribute="bottom" id="Maw-AK-ilg"/>
                                 <constraint firstItem="R5D-gN-T71" firstAttribute="top" secondItem="f5m-du-QYk" secondAttribute="bottom" constant="10" id="OB9-Dp-qJT"/>
-                                <constraint firstItem="f5m-du-QYk" firstAttribute="top" secondItem="n6M-k9-udv" secondAttribute="bottom" constant="10" id="PgN-bz-RHz"/>
-                                <constraint firstAttribute="trailing" secondItem="8Ny-AF-Hlr" secondAttribute="trailing" constant="20" id="S4r-Hc-Tz1"/>
-                                <constraint firstItem="8Ny-AF-Hlr" firstAttribute="leading" secondItem="2l9-OP-57K" secondAttribute="leading" constant="20" id="aWD-55-EuS"/>
+                                <constraint firstItem="f5m-du-QYk" firstAttribute="top" secondItem="n6M-k9-udv" secondAttribute="bottom" constant="20" id="PgN-bz-RHz"/>
+                                <constraint firstItem="n6M-k9-udv" firstAttribute="trailing" secondItem="mI2-Ys-lj5" secondAttribute="trailing" id="SH9-uw-cjK"/>
+                                <constraint firstItem="ugb-D3-gD1" firstAttribute="leading" secondItem="2l9-OP-57K" secondAttribute="leading" constant="20" id="Ufk-Xe-Mta"/>
+                                <constraint firstItem="n6M-k9-udv" firstAttribute="leading" secondItem="mI2-Ys-lj5" secondAttribute="leading" id="YZr-eg-IYK"/>
+                                <constraint firstItem="n6M-k9-udv" firstAttribute="top" secondItem="mI2-Ys-lj5" secondAttribute="bottom" constant="20" id="Zfm-uy-uj8"/>
+                                <constraint firstItem="mI2-Ys-lj5" firstAttribute="leading" secondItem="ugb-D3-gD1" secondAttribute="leading" id="asD-CI-Kca"/>
                                 <constraint firstItem="f5m-du-QYk" firstAttribute="trailing" secondItem="n6M-k9-udv" secondAttribute="trailing" id="bfR-vg-DEK"/>
                                 <constraint firstItem="Rf5-sd-HSe" firstAttribute="top" secondItem="R5D-gN-T71" secondAttribute="bottom" constant="20" id="dea-eV-54y"/>
-                                <constraint firstItem="n6M-k9-udv" firstAttribute="top" secondItem="8Ny-AF-Hlr" secondAttribute="bottom" constant="20" id="giC-N4-rfR"/>
+                                <constraint firstItem="mI2-Ys-lj5" firstAttribute="top" secondItem="ugb-D3-gD1" secondAttribute="bottom" constant="20" id="fR5-iO-UR5"/>
                                 <constraint firstItem="xJ8-MO-Wxx" firstAttribute="leading" secondItem="R5D-gN-T71" secondAttribute="leading" id="kbj-5t-CN5"/>
+                                <constraint firstItem="ugb-D3-gD1" firstAttribute="top" secondItem="2l9-OP-57K" secondAttribute="top" constant="20" id="pGa-iM-QmC"/>
                                 <constraint firstItem="Rf5-sd-HSe" firstAttribute="leading" secondItem="2l9-OP-57K" secondAttribute="leading" constant="20" id="w9q-7u-gnD"/>
                                 <constraint firstAttribute="bottom" secondItem="xJ8-MO-Wxx" secondAttribute="bottom" constant="5" id="wPj-ta-2kY"/>
                                 <constraint firstItem="R5D-gN-T71" firstAttribute="trailing" secondItem="f5m-du-QYk" secondAttribute="trailing" id="whv-Zk-JAg"/>
-                                <constraint firstItem="n6M-k9-udv" firstAttribute="height" secondItem="2l9-OP-57K" secondAttribute="height" multiplier="1.05:3" priority="250" id="yzZ-tF-4wX"/>
+                                <constraint firstItem="n6M-k9-udv" firstAttribute="height" secondItem="2l9-OP-57K" secondAttribute="height" multiplier="1:3" priority="250" id="yzZ-tF-4wX"/>
                                 <constraint firstItem="R5D-gN-T71" firstAttribute="leading" secondItem="f5m-du-QYk" secondAttribute="leading" id="zPT-Tc-geQ"/>
                             </constraints>
                         </view>
@@ -202,9 +208,6 @@
         <image name="huawei-mediapad-m6-stock-wallpaper-1024x1024_666874-mm-90" width="341.5" height="341.5"/>
         <namedColor name="Difination">
             <color red="0.60399997234344482" green="0.6589999794960022" blue="0.72899997234344482" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="Title">
-            <color red="0.13300000131130219" green="0.20000000298023224" blue="0.2669999897480011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Title">
             <color red="0.13300000131130219" green="0.20000000298023224" blue="0.2669999897480011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

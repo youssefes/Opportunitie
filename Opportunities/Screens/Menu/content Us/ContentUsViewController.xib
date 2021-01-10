@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -10,6 +11,9 @@
     <customFonts key="customFonts">
         <array key="Cairo-SemiBold.ttf">
             <string>Cairo-SemiBold</string>
+        </array>
+        <array key="Gilroy-Bold.ttf">
+            <string>Gilroy-Bold</string>
         </array>
     </customFonts>
     <objects>
@@ -30,134 +34,84 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7DQ-Ic-F8C">
                             <rect key="frame" x="0.0" y="0.0" width="406" height="800"/>
                             <subviews>
-                                <navigationBar contentMode="scaleToFill" translucent="NO" largeTitles="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ocW-Mz-35E">
-                                    <rect key="frame" x="20" y="20" width="366" height="119"/>
-                                    <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <textAttributes key="largeTitleTextAttributes">
-                                        <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="40"/>
-                                        <color key="textColor" name="Title"/>
-                                    </textAttributes>
-                                    <items>
-                                        <navigationItem title="Contact Us" id="lbT-Q7-KCc">
-                                            <barButtonItem key="leftBarButtonItem" image="ArrowLeft 2" id="L4I-pB-ggV">
-                                                <color key="tintColor" name="Title"/>
-                                                <connections>
-                                                    <action selector="DismissBtn:" destination="-1" id="T5n-qh-MXt"/>
-                                                </connections>
-                                            </barButtonItem>
-                                        </navigationItem>
-                                    </items>
-                                </navigationBar>
-                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="fEO-AS-tCl">
-                                    <rect key="frame" x="20" y="164" width="366" height="307"/>
-                                    <subviews>
-                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Bwv-OI-kFO">
-                                            <rect key="frame" x="0.0" y="0.0" width="366" height="89"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Full Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1HF-5f-2P7">
-                                                    <rect key="frame" x="0.0" y="0.0" width="366" height="34"/>
-                                                    <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="18"/>
-                                                    <color key="textColor" name="LabelColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2zI-Bp-iyF" customClass="TextField" customModule="Opportunities" customModuleProvider="target">
-                                                    <rect key="frame" x="0.0" y="39" width="366" height="50"/>
-                                                    <color key="backgroundColor" name="textFieldColorBackGround"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="50" id="2HS-Le-4Kl"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
-                                                    <userDefinedRuntimeAttributes>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                            <real key="value" value="16"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                    </userDefinedRuntimeAttributes>
-                                                </textField>
-                                            </subviews>
-                                        </stackView>
-                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="1WE-mv-haS">
-                                            <rect key="frame" x="0.0" y="109" width="366" height="89"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vf1-qL-Qbh">
-                                                    <rect key="frame" x="0.0" y="0.0" width="366" height="34"/>
-                                                    <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="18"/>
-                                                    <color key="textColor" name="LabelColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yD6-AS-9zD" customClass="TextField" customModule="Opportunities" customModuleProvider="target">
-                                                    <rect key="frame" x="0.0" y="39" width="366" height="50"/>
-                                                    <color key="backgroundColor" name="textFieldColorBackGround"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                    <textInputTraits key="textInputTraits"/>
-                                                    <userDefinedRuntimeAttributes>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                            <real key="value" value="16"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                    </userDefinedRuntimeAttributes>
-                                                </textField>
-                                            </subviews>
-                                        </stackView>
-                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="lLp-YY-9fr">
-                                            <rect key="frame" x="0.0" y="218" width="366" height="89"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subject" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Xq-6W-fOq">
-                                                    <rect key="frame" x="0.0" y="0.0" width="366" height="34"/>
-                                                    <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="18"/>
-                                                    <color key="textColor" name="LabelColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="37d-qa-k2U" customClass="TextField" customModule="Opportunities" customModuleProvider="target">
-                                                    <rect key="frame" x="0.0" y="39" width="366" height="50"/>
-                                                    <color key="backgroundColor" name="textFieldColorBackGround"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                    <textInputTraits key="textInputTraits"/>
-                                                    <userDefinedRuntimeAttributes>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                            <real key="value" value="16"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                    </userDefinedRuntimeAttributes>
-                                                </textField>
-                                            </subviews>
-                                        </stackView>
-                                    </subviews>
-                                </stackView>
-                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Eg7-0R-ypp">
-                                    <rect key="frame" x="20" y="491" width="366" height="180"/>
-                                    <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Messsage" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PiI-MX-6F3">
-                                            <rect key="frame" x="0.0" y="0.0" width="366" height="34"/>
-                                            <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="18"/>
-                                            <color key="textColor" name="LabelColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="pdA-em-jbu">
-                                            <rect key="frame" x="0.0" y="39" width="366" height="141"/>
-                                            <color key="backgroundColor" name="textFieldColorBackGround"/>
-                                            <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                            <userDefinedRuntimeAttributes>
-                                                <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Enter your Massage"/>
-                                                <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
-                                                    <color key="value" name="LabelColor"/>
-                                                </userDefinedRuntimeAttribute>
-                                            </userDefinedRuntimeAttributes>
-                                        </textView>
-                                    </subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contect us" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fbP-w7-oTa">
+                                    <rect key="frame" x="20" y="62" width="366" height="45"/>
+                                    <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="45"/>
+                                    <color key="textColor" name="Title"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Full Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1HF-5f-2P7">
+                                    <rect key="frame" x="20" y="127" width="346" height="40"/>
                                     <constraints>
-                                        <constraint firstAttribute="height" constant="180" id="bif-fw-rBK"/>
+                                        <constraint firstAttribute="height" constant="40" id="1NM-YX-olt"/>
                                     </constraints>
-                                </stackView>
+                                    <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="18"/>
+                                    <color key="textColor" name="LabelColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2zI-Bp-iyF" customClass="TextField" customModule="Opportunities" customModuleProvider="target">
+                                    <rect key="frame" x="20" y="177" width="346" height="50"/>
+                                    <color key="backgroundColor" name="textFieldColorBackGround"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="2HS-Le-4Kl"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="16"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </textField>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vf1-qL-Qbh">
+                                    <rect key="frame" x="20" y="281" width="366" height="42"/>
+                                    <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="18"/>
+                                    <color key="textColor" name="LabelColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="37d-qa-k2U" customClass="TextField" customModule="Opportunities" customModuleProvider="target">
+                                    <rect key="frame" x="20" y="342" width="366" height="27"/>
+                                    <color key="backgroundColor" name="textFieldColorBackGround"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="16"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </textField>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subject" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Xq-6W-fOq">
+                                    <rect key="frame" x="20" y="367" width="346" height="40"/>
+                                    <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="18"/>
+                                    <color key="textColor" name="LabelColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yD6-AS-9zD" customClass="TextField" customModule="Opportunities" customModuleProvider="target">
+                                    <rect key="frame" x="20" y="417" width="346" height="50"/>
+                                    <color key="backgroundColor" name="textFieldColorBackGround"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="16"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </textField>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Messsage" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PiI-MX-6F3">
+                                    <rect key="frame" x="20" y="477" width="346" height="40"/>
+                                    <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="18"/>
+                                    <color key="textColor" name="LabelColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
                                 <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y34-R4-9D0">
-                                    <rect key="frame" x="20" y="721" width="366" height="65"/>
+                                    <rect key="frame" x="20" y="695" width="346" height="65"/>
                                     <color key="backgroundColor" name="MainbuttonColor"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="65" id="lQG-cn-EJG"/>
                                     </constraints>
                                     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                    <inset key="imageEdgeInsets" minX="140" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <inset key="titleEdgeInsets" minX="-50" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <inset key="imageEdgeInsets" minX="80" minY="0.0" maxX="0.0" maxY="0.0"/>
                                     <state key="normal" title="Send" image="Send"/>
                                     <userDefinedRuntimeAttributes>
                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -168,22 +122,68 @@
                                         <action selector="SendMassageBtn:" destination="-1" eventType="touchUpInside" id="zb8-xQ-oKx"/>
                                     </connections>
                                 </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fRE-4W-hoj">
+                                    <rect key="frame" x="20" y="20" width="10" height="22"/>
+                                    <state key="normal" image="ArrowLeft 2"/>
+                                    <connections>
+                                        <action selector="DismissBtn:" destination="-1" eventType="touchUpInside" id="2kI-ge-RpG"/>
+                                    </connections>
+                                </button>
+                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="pdA-em-jbu">
+                                    <rect key="frame" x="20" y="527" width="346" height="148"/>
+                                    <color key="backgroundColor" name="textFieldColorBackGround"/>
+                                    <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Enter your Massage"/>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                            <color key="value" name="LabelColor"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </textView>
                             </subviews>
                             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             <constraints>
-                                <constraint firstItem="fEO-AS-tCl" firstAttribute="trailing" secondItem="ocW-Mz-35E" secondAttribute="trailing" id="6sZ-wE-qPY"/>
-                                <constraint firstItem="y34-R4-9D0" firstAttribute="top" secondItem="Eg7-0R-ypp" secondAttribute="bottom" constant="50" id="H7z-tK-Mj8"/>
-                                <constraint firstItem="Eg7-0R-ypp" firstAttribute="leading" secondItem="lLp-YY-9fr" secondAttribute="leading" id="Q5b-CG-lRu"/>
+                                <constraint firstItem="PiI-MX-6F3" firstAttribute="height" secondItem="2Xq-6W-fOq" secondAttribute="height" multiplier="1:1" id="2Oe-aw-RA0"/>
+                                <constraint firstItem="yD6-AS-9zD" firstAttribute="leading" secondItem="2zI-Bp-iyF" secondAttribute="leading" id="61p-YY-m0S"/>
+                                <constraint firstItem="vf1-qL-Qbh" firstAttribute="trailing" secondItem="2zI-Bp-iyF" secondAttribute="trailing" id="9r0-o1-8cc"/>
+                                <constraint firstItem="1HF-5f-2P7" firstAttribute="leading" secondItem="fbP-w7-oTa" secondAttribute="leading" id="AFz-yN-Hqd"/>
+                                <constraint firstItem="yD6-AS-9zD" firstAttribute="height" secondItem="2zI-Bp-iyF" secondAttribute="height" multiplier="1:1" id="B8D-e0-VXA"/>
+                                <constraint firstItem="2Xq-6W-fOq" firstAttribute="trailing" secondItem="1HF-5f-2P7" secondAttribute="trailing" id="EAP-fO-75W"/>
+                                <constraint firstItem="fRE-4W-hoj" firstAttribute="leading" secondItem="7DQ-Ic-F8C" secondAttribute="leading" constant="20" id="FEo-Tj-gKK"/>
+                                <constraint firstItem="vf1-qL-Qbh" firstAttribute="leading" secondItem="2zI-Bp-iyF" secondAttribute="leading" id="Ffv-nk-ZvY"/>
+                                <constraint firstItem="fbP-w7-oTa" firstAttribute="top" secondItem="fRE-4W-hoj" secondAttribute="bottom" constant="20" id="Fx4-zG-uvW"/>
+                                <constraint firstItem="y34-R4-9D0" firstAttribute="trailing" secondItem="pdA-em-jbu" secondAttribute="trailing" id="JWN-4n-yaq"/>
+                                <constraint firstItem="37d-qa-k2U" firstAttribute="top" secondItem="vf1-qL-Qbh" secondAttribute="bottom" constant="10" id="L2W-8c-p0M"/>
+                                <constraint firstItem="vf1-qL-Qbh" firstAttribute="top" secondItem="2zI-Bp-iyF" secondAttribute="bottom" constant="20" id="OJ6-Ld-FSs"/>
+                                <constraint firstItem="37d-qa-k2U" firstAttribute="trailing" secondItem="2zI-Bp-iyF" secondAttribute="trailing" id="Ohd-pI-K4c"/>
+                                <constraint firstItem="pdA-em-jbu" firstAttribute="top" secondItem="PiI-MX-6F3" secondAttribute="bottom" constant="10" id="RSp-h5-5Cv"/>
                                 <constraint firstAttribute="height" constant="800" id="RkB-PO-20o"/>
-                                <constraint firstItem="y34-R4-9D0" firstAttribute="trailing" secondItem="Eg7-0R-ypp" secondAttribute="trailing" id="XD8-Oc-bMW"/>
-                                <constraint firstItem="Eg7-0R-ypp" firstAttribute="top" secondItem="fEO-AS-tCl" secondAttribute="bottom" constant="20" id="ash-o3-6Ng"/>
-                                <constraint firstItem="ocW-Mz-35E" firstAttribute="top" secondItem="7DQ-Ic-F8C" secondAttribute="top" constant="20" id="f1r-3H-QW9"/>
-                                <constraint firstAttribute="trailing" secondItem="ocW-Mz-35E" secondAttribute="trailing" constant="20" id="fez-Wt-BgQ"/>
-                                <constraint firstItem="fEO-AS-tCl" firstAttribute="leading" secondItem="ocW-Mz-35E" secondAttribute="leading" id="hIN-ez-bKQ"/>
-                                <constraint firstItem="Eg7-0R-ypp" firstAttribute="trailing" secondItem="lLp-YY-9fr" secondAttribute="trailing" id="lvI-SJ-Ed4"/>
-                                <constraint firstItem="ocW-Mz-35E" firstAttribute="leading" secondItem="7DQ-Ic-F8C" secondAttribute="leading" constant="20" id="rGv-N7-9bf"/>
-                                <constraint firstItem="fEO-AS-tCl" firstAttribute="top" secondItem="ocW-Mz-35E" secondAttribute="bottom" constant="25" id="smC-jt-W8G"/>
-                                <constraint firstItem="y34-R4-9D0" firstAttribute="leading" secondItem="Eg7-0R-ypp" secondAttribute="leading" id="x0O-Ed-xQ6"/>
+                                <constraint firstItem="1HF-5f-2P7" firstAttribute="top" secondItem="fbP-w7-oTa" secondAttribute="bottom" constant="20" id="Rxl-Pk-afD"/>
+                                <constraint firstItem="2zI-Bp-iyF" firstAttribute="top" secondItem="1HF-5f-2P7" secondAttribute="bottom" constant="10" id="RyV-Wk-Zk9"/>
+                                <constraint firstItem="37d-qa-k2U" firstAttribute="leading" secondItem="2zI-Bp-iyF" secondAttribute="leading" id="Uiq-gM-hlz"/>
+                                <constraint firstItem="2Xq-6W-fOq" firstAttribute="leading" secondItem="1HF-5f-2P7" secondAttribute="leading" id="VkX-bN-UL0"/>
+                                <constraint firstItem="vf1-qL-Qbh" firstAttribute="height" secondItem="1HF-5f-2P7" secondAttribute="height" multiplier="1:1" id="Y6X-E6-w8C"/>
+                                <constraint firstItem="1HF-5f-2P7" firstAttribute="trailing" secondItem="fbP-w7-oTa" secondAttribute="trailing" id="a7R-mH-hO8"/>
+                                <constraint firstItem="2Xq-6W-fOq" firstAttribute="top" secondItem="37d-qa-k2U" secondAttribute="bottom" constant="20" id="apa-YH-dcH"/>
+                                <constraint firstItem="y34-R4-9D0" firstAttribute="top" secondItem="pdA-em-jbu" secondAttribute="bottom" constant="20" id="bY9-f8-qla"/>
+                                <constraint firstItem="fRE-4W-hoj" firstAttribute="top" secondItem="7DQ-Ic-F8C" secondAttribute="top" constant="20" id="bhg-fJ-zYm"/>
+                                <constraint firstItem="2zI-Bp-iyF" firstAttribute="trailing" secondItem="1HF-5f-2P7" secondAttribute="trailing" id="cAR-cf-2jA"/>
+                                <constraint firstItem="yD6-AS-9zD" firstAttribute="top" secondItem="2Xq-6W-fOq" secondAttribute="bottom" constant="10" id="eKx-u4-Q3G"/>
+                                <constraint firstItem="yD6-AS-9zD" firstAttribute="trailing" secondItem="2Xq-6W-fOq" secondAttribute="trailing" id="ipf-db-gLf"/>
+                                <constraint firstItem="PiI-MX-6F3" firstAttribute="leading" secondItem="2Xq-6W-fOq" secondAttribute="leading" id="jbK-d2-QEM"/>
+                                <constraint firstItem="pdA-em-jbu" firstAttribute="leading" secondItem="PiI-MX-6F3" secondAttribute="leading" id="kTk-iR-EM8"/>
+                                <constraint firstItem="2Xq-6W-fOq" firstAttribute="height" secondItem="1HF-5f-2P7" secondAttribute="height" multiplier="1:1" id="kco-ub-QF2"/>
+                                <constraint firstItem="fbP-w7-oTa" firstAttribute="leading" secondItem="fRE-4W-hoj" secondAttribute="leading" id="lE7-KB-Guw"/>
+                                <constraint firstItem="PiI-MX-6F3" firstAttribute="trailing" secondItem="2Xq-6W-fOq" secondAttribute="trailing" id="pqn-ZH-pmG"/>
+                                <constraint firstItem="y34-R4-9D0" firstAttribute="leading" secondItem="pdA-em-jbu" secondAttribute="leading" id="qpt-eq-8Tv"/>
+                                <constraint firstItem="2zI-Bp-iyF" firstAttribute="leading" secondItem="1HF-5f-2P7" secondAttribute="leading" id="ryR-yE-WJw"/>
+                                <constraint firstAttribute="trailing" secondItem="fbP-w7-oTa" secondAttribute="trailing" constant="40" id="sYE-aR-JRs"/>
+                                <constraint firstItem="PiI-MX-6F3" firstAttribute="top" secondItem="yD6-AS-9zD" secondAttribute="bottom" constant="10" id="tsx-TX-J1g"/>
+                                <constraint firstItem="pdA-em-jbu" firstAttribute="trailing" secondItem="PiI-MX-6F3" secondAttribute="trailing" id="uO9-Q4-Y3l"/>
+                                <constraint firstItem="37d-qa-k2U" firstAttribute="height" secondItem="2zI-Bp-iyF" secondAttribute="height" multiplier="1:1" id="wfX-Ie-TRF"/>
+                                <constraint firstAttribute="bottom" secondItem="y34-R4-9D0" secondAttribute="bottom" constant="40" id="zZ5-ef-3xV"/>
                             </constraints>
                         </view>
                     </subviews>
@@ -217,9 +217,6 @@
         </namedColor>
         <namedColor name="MainbuttonColor">
             <color red="0.47499999403953552" green="0.0" blue="0.93300002813339233" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="Title">
-            <color red="0.13300000131130219" green="0.20000000298023224" blue="0.2669999897480011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Title">
             <color red="0.13300000131130219" green="0.20000000298023224" blue="0.2669999897480011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

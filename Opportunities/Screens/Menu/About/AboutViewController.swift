@@ -18,16 +18,21 @@ class AboutViewController: BaseWireFrame<AboutViewModel> {
     let cellIdentfier = "PhotoCollectionViewCell"
     override func viewDidLoad() {
         super.viewDidLoad()
+        SetupTableView()
         
-        PhotoCollectionView.dataSource = self
-        PhotoCollectionView.delegate = self
-        
-        PhotoCollectionView.register(UINib(nibName: cellIdentfier, bundle: nil), forCellWithReuseIdentifier: cellIdentfier)
         // Do any additional setup after loading the view.
     }
     
     override func bind(ViewModel: AboutViewModel) {
         
+    }
+    
+    func SetupTableView(){
+        PhotoCollectionView.dataSource = self
+        PhotoCollectionView.delegate = self
+        
+        PhotoCollectionView.register(UINib(nibName: cellIdentfier, bundle: nil), forCellWithReuseIdentifier: cellIdentfier)
+        configrationCollectionViewToThreeColum()
     }
     
     @IBAction func playVideo(_ sender: Any) {
@@ -36,6 +41,10 @@ class AboutViewController: BaseWireFrame<AboutViewModel> {
         
         coordinator.dismiss()
     }
+    
+    func configrationCollectionViewToThreeColum(){
+           PhotoCollectionView.collectionViewLayout = createThreeColumnFlowLayout(in: view)
+       }
     
 }
 
@@ -54,10 +63,26 @@ extension AboutViewController : UICollectionViewDataSource , UICollectionViewDel
     
 }
 
+
 extension AboutViewController: UICollectionViewDelegateFlowLayout {
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width:100 , height:100 )
+    
+    func createThreeColumnFlowLayout(in view: UIView) -> UICollectionViewFlowLayout {
+        let width = view.bounds.width
+        let padding: CGFloat = 10
+        let minimumItemSpacing: CGFloat = 10
+        
+        let availableWidth =  width - (padding * 2) - (minimumItemSpacing * 2)
+        print(availableWidth)
+        let itemWidth = availableWidth / 4
+        
+        let flowLayout = UICollectionViewFlowLayout()
+        flowLayout.sectionInset = UIEdgeInsets(top: padding, left: padding, bottom: padding, right: padding)
+        
+        flowLayout.itemSize = CGSize(width: itemWidth, height: itemWidth)
+        print(flowLayout.itemSize)
+        return flowLayout
     }
 }
+
 
 

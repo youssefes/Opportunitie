@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -55,7 +56,7 @@
                     </items>
                 </navigationBar>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="IcF-JK-3Au">
-                    <rect key="frame" x="20" y="192.5" width="374" height="669.5"/>
+                    <rect key="frame" x="0.0" y="192.5" width="414" height="669.5"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </tableView>
             </subviews>
@@ -63,11 +64,11 @@
             <constraints>
                 <constraint firstItem="N9M-lZ-2qc" firstAttribute="top" secondItem="ESV-3b-Ufq" secondAttribute="bottom" constant="15" id="1we-rA-sMo"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="IcF-JK-3Au" secondAttribute="bottom" id="IAg-lh-Jdt"/>
-                <constraint firstItem="IcF-JK-3Au" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="LER-fx-we7"/>
+                <constraint firstItem="IcF-JK-3Au" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="LER-fx-we7"/>
                 <constraint firstItem="ESV-3b-Ufq" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="NJ8-7N-ONk"/>
                 <constraint firstItem="N9M-lZ-2qc" firstAttribute="trailing" secondItem="ESV-3b-Ufq" secondAttribute="trailing" constant="20" id="Yfz-4q-UZq"/>
                 <constraint firstItem="IcF-JK-3Au" firstAttribute="top" secondItem="N9M-lZ-2qc" secondAttribute="bottom" constant="20" id="kSO-To-juq"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="IcF-JK-3Au" secondAttribute="trailing" constant="20" id="n1y-a4-m7x"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="IcF-JK-3Au" secondAttribute="trailing" id="n1y-a4-m7x"/>
                 <constraint firstItem="N9M-lZ-2qc" firstAttribute="leading" secondItem="ESV-3b-Ufq" secondAttribute="leading" id="uF1-Tn-Kmx"/>
                 <constraint firstItem="ESV-3b-Ufq" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="ySS-i5-Moc"/>
                 <constraint firstItem="ESV-3b-Ufq" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" constant="-20" id="zY9-qT-a9O"/>

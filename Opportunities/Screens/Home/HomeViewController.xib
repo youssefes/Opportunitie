@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -87,7 +88,7 @@
                     </subviews>
                 </stackView>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="MUI-2j-C8E">
-                    <rect key="frame" x="20" y="344" width="374" height="518"/>
+                    <rect key="frame" x="0.0" y="344" width="414" height="518"/>
                     <color key="backgroundColor" name="BackGround"/>
                     <inset key="scrollIndicatorInsets" minX="0.0" minY="10" maxX="0.0" maxY="10"/>
                     <color key="separatorColor" name="BackGround"/>
@@ -98,16 +99,16 @@
                 <constraint firstItem="XpW-Ba-rdy" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="2EO-go-vQ0"/>
                 <constraint firstItem="c0f-iN-seU" firstAttribute="trailing" secondItem="yxN-bi-zhw" secondAttribute="trailing" id="3cc-rC-gEE"/>
                 <constraint firstItem="MUI-2j-C8E" firstAttribute="top" secondItem="uxj-EJ-fvq" secondAttribute="bottom" constant="30" id="4fx-Y7-7bW"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="MUI-2j-C8E" secondAttribute="trailing" id="H5z-LP-Eaz"/>
                 <constraint firstItem="yxN-bi-zhw" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="JWS-u7-nF4"/>
                 <constraint firstItem="c0f-iN-seU" firstAttribute="leading" secondItem="XpW-Ba-rdy" secondAttribute="leading" id="Lq8-V1-5jz"/>
-                <constraint firstItem="MUI-2j-C8E" firstAttribute="trailing" secondItem="uxj-EJ-fvq" secondAttribute="trailing" id="XRR-um-S75"/>
                 <constraint firstItem="XpW-Ba-rdy" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="bHl-pF-lW1"/>
                 <constraint firstItem="uxj-EJ-fvq" firstAttribute="top" secondItem="c0f-iN-seU" secondAttribute="bottom" constant="50" id="bch-Ry-n0P"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="yxN-bi-zhw" secondAttribute="trailing" constant="20" id="hUY-qo-Abx"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="MUI-2j-C8E" secondAttribute="bottom" id="hbL-h7-lP8"/>
                 <constraint firstItem="uxj-EJ-fvq" firstAttribute="leading" secondItem="c0f-iN-seU" secondAttribute="leading" id="mXb-HR-vK8"/>
                 <constraint firstItem="c0f-iN-seU" firstAttribute="top" secondItem="yxN-bi-zhw" secondAttribute="bottom" constant="20" id="mfk-ma-iqt"/>
-                <constraint firstItem="MUI-2j-C8E" firstAttribute="leading" secondItem="uxj-EJ-fvq" secondAttribute="leading" id="x5h-7u-OVu"/>
+                <constraint firstItem="MUI-2j-C8E" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="rdv-RM-g2G"/>
                 <constraint firstItem="uxj-EJ-fvq" firstAttribute="trailing" secondItem="c0f-iN-seU" secondAttribute="trailing" id="zZX-hB-Vwm"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>

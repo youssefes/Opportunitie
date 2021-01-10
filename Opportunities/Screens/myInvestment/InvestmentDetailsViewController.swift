@@ -38,7 +38,7 @@ class InvestmentDetailsViewController : BaseWireFrame<InvestementViewModel> {
     }
     
     func configrationCollectionViewToThreeColum(){
-//        InvestementcollectionView.collectionViewLayout = createThreeColumnFlowLayout(in: containerView)
+        InvestementcollectionView.collectionViewLayout = createThreeColumnFlowLayout(in: containerView)
     }
     
 }
@@ -62,25 +62,21 @@ extension InvestmentDetailsViewController : UICollectionViewDataSource , UIColle
 
 extension InvestmentDetailsViewController: UICollectionViewDelegateFlowLayout {
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width:100 , height:100 )
+    func createThreeColumnFlowLayout(in view: UIView) -> UICollectionViewFlowLayout {
+        let width = view.bounds.width
+        let padding: CGFloat = 20
+        let minimumItemSpacing: CGFloat = 10
+        
+        let availableWidth =  width - (padding * 2) - (minimumItemSpacing * 2) 
+        print(availableWidth)
+        let itemWidth = availableWidth / 4
+        
+        let flowLayout = UICollectionViewFlowLayout()
+        flowLayout.sectionInset = UIEdgeInsets(top: padding, left: padding, bottom: padding, right: padding)
+        
+      flowLayout.itemSize = CGSize(width: itemWidth, height: itemWidth)
+        print(flowLayout.itemSize)
+        return flowLayout
     }
-    
-//    func createThreeColumnFlowLayout(in view: UIView) -> UICollectionViewFlowLayout {
-//        let width = view.bounds.width
-//        let padding: CGFloat = 20
-//        let minimumItemSpacing: CGFloat = 10
-//        
-//        let availableWidth =  width - (padding * 2) - (minimumItemSpacing * 2) 
-//        print(availableWidth)
-//        let itemWidth = availableWidth / 3
-//        
-//        let flowLayout = UICollectionViewFlowLayout()
-//        flowLayout.sectionInset = UIEdgeInsets(top: padding, left: padding, bottom: padding, right: padding)
-//        
-//      flowLayout.itemSize = CGSize(width: itemWidth, height: itemWidth)
-//        print(flowLayout.itemSize)
-//        return flowLayout
-//    }
 }
 
