@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import BubbleTabBar
 
-class CustomTabBarController: UITabBarController {
+class CustomTabBarController: BubbleTabBarController {
     var Coorinator : Coordinator
     
     init(coordinator : Coordinator) {
@@ -68,21 +69,21 @@ class CustomTabBarController: UITabBarController {
         }
     }
     func setUpTabBarItemUI(for tabBarItem : TabBarItems) -> UITabBarItem {
-        let tab : UITabBarItem
+        let tab : CBTabBarItem
         
         switch tabBarItem {
         case .Home:
-            tab = .init(title: "", image: #imageLiteral(resourceName: "Vector-3"), selectedImage: #imageLiteral(resourceName: "Home"))
+            tab = .init(title: "Home", image: #imageLiteral(resourceName: "Vector-3"), selectedImage: #imageLiteral(resourceName: "Home"))
         case .Active:
-              tab = .init(title: "", image: #imageLiteral(resourceName: "Vector-5"), selectedImage: #imageLiteral(resourceName: "Vector-4"))
+              tab = .init(title: "Active", image: #imageLiteral(resourceName: "Vector-5"), selectedImage: #imageLiteral(resourceName: "Vector-4"))
         case .Search:
-            tab = .init(title: "", image: #imageLiteral(resourceName: "Search"), selectedImage: #imageLiteral(resourceName: "Vector-2"))
+            tab = .init(title: "Search", image: #imageLiteral(resourceName: "Search"), selectedImage: #imageLiteral(resourceName: "Vector-2"))
         case .Profile:
-            tab = .init(title: "", image: #imageLiteral(resourceName: "Profile"), selectedImage: #imageLiteral(resourceName: "Vector-1"))
+            tab = .init(title: "Profile", image: #imageLiteral(resourceName: "Profile"), selectedImage: #imageLiteral(resourceName: "Vector-1"))
         }
         
-        tab.titlePositionAdjustment = .init(horizontal: 0, vertical: 5)
-        tab.imageInsets = .init(top: 5, left: 0, bottom: -5, right: 0)
+        tab.tintColor = DesignSystem.Colors.MainbuttonColor.color
+        
         return tab
     }
 }

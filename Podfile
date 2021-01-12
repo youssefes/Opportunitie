@@ -6,7 +6,7 @@ target 'Opportunities' do
   use_frameworks!
 
   # Pods for Opportunities
-
+   pod 'BubbleTabBar', '~> 0.9'
   target 'OpportunitiesTests' do
     inherit! :search_paths
 
