@@ -23,6 +23,7 @@ class HomeViewModel {
     }
     
     func getLetestoppertunites() {
+        
         Repository.letestOppertunites().subscribe(onNext: {(oppertunites) in
             self.letestOppertunites.onNext(oppertunites)
         }).disposed(by: disposedBag)

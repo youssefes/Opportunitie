@@ -12,23 +12,20 @@ import RxCocoa
 import Alamofire
 
 class SignInViewModel {
-    var SeccessSignIn : PublishSubject<User> = .init()
+    var SeccessSignIn : PublishSubject<ResponseObjectModel<User>> = .init()
+
     var signRepository = SignRepositoryImp()
     let disposedBag = DisposeBag()
+    var MessageError : BehaviorRelay<String> = BehaviorRelay.init(value: "")
     
     func ViewDidLoad(){
         
     }
     func Signin(parameters : Parameters) {
         
-        signRepository.SignIn(parameters: parameters).subscribe(onNext: { user in
-            guard let statuscode = user.code else {return}
-            if statuscode == 200{
-                guard let userData = user.data else {return}
-                self.SeccessSignIn.onNext(userData)
-            }else{
-                print(user.msg)
-            }
+        signRepository.SignIn(parameters: parameters).subscribe(onNext: {[weak self] user in
+            guard let self = self else {return}
+            self.SeccessSignIn.onNext(user)
             
         }).disposed(by: disposedBag)
         
