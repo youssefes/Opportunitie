@@ -16,7 +16,6 @@ class NetworkClient {
             
             do {
                 guard let data = response.data else {return}
-                print(data)
                 let decoder = JSONDecoder()
                 decoder.keyDecodingStrategy = .useDefaultKeys
                 let models = try decoder.decode(ResponseObjectModel<T>.self, from: data)

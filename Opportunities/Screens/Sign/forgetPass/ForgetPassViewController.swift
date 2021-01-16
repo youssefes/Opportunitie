@@ -7,9 +7,11 @@
 //
 
 import UIKit
+import NVActivityIndicatorView
 
 class ForgetPassViewController: BaseWireFrame<ForgetPassViewModel> {
 
+    @IBOutlet weak var activatyIndicators: NVActivityIndicatorView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -30,26 +32,25 @@ class ForgetPassViewController: BaseWireFrame<ForgetPassViewModel> {
     }
     
     func  navigateTo(){
-           vieeModel.SeccessSignUp.asObserver().subscribe(onNext: { [weak self](resulte) in
-            print(resulte)
-               if  resulte.value == true{
-                guard let viewc = self?.coordinator.MainStoryBordNavigator.viewController(for: .RestPassView) else  { print("error to navigation")
-                       return
-                   }
-                   self?.present(viewc, animated: true, completion: nil)
-               }else{
-                   print(resulte.msg)
-               }
-               
-               }, onError: { (error) in
-                   print(error)
-           }).disposed(by: disposePag)
-       }
-       
+        vieeModel.SeccessSignUp.asObserver().subscribe(onNext: { [weak self](resulte) in
+            guard let self = self  else {return}
+            self.activatyIndicators.stopAnimating()
+            if  resulte.value == true{
+                let viewc = self.coordinator.MainStoryBordNavigator.viewController(for: .RestPassView)
+                self.present(viewc, animated: true, completion: nil)
+            }else{
+                self.presentAlertOnMainThread(message: resulte.msg, buttontitle: "", buttonTitle2: "OK", isoneBtn: true)
+            }
+            
+            }, onError: { (error) in
+                print(error)
+        }).disposed(by: disposePag)
+    }
+    
        func SendRequest(){
            
 //           guard let email = emailTf.text , !email.isEmpty else {return}
-           
+        activatyIndicators.startAnimating()
            let paramerter : [String : Any] = [
                "email" : "youssef.esmailelfeky@gmail.com",
            ]

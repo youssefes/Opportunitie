@@ -1,16 +1,22 @@
 PODS:
   - BubbleTabBar (0.9.0)
+  - NVActivityIndicatorView (5.1.1):
+    - NVActivityIndicatorView/Base (= 5.1.1)
+  - NVActivityIndicatorView/Base (5.1.1)
 
 DEPENDENCIES:
   - BubbleTabBar (~> 0.9)
+  - NVActivityIndicatorView
 
 SPEC REPOS:
   trunk:
     - BubbleTabBar
+    - NVActivityIndicatorView
 
 SPEC CHECKSUMS:
   BubbleTabBar: 9b63c3394182b9d866c54b11bcc887da98611fb8
+  NVActivityIndicatorView: 1f6c5687f1171810aa27a3296814dc2d7dec3667
 
-PODFILE CHECKSUM: 374123d4c71cff93297f125a4245627e384f221f
+PODFILE CHECKSUM: 0d84ad7b54fecdb83c8eeb7ab8f928f3f4be4164
 
 COCOAPODS: 1.9.1

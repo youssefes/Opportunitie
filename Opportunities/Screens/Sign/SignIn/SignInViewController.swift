@@ -7,8 +7,12 @@
 //
 
 import UIKit
+import NVActivityIndicatorView
 
 class SignInViewController: BaseWireFrame<SignInViewModel> {
+    
+    @IBOutlet weak var activatyIndicator: NVActivityIndicatorView!
+    
     @IBOutlet weak var emailTf: TextField!
     @IBOutlet weak var forgetPasswordLbl: UILabel!
     @IBOutlet weak var password: TextField!
@@ -36,10 +40,12 @@ class SignInViewController: BaseWireFrame<SignInViewModel> {
     }
     
     func signIn(){
-        
+       
         guard let email = emailTf.text , !email.isEmpty,let password = password.text , !password.isEmpty else{
             return
         }
+        
+         activatyIndicator.startAnimating()
         let paramerter : [String : Any] = [
             "email" : email,
             "password" : password
@@ -51,6 +57,7 @@ class SignInViewController: BaseWireFrame<SignInViewModel> {
     func  navigateTohome(){
         vieeModel.SeccessSignIn.subscribe(onNext: { [weak self](resulte) in
             guard let self = self  else {return}
+            self.activatyIndicator.stopAnimating()
             guard let status = resulte.code else {return}
             if status == 200{
                 let viewc = self.coordinator.tabBarController

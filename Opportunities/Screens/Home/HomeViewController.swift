@@ -7,32 +7,39 @@
 //
 
 import UIKit
-
+import NVActivityIndicatorView
 class HomeViewController: BaseWireFrame<HomeViewModel> {
 
+    @IBOutlet weak var activityIndicator: NVActivityIndicatorView!
     
     let cellIdentifier = "HomeTableViewCell"
     @IBOutlet weak var HomeTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        vieeModel.viewDidlead()
         setUpUI()
         registerCell()
         // Do any additional setup after loading the view.
     }
     
-    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        vieeModel.viewDidlead()
+    }
     override func bind(ViewModel: HomeViewModel) {
-        vieeModel.letestOppertunitesObservable.bind(to: HomeTableView.rx.items(cellIdentifier: cellIdentifier, cellType: HomeTableViewCell.self)){ (index,oppertunite, cell) in
+        activityIndicator.startAnimating()
+        vieeModel.letestOppertunitesObservable.bind(to: HomeTableView.rx.items(cellIdentifier: cellIdentifier, cellType: HomeTableViewCell.self)){ [weak  self] (index,oppertunite, cell) in
+            guard let self = self else {return}
+            self.activityIndicator.stopAnimating()
             cell.letestOppertunite.onNext(oppertunite)
-            cell.getDeteailesBtn.rx.tap.subscribe(onNext: { [weak self] event in
-                self?.coordinator.mainNavigator.Navigate(to: .OppertuniteDetailesViewController(id: 8) )
-            }).disposed(by: self.disposePag)
+            cell.getDeteailesBtn = {
+                self.coordinator.mainNavigator.Navigate(to: .OppertuniteDetailesViewController(id: oppertunite.id) )
+            }
+                
         }.disposed(by: disposePag)
     }
     func registerCell(){
-//        HomeTableView.backgroundColor = DesignSystem.Colors.BackGround.color
+        HomeTableView.backgroundColor = DesignSystem.Colors.BackGround.color
         HomeTableView.register(UINib(nibName: "HomeTableViewCell", bundle: nil), forCellReuseIdentifier: "HomeTableViewCell")
     }
     

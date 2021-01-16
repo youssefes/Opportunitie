@@ -7,8 +7,11 @@
 //
 
 import UIKit
+import NVActivityIndicatorView
 
 class RestPassViewController: BaseWireFrame<RestPassViewModel> {
+    
+    @IBOutlet weak var activatyIndactors: NVActivityIndicatorView!
     @IBOutlet weak var conformNewPass: UITextField!
     
     @IBOutlet weak var newPassword: UITextField!
@@ -21,22 +24,19 @@ class RestPassViewController: BaseWireFrame<RestPassViewModel> {
         
     }
     @IBAction func contiune(_ sender: Any) {
-        
+        SendRequest()
         navigateTo()
     }
     
     func  navigateTo(){
-        SendRequest()
-        
         vieeModel.SeccessSignUp.asObserver().subscribe(onNext: { [weak self](resulte) in
+            guard let self = self  else {return}
+            self.activatyIndactors.stopAnimating()
             if  resulte.value == true{
-                print(resulte.msg)
-                guard let viewc = self?.coordinator.MainStoryBordNavigator.viewController(for: .SeccessRestPassView) else  { print("error to navigation")
-                    return
-                }
-                self?.present(viewc, animated: true, completion: nil)
+                let viewc = self.coordinator.MainStoryBordNavigator.viewController(for: .RestPassView)
+                self.present(viewc, animated: true, completion: nil)
             }else{
-                print(resulte.msg)
+                self.presentAlertOnMainThread(message: resulte.msg, buttontitle: "", buttonTitle2: "OK", isoneBtn: true)
             }
             
             }, onError: { (error) in
@@ -47,6 +47,7 @@ class RestPassViewController: BaseWireFrame<RestPassViewModel> {
     func SendRequest(){
         
         //           guard let email = emailTf.text , !email.isEmpty else {return}
+        activatyIndactors.startAnimating()
         
         let paramerter : [String : Any] = [
             "email" : "youssef.esmailelfeky@gmail.com",

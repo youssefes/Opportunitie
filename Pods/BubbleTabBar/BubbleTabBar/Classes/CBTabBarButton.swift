@@ -80,7 +80,7 @@ public class CBTabBarButton: UIControl {
                 tabImage.tintColor = tintColor
             }
             tabLabel.textColor = tintColor
-            tabBg.backgroundColor = tintColor
+            tabBg.backgroundColor = tintColor.withAlphaComponent(0.2)
         }
     }
 

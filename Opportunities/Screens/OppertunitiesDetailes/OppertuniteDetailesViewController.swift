@@ -33,7 +33,7 @@ class OppertuniteDetailesViewController: BaseWireFrame<OppertuniteDetailesViewMo
             guard let self = self else {return}
             self.minLbl.text = opertunite.minimum
             self.maxLbl.text = opertunite.maximum
-            self.discription.text = opertunite.detail
+            self.discription.text = opertunite.detail.html2String
             self.priceLbl.text = opertunite.total
             self.timeLeftLbl.text = opertunite.timeLeft
             self.durationLbl.text = opertunite.duration

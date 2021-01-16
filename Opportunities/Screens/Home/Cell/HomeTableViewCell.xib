@@ -46,6 +46,9 @@
                                             <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
                                                 <real key="value" value="0.0"/>
                                             </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </imageView>
                                 </subviews>
@@ -66,18 +69,18 @@
                                         <real key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="point" keyPath="shadowOffset">
-                                        <point key="value" x="0.0" y="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
-                                        <real key="value" value="0.5"/>
+                                        <point key="value" x="10" y="10"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
-                                        <color key="value" name="textFieldColorBackGround"/>
+                                        <color key="value" name="SubTitle"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="0.10000000000000001"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VODAVODA water" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cUs-hz-AAI">
-                                <rect key="frame" x="104.5" y="121.5" width="147" height="32"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VODAVODA water" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="cUs-hz-AAI">
+                                <rect key="frame" x="105" y="121.5" width="146" height="32"/>
                                 <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="18"/>
                                 <color key="textColor" name="Title"/>
                                 <nil key="highlightedColor"/>
@@ -123,12 +126,15 @@
                                     <constraint firstAttribute="height" constant="47" id="Qjb-Jm-feK"/>
                                 </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Get Started"/>
+                                <state key="normal" title="View opportunity"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="16"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="goToDatalisBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Psn-7B-opy"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -145,6 +151,7 @@
                             <constraint firstAttribute="trailing" secondItem="car-iW-Qv8" secondAttribute="trailing" constant="10" id="QXz-J6-bqu"/>
                             <constraint firstItem="cUs-hz-AAI" firstAttribute="centerX" secondItem="kMv-ek-Ny3" secondAttribute="centerX" constant="20" id="R7p-As-kcN"/>
                             <constraint firstItem="car-iW-Qv8" firstAttribute="leading" secondItem="D8a-Ie-Ggi" secondAttribute="leading" id="RPA-12-OUq"/>
+                            <constraint firstItem="cUs-hz-AAI" firstAttribute="leading" secondItem="D8a-Ie-Ggi" secondAttribute="trailing" constant="15" id="a8x-KV-jNy"/>
                             <constraint firstAttribute="trailing" secondItem="Yqb-Vm-T5D" secondAttribute="trailing" id="bgW-uO-ZN7"/>
                             <constraint firstItem="Yqb-Vm-T5D" firstAttribute="top" secondItem="kMv-ek-Ny3" secondAttribute="top" id="ftn-h1-ZHX"/>
                             <constraint firstItem="pxa-lV-IrP" firstAttribute="leading" secondItem="car-iW-Qv8" secondAttribute="leading" id="mG4-sl-cVk"/>
@@ -184,7 +191,6 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="MainImage" destination="Yqb-Vm-T5D" id="wGQ-1N-3i2"/>
-                <outlet property="getDeteailesBtn" destination="pxa-lV-IrP" id="WER-Y1-rC6"/>
                 <outlet property="nameLbl" destination="cUs-hz-AAI" id="DpS-WU-YYf"/>
                 <outlet property="subImage" destination="VhK-Jy-6dt" id="VAk-Kv-mmd"/>
             </connections>
@@ -198,13 +204,13 @@
             <color red="0.59600001573562622" green="0.61599999666213989" blue="0.6470000147819519" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="MainbuttonColor">
-            <color red="0.47499999403953552" green="0.0" blue="0.93300002813339233" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.48199999332427979" green="0.0" blue="0.84700000286102295" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="SubTitle">
+            <color red="0.31799998879432678" green="0.31799998879432678" blue="0.31799998879432678" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Title">
             <color red="0.13300000131130219" green="0.20000000298023224" blue="0.2669999897480011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="textFieldColorBackGround">
-            <color red="0.9649999737739563" green="0.97299998998641968" blue="0.98400002717971802" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

@@ -7,9 +7,11 @@
 //
 
 import UIKit
+import NVActivityIndicatorView
 
 class ConframCodeViewController: BaseWireFrame<comformViewModel> {
     
+    @IBOutlet weak var activatyIndicators: NVActivityIndicatorView!
     @IBOutlet weak var textViewNumber1: UITextField!
     
     @IBOutlet weak var textViewNumber2: UITextField!
@@ -38,10 +40,11 @@ class ConframCodeViewController: BaseWireFrame<comformViewModel> {
         
     }
     @IBAction func verifyBtn(_ sender: Any) {
-//        guard let text = textViewNumber1.text, text.isEmpty ,let text2 = textViewNumber2.text, text2.isEmpty,let text3 = textViewNumber3.text, text3.isEmpty,let text4 = textviewNumber4.text, text4.isEmpty else {
-//            return
-//        }
-//
+        //        guard let text = textViewNumber1.text, text.isEmpty ,let text2 = textViewNumber2.text, text2.isEmpty,let text3 = textViewNumber3.text, text3.isEmpty,let text4 = textviewNumber4.text, text4.isEmpty else {
+        //            return
+        //        }
+        //
+        activatyIndicators.startAnimating()
         navigateTo()
         
     }
@@ -50,13 +53,13 @@ class ConframCodeViewController: BaseWireFrame<comformViewModel> {
     func  navigateTo(){
         sendCode()
         vieeModel.SeccessSignUp.asObserver().subscribe(onNext: { [weak self](resulte) in
+            guard let self = self  else {return}
+            self.activatyIndicators.stopAnimating()
             if  resulte.value == true{
-                guard let viewc = self?.coordinator.MainStoryBordNavigator.viewController(for: .haveAcountView) else  { print("error to navigation")
-                    return
-                }
-                self?.present(viewc, animated: true, completion: nil)
+                let viewc = self.coordinator.MainStoryBordNavigator.viewController(for: .haveAcountView)
+                self.present(viewc, animated: true, completion: nil)
             }else{
-                print(resulte.msg)
+                self.presentAlertOnMainThread(message: resulte.msg, buttontitle: "", buttonTitle2: "OK", isoneBtn: true)
             }
             
             }, onError: { (error) in

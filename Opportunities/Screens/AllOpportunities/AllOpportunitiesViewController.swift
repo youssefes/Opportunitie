@@ -7,9 +7,12 @@
 //
 
 import UIKit
-
+import RxCocoa
+import RxSwift
+import NVActivityIndicatorView
 class AllOpportunitiesViewController: BaseWireFrame<AllOppertunitesViewModel> {
-
+    @IBOutlet weak var activityIndicators: NVActivityIndicatorView!
+    
     @IBOutlet weak var numberofOppertuniteLbl: UILabel!
     @IBOutlet weak var OppertunitieTableview: UITableView!
     
@@ -18,15 +21,25 @@ class AllOpportunitiesViewController: BaseWireFrame<AllOppertunitesViewModel> {
         super.viewDidLoad()
         registerCell()
         setUpUI()
+        vieeModel.viewDidlead()
     }
+    
     override func bind(ViewModel: AllOppertunitesViewModel) {
-        ViewModel.viewDidlead()
-        ViewModel.allOppertunitesObservable.bind(to: OppertunitieTableview.rx.items(cellIdentifier: cellIdentifier, cellType: HomeTableViewCell.self)){[weak self] (index, oppertunites, cell) in
+        activityIndicators.startAnimating()
+        ViewModel.allOppertunitesObservable.bind(to: OppertunitieTableview.rx.items(cellIdentifier: cellIdentifier, cellType: HomeTableViewCell.self)){[weak self] (index, oppertunites,
+            cell) in
+            guard let self = self else {return}
+            self.activityIndicators.stopAnimating()
             cell.letestOppertunite.onNext(oppertunites)
-            cell.getDeteailesBtn.rx.tap.subscribe { [weak self](touch) in
-                self?.coordinator.mainNavigator.Navigate(to: .OppertuniteDetailesViewController(id: 5))
-            }.disposed(by: self!.disposePag)
+            cell.getDeteailesBtn = {
+                self.coordinator.mainNavigator.Navigate(to: .OppertuniteDetailesViewController(id: oppertunites.id) )
+            }
         }.disposed(by: disposePag)
+        
+        ViewModel.numberOfAppartunites.subscribe(onNext: {[weak self] (numberOfOpertunites) in
+            guard let self = self else {return}
+            self.numberofOppertuniteLbl.text = "\(numberOfOpertunites) Opportunites"
+        }).disposed(by: disposePag)
     }
     func registerCell(){
         OppertunitieTableview.backgroundColor = DesignSystem.Colors.BackGround.color

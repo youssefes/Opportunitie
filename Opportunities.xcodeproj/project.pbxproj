@@ -78,7 +78,8 @@
 		E83EFAC0257D77BC0075CDF1 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83EFABE257D77BC0075CDF1 /* SearchViewController.swift */; };
 		E83EFAC1257D77BC0075CDF1 /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E83EFABF257D77BC0075CDF1 /* SearchViewController.xib */; };
 		E843420E25A3940F00B9E08A /* OppertunitesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E843420D25A3940F00B9E08A /* OppertunitesRouter.swift */; };
-		E84EE043259137D8009FEAD3 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = E84EE042259137D8009FEAD3 /* SwiftPackageProductDependency */; };
+		E8440E3925B2208E00B83F5B /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = E8440E3825B2208E00B83F5B /* Kingfisher */; };
+		E84EE043259137D8009FEAD3 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = E84EE042259137D8009FEAD3 /* Alamofire */; };
 		E84EE0452591381D009FEAD3 /* NetworkConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84EE0442591381D009FEAD3 /* NetworkConstant.swift */; };
 		E84EE047259138D1009FEAD3 /* SignRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84EE046259138D1009FEAD3 /* SignRouter.swift */; };
 		E84EE049259139FA009FEAD3 /* ClientNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84EE048259139FA009FEAD3 /* ClientNetwork.swift */; };
@@ -99,13 +100,13 @@
 		E85770BE258154FE00F6130F /* MainNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85770BD258154FE00F6130F /* MainNavigator.swift */; };
 		E85770C02581551B00F6130F /* navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85770BF2581551B00F6130F /* navigator.swift */; };
 		E85E3C8F258CF2610039160B /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85E3C8E258CF2610039160B /* SignUpViewModel.swift */; };
-		E85FC6DD258CCCB9007D126E /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = E85FC6DC258CCCB9007D126E /* SwiftPackageProductDependency */; };
-		E85FC6DF258CCCB9007D126E /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = E85FC6DE258CCCB9007D126E /* SwiftPackageProductDependency */; };
-		E85FC6E1258CCCB9007D126E /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = E85FC6E0258CCCB9007D126E /* SwiftPackageProductDependency */; };
-		E85FC6E3258CCCB9007D126E /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = E85FC6E2258CCCB9007D126E /* SwiftPackageProductDependency */; };
-		E85FC6E5258CCCB9007D126E /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = E85FC6E4258CCCB9007D126E /* SwiftPackageProductDependency */; };
-		E85FC6E8258CCD47007D126E /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = E85FC6E7258CCD47007D126E /* SwiftPackageProductDependency */; };
-		E85FC6EB258CCED9007D126E /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = E85FC6EA258CCED9007D126E /* SwiftPackageProductDependency */; };
+		E85FC6DD258CCCB9007D126E /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E85FC6DC258CCCB9007D126E /* RxSwift */; };
+		E85FC6DF258CCCB9007D126E /* RxTest in Frameworks */ = {isa = PBXBuildFile; productRef = E85FC6DE258CCCB9007D126E /* RxTest */; };
+		E85FC6E1258CCCB9007D126E /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = E85FC6E0258CCCB9007D126E /* RxRelay */; };
+		E85FC6E3258CCCB9007D126E /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = E85FC6E2258CCCB9007D126E /* RxCocoa */; };
+		E85FC6E5258CCCB9007D126E /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = E85FC6E4258CCCB9007D126E /* RxBlocking */; };
+		E85FC6E8258CCD47007D126E /* UITextView+Placeholder in Frameworks */ = {isa = PBXBuildFile; productRef = E85FC6E7258CCD47007D126E /* UITextView+Placeholder */; };
+		E85FC6EB258CCED9007D126E /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = E85FC6EA258CCED9007D126E /* IQKeyboardManagerSwift */; };
 		E865113525893D1200B4B263 /* LanguageToSpeakeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E865113425893D1200B4B263 /* LanguageToSpeakeViewModel.swift */; };
 		E87C25A5258280ED00833DB3 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87C25A3258280ED00833DB3 /* MenuViewController.swift */; };
 		E87C25A6258280ED00833DB3 /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E87C25A4258280ED00833DB3 /* MenuViewController.xib */; };
@@ -336,14 +337,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E84EE043259137D8009FEAD3 /* BuildFile in Frameworks */,
-				E85FC6DD258CCCB9007D126E /* BuildFile in Frameworks */,
-				E85FC6EB258CCED9007D126E /* BuildFile in Frameworks */,
-				E85FC6E5258CCCB9007D126E /* BuildFile in Frameworks */,
-				E85FC6DF258CCCB9007D126E /* BuildFile in Frameworks */,
-				E85FC6E8258CCD47007D126E /* BuildFile in Frameworks */,
-				E85FC6E3258CCCB9007D126E /* BuildFile in Frameworks */,
-				E85FC6E1258CCCB9007D126E /* BuildFile in Frameworks */,
+				E84EE043259137D8009FEAD3 /* Alamofire in Frameworks */,
+				E85FC6DD258CCCB9007D126E /* RxSwift in Frameworks */,
+				E85FC6EB258CCED9007D126E /* IQKeyboardManagerSwift in Frameworks */,
+				E85FC6E5258CCCB9007D126E /* RxBlocking in Frameworks */,
+				E8440E3925B2208E00B83F5B /* Kingfisher in Frameworks */,
+				E85FC6DF258CCCB9007D126E /* RxTest in Frameworks */,
+				E85FC6E8258CCD47007D126E /* UITextView+Placeholder in Frameworks */,
+				E85FC6E3258CCCB9007D126E /* RxCocoa in Frameworks */,
+				E85FC6E1258CCCB9007D126E /* RxRelay in Frameworks */,
 				59D1BA9597D9D824B9F4EDDE /* Pods_Opportunities.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -628,6 +630,7 @@
 		E83EFABD257D77A30075CDF1 /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				E83E6F74258592CD0017F67A /* myInvestment */,
 				E83EFABE257D77BC0075CDF1 /* SearchViewController.swift */,
 				E83EFABF257D77BC0075CDF1 /* SearchViewController.xib */,
 				E83A54F9258763F40076BDCE /* searchViewModel.swift */,
@@ -1006,7 +1009,6 @@
 				E81C3E5D258815E700A2D9B6 /* completePayment */,
 				E81C3E5025880E4C00A2D9B6 /* payMent */,
 				E801583B2586A85F003D44C3 /* Profile */,
-				E83E6F74258592CD0017F67A /* myInvestment */,
 				E83E6F6425857AAA0017F67A /* Active */,
 				E87EC4A72582486000003C29 /* Menu */,
 				E8E8FDFA25810B3D00FBF9C4 /* OppertunitiesDetailes */,
@@ -1049,7 +1051,7 @@
 				E8B2875A2576CB0B00326E02 /* Sources */,
 				E8B2875B2576CB0B00326E02 /* Frameworks */,
 				E8B2875C2576CB0B00326E02 /* Resources */,
-				673403C8033519A06C595618 /* [CP] Embed Pods Frameworks */,
+				4A380C4983B344CBD3DDA3CD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1057,14 +1059,15 @@
 			);
 			name = Opportunities;
 			packageProductDependencies = (
-				E85FC6DC258CCCB9007D126E /* SwiftPackageProductDependency */,
-				E85FC6DE258CCCB9007D126E /* SwiftPackageProductDependency */,
-				E85FC6E0258CCCB9007D126E /* SwiftPackageProductDependency */,
-				E85FC6E2258CCCB9007D126E /* SwiftPackageProductDependency */,
-				E85FC6E4258CCCB9007D126E /* SwiftPackageProductDependency */,
-				E85FC6E7258CCD47007D126E /* SwiftPackageProductDependency */,
-				E85FC6EA258CCED9007D126E /* SwiftPackageProductDependency */,
-				E84EE042259137D8009FEAD3 /* SwiftPackageProductDependency */,
+				E85FC6DC258CCCB9007D126E /* RxSwift */,
+				E85FC6DE258CCCB9007D126E /* RxTest */,
+				E85FC6E0258CCCB9007D126E /* RxRelay */,
+				E85FC6E2258CCCB9007D126E /* RxCocoa */,
+				E85FC6E4258CCCB9007D126E /* RxBlocking */,
+				E85FC6E7258CCD47007D126E /* UITextView+Placeholder */,
+				E85FC6EA258CCED9007D126E /* IQKeyboardManagerSwift */,
+				E84EE042259137D8009FEAD3 /* Alamofire */,
+				E8440E3825B2208E00B83F5B /* Kingfisher */,
 			);
 			productName = Opportunities;
 			productReference = E8B2875E2576CB0B00326E02 /* Opportunities.app */;
@@ -1097,7 +1100,7 @@
 				E8B2877B2576CB1100326E02 /* Sources */,
 				E8B2877C2576CB1100326E02 /* Frameworks */,
 				E8B2877D2576CB1100326E02 /* Resources */,
-				5E6E0C75836F9055CE6801DE /* [CP] Embed Pods Frameworks */,
+				F6DC177BD6626A210D6288BD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1143,10 +1146,11 @@
 			);
 			mainGroup = E8B287552576CB0B00326E02;
 			packageReferences = (
-				E85FC6DB258CCCB9007D126E /* RemoteSwiftPackageReference */,
-				E85FC6E6258CCD47007D126E /* RemoteSwiftPackageReference */,
-				E85FC6E9258CCED9007D126E /* RemoteSwiftPackageReference */,
-				E84EE041259137D8009FEAD3 /* RemoteSwiftPackageReference */,
+				E85FC6DB258CCCB9007D126E /* XCRemoteSwiftPackageReference "RxSwift" */,
+				E85FC6E6258CCD47007D126E /* XCRemoteSwiftPackageReference "UITextView-Placeholder" */,
+				E85FC6E9258CCED9007D126E /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+				E84EE041259137D8009FEAD3 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				E8440E3725B2208E00B83F5B /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = E8B2875F2576CB0B00326E02 /* Products */;
 			projectDirPath = "";
@@ -1270,24 +1274,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		5E6E0C75836F9055CE6801DE /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Opportunities-OpportunitiesUITests/Pods-Opportunities-OpportunitiesUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Opportunities-OpportunitiesUITests/Pods-Opportunities-OpportunitiesUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Opportunities-OpportunitiesUITests/Pods-Opportunities-OpportunitiesUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		673403C8033519A06C595618 /* [CP] Embed Pods Frameworks */ = {
+		4A380C4983B344CBD3DDA3CD /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1324,6 +1311,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6DC177BD6626A210D6288BD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Opportunities-OpportunitiesUITests/Pods-Opportunities-OpportunitiesUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Opportunities-OpportunitiesUITests/Pods-Opportunities-OpportunitiesUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Opportunities-OpportunitiesUITests/Pods-Opportunities-OpportunitiesUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1769,7 +1773,15 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		E84EE041259137D8009FEAD3 /* RemoteSwiftPackageReference */ = {
+		E8440E3725B2208E00B83F5B /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.0;
+			};
+		};
+		E84EE041259137D8009FEAD3 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
 			requirement = {
@@ -1777,7 +1789,7 @@
 				minimumVersion = 5.4.1;
 			};
 		};
-		E85FC6DB258CCCB9007D126E /* RemoteSwiftPackageReference */ = {
+		E85FC6DB258CCCB9007D126E /* XCRemoteSwiftPackageReference "RxSwift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
 			requirement = {
@@ -1785,7 +1797,7 @@
 				minimumVersion = 5.1.1;
 			};
 		};
-		E85FC6E6258CCD47007D126E /* RemoteSwiftPackageReference */ = {
+		E85FC6E6258CCD47007D126E /* XCRemoteSwiftPackageReference "UITextView-Placeholder" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/devxoul/UITextView-Placeholder.git";
 			requirement = {
@@ -1793,7 +1805,7 @@
 				minimumVersion = 1.4.0;
 			};
 		};
-		E85FC6E9258CCED9007D126E /* RemoteSwiftPackageReference */ = {
+		E85FC6E9258CCED9007D126E /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
 			requirement = {
@@ -1804,44 +1816,49 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		E84EE042259137D8009FEAD3 /* SwiftPackageProductDependency */ = {
+		E8440E3825B2208E00B83F5B /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = E84EE041259137D8009FEAD3 /* RemoteSwiftPackageReference */;
+			package = E8440E3725B2208E00B83F5B /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		E84EE042259137D8009FEAD3 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E84EE041259137D8009FEAD3 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
 		};
-		E85FC6DC258CCCB9007D126E /* SwiftPackageProductDependency */ = {
+		E85FC6DC258CCCB9007D126E /* RxSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = E85FC6DB258CCCB9007D126E /* RemoteSwiftPackageReference */;
+			package = E85FC6DB258CCCB9007D126E /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxSwift;
 		};
-		E85FC6DE258CCCB9007D126E /* SwiftPackageProductDependency */ = {
+		E85FC6DE258CCCB9007D126E /* RxTest */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = E85FC6DB258CCCB9007D126E /* RemoteSwiftPackageReference */;
+			package = E85FC6DB258CCCB9007D126E /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxTest;
 		};
-		E85FC6E0258CCCB9007D126E /* SwiftPackageProductDependency */ = {
+		E85FC6E0258CCCB9007D126E /* RxRelay */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = E85FC6DB258CCCB9007D126E /* RemoteSwiftPackageReference */;
+			package = E85FC6DB258CCCB9007D126E /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxRelay;
 		};
-		E85FC6E2258CCCB9007D126E /* SwiftPackageProductDependency */ = {
+		E85FC6E2258CCCB9007D126E /* RxCocoa */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = E85FC6DB258CCCB9007D126E /* RemoteSwiftPackageReference */;
+			package = E85FC6DB258CCCB9007D126E /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxCocoa;
 		};
-		E85FC6E4258CCCB9007D126E /* SwiftPackageProductDependency */ = {
+		E85FC6E4258CCCB9007D126E /* RxBlocking */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = E85FC6DB258CCCB9007D126E /* RemoteSwiftPackageReference */;
+			package = E85FC6DB258CCCB9007D126E /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxBlocking;
 		};
-		E85FC6E7258CCD47007D126E /* SwiftPackageProductDependency */ = {
+		E85FC6E7258CCD47007D126E /* UITextView+Placeholder */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = E85FC6E6258CCD47007D126E /* RemoteSwiftPackageReference */;
+			package = E85FC6E6258CCD47007D126E /* XCRemoteSwiftPackageReference "UITextView-Placeholder" */;
 			productName = "UITextView+Placeholder";
 		};
-		E85FC6EA258CCED9007D126E /* SwiftPackageProductDependency */ = {
+		E85FC6EA258CCED9007D126E /* IQKeyboardManagerSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = E85FC6E9258CCED9007D126E /* RemoteSwiftPackageReference */;
+			package = E85FC6E9258CCED9007D126E /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
 			productName = IQKeyboardManagerSwift;
 		};
 /* End XCSwiftPackageProductDependency section */

@@ -7,9 +7,11 @@
 //
 
 import UIKit
+import NVActivityIndicatorView
 
 class SignUpViewController: BaseWireFrame<SignUpViewModel> {
     
+    @IBOutlet weak var activatyIndactors: NVActivityIndicatorView!
     var isSelested = false
     @IBOutlet weak var emailTf: UITextField!
     @IBOutlet weak var accountNumberTf: TextField!
@@ -24,6 +26,7 @@ class SignUpViewController: BaseWireFrame<SignUpViewModel> {
         
     }
     override func bind(ViewModel: SignUpViewModel) {
+        
         
     }
     @IBAction func accuptOurTeermsBtn(_ sender: UIButton) {
@@ -44,18 +47,18 @@ class SignUpViewController: BaseWireFrame<SignUpViewModel> {
     }
     
     @IBAction func backBtn(_ sender: Any) {
-       dismiss(animated: true, completion: nil)
+        dismiss(animated: true, completion: nil)
     }
     
     func  navigateToConformCode(){
         vieeModel.SeccessSignUp.asObserver().subscribe(onNext: { [weak self](resulte) in
+            guard let self = self  else {return}
+            self.activatyIndactors.stopAnimating()
             if  resulte.value == true{
-                guard let viewc = self?.coordinator.MainStoryBordNavigator.viewController(for: .ConframCodeView) else  { print("error to navigation")
-                    return
-                }
-                self?.present(viewc, animated: true, completion: nil)
+                let viewc = self.coordinator.MainStoryBordNavigator.viewController(for: .ConframCodeView)
+                self.present(viewc, animated: true, completion: nil)
             }else{
-                print(resulte.msg)
+                self.presentAlertOnMainThread(message: resulte.msg, buttontitle: "", buttonTitle2: "OK", isoneBtn: true)
             }
             
             }, onError: { (error) in
@@ -67,19 +70,27 @@ class SignUpViewController: BaseWireFrame<SignUpViewModel> {
         
         guard let email = emailTf.text , !email.isEmpty,let password = passwordTf.text , !password.isEmpty,let passwordconform = conformPassTf.text , !passwordconform.isEmpty,let phone = phoneNumberTf.text , !phone.isEmpty,let name = fullNameTf.text , !name.isEmpty
             ,let accountNumber = accountNumberTf.text ,!accountNumber.isEmpty, let codeNumder = phoneNumberCodeTf.text ,!codeNumder.isEmpty else {return}
-        if isSelested{
-            let paramerter : [String : Any] = [
-                "name" : name,
-                "mobile" : codeNumder + phone,
-                "email" : email,
-                "account_bank" : accountNumber,
-                "password_confirmation" : passwordconform,
-                "password" : password,
-            ]
-            vieeModel.SignUp(parameters: paramerter)
+        if password != passwordconform {
+            self.presentAlertOnMainThread(message: "the password and conform Password not match", buttontitle: "", buttonTitle2: "OK", isoneBtn: true)
         }else{
-            presentAlertOnMainThread(message: "you should check Button to accept our trems", buttontitle: "", buttonTitle2: "OK", isoneBtn: true)
+            if isSelested{
+                activatyIndactors.startAnimating()
+                let paramerter : [String : Any] = [
+                    "name" : name,
+                    "mobile" : codeNumder + phone,
+                    "email" : email,
+                    "account_bank" : accountNumber,
+                    "password_confirmation" : passwordconform,
+                    "password" : password,
+                ]
+                vieeModel.SignUp(parameters: paramerter)
+                
+            }else{
+                presentAlertOnMainThread(message: "you should check Button to accept our trems", buttontitle: "", buttonTitle2: "OK", isoneBtn: true)
+            }
         }
+        
+        
     }
     
 }

@@ -33,7 +33,6 @@ class OppertunitesRepositoryImp: OppertunitesRepository {
                     guard  let oppertunitesData = data.data else {
                         return
                     }
-                    print(oppertunitesData)
                     oppertunites.onNext(oppertunitesData)
                 case .failure(let error):
                     oppertunites.onError(error)

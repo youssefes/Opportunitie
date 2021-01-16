@@ -75,7 +75,7 @@ class CustomTabBarController: BubbleTabBarController {
         case .Home:
             tab = .init(title: "Home", image: #imageLiteral(resourceName: "Vector-3"), selectedImage: #imageLiteral(resourceName: "Home"))
         case .Active:
-              tab = .init(title: "Active", image: #imageLiteral(resourceName: "Vector-5"), selectedImage: #imageLiteral(resourceName: "Vector-4"))
+              tab = .init(title: "Investments", image: #imageLiteral(resourceName: "Vector-5"), selectedImage: #imageLiteral(resourceName: "Vector-4"))
         case .Search:
             tab = .init(title: "Search", image: #imageLiteral(resourceName: "Search"), selectedImage: #imageLiteral(resourceName: "Vector-2"))
         case .Profile:

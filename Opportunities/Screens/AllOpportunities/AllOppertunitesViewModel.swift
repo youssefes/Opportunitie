@@ -17,13 +17,16 @@ class AllOppertunitesViewModel {
     private  var allOppertunites : PublishSubject<[OppertunitesModel]> = .init()
     lazy var allOppertunitesObservable : Observable<[OppertunitesModel]> = allOppertunites.asObservable()
     
+    var numberOfAppartunites : BehaviorSubject<Int> = .init(value: 0)
+    
     func viewDidlead(){
         getLetestoppertunites()
     }
     
    private func getLetestoppertunites() {
-        Repository.letestOppertunites().subscribe(onNext: {(oppertunites) in
+        Repository.allOppertunites().subscribe(onNext: {(oppertunites) in
             self.allOppertunites.onNext(oppertunites)
+            self.numberOfAppartunites.onNext(oppertunites.count)
         }).disposed(by: disposedBag)
     }
 }

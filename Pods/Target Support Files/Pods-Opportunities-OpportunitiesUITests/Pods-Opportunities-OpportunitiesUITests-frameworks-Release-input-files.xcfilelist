@@ -1,2 +1,3 @@
 ${PODS_ROOT}/Target Support Files/Pods-Opportunities-OpportunitiesUITests/Pods-Opportunities-OpportunitiesUITests-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/BubbleTabBar/BubbleTabBar.framework
+${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework

@@ -8,6 +8,7 @@
 import Foundation
 
 struct OppertunitesModel: Codable {
+    let id: Int
     let name: String
     let videoDeal: String
     let detail, brief, minimum, maximum: String
@@ -16,6 +17,7 @@ struct OppertunitesModel: Codable {
     let shipmentDevelopments, snapshotProduct, participationReturns, createdAt: String
 
     enum CodingKeys: String, CodingKey {
+        case id
         case name
         case videoDeal = "video_deal"
         case detail, brief, minimum, maximum, total

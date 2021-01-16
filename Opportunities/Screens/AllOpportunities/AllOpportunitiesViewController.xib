@@ -17,6 +17,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AllOpportunitiesViewController" customModule="Opportunities" customModuleProvider="target">
             <connections>
                 <outlet property="OppertunitieTableview" destination="IcF-JK-3Au" id="L6V-Qc-L9J"/>
+                <outlet property="activityIndicators" destination="haE-go-ec2" id="3ha-bf-HfO"/>
                 <outlet property="numberofOppertuniteLbl" destination="N9M-lZ-2qc" id="5xb-cR-Do3"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -27,13 +28,13 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15 Opportunites" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N9M-lZ-2qc">
-                    <rect key="frame" x="20" y="155" width="394" height="17.5"/>
+                    <rect key="frame" x="20" y="155" width="374" height="15"/>
                     <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="15"/>
                     <color key="textColor" red="0.3411764705882353" green="0.88235294117647056" blue="0.69019607843137254" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <navigationBar contentMode="scaleToFill" largeTitles="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ESV-3b-Ufq">
-                    <rect key="frame" x="20" y="44" width="374" height="96"/>
+                    <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                     <textAttributes key="largeTitleTextAttributes">
                         <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="30"/>
                         <color key="textColor" red="0.1333333333" green="0.20000000000000001" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -56,22 +57,38 @@
                     </items>
                 </navigationBar>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="IcF-JK-3Au">
-                    <rect key="frame" x="0.0" y="192.5" width="414" height="669.5"/>
+                    <rect key="frame" x="0.0" y="190" width="414" height="672"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="haE-go-ec2" customClass="NVActivityIndicatorView" customModule="NVActivityIndicatorView">
+                    <rect key="frame" x="182" y="501" width="50" height="50"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="6tu-2T-i83"/>
+                        <constraint firstAttribute="width" constant="50" id="nUR-eI-eGH"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="typeName" value="lineScale"/>
+                        <userDefinedRuntimeAttribute type="color" keyPath="color">
+                            <color key="value" name="MainbuttonColor"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
             </subviews>
             <color key="backgroundColor" name="BackGround"/>
             <constraints>
                 <constraint firstItem="N9M-lZ-2qc" firstAttribute="top" secondItem="ESV-3b-Ufq" secondAttribute="bottom" constant="15" id="1we-rA-sMo"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="N9M-lZ-2qc" secondAttribute="trailing" constant="20" id="BoR-cL-OET"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="IcF-JK-3Au" secondAttribute="bottom" id="IAg-lh-Jdt"/>
                 <constraint firstItem="IcF-JK-3Au" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="LER-fx-we7"/>
-                <constraint firstItem="ESV-3b-Ufq" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="NJ8-7N-ONk"/>
-                <constraint firstItem="N9M-lZ-2qc" firstAttribute="trailing" secondItem="ESV-3b-Ufq" secondAttribute="trailing" constant="20" id="Yfz-4q-UZq"/>
+                <constraint firstItem="ESV-3b-Ufq" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="NJ8-7N-ONk"/>
+                <constraint firstItem="haE-go-ec2" firstAttribute="centerX" secondItem="IcF-JK-3Au" secondAttribute="centerX" id="Nez-fH-cfm"/>
+                <constraint firstItem="haE-go-ec2" firstAttribute="centerY" secondItem="IcF-JK-3Au" secondAttribute="centerY" id="bBU-Q8-hrw"/>
                 <constraint firstItem="IcF-JK-3Au" firstAttribute="top" secondItem="N9M-lZ-2qc" secondAttribute="bottom" constant="20" id="kSO-To-juq"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="IcF-JK-3Au" secondAttribute="trailing" id="n1y-a4-m7x"/>
-                <constraint firstItem="N9M-lZ-2qc" firstAttribute="leading" secondItem="ESV-3b-Ufq" secondAttribute="leading" id="uF1-Tn-Kmx"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="IcF-JK-3Au" secondAttribute="trailing" id="lNX-5O-KAv"/>
+                <constraint firstItem="N9M-lZ-2qc" firstAttribute="leading" secondItem="ESV-3b-Ufq" secondAttribute="leading" constant="20" id="uF1-Tn-Kmx"/>
                 <constraint firstItem="ESV-3b-Ufq" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="ySS-i5-Moc"/>
-                <constraint firstItem="ESV-3b-Ufq" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" constant="-20" id="zY9-qT-a9O"/>
+                <constraint firstItem="ESV-3b-Ufq" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="zY9-qT-a9O"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="131.8840579710145" y="108.48214285714285"/>
@@ -82,6 +99,9 @@
         <image name="Search" width="24" height="24"/>
         <namedColor name="BackGround">
             <color red="0.97600001096725464" green="0.98400002717971802" blue="0.99199998378753662" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="MainbuttonColor">
+            <color red="0.48199999332427979" green="0.0" blue="0.84700000286102295" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

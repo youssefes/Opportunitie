@@ -11,6 +11,7 @@ import UIKit
 import RxSwift
 import RxCocoa
 import Alamofire
+import NVActivityIndicatorView
 
 class BaseWireFrame <T>: UIViewController {
     var vieeModel : T!

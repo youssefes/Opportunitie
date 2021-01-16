@@ -32,7 +32,8 @@ class OppertuniteDetailesViewModel {
                 guard let oppertuniteData = oppertunites.data else {return}
                 self.OppertuniteDetailes.onNext(oppertuniteData)
             }else{
-                print(oppertunites.msg)
+                guard let massage = oppertunites.msg else {return}
+                print(massage)
             }
            },onError: { (error) in
                print(error)
