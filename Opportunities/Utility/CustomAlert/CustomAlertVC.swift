@@ -55,7 +55,10 @@ class CustomAlertVC: UIViewController {
     @IBAction func DeleteBtn(_ sender: Any) {
         if titleBtn2?.titleLabel?.text == "Delete" || titleBtn2?.titleLabel?.text == "OK" {
             if isoneButton{
-                dismiss(animated: true, completion: nil)
+                DispatchQueue.main.async {
+                    self.dismiss(animated: true, completion: nil)
+                }
+               
             }else{
                 print("delet")
             }

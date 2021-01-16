@@ -43,7 +43,7 @@ class SignUpViewController: BaseWireFrame<SignUpViewModel> {
     
     @IBAction func getStartBtn(_ sender: Any) {
         signUp()
-        navigateToConformCode()
+       
     }
     
     @IBAction func backBtn(_ sender: Any) {
@@ -51,14 +51,15 @@ class SignUpViewController: BaseWireFrame<SignUpViewModel> {
     }
     
     func  navigateToConformCode(){
-        vieeModel.SeccessSignUp.asObserver().subscribe(onNext: { [weak self](resulte) in
+        vieeModel.SeccessSignUpAbsercable.subscribe(onNext: { [weak self](resulte) in
             guard let self = self  else {return}
             self.activatyIndactors.stopAnimating()
             if  resulte.value == true{
                 let viewc = self.coordinator.MainStoryBordNavigator.viewController(for: .ConframCodeView)
                 self.present(viewc, animated: true, completion: nil)
             }else{
-                self.presentAlertOnMainThread(message: resulte.msg, buttontitle: "", buttonTitle2: "OK", isoneBtn: true)
+                guard let massage = resulte.msg else {return}
+                self.presentAlertOnMainThread(message: massage, buttontitle: "", buttonTitle2: "OK", isoneBtn: true)
             }
             
             }, onError: { (error) in
@@ -84,7 +85,7 @@ class SignUpViewController: BaseWireFrame<SignUpViewModel> {
                     "password" : password,
                 ]
                 vieeModel.SignUp(parameters: paramerter)
-                
+                 navigateToConformCode()
             }else{
                 presentAlertOnMainThread(message: "you should check Button to accept our trems", buttontitle: "", buttonTitle2: "OK", isoneBtn: true)
             }

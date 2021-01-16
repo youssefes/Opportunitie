@@ -357,24 +357,6 @@
                                     <constraint firstAttribute="height" constant="30" id="ZCW-Pz-JQe"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LNS-EZ-wk8">
-                                <rect key="frame" x="20" y="514" width="374" height="65"/>
-                                <color key="backgroundColor" name="MainbuttonColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="65" id="ZHi-B7-PxA"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="20"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Log In"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="16"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="logInBtn:" destination="PJd-mx-9UW" eventType="touchUpInside" id="BAc-ag-9Y9"/>
-                                </connections>
-                            </button>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Yzp-Na-7o7">
                                 <rect key="frame" x="95" y="832" width="224.5" height="30"/>
                                 <subviews>
@@ -413,6 +395,24 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="typeName" value="lineScale"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LNS-EZ-wk8">
+                                <rect key="frame" x="20" y="514" width="374" height="65"/>
+                                <color key="backgroundColor" name="MainbuttonColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="ZHi-B7-PxA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="20"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Sign In"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="logInBtn:" destination="PJd-mx-9UW" eventType="touchUpInside" id="BAc-ag-9Y9"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -732,7 +732,7 @@
                                                     <constraint firstAttribute="height" constant="65" id="t2i-GT-UCM"/>
                                                 </constraints>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" title="Get Started"/>
+                                                <state key="normal" title="Sign Up"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                         <real key="value" value="16"/>

@@ -36,7 +36,10 @@ class RestPassViewController: BaseWireFrame<RestPassViewModel> {
                 let viewc = self.coordinator.MainStoryBordNavigator.viewController(for: .RestPassView)
                 self.present(viewc, animated: true, completion: nil)
             }else{
-                self.presentAlertOnMainThread(message: resulte.msg, buttontitle: "", buttonTitle2: "OK", isoneBtn: true)
+                guard let massage = resulte.msg else {
+                    return
+                }
+                self.presentAlertOnMainThread(message: massage, buttontitle: "", buttonTitle2: "OK", isoneBtn: true)
             }
             
             }, onError: { (error) in

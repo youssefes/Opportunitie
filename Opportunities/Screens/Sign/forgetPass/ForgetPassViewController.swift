@@ -32,14 +32,17 @@ class ForgetPassViewController: BaseWireFrame<ForgetPassViewModel> {
     }
     
     func  navigateTo(){
-        vieeModel.SeccessSignUp.asObserver().subscribe(onNext: { [weak self](resulte) in
+        vieeModel.SeccessSignUp.subscribe(onNext: { [weak self](resulte) in
             guard let self = self  else {return}
             self.activatyIndicators.stopAnimating()
             if  resulte.value == true{
-                let viewc = self.coordinator.MainStoryBordNavigator.viewController(for: .RestPassView)
+                let viewc = self.coordinator.MainStoryBordNavigator.viewController(for: .ConframCodeView)
                 self.present(viewc, animated: true, completion: nil)
             }else{
-                self.presentAlertOnMainThread(message: resulte.msg, buttontitle: "", buttonTitle2: "OK", isoneBtn: true)
+                guard let massage = resulte.msg else {
+                    return
+                }
+                self.presentAlertOnMainThread(message: massage, buttontitle: "", buttonTitle2: "OK", isoneBtn: true)
             }
             
             }, onError: { (error) in
@@ -48,11 +51,9 @@ class ForgetPassViewController: BaseWireFrame<ForgetPassViewModel> {
     }
     
        func SendRequest(){
-           
-//           guard let email = emailTf.text , !email.isEmpty else {return}
         activatyIndicators.startAnimating()
            let paramerter : [String : Any] = [
-               "email" : "youssef.esmailelfeky@gmail.com",
+               "mobile" : "01063714613",
            ]
            vieeModel.ForgetPassRequest(parameters: paramerter)
        }

@@ -44,7 +44,7 @@ enum SignRouter: APIRouter {
         case .ChangePass:
             return "change_password"
         case .checkCodeActivEmail:
-            return "check_code_activemail"
+            return "check_code_activmobile"
         }
     }
     

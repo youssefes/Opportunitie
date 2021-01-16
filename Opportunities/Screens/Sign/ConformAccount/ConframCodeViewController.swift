@@ -40,11 +40,6 @@ class ConframCodeViewController: BaseWireFrame<comformViewModel> {
         
     }
     @IBAction func verifyBtn(_ sender: Any) {
-        //        guard let text = textViewNumber1.text, text.isEmpty ,let text2 = textViewNumber2.text, text2.isEmpty,let text3 = textViewNumber3.text, text3.isEmpty,let text4 = textviewNumber4.text, text4.isEmpty else {
-        //            return
-        //        }
-        //
-        activatyIndicators.startAnimating()
         navigateTo()
         
     }
@@ -52,14 +47,17 @@ class ConframCodeViewController: BaseWireFrame<comformViewModel> {
     
     func  navigateTo(){
         sendCode()
-        vieeModel.SeccessSignUp.asObserver().subscribe(onNext: { [weak self](resulte) in
+        vieeModel.SeccessSignUp.subscribe(onNext: { [weak self](resulte) in
             guard let self = self  else {return}
             self.activatyIndicators.stopAnimating()
-            if  resulte.value == true{
+            if  resulte.code == 200{
                 let viewc = self.coordinator.MainStoryBordNavigator.viewController(for: .haveAcountView)
                 self.present(viewc, animated: true, completion: nil)
             }else{
-                self.presentAlertOnMainThread(message: resulte.msg, buttontitle: "", buttonTitle2: "OK", isoneBtn: true)
+                guard let massage = resulte.msg else {
+                    return
+                }
+                self.presentAlertOnMainThread(message: massage, buttontitle: "", buttonTitle2: "OK", isoneBtn: true)
             }
             
             }, onError: { (error) in
@@ -72,9 +70,10 @@ class ConframCodeViewController: BaseWireFrame<comformViewModel> {
         guard let number1 = textViewNumber1.text , !number1.isEmpty,let number2 = textViewNumber2.text , !number2.isEmpty,let number3 = textViewNumber3.text , !number3.isEmpty,let number4 = textviewNumber4.text , !number4.isEmpty else {return}
         
         let code = number1 + number2 + number3 + number4
+        activatyIndicators.startAnimating()
         print(code)
         let paramerter : [String : Any] = [
-            "email" : "youssef.esmailelfeky@gmail.com",
+            "mobile" : "01063714613",
             "codeActive" : "123456"
         ]
         vieeModel.sendCode(parameters: paramerter)

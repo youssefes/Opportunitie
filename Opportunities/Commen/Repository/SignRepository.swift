@@ -10,8 +10,8 @@ import Foundation
 import RxSwift
 import Alamofire
 protocol SignRepository {
-    func SignUp(parameters : Parameters ) -> Observable<signUpDataModel>
-//    func SignIn(parameters : Parameters ) -> Observable<Decodable>
+    func SignUp(parameters : Parameters ) -> Observable<ResponseObjectModel<signUpDataModel>>
+    //    func SignIn(parameters : Parameters ) -> Observable<Decodable>
 }
 
 class SignRepositoryImp: SignRepository {
@@ -20,14 +20,12 @@ class SignRepositoryImp: SignRepository {
         self.networkClient = networkClient
     }
     
-    func SignUp(parameters : Parameters ) -> Observable<signUpDataModel> {
-        Observable<signUpDataModel>.create { [weak self] (items) -> Disposable in
+    func SignUp(parameters : Parameters ) -> Observable<ResponseObjectModel<signUpDataModel>> {
+        Observable<ResponseObjectModel<signUpDataModel>>.create { [weak self] (items) -> Disposable in
             self?.networkClient.performRequest(signUpDataModel.self, router: SignRouter.SignUp(parameters: parameters)) { (resulte) in
                 switch resulte{
                 case .success(let data):
-                     print(data)
-                     guard let dataresu = data.data else {return}
-                     items.onNext(dataresu)
+                    items.onNext(data)
                     items.onCompleted()
                 case .failure(let error):
                     items.onError(error)
@@ -54,13 +52,12 @@ class SignRepositoryImp: SignRepository {
         
     }
     
-    func forgetPassRequest(parameters : Parameters ) -> Observable<signUpDataModel> {
-        Observable<signUpDataModel>.create { [weak self] (items) -> Disposable in
+    func forgetPassRequest(parameters : Parameters ) -> Observable<ResponseObjectModel<signUpDataModel>> {
+        Observable<ResponseObjectModel<signUpDataModel>>.create { [weak self] (items) -> Disposable in
             self?.networkClient.performRequest(signUpDataModel.self, router: SignRouter.forgetPass(parameters: parameters)) { (resulte) in
                 switch resulte{
                 case .success(let data):
-                    guard let dataresu = data.data else {return}
-                    items.onNext(dataresu)
+                    items.onNext(data)
                     items.onCompleted()
                 case .failure(let error):
                     items.onError(error)
@@ -71,13 +68,12 @@ class SignRepositoryImp: SignRepository {
         
     }
     
-    func ChangePassRequest(parameters : Parameters ) -> Observable<signUpDataModel> {
-        Observable<signUpDataModel>.create { [weak self] (items) -> Disposable in
+    func ChangePassRequest(parameters : Parameters ) -> Observable<ResponseObjectModel<signUpDataModel>> {
+        Observable<ResponseObjectModel<signUpDataModel>>.create { [weak self] (items) -> Disposable in
             self?.networkClient.performRequest(signUpDataModel.self, router: SignRouter.ChangePass(parameters: parameters)) { (resulte) in
                 switch resulte{
                 case .success(let data):
-                    guard let dataresu = data.data else {return}
-                    items.onNext(dataresu)
+                    items.onNext(data)
                     items.onCompleted()
                 case .failure(let error):
                     items.onError(error)
@@ -88,14 +84,13 @@ class SignRepositoryImp: SignRepository {
         
     }
     
-    func checkCodeActivEmail(parameters : Parameters ) -> Observable<signUpDataModel> {
-        Observable<signUpDataModel>.create { [weak self] (items) -> Disposable in
+    func checkCodeActivEmail(parameters : Parameters ) -> Observable<ResponseObjectModel<signUpDataModel>> {
+        Observable<ResponseObjectModel<signUpDataModel>>.create { [weak self] (items) -> Disposable in
             self?.networkClient.performRequest(signUpDataModel.self, router: SignRouter.checkCodeActivEmail(parameters: parameters)) { (resulte) in
                 switch resulte{
                 case .success(let data):
                     print(data)
-                    guard let dataresu = data.data else {return}
-                    items.onNext(dataresu)
+                    items.onNext(data)
                     items.onCompleted()
                 case .failure(let error):
                     items.onError(error)

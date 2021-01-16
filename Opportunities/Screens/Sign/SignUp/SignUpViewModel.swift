@@ -16,18 +16,15 @@ class SignUpViewModel {
 
     var signRepository = SignRepositoryImp()
     let disposedBag = DisposeBag()
-    var SeccessSignUp : PublishSubject<signUpDataModel> = .init()
+    private var SeccessSignUp : PublishSubject<ResponseObjectModel<signUpDataModel>> = .init()
+    lazy var SeccessSignUpAbsercable : Observable<ResponseObjectModel<signUpDataModel>> = SeccessSignUp.asObservable()
     func ViewDidLoad(){
         
     }
-     func SignUp(parameters : Parameters) {
-        signRepository.SignUp(parameters: parameters).subscribe(onNext: { [weak self](respond) in
-            
-            self?.SeccessSignUp.onNext(respond)
-        },onError: { (error) in
-                print(error)
-        },onCompleted: {
-            print("commplet")
+    func SignUp(parameters : Parameters) {
+        signRepository.SignUp(parameters: parameters).subscribe(onNext: { [weak self] (data) in
+            guard let self = self else {return}
+            self.SeccessSignUp.onNext(data)
         }).disposed(by: disposedBag)
     }
 }

@@ -15,7 +15,7 @@ class comformViewModel {
     
     var signRepository = SignRepositoryImp()
     let disposedBag = DisposeBag()
-    var SeccessSignUp : PublishSubject<signUpDataModel> = .init()
+    var SeccessSignUp : PublishSubject<ResponseObjectModel<signUpDataModel>> = .init()
     func ViewDidLoad(){
         
     }
