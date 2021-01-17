@@ -40,12 +40,12 @@ class SignInViewController: BaseWireFrame<SignInViewModel> {
     }
     
     func signIn(){
-       
+        
         guard let email = emailTf.text , !email.isEmpty,let password = password.text , !password.isEmpty else{
             return
         }
         
-         activatyIndicator.startAnimating()
+        activatyIndicator.startAnimating()
         let paramerter : [String : Any] = [
             "email" : email,
             "password" : password
@@ -59,6 +59,7 @@ class SignInViewController: BaseWireFrame<SignInViewModel> {
             guard let self = self  else {return}
             self.activatyIndicator.stopAnimating()
             guard let status = resulte.code else {return}
+            guard let userId = resulte.data?.id else {return}
             if status == 200{
                 let viewc = self.coordinator.tabBarController
                 viewc.modalPresentationStyle = .overFullScreen
@@ -70,7 +71,15 @@ class SignInViewController: BaseWireFrame<SignInViewModel> {
                 self.presentAlertOnMainThread(message: massage, buttontitle: "", buttonTitle2: "OK", isoneBtn: true)
                 self.forgetPasswordLbl.isHidden = false
             }
-           
+            if let userid = UserDefaults.standard.value(forKey: NetworkConstants.userIdKey) as? Int{
+                print(userid)
+                
+            }else{
+                UserDefaults.standard.set(userId, forKey: NetworkConstants.userIdKey)
+            }
+            
+            
+            
             
         }).disposed(by: disposePag)
     }

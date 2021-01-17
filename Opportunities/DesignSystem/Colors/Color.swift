@@ -22,6 +22,9 @@ extension DesignSystem {
         case white = "White"
         case SelectedColor = "SelectedColor"
         case Colorclear = "Colorclear"
+        case loseColor = "loseColor"
+        case typeTransactionCellProfile = "typeTransactionCellProfile"
+        case loseColorBackground = "loseColorBackground"
         var color : UIColor {
             switch self {
             case .Title:
@@ -46,6 +49,12 @@ extension DesignSystem {
             case .SelectedColor:
                 return UIColor(named : self.rawValue)!
             case .Colorclear:
+                 return UIColor(named : self.rawValue)!
+            case .loseColor:
+                return UIColor(named : self.rawValue)!
+            case .typeTransactionCellProfile:
+                return UIColor(named : self.rawValue)!
+            case .loseColorBackground:
                  return UIColor(named : self.rawValue)!
             }
         }

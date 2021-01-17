@@ -77,4 +77,21 @@ class OppertunitesRepositoryImp: OppertunitesRepository {
             return Disposables.create()
         }
     }
+    
+    func OppertuniteSearch(oppertuniteName: String) -> Observable<ResponseObjectModel<[OppertunitesModel]>> {
+        Observable<ResponseObjectModel<[OppertunitesModel]>>.create{[weak self] (oppertunites) -> Disposable in
+            self?.networkClient.performRequest([OppertunitesModel].self, router: OppertunitesRouter.search(opertunitesName: oppertuniteName)) { (resulet) in
+                switch resulet{
+                case .success(let data):
+                    oppertunites.onNext(data)
+                    
+                case .failure(let error):
+                    oppertunites.onError(error)
+                }
+            }
+            
+            return Disposables.create()
+        }
+        
+    }
 }

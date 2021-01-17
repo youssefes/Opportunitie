@@ -193,6 +193,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="FaX-Mh-7RD"/>
                     </view>
+                    <connections>
+                        <outlet property="emailLbl" destination="T25-tf-FH7" id="qNz-jg-rQE"/>
+                        <outlet property="investLbl" destination="sze-Ov-v9M" id="yES-yJ-bQb"/>
+                        <outlet property="nameLbl" destination="8xx-4Q-MkW" id="GY3-od-zmw"/>
+                        <outlet property="profilImage" destination="bEU-F4-mvE" id="h9p-df-5PD"/>
+                        <outlet property="profileLbl" destination="TWt-pQ-btN" id="PaE-qM-jiU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0i6-Ia-Snv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -383,6 +390,20 @@
                                                     <action selector="SaveSetting:" destination="6Hf-rb-Qqh" eventType="touchUpInside" id="4nQ-xl-xAL"/>
                                                 </connections>
                                             </button>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s2R-7f-Uaq" customClass="NVActivityIndicatorView" customModule="NVActivityIndicatorView">
+                                                <rect key="frame" x="306" y="877.5" width="40" height="40"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="VnH-Dq-5TW"/>
+                                                    <constraint firstAttribute="width" constant="40" id="xOX-SN-5Q2"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                                        <color key="value" name="White"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="typeName" value="lineScale"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
@@ -391,11 +412,13 @@
                                             <constraint firstItem="raf-3v-JeE" firstAttribute="trailing" secondItem="wHQ-cc-ZX3" secondAttribute="trailing" id="46M-Co-Y7j"/>
                                             <constraint firstItem="Q1v-Lf-v5y" firstAttribute="leading" secondItem="raf-3v-JeE" secondAttribute="leading" id="4nr-o6-cwm"/>
                                             <constraint firstItem="wHQ-cc-ZX3" firstAttribute="trailing" secondItem="5nZ-tj-024" secondAttribute="trailing" id="7xN-jb-Na5"/>
+                                            <constraint firstItem="s2R-7f-Uaq" firstAttribute="centerY" secondItem="K4O-tt-tdY" secondAttribute="centerY" id="CBw-he-C4Y"/>
                                             <constraint firstItem="Iq3-qp-qal" firstAttribute="height" secondItem="hfD-cY-RYi" secondAttribute="height" id="CZr-PA-Un7"/>
                                             <constraint firstItem="b2U-Lo-zyN" firstAttribute="top" secondItem="k1f-SF-w9t" secondAttribute="top" constant="20" id="Dla-7D-wfk"/>
                                             <constraint firstItem="HKo-Zz-okz" firstAttribute="leading" secondItem="9jx-RP-9rI" secondAttribute="leading" id="Fbt-ZO-BSM"/>
                                             <constraint firstAttribute="trailing" secondItem="rAP-zQ-AWL" secondAttribute="trailing" constant="20" id="HaI-Mg-xv1"/>
                                             <constraint firstItem="Iq3-qp-qal" firstAttribute="trailing" secondItem="hfD-cY-RYi" secondAttribute="trailing" id="Hr2-Fh-5hR"/>
+                                            <constraint firstItem="s2R-7f-Uaq" firstAttribute="trailing" secondItem="K4O-tt-tdY" secondAttribute="trailing" constant="-40" id="Hyx-ds-opD"/>
                                             <constraint firstItem="HKo-Zz-okz" firstAttribute="trailing" secondItem="9jx-RP-9rI" secondAttribute="trailing" id="KCz-hZ-ROI"/>
                                             <constraint firstItem="wHQ-cc-ZX3" firstAttribute="top" secondItem="0oD-Fr-xle" secondAttribute="bottom" constant="20" id="Mea-Cg-fpI"/>
                                             <constraint firstItem="6pk-WM-4iW" firstAttribute="bottom" secondItem="OPh-r0-T5O" secondAttribute="bottom" constant="10" id="NKw-rg-cfp"/>
@@ -468,11 +491,18 @@
                     <connections>
                         <outlet property="SelectedImage" destination="OPh-r0-T5O" id="TQi-BB-IZJ"/>
                         <outlet property="ToSelectImage" destination="6pk-WM-4iW" id="8nF-nl-6LB"/>
+                        <outlet property="acountTf" destination="Iq3-qp-qal" id="WXW-9L-eDh"/>
+                        <outlet property="activatyIndictor" destination="s2R-7f-Uaq" id="Czj-fE-xBX"/>
+                        <outlet property="codeNumberlbl" destination="Suu-Ot-psx" id="XJw-qf-Gj0"/>
+                        <outlet property="emailTf" destination="hfD-cY-RYi" id="Hxk-JT-NGR"/>
+                        <outlet property="nameLbl" destination="HKo-Zz-okz" id="inV-t7-Oj3"/>
+                        <outlet property="numberlbl" destination="nmY-hu-IOL" id="dgx-jJ-nPV"/>
+                        <outlet property="passwordTf" destination="sMN-i1-QvN" id="I4N-BM-DOn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JrI-cW-PtR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1055.072463768116" y="69.642857142857139"/>
+            <point key="canvasLocation" x="729" y="95"/>
         </scene>
         <!--Transactions View Controller-->
         <scene sceneID="mAc-R6-ZAr">
@@ -658,6 +688,9 @@
         </namedColor>
         <namedColor name="Title">
             <color red="0.13300000131130219" green="0.20000000298023224" blue="0.2669999897480011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="White">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="backGroundButton">
             <color red="0.94099998474121094" green="0.9649999737739563" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

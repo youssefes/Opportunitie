@@ -25,6 +25,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window?.windowScene = windowScene
         window?.makeKeyAndVisible()
         Coordinator = AppCoordinator(Window: window!)
+        if let userId = UserDefaults.standard.value(forKey: NetworkConstants.userIdKey) as? Int{
+            print(userId)
+            Coordinator.isLogIn = true
+        }
         Coordinator.start()
         
     }

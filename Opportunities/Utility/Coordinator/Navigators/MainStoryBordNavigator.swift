@@ -43,7 +43,7 @@ class MainStoryBordNavigator : Navigator {
             viewc.coordinator = coordinator
             return viewc
         case .profile:
-            let viewModel = ProfileViewModel()
+            let viewModel = SignInViewModel()
             let viewc = ProfileVC.instantiate(fromAppStoryboard: .Profile)
             viewc.vieeModel = viewModel
             viewc.coordinator = coordinator

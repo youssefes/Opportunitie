@@ -25,9 +25,19 @@ class SignInViewModel {
         
         signRepository.SignIn(parameters: parameters).subscribe(onNext: {[weak self] user in
             guard let self = self else {return}
+            print(user)
             self.SeccessSignIn.onNext(user)
             
         }).disposed(by: disposedBag)
         
     }
+    func getProfile(parameters : Parameters) {
+        
+        signRepository.GetProfile(parameters: parameters).subscribe(onNext: {[weak self] (resulte) in
+            guard let self = self else {return}
+            self.SeccessSignIn.onNext(resulte)
+        }).disposed(by: disposedBag)
+    }
+    
+    
 }

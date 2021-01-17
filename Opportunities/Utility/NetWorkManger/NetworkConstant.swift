@@ -12,4 +12,5 @@ import Foundation
 class NetworkConstants {
     static let baseUrl = "https://opportunitieskw.com/api/"
     static let baseUrlImages = "https://opportunitieskw.com/deals/"
+    static let userIdKey = "userId"
 }

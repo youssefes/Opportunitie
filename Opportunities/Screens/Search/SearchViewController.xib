@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -19,9 +20,11 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchViewController" customModule="Opportunities" customModuleProvider="target">
             <connections>
                 <outlet property="ContainerOfResultSearch" destination="phu-Pz-zSh" id="E4U-LK-vu5"/>
+                <outlet property="imageSearch" destination="RdA-sN-ubp" id="Fsz-3x-2g6"/>
                 <outlet property="numberOfResulte" destination="M9J-le-Q05" id="caG-BG-7k3"/>
                 <outlet property="resulteTableView" destination="iBf-e1-66g" id="N0c-ql-ofi"/>
                 <outlet property="searchTextField" destination="Wqa-9P-8He" id="xe1-Ns-lyi"/>
+                <outlet property="stachSearch" destination="O14-Eq-7bI" id="KtT-Pr-afd"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

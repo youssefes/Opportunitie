@@ -19,20 +19,33 @@ class ActiveViewController: BaseWireFrame<ActiveViewModel> {
     let CellTAbleViewIdentifier = "ActiveTableViewCell"
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        vieeModel.viewDidLoed()
         registerCells()
     }
     
     override func bind(ViewModel: ActiveViewModel) {
+        ViewModel.AllInsterementesObservable.bind(to: activeTableView.rx.items(cellIdentifier: CellTAbleViewIdentifier, cellType: ActiveTableViewCell.self)){
+            (index,insterment,cell) in
+            cell.instarementData.onNext(insterment)
+        }.disposed(by: disposePag)
+        ViewModel.numberOfInstrament.subscribe(onNext: {[weak self] (number) in
+             guard let self = self else {return}
+            self.numberOfInvestment.text = "\(number) Investments"
+        }).disposed(by: disposePag)
         
+        ViewModel.errorMassage.subscribe(onNext: { [weak self] (massage) in
+            guard let self = self else {return}
+            if !massage.isEmpty {
+                self.presentAlertOnMainThread(message: massage, buttontitle: "", buttonTitle2: "OK", isoneBtn: true)
+            }
+            
+        }).disposed(by: disposePag)
     }
     func registerCells(){
         ActiveCollectionView.register(UINib(nibName: CellCollectionViewIdentifier, bundle: nil), forCellWithReuseIdentifier: CellCollectionViewIdentifier)
         activeTableView.register(UINib(nibName: CellTAbleViewIdentifier, bundle: nil), forCellReuseIdentifier: CellTAbleViewIdentifier)
-       
-        activeTableView.dataSource = self
-        activeTableView.delegate = self
         
+        activeTableView.delegate = self
         ActiveCollectionView.dataSource = self
         ActiveCollectionView.delegate = self
         
@@ -55,11 +68,12 @@ extension ActiveViewController : UICollectionViewDataSource, UICollectionViewDel
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let width = collectionView.bounds.size.width - 50
-        return CGSize(width: width, height: 220)
+        return CGSize(width: width, height: 180)
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CellCollectionViewIdentifier, for: indexPath) as! ActiveCollectionViewCell
+       
         return cell
     }
     
@@ -72,22 +86,10 @@ extension ActiveViewController : UICollectionViewDataSource, UICollectionViewDel
     
 }
 
-extension ActiveViewController : UITableViewDataSource, UITableViewDelegate {
-    
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
-    }
-    
-    
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: CellTAbleViewIdentifier, for: indexPath) as! ActiveTableViewCell
-        return cell
-    }
+extension ActiveViewController : UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 150
+        return 120
     }
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {

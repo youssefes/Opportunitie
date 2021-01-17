@@ -19,6 +19,7 @@ class NetworkClient {
                 let decoder = JSONDecoder()
                 decoder.keyDecodingStrategy = .useDefaultKeys
                 let models = try decoder.decode(ResponseObjectModel<T>.self, from: data)
+                print(models)
                 completion(.success(models))
             } catch let error {
                 completion(.failure(error))

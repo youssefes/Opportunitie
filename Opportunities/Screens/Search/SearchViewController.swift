@@ -7,9 +7,13 @@
 //
 
 import UIKit
+import RxCocoa
+import RxSwift
 
 class SearchViewController: BaseWireFrame<searchViewModel> {
-
+    
+    @IBOutlet weak var imageSearch: UIImageView!
+    @IBOutlet weak var stachSearch: UIStackView!
     @IBOutlet weak var numberOfResulte: UILabel!
     @IBOutlet weak var resulteTableView: UITableView!
     @IBOutlet weak var ContainerOfResultSearch: UIView!
@@ -18,17 +22,36 @@ class SearchViewController: BaseWireFrame<searchViewModel> {
     let cellIdentifier = "HomeTableViewCell"
     override func viewDidLoad() {
         super.viewDidLoad()
-
         
+        vieeModel.viewDidLoad()
         resulteTableView.register(UINib(nibName: cellIdentifier, bundle: nil), forCellReuseIdentifier: cellIdentifier)
-        resulteTableView.dataSource = self
         resulteTableView.delegate = self
-        searchTextField.delegate = self
     }
-
     
     override func bind(ViewModel: searchViewModel) {
         
+        searchTextField.rx.text.orEmpty.bind(to: ViewModel.searchText).disposed(by: disposePag)
+        ViewModel.numberOfresulteAsobservable.subscribe(onNext: { [weak self] (number) in
+            guard let self = self else {return}
+            if number > 0{
+                self.stachSearch.isHidden = true
+                self.imageSearch.isHidden = true
+                self.ContainerOfResultSearch.isHidden = false
+            }else{
+                self.stachSearch.isHidden = false
+                self.imageSearch.isHidden = false
+                self.ContainerOfResultSearch.isHidden = true
+            }
+            self.numberOfResulte.text = "\(number) Resulte"
+        }).disposed(by: disposePag)
+        vieeModel.OppertuniteDetailesObservable.bind(to: resulteTableView.rx.items(cellIdentifier: cellIdentifier, cellType: HomeTableViewCell.self)){ [weak  self] (index,oppertunite, cell) in
+            guard let self = self else {return}
+            cell.letestOppertunite.onNext(oppertunite)
+            cell.getDeteailesBtn = {
+                self.coordinator.mainNavigator.Navigate(to: .OppertuniteDetailesViewController(id: oppertunite.id) )
+            }
+            
+        }.disposed(by: disposePag)
     }
     
     
@@ -37,31 +60,12 @@ class SearchViewController: BaseWireFrame<searchViewModel> {
         coordinator.dismiss()
     }
     
-}
-
-extension SearchViewController : UITableViewDataSource{
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! HomeTableViewCell
-        cell.selectionStyle = UITableViewCell.SelectionStyle.none
-        return cell
-    }
-    
     
 }
 
 extension SearchViewController :  UITableViewDelegate{
-
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 285
-    }
-}
-
-extension SearchViewController : UITextFieldDelegate {
-    func textFieldDidBeginEditing(_ textField: UITextField) {
-        ContainerOfResultSearch.isHidden = false
     }
 }

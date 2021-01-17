@@ -36,7 +36,6 @@
 		E83A36E0258CF6AD002B8BDB /* ConframCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83A36DF258CF6AD002B8BDB /* ConframCodeViewController.swift */; };
 		E83A36E2258CF6C2002B8BDB /* comformViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83A36E1258CF6C2002B8BDB /* comformViewModel.swift */; };
 		E83A54F02587621F0076BDCE /* BaseWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83A54EF2587621F0076BDCE /* BaseWireFrame.swift */; };
-		E83A54F2258762800076BDCE /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83A54F1258762800076BDCE /* ProfileViewModel.swift */; };
 		E83A54F4258762DA0076BDCE /* InvestementViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83A54F3258762DA0076BDCE /* InvestementViewModel.swift */; };
 		E83A54F6258763690076BDCE /* ActiveViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83A54F5258763690076BDCE /* ActiveViewModel.swift */; };
 		E83A54F8258763C30076BDCE /* MenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83A54F7258763C30076BDCE /* MenuViewModel.swift */; };
@@ -79,6 +78,9 @@
 		E83EFAC1257D77BC0075CDF1 /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E83EFABF257D77BC0075CDF1 /* SearchViewController.xib */; };
 		E843420E25A3940F00B9E08A /* OppertunitesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E843420D25A3940F00B9E08A /* OppertunitesRouter.swift */; };
 		E8440E3925B2208E00B83F5B /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = E8440E3825B2208E00B83F5B /* Kingfisher */; };
+		E845F3B925B4887700A00FB3 /* Instrements.swift in Sources */ = {isa = PBXBuildFile; fileRef = E845F3B825B4887700A00FB3 /* Instrements.swift */; };
+		E845F3BB25B488DF00A00FB3 /* InstrementsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E845F3BA25B488DF00A00FB3 /* InstrementsRouter.swift */; };
+		E845F3BD25B48AB800A00FB3 /* InsterementesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E845F3BC25B48AB800A00FB3 /* InsterementesRepository.swift */; };
 		E84EE043259137D8009FEAD3 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = E84EE042259137D8009FEAD3 /* Alamofire */; };
 		E84EE0452591381D009FEAD3 /* NetworkConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84EE0442591381D009FEAD3 /* NetworkConstant.swift */; };
 		E84EE047259138D1009FEAD3 /* SignRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84EE046259138D1009FEAD3 /* SignRouter.swift */; };
@@ -209,7 +211,6 @@
 		E83A36DF258CF6AD002B8BDB /* ConframCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConframCodeViewController.swift; sourceTree = "<group>"; };
 		E83A36E1258CF6C2002B8BDB /* comformViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = comformViewModel.swift; sourceTree = "<group>"; };
 		E83A54EF2587621F0076BDCE /* BaseWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseWireFrame.swift; sourceTree = "<group>"; };
-		E83A54F1258762800076BDCE /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		E83A54F3258762DA0076BDCE /* InvestementViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestementViewModel.swift; sourceTree = "<group>"; };
 		E83A54F5258763690076BDCE /* ActiveViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveViewModel.swift; sourceTree = "<group>"; };
 		E83A54F7258763C30076BDCE /* MenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewModel.swift; sourceTree = "<group>"; };
@@ -252,6 +253,9 @@
 		E83EFABF257D77BC0075CDF1 /* SearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
 		E843420D25A3940F00B9E08A /* OppertunitesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OppertunitesRouter.swift; sourceTree = "<group>"; };
 		E8451CB5259A1303009FA025 /* OpportunitiesDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OpportunitiesDebug.entitlements; sourceTree = "<group>"; };
+		E845F3B825B4887700A00FB3 /* Instrements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instrements.swift; sourceTree = "<group>"; };
+		E845F3BA25B488DF00A00FB3 /* InstrementsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstrementsRouter.swift; sourceTree = "<group>"; };
+		E845F3BC25B48AB800A00FB3 /* InsterementesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsterementesRepository.swift; sourceTree = "<group>"; };
 		E84D1053259009C900E6A80F /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		E84D1054259009CA00E6A80F /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Main.strings; sourceTree = "<group>"; };
 		E84EE0442591381D009FEAD3 /* NetworkConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstant.swift; sourceTree = "<group>"; };
@@ -388,7 +392,6 @@
 				E852D4DB2586C79F00A643AA /* transactions */,
 				E801583C2586A87F003D44C3 /* Profile.storyboard */,
 				E80158402586ADDC003D44C3 /* ProfileVC.swift */,
-				E83A54F1258762800076BDCE /* ProfileViewModel.swift */,
 				E8A58D7625ABAE8B0098E490 /* settingViewModel.swift */,
 				E852D4D12586C06E00A643AA /* SettingViewController.swift */,
 			);
@@ -501,6 +504,7 @@
 				E84EE046259138D1009FEAD3 /* SignRouter.swift */,
 				E84EE0442591381D009FEAD3 /* NetworkConstant.swift */,
 				E843420D25A3940F00B9E08A /* OppertunitesRouter.swift */,
+				E845F3BA25B488DF00A00FB3 /* InstrementsRouter.swift */,
 			);
 			path = NetWorkManger;
 			sourceTree = "<group>";
@@ -644,6 +648,7 @@
 				E84EE04B25913A9D009FEAD3 /* MainRespondObject.swift */,
 				E8DA893F25917B6C00B413E1 /* UserModel.swift */,
 				E856217C25A3905C003B8B31 /* OppertunitesModel.swift */,
+				E845F3B825B4887700A00FB3 /* Instrements.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -653,6 +658,7 @@
 			children = (
 				E84EE04E25913ED1009FEAD3 /* SignRepository.swift */,
 				E856217A25A38D14003B8B31 /* OppertunitesRepository.swift */,
+				E845F3BC25B48AB800A00FB3 /* InsterementesRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -1349,6 +1355,7 @@
 				E8F0FB65258CEE260036A877 /* SignInViewController.swift in Sources */,
 				E84F8533258D4A7600B8EB7E /* RestPassViewController.swift in Sources */,
 				E87EC4AA258248A200003C29 /* LangoageViewController.swift in Sources */,
+				E845F3B925B4887700A00FB3 /* Instrements.swift in Sources */,
 				E83DE199258D104800E51492 /* haveAcountViewModel.swift in Sources */,
 				E83E529B25879D7B0023CEE3 /* ContectUsViewModel.swift in Sources */,
 				E83E529F2587B2080023CEE3 /* AllOppertunitesViewModel.swift in Sources */,
@@ -1402,6 +1409,7 @@
 				E83DE197258D103300E51492 /* haveAcountViewController.swift in Sources */,
 				E87EC4B025824DE300003C29 /* ContentUsViewController.swift in Sources */,
 				E8B287932576D60D00326E02 /* DesignSystem.swift in Sources */,
+				E845F3BD25B48AB800A00FB3 /* InsterementesRepository.swift in Sources */,
 				E8DA894025917B6C00B413E1 /* UserModel.swift in Sources */,
 				E8B2879A2576DFE700326E02 /* Font.swift in Sources */,
 				E83EFAB3257D62CB0075CDF1 /* CustomAlertVC.swift in Sources */,
@@ -1413,6 +1421,7 @@
 				E838E916257D18E900E95553 /* NotificationViewController.swift in Sources */,
 				E865113525893D1200B4B263 /* LanguageToSpeakeViewModel.swift in Sources */,
 				E83A54F6258763690076BDCE /* ActiveViewModel.swift in Sources */,
+				E845F3BB25B488DF00A00FB3 /* InstrementsRouter.swift in Sources */,
 				E8B287662576CB0B00326E02 /* LanguageToSpeakViewController.swift in Sources */,
 				E83EFAB6257D65E30075CDF1 /* Extension+ViewController.swift in Sources */,
 				E83EFABA257D6DC60075CDF1 /* AllOpportunitiesViewController.swift in Sources */,
@@ -1422,7 +1431,6 @@
 				E87E6F73258932D3005750B7 /* AppStoryboard.swift in Sources */,
 				E8F0FB67258CEE470036A877 /* SignInViewModel.swift in Sources */,
 				E83CC34025829834005163E8 /* PhotoCollectionViewCell.swift in Sources */,
-				E83A54F2258762800076BDCE /* ProfileViewModel.swift in Sources */,
 				E84EE04F25913ED1009FEAD3 /* SignRepository.swift in Sources */,
 				E83E52922587925B0023CEE3 /* NotificationViewModel.swift in Sources */,
 				E83A54FA258763F40076BDCE /* searchViewModel.swift in Sources */,

@@ -15,13 +15,36 @@ class TransactionsViewController: BaseWireFrame<TransactionsViewMode> {
     let CellIdentifierHeader = "HeaderTableViewCell"
     let cellOfItem = "TransactionTableViewCell"
     
-    var arrayElement : [Int] = [1,1,1,1,1]
+    var arrayElement : [TransactionModel] = []
+    var thisManthArray : [TransactionModel] = []
+     var LastManthArray : [TransactionModel] = []
     override func viewDidLoad() {
         super.viewDidLoad()
         RegisterCells()
         setUpUI()
+        vieeModel.viewDidLoad()
     }
     override func bind(ViewModel: TransactionsViewMode) {
+        vieeModel.TransactionThisManthObservable.subscribe(onNext: { [weak self](trasactions) in
+            guard let self = self else {return}
+            self.thisManthArray = trasactions
+            self.arrayElement = trasactions
+            self.TransactionsTableView.reloadData()
+           
+        }).disposed(by: disposePag)
+        
+        vieeModel.TransactionLastManthObservable.subscribe(onNext: { [weak self](trasactions) in
+            guard let self = self else {return}
+            self.LastManthArray = trasactions
+        }).disposed(by: disposePag)
+        
+        ViewModel.errorMassage.subscribe(onNext: { [weak self] (massage) in
+            guard let self = self else {return}
+            if !massage.isEmpty {
+                self.presentAlertOnMainThread(message: massage, buttontitle: "", buttonTitle2: "OK", isoneBtn: true)
+            }
+        }).disposed(by: disposePag)
+        
         
     }
     
@@ -39,14 +62,13 @@ class TransactionsViewController: BaseWireFrame<TransactionsViewMode> {
         segmentedControl.setTitleTextAttributes([.foregroundColor: UIColor.white , NSAttributedString.Key.font: DesignSystem.Typography.SegmentControl.font], for: .selected)
         segmentedControl.setTitleTextAttributes([.foregroundColor: DesignSystem.Colors.LabelColor.color , NSAttributedString.Key.font: DesignSystem.Typography.SegmentControl.font], for: .normal)
         segmentedControl.addTarget(self, action: #selector(DidChangeValue(for:)), for: .valueChanged)
-        
     }
     
     @objc func DidChangeValue (for segment : UISegmentedControl){
-        if segment.selectedSegmentIndex == 1{
-            self.arrayElement = [1,3]
+        if segment.selectedSegmentIndex == 0{
+            arrayElement = thisManthArray
         }else{
-            self.arrayElement = [1,4,3,2,3]
+            arrayElement = LastManthArray
         }
         
         TransactionsTableView.reloadData()
@@ -73,6 +95,8 @@ extension TransactionsViewController : UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellOfItem, for: indexPath) as! TransactionTableViewCell
+        let transaction = arrayElement[indexPath.row]
+        cell.transactionCell.onNext(transaction)
         return cell
     }
     

@@ -6,6 +6,7 @@ protocol APIRouter: URLRequestConvertible {
     var path: String  { get }
     var parameters: Parameters?  { get }
     var encoding: ParameterEncoding { get }
+    var header : HTTPHeaders {get}
 
 }
 
@@ -16,7 +17,7 @@ extension APIRouter {
         }
         url.appendPathComponent(path)
         
-        let request = try URLRequest(url: url, method: method, headers: nil)
+        let request = try URLRequest(url: url, method: method, headers: header)
         
         return try encoding.encode(request, with: parameters)
     }
