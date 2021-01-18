@@ -9,6 +9,7 @@
 import Foundation
 import RxSwift
 import RxCocoa
+import Alamofire
 
 
 protocol InsterementesRepository {
@@ -66,6 +67,22 @@ class InsterementesRepositoryImp: InsterementesRepository {
             
             return Disposables.create()
         }
+    }
+    
+    func transactionAamount(parameters : Parameters ) -> Observable<ResponseObjectModel<signUpDataModel>> {
+        Observable<ResponseObjectModel<signUpDataModel>>.create { [weak self] (items) -> Disposable in
+            self?.networkClient.performRequest(signUpDataModel.self, router: InstrementsRouter.transactionAmount(parameters: parameters)) { (resulte) in
+                switch resulte{
+                case .success(let data):
+                    items.onNext(data)
+                    items.onCompleted()
+                case .failure(let error):
+                    items.onError(error)
+                }
+            }
+            return Disposables.create()
+        }
+        
     }
     
     

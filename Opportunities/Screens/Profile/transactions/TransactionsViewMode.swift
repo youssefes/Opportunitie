@@ -28,7 +28,7 @@ class TransactionsViewMode {
     
     func GetTransactionThisMath(){
         if let userId = UserDefaults.standard.value(forKey: NetworkConstants.userIdKey) as? Int{
-            Repository.TransactionThisManth(userId: 30).subscribe(onNext: { [weak self] (transaction) in
+            Repository.TransactionThisManth(userId: userId).subscribe(onNext: { [weak self] (transaction) in
                 guard let self = self else {return}
                 if transaction.value == true{
                     guard let datathisManth = transaction.data else {return}
@@ -47,7 +47,7 @@ class TransactionsViewMode {
     
     func GetTransactionLastMath(){
         if let userId = UserDefaults.standard.value(forKey: NetworkConstants.userIdKey) as? Int{
-            Repository.transactionLastMonth(userId: 30).subscribe(onNext: { [weak self] (transaction) in
+            Repository.transactionLastMonth(userId: userId).subscribe(onNext: { [weak self] (transaction) in
                 guard let self = self else {return}
                 if transaction.value == true{
                     guard let datalastManth = transaction.data else {return}

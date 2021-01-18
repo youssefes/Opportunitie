@@ -12,6 +12,7 @@ class MenuViewController: BaseWireFrame<MenuViewModel> {
     
     
  
+    @IBOutlet weak var loginBtn: UIButton!
     
     
     
@@ -26,11 +27,15 @@ class MenuViewController: BaseWireFrame<MenuViewModel> {
         super.viewDidLoad()
         setupTableView()
         registerCell()
-        
-        
     }
     
     func setupTableView(){
+        if let userid = UserDefaults.standard.value(forKey: NetworkConstants.userIdKey) as? Int{
+            loginBtn.setTitle("LogOut", for: .normal)
+            print(userid)
+        }else{
+           loginBtn.setTitle("LogIn", for: .normal)
+        }
         menuTableView.dataSource = self
         menuTableView.delegate = self
     }
@@ -41,14 +46,23 @@ class MenuViewController: BaseWireFrame<MenuViewModel> {
     
     override func bind(ViewModel: MenuViewModel) {
         
-        
     }
     
     
     @IBAction func clsoeBtn(_ sender: Any) {
         coordinator.dismiss()
     }
-    @IBAction func logOutBtn(_ sender: Any) {
+    @IBAction func logOutBtn(_ sender: UIButton) {
+        if let userid = UserDefaults.standard.value(forKey: NetworkConstants.userIdKey) as? Int{
+            sender.setTitle("login", for: .normal)
+            UserDefaults.standard.removeObject(forKey: NetworkConstants.userIdKey)
+            let VC = coordinator.MainStoryBordNavigator.viewController(for: .SignInView)
+            present(VC, animated: true, completion: nil)
+            print(userid)
+        }else{
+            let VC = coordinator.MainStoryBordNavigator.viewController(for: .SignInView)
+            present(VC, animated: true, completion: nil)
+        }
     }
 }
 

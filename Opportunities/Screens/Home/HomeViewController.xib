@@ -52,7 +52,7 @@
                                 <fragment content="Get your investment opportunity now!">
                                     <attributes>
                                         <color key="NSColor" red="0.13333333333333333" green="0.20000000000000001" blue="0.26666666666666666" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <font key="NSFont" size="25" name="AvenirNext-Bold"/>
+                                        <font key="NSFont" size="22" name="AvenirNext-Bold"/>
                                         <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="3" tighteningFactorForTruncation="0.0"/>
                                     </attributes>
                                 </fragment>
@@ -72,7 +72,7 @@
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Opportunities" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xXO-ZM-eWm">
                             <rect key="frame" x="0.0" y="0.0" width="187" height="28"/>
-                            <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="22"/>
+                            <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="18"/>
                             <color key="textColor" name="Title"/>
                             <nil key="highlightedColor"/>
                         </label>

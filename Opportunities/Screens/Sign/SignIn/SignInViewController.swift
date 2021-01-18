@@ -23,44 +23,12 @@ class SignInViewController: BaseWireFrame<SignInViewModel> {
     }
     
     override func bind(ViewModel: SignInViewModel) {
-        
-    }
-    @IBAction func logInBtn(_ sender: Any) {
-        signIn()
-        navigateTohome()
-        
-    }
-    @IBAction func forgetPasswordBtn(_ sender: Any) {
-        let viewc = coordinator.MainStoryBordNavigator.viewController(for: .ForgetPassView)
-        present(viewc, animated: true, completion: nil)
-    }
-    @IBAction func signUpBtn(_ sender: Any) {
-        let viewc = coordinator.MainStoryBordNavigator.viewController(for: .SignUpView)
-        present(viewc, animated: true, completion: nil)
-    }
-    
-    func signIn(){
-        
-        guard let email = emailTf.text , !email.isEmpty,let password = password.text , !password.isEmpty else{
-            return
-        }
-        
-        activatyIndicator.startAnimating()
-        let paramerter : [String : Any] = [
-            "email" : email,
-            "password" : password
-        ]
-        vieeModel.Signin(parameters :  paramerter)
-        
-    }
-    
-    func  navigateTohome(){
         vieeModel.SeccessSignIn.subscribe(onNext: { [weak self](resulte) in
             guard let self = self  else {return}
             self.activatyIndicator.stopAnimating()
             guard let status = resulte.code else {return}
-            guard let userId = resulte.data?.id else {return}
             if status == 200{
+                 
                 let viewc = self.coordinator.tabBarController
                 viewc.modalPresentationStyle = .overFullScreen
                 self.present(viewc, animated: true, completion: nil)
@@ -75,12 +43,38 @@ class SignInViewController: BaseWireFrame<SignInViewModel> {
                 print(userid)
                 
             }else{
+                guard let userId = resulte.data?.id else {return}
                 UserDefaults.standard.set(userId, forKey: NetworkConstants.userIdKey)
             }
-            
-            
-            
-            
         }).disposed(by: disposePag)
+        
+        
     }
+    @IBAction func logInBtn(_ sender: Any) {
+        signIn()
+        
+        
+    }
+    @IBAction func forgetPasswordBtn(_ sender: Any) {
+        let viewc = coordinator.MainStoryBordNavigator.viewController(for: .ForgetPassView)
+        present(viewc, animated: true, completion: nil)
+    }
+    @IBAction func signUpBtn(_ sender: Any) {
+        let viewc = coordinator.MainStoryBordNavigator.viewController(for: .SignUpView)
+        present(viewc, animated: true, completion: nil)
+    }
+    
+    func signIn(){
+        guard let email = emailTf.text , !email.isEmpty,let password = password.text , !password.isEmpty else{
+            return
+        }
+        activatyIndicator.startAnimating()
+        
+        let paramerter : [String : Any] = [
+            "email" : email,
+            "password" : password
+        ]
+        vieeModel.Signin(parameters :  paramerter)
+    }
+    
 }

@@ -14,11 +14,26 @@ class PaymentViewController: BaseWireFrame<PaymentViewModel> {
     @IBOutlet weak var masterCardBtn: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
-
+    
     override func bind(ViewModel: PaymentViewModel) {
+        ViewModel.errorMassage.subscribe(onNext: { [weak self] (massage) in
+            guard let self = self else {return}
+            if !massage.isEmpty {
+                self.presentAlertOnMainThread(message: massage, buttontitle: "", buttonTitle2: "OK", isoneBtn: true)
+            }
+            
+        }).disposed(by: disposePag)
+        
+        ViewModel.respondDataObservable.subscribe(onNext: { [weak self]  (respond) in
+            guard let self = self else {return}
+            if respond.value == true{
+                self.coordinator.mainNavigator.Navigate(to: .CompletePayMentViewController)
+            }else{
+                guard let massage = respond.msg else {return}
+                self.presentAlertOnMainThread(message: massage, buttontitle: "", buttonTitle2: "OK", isoneBtn: true)
+            }
+        }).disposed(by: disposePag)
         
     }
     @IBAction func selectedKnet(_ sender: Any) {
@@ -32,13 +47,17 @@ class PaymentViewController: BaseWireFrame<PaymentViewModel> {
         masterCardBtn.backgroundColor = DesignSystem.Colors.SelectedColor.color
         masterCardBtn.setImage(#imageLiteral(resourceName: "Vector"), for: .normal)
         knetBtn.backgroundColor = DesignSystem.Colors.Colorclear.color
-         knetBtn.setImage(#imageLiteral(resourceName: "unselectedCheck"), for: .normal)
+        knetBtn.setImage(#imageLiteral(resourceName: "unselectedCheck"), for: .normal)
     }
     @IBAction func dismiss(_ sender: Any) {
         coordinator.dismiss()
     }
     @IBAction func conform(_ sender: Any) {
-        coordinator.mainNavigator.Navigate(to: .CompletePayMentViewController)
+        conformSubscribe()
+    }
+    
+    func conformSubscribe() {
+        vieeModel.sebsecribeToOppertunites()
     }
     
 }

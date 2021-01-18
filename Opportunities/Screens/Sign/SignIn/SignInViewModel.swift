@@ -13,6 +13,7 @@ import Alamofire
 
 class SignInViewModel {
     var SeccessSignIn : PublishSubject<ResponseObjectModel<User>> = .init()
+    var getProfile : PublishSubject<ResponseObjectModel<User>> = .init()
 
     var signRepository = SignRepositoryImp()
     let disposedBag = DisposeBag()

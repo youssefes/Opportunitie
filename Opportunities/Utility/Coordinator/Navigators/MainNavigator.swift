@@ -25,7 +25,7 @@ class MainNavigator : Navigator {
         case AllOpportunitiesViewController
         case MainTabBar
         case OppertuniteDetailesViewController(id : Int)
-        case payMent
+        case payMent(opertuniteId : Int,amount: String)
         case CompletePayMentViewController
         case InvestmentDetailsViewController
     }
@@ -79,8 +79,8 @@ class MainNavigator : Navigator {
             let viewModel = OppertuniteDetailesViewModel(id: id)
             let view = OppertuniteDetailesViewController(ViewModel: viewModel, coordinator: coordinator)
             return view
-        case .payMent:
-            let viewModel = PaymentViewModel()
+        case .payMent(let opertuniteId, let amount):
+            let viewModel = PaymentViewModel(opertuniteId : opertuniteId, amount: amount)
             let view = PaymentViewController(ViewModel: viewModel, coordinator: coordinator)
             return view
         case .CompletePayMentViewController:

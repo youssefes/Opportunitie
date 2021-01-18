@@ -14,14 +14,15 @@ enum InstrementsRouter : APIRouter{
     case AllInstraments(userId : Int)
     case transactionThisMonth(userId : Int)
     case transactionLastMonth(userId : Int)
+    case transactionAmount(parameters : Parameters)
     var method: HTTPMethod{
         switch self{
         case .AllInstraments:
             return .post
             
-        case .transactionThisMonth, .transactionLastMonth:
+        case .transactionThisMonth, .transactionLastMonth,.transactionAmount:
             return .post
-        }
+       }
     }
     var path: String{
         switch self{
@@ -31,6 +32,8 @@ enum InstrementsRouter : APIRouter{
             return "transactionThisMonth"
         case .transactionLastMonth:
             return "transactionLastMonth"
+        case .transactionAmount:
+            return "transaction_amount"
         }
     }
     
@@ -51,6 +54,8 @@ enum InstrementsRouter : APIRouter{
                 "user_id" : userId
             ]
             return parameters
+        case .transactionAmount(let parameters):
+            return parameters
         }
         
        
@@ -58,13 +63,13 @@ enum InstrementsRouter : APIRouter{
     
     var encoding: ParameterEncoding{
         switch self{
-        case .AllInstraments, .transactionThisMonth,.transactionLastMonth:
+        case .AllInstraments, .transactionThisMonth,.transactionLastMonth,.transactionAmount:
             return URLEncoding.default
         }
     }
     var header: HTTPHeaders{
         switch self{
-        case .AllInstraments,.transactionThisMonth,.transactionLastMonth:
+        case .AllInstraments,.transactionThisMonth,.transactionLastMonth,.transactionAmount:
             let header = HTTPHeaders([HTTPHeader(name: "Accept-Language", value: "en")])
             return header
         }

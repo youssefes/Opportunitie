@@ -46,7 +46,7 @@ class SearchViewController: BaseWireFrame<searchViewModel> {
         }).disposed(by: disposePag)
         vieeModel.OppertuniteDetailesObservable.bind(to: resulteTableView.rx.items(cellIdentifier: cellIdentifier, cellType: HomeTableViewCell.self)){ [weak  self] (index,oppertunite, cell) in
             guard let self = self else {return}
-            cell.letestOppertunite.onNext(oppertunite)
+            cell.searchOppertunite.onNext(oppertunite)
             cell.getDeteailesBtn = {
                 self.coordinator.mainNavigator.Navigate(to: .OppertuniteDetailesViewController(id: oppertunite.id) )
             }

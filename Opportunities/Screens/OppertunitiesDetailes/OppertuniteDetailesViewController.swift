@@ -13,6 +13,7 @@ class OppertuniteDetailesViewController: BaseWireFrame<OppertuniteDetailesViewMo
     @IBOutlet weak var priceLbl: UILabel!
     @IBOutlet weak var discrription2Lbl: UILabel!
     @IBOutlet weak var videoImage: UIImageView!
+    @IBOutlet weak var amountTf: TextField!
     @IBOutlet weak var durationLbl: UILabel!
     
     @IBOutlet weak var timeLeftLbl: UILabel!
@@ -26,7 +27,7 @@ class OppertuniteDetailesViewController: BaseWireFrame<OppertuniteDetailesViewMo
 
         // Do any additional setup after loading the view.
     }
-    
+    var opertuniteId : Int = 0
     override func bind(ViewModel: OppertuniteDetailesViewModel) {
         ViewModel.viewDidlead()
         ViewModel.OppertuniteDetailesObservable.subscribe(onNext: {[weak self](opertunite) in
@@ -38,11 +39,15 @@ class OppertuniteDetailesViewController: BaseWireFrame<OppertuniteDetailesViewMo
             self.timeLeftLbl.text = opertunite.timeLeft
             self.durationLbl.text = opertunite.duration
             self.urlVideo = opertunite.videoDeal
+            self.opertuniteId = opertunite.id
             }).disposed(by: disposePag)
     }
 
     @IBAction func ContunieBtn(_ sender: Any) {
-        coordinator.mainNavigator.Navigate(to: .payMent)
+        guard let amount = amountTf.text,!amount.isEmpty else {
+            self.presentAlertOnMainThread(message: "please enter the amount value", buttontitle: "", buttonTitle2: "Ok", isoneBtn: true)
+            return}
+        coordinator.mainNavigator.Navigate(to: .payMent(opertuniteId: opertuniteId, amount: amount))
     }
     @IBAction func shareBtn(_ sender: Any) {
     }

@@ -30,7 +30,7 @@ class AllOpportunitiesViewController: BaseWireFrame<AllOppertunitesViewModel> {
             cell) in
             guard let self = self else {return}
             self.activityIndicators.stopAnimating()
-            cell.letestOppertunite.onNext(oppertunites)
+            cell.allOppertunite.onNext(oppertunites)
             cell.getDeteailesBtn = {
                 self.coordinator.mainNavigator.Navigate(to: .OppertuniteDetailesViewController(id: oppertunites.id) )
             }

@@ -8,14 +8,14 @@
 import Foundation
 
 struct OppertunitesModel: Codable {
-    let id: Int
+    let id,amount,stay: Int
     let name: String
     let videoDeal: String
     let detail, brief, minimum, maximum: String
     let total, timeLeft, expected, duration: String
     let salesDevelopments, country, projectShipment, recommendations: String
     let shipmentDevelopments, snapshotProduct, participationReturns, createdAt: String
-
+    
     enum CodingKeys: String, CodingKey {
         case id
         case name
@@ -31,5 +31,7 @@ struct OppertunitesModel: Codable {
         case snapshotProduct = "Snapshot_Product"
         case participationReturns = "participation_returns"
         case createdAt = "created_at"
+        case amount
+        case stay
     }
 }

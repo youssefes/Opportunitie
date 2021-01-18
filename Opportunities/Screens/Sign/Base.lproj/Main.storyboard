@@ -24,6 +24,12 @@
         <array key="Gilroy-Bold.ttf">
             <string>Gilroy-Bold</string>
         </array>
+        <array key="Gilroy-Light.ttf">
+            <string>Gilroy-Light</string>
+        </array>
+        <array key="Gilroy-Medium.ttf">
+            <string>Gilroy-Medium</string>
+        </array>
         <array key="Gilroy-Regular.ttf">
             <string>Gilroy-Regular</string>
         </array>
@@ -38,11 +44,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Language" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bKr-45-u9x">
-                                <rect key="frame" x="15" y="94" width="384" height="60"/>
+                                <rect key="frame" x="30" y="94" width="354" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="UFb-ep-CxV"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="50"/>
+                                <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="40"/>
                                 <color key="textColor" name="Title"/>
                                 <nil key="highlightedColor"/>
                                 <userDefinedRuntimeAttributes>
@@ -61,21 +67,21 @@
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Which language do you speak?" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tRq-L1-ACq">
-                                <rect key="frame" x="15" y="159" width="384" height="116.5"/>
-                                <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="31"/>
+                                <rect key="frame" x="30" y="159" width="354" height="136.5"/>
+                                <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="28"/>
                                 <color key="textColor" name="SubTitle"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="bFs-aU-bm4">
-                                <rect key="frame" x="12" y="365.5" width="390" height="165"/>
+                                <rect key="frame" x="30" y="385.5" width="354" height="125"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cdw-Fg-jYe">
-                                        <rect key="frame" x="0.0" y="0.0" width="390" height="70"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="354" height="50"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZWF-hO-tAt">
-                                                <rect key="frame" x="0.0" y="0.0" width="390" height="70"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="354" height="50"/>
                                                 <color key="backgroundColor" name="backGroundButton"/>
-                                                <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="25"/>
+                                                <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="20"/>
                                                 <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="15" maxY="0.0"/>
                                                 <state key="normal" title="English" image="Flag_of_the_United_Kingdom 1">
@@ -91,7 +97,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bb4-Kw-KVt">
-                                                <rect key="frame" x="344" y="27" width="16" height="16"/>
+                                                <rect key="frame" x="308" y="17" width="16" height="16"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="16" id="7EB-6q-KhI"/>
@@ -110,19 +116,19 @@
                                             <constraint firstItem="ZWF-hO-tAt" firstAttribute="leading" secondItem="Cdw-Fg-jYe" secondAttribute="leading" id="6M9-Ek-ZCz"/>
                                             <constraint firstItem="ZWF-hO-tAt" firstAttribute="top" secondItem="Cdw-Fg-jYe" secondAttribute="top" id="C3e-xF-bXf"/>
                                             <constraint firstItem="bb4-Kw-KVt" firstAttribute="centerY" secondItem="ZWF-hO-tAt" secondAttribute="centerY" id="Dj3-c6-N9m"/>
-                                            <constraint firstAttribute="height" constant="70" id="Edv-MO-x1a"/>
+                                            <constraint firstAttribute="height" constant="50" id="Edv-MO-x1a"/>
                                             <constraint firstAttribute="trailing" secondItem="bb4-Kw-KVt" secondAttribute="trailing" constant="30" id="Vn8-7K-yuu"/>
                                             <constraint firstAttribute="trailing" secondItem="ZWF-hO-tAt" secondAttribute="trailing" id="ZXH-cp-vbc"/>
                                             <constraint firstAttribute="bottom" secondItem="ZWF-hO-tAt" secondAttribute="bottom" id="elS-C1-XzR"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cd1-9m-hIk">
-                                        <rect key="frame" x="0.0" y="95" width="390" height="70"/>
+                                        <rect key="frame" x="0.0" y="75" width="354" height="50"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VRa-N5-FX3">
-                                                <rect key="frame" x="0.0" y="0.0" width="390" height="70"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="354" height="50"/>
                                                 <color key="backgroundColor" name="backGroundButton"/>
-                                                <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="30"/>
+                                                <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="25"/>
                                                 <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="15" maxY="0.0"/>
                                                 <state key="normal" title="العربية" image="saudi-arabia-flag-icon-free-download 1">
@@ -138,7 +144,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MFf-RE-fgM">
-                                                <rect key="frame" x="344" y="27" width="16" height="16"/>
+                                                <rect key="frame" x="308" y="17" width="16" height="16"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="16" id="IB8-he-3IU"/>
@@ -168,15 +174,15 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="bKr-45-u9x" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="E5n-07-G2w"/>
+                            <constraint firstItem="bKr-45-u9x" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="E5n-07-G2w"/>
                             <constraint firstItem="tRq-L1-ACq" firstAttribute="top" secondItem="bKr-45-u9x" secondAttribute="bottom" constant="5" id="IzC-F4-PMi"/>
                             <constraint firstItem="bFs-aU-bm4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="KZ1-8Q-qRA"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bKr-45-u9x" secondAttribute="trailing" constant="15" id="Lny-g6-tNt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bKr-45-u9x" secondAttribute="trailing" constant="30" id="Lny-g6-tNt"/>
                             <constraint firstItem="tRq-L1-ACq" firstAttribute="leading" secondItem="bKr-45-u9x" secondAttribute="leading" id="Tvn-CH-BKG"/>
-                            <constraint firstItem="bFs-aU-bm4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="12" id="byH-vt-IpN"/>
+                            <constraint firstItem="bFs-aU-bm4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="byH-vt-IpN"/>
                             <constraint firstItem="tRq-L1-ACq" firstAttribute="trailing" secondItem="bKr-45-u9x" secondAttribute="trailing" id="c44-U5-rDh"/>
                             <constraint firstItem="bFs-aU-bm4" firstAttribute="top" relation="lessThanOrEqual" secondItem="tRq-L1-ACq" secondAttribute="bottom" constant="90" id="eKA-Rb-r1T"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bFs-aU-bm4" secondAttribute="trailing" constant="12" id="zU7-7C-YPR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bFs-aU-bm4" secondAttribute="trailing" constant="30" id="zU7-7C-YPR"/>
                             <constraint firstItem="bKr-45-u9x" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="zte-16-cPY"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -199,14 +205,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E1k-bu-acU">
-                                <rect key="frame" x="0.0" y="44" width="414" height="713"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="733"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </view>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HcC-Bm-qUL">
-                                <rect key="frame" x="15" y="777" width="385" height="65"/>
+                                <rect key="frame" x="15" y="797" width="385" height="45"/>
                                 <color key="backgroundColor" name="MainbuttonColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="65" id="uQe-Zp-m5X"/>
+                                    <constraint firstAttribute="height" constant="45" id="uQe-Zp-m5X"/>
                                 </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Get Started"/>
@@ -220,12 +226,12 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="V6w-dO-74L">
-                                <rect key="frame" x="15" y="777" width="385" height="65"/>
+                                <rect key="frame" x="15" y="797" width="385" height="45"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mfh-mt-RUI">
-                                        <rect key="frame" x="0.0" y="0.0" width="182.5" height="65"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="182.5" height="45"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="65" id="yuB-zS-cSA"/>
+                                            <constraint firstAttribute="height" constant="45" id="yuB-zS-cSA"/>
                                         </constraints>
                                         <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <state key="normal" title="Skip"/>
@@ -234,7 +240,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="pl2-um-u1N">
-                                        <rect key="frame" x="202.5" y="0.0" width="182.5" height="65"/>
+                                        <rect key="frame" x="202.5" y="0.0" width="182.5" height="45"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" name="MainbuttonColor"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -287,27 +293,27 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome back!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KcF-LR-6Bi">
-                                <rect key="frame" x="20" y="94" width="374" height="40"/>
-                                <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy-Regular" pointSize="40"/>
+                                <rect key="frame" x="30" y="94" width="354" height="30"/>
+                                <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy-Regular" pointSize="30"/>
                                 <color key="textColor" name="SubTitle"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="deX-QK-JnS">
-                                <rect key="frame" x="20" y="164" width="374" height="260"/>
+                                <rect key="frame" x="30" y="154" width="354" height="180"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hEj-hg-UP8">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="65"/>
-                                        <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="18"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hEj-hg-UP8">
+                                        <rect key="frame" x="0.0" y="0.0" width="354" height="45"/>
+                                        <fontDescription key="fontDescription" name="Gilroy-Medium" family="Gilroy-Medium" pointSize="15"/>
                                         <color key="textColor" name="LabelColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KUG-9W-Rhu" customClass="TextField" customModule="Opportunities" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="65" width="374" height="65"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KUG-9W-Rhu" customClass="TextField" customModule="Opportunities" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="45" width="354" height="45"/>
                                         <color key="backgroundColor" name="backGroundButton"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="65" id="gs6-7S-BhE"/>
+                                            <constraint firstAttribute="height" constant="45" id="gs6-7S-BhE"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy-Regular" pointSize="16"/>
                                         <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -316,15 +322,15 @@
                                         </userDefinedRuntimeAttributes>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6EU-Sh-dRw">
-                                        <rect key="frame" x="0.0" y="130" width="374" height="65"/>
-                                        <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="18"/>
+                                        <rect key="frame" x="0.0" y="90" width="354" height="45"/>
+                                        <fontDescription key="fontDescription" name="Gilroy-Medium" family="Gilroy-Medium" pointSize="15"/>
                                         <color key="textColor" name="LabelColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kiX-gJ-byg" customClass="TextField" customModule="Opportunities" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="195" width="374" height="65"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kiX-gJ-byg" customClass="TextField" customModule="Opportunities" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="135" width="354" height="45"/>
                                         <color key="backgroundColor" name="backGroundButton"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy-Regular" pointSize="16"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -335,7 +341,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="xyk-KW-T21">
-                                <rect key="frame" x="20" y="434" width="374" height="30"/>
+                                <rect key="frame" x="30" y="344" width="354" height="30"/>
                                 <subviews>
                                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Incorrect Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HuG-Xa-eTG">
                                         <rect key="frame" x="0.0" y="0.0" width="0.0" height="30"/>
@@ -344,8 +350,8 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yOQ-JO-jrQ">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="30"/>
-                                        <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="15"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="354" height="30"/>
+                                        <fontDescription key="fontDescription" name="Gilroy-Medium" family="Gilroy-Medium" pointSize="15"/>
                                         <color key="tintColor" name="MainbuttonColor"/>
                                         <state key="normal" title="Forgot Password?"/>
                                         <connections>
@@ -381,27 +387,13 @@
                                 </constraints>
                                 <viewLayoutGuide key="safeArea" id="Sas-Wn-8E9"/>
                             </stackView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gze-f4-bUQ" customClass="NVActivityIndicatorView" customModule="NVActivityIndicatorView">
-                                <rect key="frame" x="314" y="526.5" width="40" height="40"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="40" id="OXO-oC-sw0"/>
-                                    <constraint firstAttribute="height" constant="40" id="pqx-Pd-GG0"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
-                                        <color key="value" name="White"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="typeName" value="lineScale"/>
-                                </userDefinedRuntimeAttributes>
-                            </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LNS-EZ-wk8">
-                                <rect key="frame" x="20" y="514" width="374" height="65"/>
+                                <rect key="frame" x="30" y="394" width="354" height="45"/>
                                 <color key="backgroundColor" name="MainbuttonColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="65" id="ZHi-B7-PxA"/>
+                                    <constraint firstAttribute="height" constant="45" id="ZHi-B7-PxA"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="Gilroy-Medium" family="Gilroy-Medium" pointSize="18"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Sign In"/>
                                 <userDefinedRuntimeAttributes>
@@ -413,12 +405,26 @@
                                     <action selector="logInBtn:" destination="PJd-mx-9UW" eventType="touchUpInside" id="BAc-ag-9Y9"/>
                                 </connections>
                             </button>
+                            <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gze-f4-bUQ" customClass="NVActivityIndicatorView" customModule="NVActivityIndicatorView">
+                                <rect key="frame" x="319" y="404" width="25" height="25"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="25" id="OXO-oC-sw0"/>
+                                    <constraint firstAttribute="height" constant="25" id="pqx-Pd-GG0"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" name="White"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="typeName" value="lineScale"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="deX-QK-JnS" firstAttribute="leading" secondItem="KcF-LR-6Bi" secondAttribute="leading" id="0YI-qn-mSy"/>
-                            <constraint firstItem="6dS-hu-xLg" firstAttribute="trailing" secondItem="KcF-LR-6Bi" secondAttribute="trailing" constant="20" id="1u7-4W-b5k"/>
-                            <constraint firstItem="KcF-LR-6Bi" firstAttribute="leading" secondItem="6dS-hu-xLg" secondAttribute="leading" constant="20" id="51P-2T-Lc8"/>
+                            <constraint firstItem="6dS-hu-xLg" firstAttribute="trailing" secondItem="KcF-LR-6Bi" secondAttribute="trailing" constant="30" id="1u7-4W-b5k"/>
+                            <constraint firstItem="KcF-LR-6Bi" firstAttribute="leading" secondItem="6dS-hu-xLg" secondAttribute="leading" constant="30" id="51P-2T-Lc8"/>
                             <constraint firstItem="Gze-f4-bUQ" firstAttribute="trailing" secondItem="LNS-EZ-wk8" secondAttribute="trailing" constant="-40" id="5Di-ks-VT9"/>
                             <constraint firstItem="Gze-f4-bUQ" firstAttribute="centerY" secondItem="LNS-EZ-wk8" secondAttribute="centerY" id="88b-lT-3af"/>
                             <constraint firstItem="xyk-KW-T21" firstAttribute="leading" secondItem="deX-QK-JnS" secondAttribute="leading" id="BPA-wD-3od"/>
@@ -427,7 +433,7 @@
                             <constraint firstItem="Yzp-Na-7o7" firstAttribute="centerX" secondItem="pal-qr-C0l" secondAttribute="centerX" id="T66-UB-8Ze"/>
                             <constraint firstItem="LNS-EZ-wk8" firstAttribute="trailing" secondItem="deX-QK-JnS" secondAttribute="trailing" id="Tqh-ti-zl0"/>
                             <constraint firstItem="deX-QK-JnS" firstAttribute="top" secondItem="KcF-LR-6Bi" secondAttribute="bottom" constant="30" id="daV-Qn-3gz"/>
-                            <constraint firstItem="LNS-EZ-wk8" firstAttribute="top" secondItem="xyk-KW-T21" secondAttribute="bottom" constant="50" id="eNf-u8-OPi"/>
+                            <constraint firstItem="LNS-EZ-wk8" firstAttribute="top" secondItem="xyk-KW-T21" secondAttribute="bottom" constant="20" id="eNf-u8-OPi"/>
                             <constraint firstItem="Yzp-Na-7o7" firstAttribute="bottom" secondItem="6dS-hu-xLg" secondAttribute="bottom" id="fQY-ae-PQ5"/>
                             <constraint firstItem="LNS-EZ-wk8" firstAttribute="leading" secondItem="deX-QK-JnS" secondAttribute="leading" id="pBY-zT-h31"/>
                             <constraint firstItem="xyk-KW-T21" firstAttribute="top" secondItem="deX-QK-JnS" secondAttribute="bottom" constant="10" id="tGr-Y4-PdK"/>
@@ -475,13 +481,13 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DVL-lB-6MY">
-                                    <rect key="frame" x="0.0" y="0.0" width="374" height="21"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
                                     <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="18"/>
                                     <color key="textColor" name="LabelColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2zW-Vg-khv">
-                                    <rect key="frame" x="0.0" y="21" width="374" height="64"/>
+                                    <rect key="frame" x="0.0" y="34" width="374" height="51"/>
                                     <color key="backgroundColor" name="backGroundButton"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <textInputTraits key="textInputTraits"/>
@@ -498,13 +504,13 @@
                             <rect key="frame" x="0.0" y="115" width="374" height="85"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jne-Ab-e3u">
-                                    <rect key="frame" x="0.0" y="0.0" width="374" height="21"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
                                     <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="18"/>
                                     <color key="textColor" name="LabelColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vc1-gm-HaH">
-                                    <rect key="frame" x="0.0" y="21" width="374" height="64"/>
+                                    <rect key="frame" x="0.0" y="34" width="374" height="51"/>
                                     <color key="backgroundColor" name="backGroundButton"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <textInputTraits key="textInputTraits"/>
@@ -540,7 +546,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="406" height="1150"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="smj-f4-jeP">
-                                                <rect key="frame" x="20" y="20" width="30" height="30"/>
+                                                <rect key="frame" x="30" y="20" width="30" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="30" id="Scu-Z7-Fic"/>
                                                     <constraint firstAttribute="height" constant="30" id="wKz-8X-LMd"/>
@@ -551,21 +557,21 @@
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Full Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XKY-Wt-qYQ">
-                                                <rect key="frame" x="20" y="190" width="366" height="30"/>
+                                                <rect key="frame" x="30" y="170" width="346" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="Qe6-SF-QiU"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="18"/>
+                                                <fontDescription key="fontDescription" name="Gilroy-Medium" family="Gilroy-Medium" pointSize="16"/>
                                                 <color key="textColor" name="LabelColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NHP-hX-umV" customClass="TextField" customModule="Opportunities" customModuleProvider="target">
-                                                <rect key="frame" x="20" y="240" width="366" height="60"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Full Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NHP-hX-umV" customClass="TextField" customModule="Opportunities" customModuleProvider="target">
+                                                <rect key="frame" x="30" y="220" width="346" height="45"/>
                                                 <color key="backgroundColor" name="backGroundButton"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="60" id="pV0-aS-7Uf"/>
+                                                    <constraint firstAttribute="height" constant="45" id="pV0-aS-7Uf"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy-Regular" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -574,16 +580,16 @@
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SnA-44-a19">
-                                                <rect key="frame" x="20" y="320" width="366" height="18.5"/>
-                                                <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="18"/>
+                                                <rect key="frame" x="30" y="285" width="346" height="18.5"/>
+                                                <fontDescription key="fontDescription" name="Gilroy-Medium" family="Gilroy-Medium" pointSize="16"/>
                                                 <color key="textColor" name="LabelColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="btc-YJ-Klz">
-                                                <rect key="frame" x="20" y="358.5" width="366" height="55"/>
+                                                <rect key="frame" x="30" y="323.5" width="346" height="41.5"/>
                                                 <subviews>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rdO-6B-dFl" customClass="TextField" customModule="Opportunities" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="100" height="55"/>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="code" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rdO-6B-dFl" customClass="TextField" customModule="Opportunities" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="100" height="41.5"/>
                                                         <color key="backgroundColor" name="backGroundButton"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="100" id="fZI-4y-IWV"/>
@@ -596,8 +602,8 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AhQ-JL-d97" customClass="TextField" customModule="Opportunities" customModuleProvider="target">
-                                                        <rect key="frame" x="110" y="0.0" width="256" height="55"/>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AhQ-JL-d97" customClass="TextField" customModule="Opportunities" customModuleProvider="target">
+                                                        <rect key="frame" x="105" y="0.0" width="241" height="41.5"/>
                                                         <color key="backgroundColor" name="backGroundButton"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
@@ -610,7 +616,7 @@
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
-                                                    <constraint firstItem="AhQ-JL-d97" firstAttribute="leading" secondItem="rdO-6B-dFl" secondAttribute="trailing" constant="10" id="Isc-AM-kln"/>
+                                                    <constraint firstItem="AhQ-JL-d97" firstAttribute="leading" secondItem="rdO-6B-dFl" secondAttribute="trailing" constant="5" id="Isc-AM-kln"/>
                                                     <constraint firstItem="rdO-6B-dFl" firstAttribute="top" secondItem="btc-YJ-Klz" secondAttribute="top" id="NHH-bM-yPv"/>
                                                     <constraint firstItem="rdO-6B-dFl" firstAttribute="height" secondItem="AhQ-JL-d97" secondAttribute="height" id="aBU-Gi-ZTa"/>
                                                     <constraint firstAttribute="bottom" secondItem="rdO-6B-dFl" secondAttribute="bottom" id="bNI-3W-ihX"/>
@@ -620,15 +626,15 @@
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GPx-mO-swy">
-                                                <rect key="frame" x="20" y="433.5" width="366" height="19"/>
-                                                <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="18"/>
+                                                <rect key="frame" x="30" y="385" width="346" height="18.5"/>
+                                                <fontDescription key="fontDescription" name="Gilroy-Medium" family="Gilroy-Medium" pointSize="16"/>
                                                 <color key="textColor" name="LabelColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wpl-8a-ezj" customClass="TextField" customModule="Opportunities" customModuleProvider="target">
-                                                <rect key="frame" x="20" y="472.5" width="366" height="60"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Your email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wpl-8a-ezj" customClass="TextField" customModule="Opportunities" customModuleProvider="target">
+                                                <rect key="frame" x="30" y="423.5" width="346" height="45"/>
                                                 <color key="backgroundColor" name="backGroundButton"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy-Regular" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -637,15 +643,15 @@
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pz4-Vf-EDP">
-                                                <rect key="frame" x="20" y="552.5" width="366" height="18.5"/>
-                                                <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="18"/>
+                                                <rect key="frame" x="30" y="488.5" width="346" height="19"/>
+                                                <fontDescription key="fontDescription" name="Gilroy-Medium" family="Gilroy-Medium" pointSize="16"/>
                                                 <color key="textColor" name="LabelColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="08M-rH-Vkl" customClass="TextField" customModule="Opportunities" customModuleProvider="target">
-                                                <rect key="frame" x="20" y="591" width="366" height="60"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Account number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="08M-rH-Vkl" customClass="TextField" customModule="Opportunities" customModuleProvider="target">
+                                                <rect key="frame" x="30" y="527.5" width="346" height="45"/>
                                                 <color key="backgroundColor" name="backGroundButton"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy-Regular" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -654,15 +660,15 @@
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mwe-fJ-txZ">
-                                                <rect key="frame" x="20" y="671" width="366" height="18.5"/>
-                                                <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="18"/>
+                                                <rect key="frame" x="30" y="592.5" width="346" height="18.5"/>
+                                                <fontDescription key="fontDescription" name="Gilroy-Medium" family="Gilroy-Medium" pointSize="16"/>
                                                 <color key="textColor" name="LabelColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZB3-Iw-eDu" customClass="TextField" customModule="Opportunities" customModuleProvider="target">
-                                                <rect key="frame" x="20" y="709.5" width="366" height="60"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZB3-Iw-eDu" customClass="TextField" customModule="Opportunities" customModuleProvider="target">
+                                                <rect key="frame" x="30" y="631" width="346" height="45"/>
                                                 <color key="backgroundColor" name="backGroundButton"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy-Regular" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -671,15 +677,15 @@
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirm Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M9h-ab-hIv">
-                                                <rect key="frame" x="20" y="789.5" width="366" height="22"/>
-                                                <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="18"/>
+                                                <rect key="frame" x="30" y="696" width="346" height="21.5"/>
+                                                <fontDescription key="fontDescription" name="Gilroy-Medium" family="Gilroy-Medium" pointSize="16"/>
                                                 <color key="textColor" name="LabelColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1Oh-Ts-4t5" customClass="TextField" customModule="Opportunities" customModuleProvider="target">
-                                                <rect key="frame" x="20" y="831.5" width="366" height="60"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Confirm Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1Oh-Ts-4t5" customClass="TextField" customModule="Opportunities" customModuleProvider="target">
+                                                <rect key="frame" x="30" y="737.5" width="346" height="45"/>
                                                 <color key="backgroundColor" name="backGroundButton"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy-Regular" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -688,7 +694,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vIb-yb-APf">
-                                                <rect key="frame" x="20" y="911.5" width="366" height="60"/>
+                                                <rect key="frame" x="30" y="802.5" width="346" height="60"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2zM-JA-iKo">
                                                         <rect key="frame" x="0.0" y="4" width="16" height="16"/>
@@ -709,9 +715,9 @@
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Accept our Terms &amp; Conditions to complete registeration." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Udw-AY-jNs">
-                                                        <rect key="frame" x="26" y="4" width="320" height="36"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                        <nil key="textColor"/>
+                                                        <rect key="frame" x="26" y="4" width="300" height="30"/>
+                                                        <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy-Regular" pointSize="16"/>
+                                                        <color key="textColor" name="LabelColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
@@ -726,11 +732,12 @@
                                                 </constraints>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZiE-oX-rp7">
-                                                <rect key="frame" x="20" y="995.5" width="366" height="65"/>
+                                                <rect key="frame" x="30" y="886.5" width="346" height="45"/>
                                                 <color key="backgroundColor" name="MainbuttonColor"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="65" id="t2i-GT-UCM"/>
+                                                    <constraint firstAttribute="height" constant="45" id="t2i-GT-UCM"/>
                                                 </constraints>
+                                                <fontDescription key="fontDescription" name="Gilroy-Medium" family="Gilroy-Medium" pointSize="18"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Sign Up"/>
                                                 <userDefinedRuntimeAttributes>
@@ -743,23 +750,23 @@
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let’s sign you up!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b3e-nP-TG0">
-                                                <rect key="frame" x="20" y="130" width="366" height="40"/>
-                                                <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy-Regular" pointSize="40"/>
+                                                <rect key="frame" x="30" y="120" width="346" height="30"/>
+                                                <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy-Regular" pointSize="30"/>
                                                 <color key="textColor" name="SubTitle"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign Up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ES5-6O-nTw">
-                                                <rect key="frame" x="20" y="70" width="366" height="40"/>
-                                                <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="40"/>
+                                                <rect key="frame" x="30" y="70" width="346" height="30"/>
+                                                <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="30"/>
                                                 <color key="textColor" name="Title"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ttK-BT-Az9" customClass="NVActivityIndicatorView" customModule="NVActivityIndicatorView">
-                                                <rect key="frame" x="306" y="1008" width="40" height="40"/>
+                                                <rect key="frame" x="311" y="896.5" width="25" height="25"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="40" id="Xv6-U1-Ji4"/>
-                                                    <constraint firstAttribute="height" constant="40" id="gMu-Iv-jDs"/>
+                                                    <constraint firstAttribute="width" constant="25" id="Xv6-U1-Ji4"/>
+                                                    <constraint firstAttribute="height" constant="25" id="gMu-Iv-jDs"/>
                                                 </constraints>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="color">
@@ -794,7 +801,7 @@
                                             <constraint firstItem="M9h-ab-hIv" firstAttribute="leading" secondItem="mwe-fJ-txZ" secondAttribute="leading" id="Pob-ZV-5UN"/>
                                             <constraint firstItem="Pz4-Vf-EDP" firstAttribute="leading" secondItem="GPx-mO-swy" secondAttribute="leading" id="RRm-q9-4Pk"/>
                                             <constraint firstItem="vIb-yb-APf" firstAttribute="leading" secondItem="1Oh-Ts-4t5" secondAttribute="leading" id="THO-AJ-VU1"/>
-                                            <constraint firstAttribute="height" constant="1150" id="TUO-KI-ewg"/>
+                                            <constraint firstAttribute="height" constant="1000" id="TUO-KI-ewg"/>
                                             <constraint firstItem="b3e-nP-TG0" firstAttribute="leading" secondItem="dNJ-iT-644" secondAttribute="leading" constant="20" id="U1N-G7-j9T"/>
                                             <constraint firstItem="btc-YJ-Klz" firstAttribute="trailing" secondItem="SnA-44-a19" secondAttribute="trailing" id="Vfk-Xi-yuE"/>
                                             <constraint firstItem="ttK-BT-Az9" firstAttribute="centerY" secondItem="ZiE-oX-rp7" secondAttribute="centerY" id="WVK-y2-s6r"/>
@@ -806,24 +813,24 @@
                                             <constraint firstItem="ZB3-Iw-eDu" firstAttribute="leading" secondItem="08M-rH-Vkl" secondAttribute="leading" id="Xn6-85-Hj3"/>
                                             <constraint firstItem="ZiE-oX-rp7" firstAttribute="leading" secondItem="vIb-yb-APf" secondAttribute="leading" id="Ydp-xI-f1h"/>
                                             <constraint firstItem="SnA-44-a19" firstAttribute="top" secondItem="NHP-hX-umV" secondAttribute="bottom" constant="20" id="agm-ja-bNR"/>
-                                            <constraint firstItem="XKY-Wt-qYQ" firstAttribute="leading" secondItem="dNJ-iT-644" secondAttribute="leading" constant="20" id="cKJ-z6-oYX"/>
+                                            <constraint firstItem="XKY-Wt-qYQ" firstAttribute="leading" secondItem="dNJ-iT-644" secondAttribute="leading" constant="30" id="cKJ-z6-oYX"/>
                                             <constraint firstItem="mwe-fJ-txZ" firstAttribute="leading" secondItem="Pz4-Vf-EDP" secondAttribute="leading" id="cSZ-a6-GPN"/>
                                             <constraint firstItem="vIb-yb-APf" firstAttribute="trailing" secondItem="1Oh-Ts-4t5" secondAttribute="trailing" id="csT-v4-eCL"/>
                                             <constraint firstItem="NHP-hX-umV" firstAttribute="trailing" secondItem="XKY-Wt-qYQ" secondAttribute="trailing" id="dba-A0-njy"/>
                                             <constraint firstItem="SnA-44-a19" firstAttribute="trailing" secondItem="XKY-Wt-qYQ" secondAttribute="trailing" id="dde-QS-XrZ"/>
                                             <constraint firstItem="SnA-44-a19" firstAttribute="height" secondItem="XKY-Wt-qYQ" secondAttribute="height" multiplier="0.622642" id="dgh-fz-xjY"/>
                                             <constraint firstItem="smj-f4-jeP" firstAttribute="top" secondItem="dNJ-iT-644" secondAttribute="top" constant="20" id="f10-Jg-dcF"/>
-                                            <constraint firstItem="smj-f4-jeP" firstAttribute="leading" secondItem="dNJ-iT-644" secondAttribute="leading" constant="20" id="f4w-6W-R6h"/>
+                                            <constraint firstItem="smj-f4-jeP" firstAttribute="leading" secondItem="dNJ-iT-644" secondAttribute="leading" constant="30" id="f4w-6W-R6h"/>
                                             <constraint firstItem="vIb-yb-APf" firstAttribute="top" secondItem="1Oh-Ts-4t5" secondAttribute="bottom" constant="20" id="hzN-yK-bLW"/>
                                             <constraint firstItem="mwe-fJ-txZ" firstAttribute="height" secondItem="Pz4-Vf-EDP" secondAttribute="height" id="iqC-pF-urn"/>
                                             <constraint firstItem="GPx-mO-swy" firstAttribute="leading" secondItem="SnA-44-a19" secondAttribute="leading" id="jnX-u3-yje"/>
                                             <constraint firstItem="b3e-nP-TG0" firstAttribute="top" secondItem="ES5-6O-nTw" secondAttribute="bottom" constant="20" id="k0F-0J-283"/>
                                             <constraint firstItem="b3e-nP-TG0" firstAttribute="leading" secondItem="ES5-6O-nTw" secondAttribute="leading" id="l7A-6j-RrA"/>
-                                            <constraint firstAttribute="trailing" secondItem="ES5-6O-nTw" secondAttribute="trailing" constant="20" id="lUN-3J-UKY"/>
+                                            <constraint firstAttribute="trailing" secondItem="ES5-6O-nTw" secondAttribute="trailing" constant="30" id="lUN-3J-UKY"/>
                                             <constraint firstItem="M9h-ab-hIv" firstAttribute="trailing" secondItem="mwe-fJ-txZ" secondAttribute="trailing" id="mes-df-sk0"/>
                                             <constraint firstItem="Wpl-8a-ezj" firstAttribute="trailing" secondItem="NHP-hX-umV" secondAttribute="trailing" id="mpE-Bl-Fsa"/>
                                             <constraint firstItem="1Oh-Ts-4t5" firstAttribute="top" secondItem="M9h-ab-hIv" secondAttribute="bottom" constant="20" id="nIe-gR-fXI"/>
-                                            <constraint firstAttribute="trailing" secondItem="XKY-Wt-qYQ" secondAttribute="trailing" constant="20" id="npx-Oa-iIL"/>
+                                            <constraint firstAttribute="trailing" secondItem="XKY-Wt-qYQ" secondAttribute="trailing" constant="30" id="npx-Oa-iIL"/>
                                             <constraint firstItem="GPx-mO-swy" firstAttribute="trailing" secondItem="SnA-44-a19" secondAttribute="trailing" id="oTK-cM-fjg"/>
                                             <constraint firstAttribute="trailing" secondItem="b3e-nP-TG0" secondAttribute="trailing" constant="20" id="oza-UE-Zcv"/>
                                             <constraint firstItem="ZB3-Iw-eDu" firstAttribute="top" secondItem="mwe-fJ-txZ" secondAttribute="bottom" constant="20" id="p1G-CW-fgv"/>
@@ -884,7 +891,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="em8-yX-qUw">
-                                <rect key="frame" x="20" y="64" width="30" height="30"/>
+                                <rect key="frame" x="30" y="64" width="30" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="HjM-ps-PHF"/>
                                     <constraint firstAttribute="width" constant="30" id="LnD-Ar-9q0"/>
@@ -895,22 +902,22 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Code Verification" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p7e-So-16N">
-                                <rect key="frame" x="20" y="114" width="374" height="40"/>
-                                <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="40"/>
+                                <rect key="frame" x="30" y="114" width="354" height="30"/>
+                                <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="30"/>
                                 <color key="textColor" name="Title"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter the 4-digit code we’ve sent to your phone number." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uGf-g3-ISj">
-                                <rect key="frame" x="20" y="164" width="374" height="75"/>
+                                <rect key="frame" x="30" y="154" width="354" height="75"/>
                                 <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="20"/>
                                 <color key="textColor" name="SubTitle"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="3Yb-sf-jap">
-                                <rect key="frame" x="20" y="284" width="374" height="65"/>
+                                <rect key="frame" x="30" y="274" width="354" height="45"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="-" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r1U-xc-Irw">
-                                        <rect key="frame" x="0.0" y="0.0" width="82.5" height="65"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="77.5" height="45"/>
                                         <color key="backgroundColor" name="textFieldColorBackGround"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="40"/>
@@ -922,7 +929,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="-" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e3B-He-a81">
-                                        <rect key="frame" x="97.5" y="0.0" width="82" height="65"/>
+                                        <rect key="frame" x="92.5" y="0.0" width="77" height="45"/>
                                         <color key="backgroundColor" name="textFieldColorBackGround"/>
                                         <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="40"/>
                                         <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
@@ -933,7 +940,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="-" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Ab-h0-42f">
-                                        <rect key="frame" x="194.5" y="0.0" width="82.5" height="65"/>
+                                        <rect key="frame" x="184.5" y="0.0" width="77.5" height="45"/>
                                         <color key="backgroundColor" name="textFieldColorBackGround"/>
                                         <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="40"/>
                                         <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
@@ -944,7 +951,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="-" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BLb-xQ-bH7">
-                                        <rect key="frame" x="292" y="0.0" width="82" height="65"/>
+                                        <rect key="frame" x="277" y="0.0" width="77" height="45"/>
                                         <color key="backgroundColor" name="textFieldColorBackGround"/>
                                         <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="40"/>
                                         <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
@@ -956,29 +963,16 @@
                                     </textField>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="65" id="opj-ZV-x8x"/>
+                                    <constraint firstAttribute="height" constant="45" id="opj-ZV-x8x"/>
                                 </constraints>
                             </stackView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qMK-tp-Brl" customClass="NVActivityIndicatorView" customModule="NVActivityIndicatorView">
-                                <rect key="frame" x="314" y="411.5" width="40" height="40"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="40" id="dhS-YN-tFk"/>
-                                    <constraint firstAttribute="height" constant="40" id="vcK-il-x6G"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
-                                        <color key="value" name="White"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="typeName" value="lineScale"/>
-                                </userDefinedRuntimeAttributes>
-                            </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1eb-Cu-Ltn">
-                                <rect key="frame" x="20" y="399" width="374" height="65"/>
+                                <rect key="frame" x="30" y="369" width="354" height="45"/>
                                 <color key="backgroundColor" name="MainbuttonColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="65" id="Sh8-Ix-d8E"/>
+                                    <constraint firstAttribute="height" constant="45" id="Sh8-Ix-d8E"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" name="Gilroy-Medium" family="Gilroy-Medium" pointSize="18"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Verify"/>
                                 <userDefinedRuntimeAttributes>
@@ -990,6 +984,20 @@
                                     <action selector="verifyBtn:" destination="Bpz-wx-3vf" eventType="touchUpInside" id="D25-CR-SQg"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qMK-tp-Brl" customClass="NVActivityIndicatorView" customModule="NVActivityIndicatorView">
+                                <rect key="frame" x="319" y="379" width="25" height="25"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="25" id="dhS-YN-tFk"/>
+                                    <constraint firstAttribute="height" constant="25" id="vcK-il-x6G"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" name="White"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="typeName" value="lineScale"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -1004,10 +1012,10 @@
                             <constraint firstItem="1eb-Cu-Ltn" firstAttribute="leading" secondItem="3Yb-sf-jap" secondAttribute="leading" id="MWk-E7-k6v"/>
                             <constraint firstItem="1eb-Cu-Ltn" firstAttribute="leading" secondItem="uGf-g3-ISj" secondAttribute="leading" id="S0n-4J-8Et"/>
                             <constraint firstItem="p7e-So-16N" firstAttribute="top" secondItem="em8-yX-qUw" secondAttribute="bottom" constant="20" id="Tse-Xv-H4r"/>
-                            <constraint firstItem="em8-yX-qUw" firstAttribute="leading" secondItem="OUi-lo-low" secondAttribute="leading" constant="20" id="XxR-qE-T4d"/>
+                            <constraint firstItem="em8-yX-qUw" firstAttribute="leading" secondItem="OUi-lo-low" secondAttribute="leading" constant="30" id="XxR-qE-T4d"/>
                             <constraint firstItem="1eb-Cu-Ltn" firstAttribute="trailing" secondItem="uGf-g3-ISj" secondAttribute="trailing" id="tbt-O0-epc"/>
                             <constraint firstItem="uGf-g3-ISj" firstAttribute="leading" secondItem="p7e-So-16N" secondAttribute="leading" id="vBK-zY-3KS"/>
-                            <constraint firstItem="OUi-lo-low" firstAttribute="trailing" secondItem="p7e-So-16N" secondAttribute="trailing" constant="20" id="wgH-jB-Mhd"/>
+                            <constraint firstItem="OUi-lo-low" firstAttribute="trailing" secondItem="p7e-So-16N" secondAttribute="trailing" constant="30" id="wgH-jB-Mhd"/>
                             <constraint firstItem="1eb-Cu-Ltn" firstAttribute="top" secondItem="3Yb-sf-jap" secondAttribute="bottom" constant="50" id="xVQ-OQ-ebw"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="OUi-lo-low"/>
@@ -1036,23 +1044,24 @@
                                 <rect key="frame" x="30" y="44" width="354" height="358.5"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Congratulations, now you have account on Opportunities." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fxj-PG-Zax">
-                                <rect key="frame" x="20" y="402.5" width="374" height="56"/>
-                                <fontDescription key="fontDescription" name="Cairo-Black" family="Cairo" pointSize="24"/>
+                                <rect key="frame" x="30" y="402.5" width="354" height="75"/>
+                                <fontDescription key="fontDescription" name="Cairo-Black" family="Cairo" pointSize="20"/>
                                 <color key="textColor" name="Title"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In in faucibus enim vitae elit ipsum netus. Amet lacus id eget vel egestas." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h6F-Su-HHS">
-                                <rect key="frame" x="20" y="478.5" width="374" height="42"/>
+                                <rect key="frame" x="30" y="497.5" width="354" height="67.5"/>
                                 <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="18"/>
                                 <color key="textColor" name="Difination"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5km-yu-O6y">
-                                <rect key="frame" x="20" y="777" width="374" height="65"/>
+                                <rect key="frame" x="30" y="797" width="354" height="45"/>
                                 <color key="backgroundColor" name="MainbuttonColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="65" id="guc-Ig-ZCD"/>
+                                    <constraint firstAttribute="height" constant="45" id="guc-Ig-ZCD"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" name="Gilroy-Medium" family="Gilroy-Medium" pointSize="18"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Login"/>
                                 <userDefinedRuntimeAttributes>
@@ -1069,12 +1078,12 @@
                         <constraints>
                             <constraint firstItem="5km-yu-O6y" firstAttribute="leading" secondItem="h6F-Su-HHS" secondAttribute="leading" id="0Mq-7K-KxN"/>
                             <constraint firstItem="h6F-Su-HHS" firstAttribute="top" secondItem="Fxj-PG-Zax" secondAttribute="bottom" constant="20" id="AnZ-G2-QVf"/>
-                            <constraint firstItem="Fxj-PG-Zax" firstAttribute="leading" secondItem="Tbx-rE-Kfi" secondAttribute="leading" constant="20" id="ELL-WF-Lkw"/>
+                            <constraint firstItem="Fxj-PG-Zax" firstAttribute="leading" secondItem="Tbx-rE-Kfi" secondAttribute="leading" constant="30" id="ELL-WF-Lkw"/>
                             <constraint firstItem="Q5B-mf-QlA" firstAttribute="trailing" secondItem="rBm-i3-Cf8" secondAttribute="trailing" constant="30" id="Kwt-ul-wmY"/>
                             <constraint firstItem="rBm-i3-Cf8" firstAttribute="leading" secondItem="Q5B-mf-QlA" secondAttribute="leading" constant="30" id="Q21-ng-jGo"/>
                             <constraint firstItem="rBm-i3-Cf8" firstAttribute="top" secondItem="Q5B-mf-QlA" secondAttribute="top" id="QyO-4T-9yB"/>
                             <constraint firstItem="Q5B-mf-QlA" firstAttribute="bottom" secondItem="5km-yu-O6y" secondAttribute="bottom" constant="20" id="RKx-ho-IzD"/>
-                            <constraint firstItem="Q5B-mf-QlA" firstAttribute="trailing" secondItem="Fxj-PG-Zax" secondAttribute="trailing" constant="20" id="T5A-Ve-4Rn"/>
+                            <constraint firstItem="Q5B-mf-QlA" firstAttribute="trailing" secondItem="Fxj-PG-Zax" secondAttribute="trailing" constant="30" id="T5A-Ve-4Rn"/>
                             <constraint firstItem="rBm-i3-Cf8" firstAttribute="height" secondItem="Tbx-rE-Kfi" secondAttribute="height" multiplier="1.2:3" id="cKW-b6-pGW"/>
                             <constraint firstItem="5km-yu-O6y" firstAttribute="trailing" secondItem="h6F-Su-HHS" secondAttribute="trailing" id="cl9-NH-KVf"/>
                             <constraint firstItem="h6F-Su-HHS" firstAttribute="leading" secondItem="Fxj-PG-Zax" secondAttribute="leading" id="fEX-m0-UH6"/>
@@ -1097,7 +1106,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JMY-MW-xkQ">
-                                <rect key="frame" x="20" y="64" width="30" height="30"/>
+                                <rect key="frame" x="30" y="64" width="30" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="7ff-KC-K4s"/>
                                     <constraint firstAttribute="width" constant="30" id="rXV-RL-GKk"/>
@@ -1108,37 +1117,37 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forget Pass" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B5f-4B-EaZ">
-                                <rect key="frame" x="20" y="114" width="374" height="50.5"/>
-                                <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="50"/>
+                                <rect key="frame" x="30" y="114" width="354" height="30"/>
+                                <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="30"/>
                                 <color key="textColor" name="Title"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your phone number, so we can sent you a verification code." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nW2-x6-vbc">
-                                <rect key="frame" x="20" y="174.5" width="374" height="75"/>
-                                <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="20"/>
+                                <rect key="frame" x="30" y="154" width="354" height="75"/>
+                                <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy-Regular" pointSize="20"/>
                                 <color key="textColor" name="SubTitle"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="HU8-3X-0qa">
-                                <rect key="frame" x="20" y="279.5" width="374" height="104"/>
+                                <rect key="frame" x="30" y="259" width="354" height="84"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wpd-cw-XMR">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
-                                        <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="18"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="354" height="34"/>
+                                        <fontDescription key="fontDescription" name="Gilroy-Medium" family="Gilroy-Medium" pointSize="16"/>
                                         <color key="textColor" name="LabelColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ciJ-7N-XaW">
-                                        <rect key="frame" x="0.0" y="39" width="374" height="65"/>
+                                        <rect key="frame" x="0.0" y="39" width="354" height="45"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7bQ-9L-BvG" customClass="TextField" customModule="Opportunities" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="100" height="65"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="code" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7bQ-9L-BvG" customClass="TextField" customModule="Opportunities" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="100" height="45"/>
                                                 <color key="backgroundColor" name="backGroundButton"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="100" id="BrK-5U-qWF"/>
-                                                    <constraint firstAttribute="height" constant="65" id="Urj-I0-XYs"/>
+                                                    <constraint firstAttribute="height" constant="45" id="Urj-I0-XYs"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy-Light" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -1146,10 +1155,10 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PcJ-da-Fhb" customClass="TextField" customModule="Opportunities" customModuleProvider="target">
-                                                <rect key="frame" x="110" y="0.0" width="264" height="65"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PcJ-da-Fhb" customClass="TextField" customModule="Opportunities" customModuleProvider="target">
+                                                <rect key="frame" x="110" y="0.0" width="244" height="45"/>
                                                 <color key="backgroundColor" name="backGroundButton"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy-Light" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -1162,11 +1171,12 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g10-DF-iDx">
-                                <rect key="frame" x="20" y="777" width="374" height="65"/>
+                                <rect key="frame" x="30" y="797" width="354" height="45"/>
                                 <color key="backgroundColor" name="MainbuttonColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="65" id="rps-Sh-lJ6"/>
+                                    <constraint firstAttribute="height" constant="45" id="rps-Sh-lJ6"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" name="Gilroy-Medium" family="Gilroy-Medium" pointSize="18"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Continue"/>
                                 <userDefinedRuntimeAttributes>
@@ -1179,11 +1189,11 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZoU-lG-Q41" customClass="NVActivityIndicatorView" customModule="NVActivityIndicatorView">
-                                <rect key="frame" x="314" y="789.5" width="40" height="40"/>
+                                <rect key="frame" x="319" y="807" width="25" height="25"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="40" id="lke-lb-vRX"/>
-                                    <constraint firstAttribute="height" constant="40" id="q08-t5-laY"/>
+                                    <constraint firstAttribute="width" constant="25" id="lke-lb-vRX"/>
+                                    <constraint firstAttribute="height" constant="25" id="q08-t5-laY"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="color">
@@ -1197,7 +1207,7 @@
                         <constraints>
                             <constraint firstItem="nW2-x6-vbc" firstAttribute="trailing" secondItem="B5f-4B-EaZ" secondAttribute="trailing" id="1jB-2P-f7B"/>
                             <constraint firstItem="HU8-3X-0qa" firstAttribute="trailing" secondItem="nW2-x6-vbc" secondAttribute="trailing" id="7iu-Pv-kwS"/>
-                            <constraint firstItem="d1K-VC-be8" firstAttribute="trailing" secondItem="B5f-4B-EaZ" secondAttribute="trailing" constant="20" id="86s-RE-2C3"/>
+                            <constraint firstItem="d1K-VC-be8" firstAttribute="trailing" secondItem="B5f-4B-EaZ" secondAttribute="trailing" constant="30" id="86s-RE-2C3"/>
                             <constraint firstItem="ZoU-lG-Q41" firstAttribute="trailing" secondItem="g10-DF-iDx" secondAttribute="trailing" constant="-40" id="9Nb-cD-vk2"/>
                             <constraint firstItem="HU8-3X-0qa" firstAttribute="leading" secondItem="nW2-x6-vbc" secondAttribute="leading" id="Bfb-8g-vfd"/>
                             <constraint firstItem="d1K-VC-be8" firstAttribute="bottom" secondItem="g10-DF-iDx" secondAttribute="bottom" constant="20" id="Ilw-b4-DDe"/>
@@ -1208,7 +1218,7 @@
                             <constraint firstItem="nW2-x6-vbc" firstAttribute="leading" secondItem="B5f-4B-EaZ" secondAttribute="leading" id="loS-tq-sXH"/>
                             <constraint firstItem="B5f-4B-EaZ" firstAttribute="top" secondItem="JMY-MW-xkQ" secondAttribute="bottom" constant="20" id="nFu-9G-trR"/>
                             <constraint firstItem="HU8-3X-0qa" firstAttribute="top" secondItem="nW2-x6-vbc" secondAttribute="bottom" constant="30" id="v41-7u-g0s"/>
-                            <constraint firstItem="JMY-MW-xkQ" firstAttribute="leading" secondItem="d1K-VC-be8" secondAttribute="leading" constant="20" id="z3s-LJ-hxv"/>
+                            <constraint firstItem="JMY-MW-xkQ" firstAttribute="leading" secondItem="d1K-VC-be8" secondAttribute="leading" constant="30" id="z3s-LJ-hxv"/>
                             <constraint firstItem="ZoU-lG-Q41" firstAttribute="centerY" secondItem="g10-DF-iDx" secondAttribute="centerY" id="zfd-jv-Mc3"/>
                             <constraint firstItem="JMY-MW-xkQ" firstAttribute="top" secondItem="d1K-VC-be8" secondAttribute="top" constant="20" id="zvR-a4-zlx"/>
                         </constraints>
@@ -1234,23 +1244,24 @@
                                 <rect key="frame" x="30" y="44" width="354" height="358.5"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your password reset successfully," textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CRx-4q-uOD">
-                                <rect key="frame" x="20" y="402.5" width="374" height="61"/>
+                                <rect key="frame" x="30" y="402.5" width="354" height="97.5"/>
                                 <fontDescription key="fontDescription" name="Cairo-Black" family="Cairo" pointSize="26"/>
                                 <color key="textColor" name="Title"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In in faucibus enim vitae elit ipsum netus. Amet lacus id eget vel egestas." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3fX-qe-xtX">
-                                <rect key="frame" x="20" y="483.5" width="374" height="42"/>
+                                <rect key="frame" x="30" y="520" width="354" height="67.5"/>
                                 <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="18"/>
                                 <color key="textColor" name="Difination"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3vP-BX-T9A">
-                                <rect key="frame" x="20" y="777" width="374" height="65"/>
+                                <rect key="frame" x="30" y="797" width="354" height="45"/>
                                 <color key="backgroundColor" name="MainbuttonColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="65" id="pip-hT-yAn"/>
+                                    <constraint firstAttribute="height" constant="45" id="pip-hT-yAn"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" name="Gilroy-Medium" family="Gilroy-Medium" pointSize="18"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Login"/>
                                 <userDefinedRuntimeAttributes>
@@ -1272,11 +1283,11 @@
                             <constraint firstItem="3vP-BX-T9A" firstAttribute="leading" secondItem="3fX-qe-xtX" secondAttribute="leading" id="Mqj-Su-Zoe"/>
                             <constraint firstItem="a0G-SX-hnm" firstAttribute="top" secondItem="hM9-Vr-tjJ" secondAttribute="top" id="PeW-KU-Ev6"/>
                             <constraint firstItem="a0G-SX-hnm" firstAttribute="leading" secondItem="hM9-Vr-tjJ" secondAttribute="leading" constant="30" id="WHS-V8-3L1"/>
-                            <constraint firstItem="hM9-Vr-tjJ" firstAttribute="trailing" secondItem="CRx-4q-uOD" secondAttribute="trailing" constant="20" id="Y6R-sr-3oi"/>
+                            <constraint firstItem="hM9-Vr-tjJ" firstAttribute="trailing" secondItem="CRx-4q-uOD" secondAttribute="trailing" constant="30" id="Y6R-sr-3oi"/>
                             <constraint firstItem="3fX-qe-xtX" firstAttribute="leading" secondItem="CRx-4q-uOD" secondAttribute="leading" id="YZs-e3-Xn4"/>
                             <constraint firstItem="a0G-SX-hnm" firstAttribute="height" secondItem="NpA-G3-V0H" secondAttribute="height" multiplier="1.2:3" id="fB6-r3-rEa"/>
                             <constraint firstItem="3vP-BX-T9A" firstAttribute="trailing" secondItem="3fX-qe-xtX" secondAttribute="trailing" id="fc4-RP-kf5"/>
-                            <constraint firstItem="CRx-4q-uOD" firstAttribute="leading" secondItem="NpA-G3-V0H" secondAttribute="leading" constant="20" id="rua-I5-ofZ"/>
+                            <constraint firstItem="CRx-4q-uOD" firstAttribute="leading" secondItem="NpA-G3-V0H" secondAttribute="leading" constant="30" id="rua-I5-ofZ"/>
                             <constraint firstItem="hM9-Vr-tjJ" firstAttribute="trailing" secondItem="a0G-SX-hnm" secondAttribute="trailing" constant="30" id="ycd-G3-ewU"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hM9-Vr-tjJ"/>
@@ -1295,7 +1306,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z3Z-ki-cKQ">
-                                <rect key="frame" x="20" y="64" width="30" height="30"/>
+                                <rect key="frame" x="30" y="64" width="30" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Inj-Zy-wia"/>
                                     <constraint firstAttribute="width" constant="30" id="Tae-lY-P96"/>
@@ -1306,23 +1317,24 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rest Pass" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GUc-YP-6vb">
-                                <rect key="frame" x="20" y="114" width="374" height="50.5"/>
-                                <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="50"/>
+                                <rect key="frame" x="30" y="114" width="219" height="30"/>
+                                <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="30"/>
                                 <color key="textColor" name="Title"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your new password." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Dm-qG-mZQ">
-                                <rect key="frame" x="20" y="174.5" width="374" height="37.5"/>
-                                <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="20"/>
+                                <rect key="frame" x="30" y="154" width="219" height="37.5"/>
+                                <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy-Regular" pointSize="20"/>
                                 <color key="textColor" name="SubTitle"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4B7-ZZ-ysr">
-                                <rect key="frame" x="20" y="777" width="374" height="65"/>
+                                <rect key="frame" x="30" y="797" width="219" height="45"/>
                                 <color key="backgroundColor" name="MainbuttonColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="65" id="2f8-s0-HDr"/>
+                                    <constraint firstAttribute="height" constant="45" id="2f8-s0-HDr"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" name="Gilroy-Medium" family="Gilroy-Medium" pointSize="18"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Continue"/>
                                 <userDefinedRuntimeAttributes>
@@ -1334,26 +1346,26 @@
                                     <action selector="contiune:" destination="yCI-Pw-qdC" eventType="touchUpInside" id="1Uh-gV-9GQ"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="r3s-qq-A5Z">
-                                <rect key="frame" x="20" y="262" width="374" height="200"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="r3s-qq-A5Z">
+                                <rect key="frame" x="30" y="221.5" width="374" height="200"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" id="Xjl-Q1-rA2">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="85"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="90"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JtH-2A-qaa">
-                                                <rect key="frame" x="0.0" y="0.0" width="374" height="20"/>
-                                                <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="18"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="45"/>
+                                                <fontDescription key="fontDescription" name="Gilroy-Medium" family="Gilroy-Medium" pointSize="16"/>
                                                 <color key="textColor" name="LabelColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4Jb-S1-s2g" customClass="TextField" customModule="Opportunities" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="20" width="374" height="65"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4Jb-S1-s2g" customClass="TextField" customModule="Opportunities" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="45" width="374" height="45"/>
                                                 <color key="backgroundColor" name="backGroundButton"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="65" id="ReB-08-zVr"/>
+                                                    <constraint firstAttribute="height" constant="45" id="ReB-08-zVr"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <fontDescription key="fontDescription" name="Gilroy-Light" family="Gilroy-Light" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -1365,18 +1377,18 @@
                                         <viewLayoutGuide key="safeArea" id="4FP-UC-qiQ"/>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="VSO-T7-PZc">
-                                        <rect key="frame" x="0.0" y="115" width="374" height="85"/>
+                                        <rect key="frame" x="0.0" y="110" width="374" height="90"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZBE-3d-2IJ">
                                                 <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
-                                                <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="18"/>
+                                                <fontDescription key="fontDescription" name="Gilroy-Medium" family="Gilroy-Medium" pointSize="16"/>
                                                 <color key="textColor" name="LabelColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1g9-Mj-Z1k" customClass="TextField" customModule="Opportunities" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="34" width="374" height="51"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1g9-Mj-Z1k" customClass="TextField" customModule="Opportunities" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="34" width="374" height="56"/>
                                                 <color key="backgroundColor" name="backGroundButton"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy-Regular" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -1389,11 +1401,11 @@
                                 </subviews>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eOG-Ot-jsY" customClass="NVActivityIndicatorView" customModule="NVActivityIndicatorView">
-                                <rect key="frame" x="314" y="789.5" width="40" height="40"/>
+                                <rect key="frame" x="184" y="807" width="25" height="25"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="H4K-6K-DxH"/>
-                                    <constraint firstAttribute="width" constant="40" id="IEf-gX-lGY"/>
+                                    <constraint firstAttribute="height" constant="25" id="H4K-6K-DxH"/>
+                                    <constraint firstAttribute="width" constant="25" id="IEf-gX-lGY"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="color">
@@ -1408,15 +1420,15 @@
                             <constraint firstItem="4B7-ZZ-ysr" firstAttribute="trailing" secondItem="4Dm-qG-mZQ" secondAttribute="trailing" id="2yW-CK-Zkb"/>
                             <constraint firstItem="4Dm-qG-mZQ" firstAttribute="leading" secondItem="GUc-YP-6vb" secondAttribute="leading" id="3Wo-r6-Nl7"/>
                             <constraint firstItem="4B7-ZZ-ysr" firstAttribute="leading" secondItem="4Dm-qG-mZQ" secondAttribute="leading" id="4A3-5l-TXB"/>
-                            <constraint firstItem="r3s-qq-A5Z" firstAttribute="top" secondItem="4Dm-qG-mZQ" secondAttribute="bottom" constant="50" id="6cj-xG-EQI"/>
+                            <constraint firstItem="r3s-qq-A5Z" firstAttribute="top" secondItem="4Dm-qG-mZQ" secondAttribute="bottom" constant="30" id="6cj-xG-EQI"/>
                             <constraint firstItem="eOG-Ot-jsY" firstAttribute="centerY" secondItem="4B7-ZZ-ysr" secondAttribute="centerY" id="FKE-Ij-aBV"/>
                             <constraint firstItem="eOG-Ot-jsY" firstAttribute="trailing" secondItem="4B7-ZZ-ysr" secondAttribute="trailing" constant="-40" id="L86-cz-DQz"/>
                             <constraint firstItem="4Dm-qG-mZQ" firstAttribute="top" secondItem="GUc-YP-6vb" secondAttribute="bottom" constant="10" id="NZJ-LA-ahc"/>
                             <constraint firstItem="GUc-YP-6vb" firstAttribute="top" secondItem="z3Z-ki-cKQ" secondAttribute="bottom" constant="20" id="NtY-HH-tvz"/>
                             <constraint firstItem="r3s-qq-A5Z" firstAttribute="leading" secondItem="4Dm-qG-mZQ" secondAttribute="leading" id="Phw-3C-HWe"/>
                             <constraint firstItem="GUc-YP-6vb" firstAttribute="leading" secondItem="z3Z-ki-cKQ" secondAttribute="leading" id="XGO-Ai-xd7"/>
-                            <constraint firstItem="z3Z-ki-cKQ" firstAttribute="leading" secondItem="wIb-hD-FYk" secondAttribute="leading" constant="20" id="XaZ-fz-Wxn"/>
-                            <constraint firstItem="wIb-hD-FYk" firstAttribute="trailing" secondItem="GUc-YP-6vb" secondAttribute="trailing" constant="20" id="fwq-gp-9Sh"/>
+                            <constraint firstItem="z3Z-ki-cKQ" firstAttribute="leading" secondItem="wIb-hD-FYk" secondAttribute="leading" constant="30" id="XaZ-fz-Wxn"/>
+                            <constraint firstItem="wIb-hD-FYk" firstAttribute="trailing" secondItem="GUc-YP-6vb" secondAttribute="trailing" constant="30" id="fwq-gp-9Sh"/>
                             <constraint firstItem="r3s-qq-A5Z" firstAttribute="trailing" secondItem="4Dm-qG-mZQ" secondAttribute="trailing" id="kJZ-SU-6BE"/>
                             <constraint firstItem="4Dm-qG-mZQ" firstAttribute="trailing" secondItem="GUc-YP-6vb" secondAttribute="trailing" id="lv6-Lh-ZB4"/>
                             <constraint firstItem="wIb-hD-FYk" firstAttribute="bottom" secondItem="4B7-ZZ-ysr" secondAttribute="bottom" constant="20" id="qn1-Bj-1d2"/>

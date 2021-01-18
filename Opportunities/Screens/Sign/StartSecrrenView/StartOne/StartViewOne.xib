@@ -24,26 +24,26 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 128" translatesAutoresizingMaskIntoConstraints="NO" id="t3F-wP-07d">
-                    <rect key="frame" x="20" y="64" width="455" height="227.5"/>
+                    <rect key="frame" x="30" y="64" width="435" height="227.5"/>
                 </imageView>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 127-2" translatesAutoresizingMaskIntoConstraints="NO" id="ZT0-GX-sZg">
-                    <rect key="frame" x="176.5" y="311.5" width="142" height="10"/>
+                    <rect key="frame" x="176.5" y="311.5" width="142" height="5"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="10" id="WlK-tZ-PfS"/>
+                        <constraint firstAttribute="height" constant="5" id="WlK-tZ-PfS"/>
                     </constraints>
                 </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eNl-Oe-6R3">
-                    <rect key="frame" x="20" y="341.5" width="455" height="237.5"/>
+                    <rect key="frame" x="30" y="336.5" width="435" height="242.5"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get some nice deals directly to your account!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L5t-lk-nud">
-                            <rect key="frame" x="0.0" y="20" width="455" height="56"/>
-                            <fontDescription key="fontDescription" name="Cairo-Black" family="Cairo" pointSize="24"/>
+                            <rect key="frame" x="0.0" y="20" width="435" height="54"/>
+                            <fontDescription key="fontDescription" name="Cairo-Black" family="Cairo" pointSize="23"/>
                             <color key="textColor" name="Title"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In in faucibus enim vitae elit ipsum netus. Amet lacus id eget vel egestastus. Amet lacus id eget vel egestas." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uG6-9w-gAN">
-                            <rect key="frame" x="0.0" y="86" width="455" height="42"/>
-                            <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="18"/>
+                            <rect key="frame" x="0.0" y="84" width="435" height="40"/>
+                            <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="17"/>
                             <color key="textColor" name="Difination"/>
                             <nil key="highlightedColor"/>
                         </label>
@@ -61,7 +61,7 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="t3F-wP-07d" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="8am-pu-IB9"/>
+                <constraint firstItem="t3F-wP-07d" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="30" id="8am-pu-IB9"/>
                 <constraint firstItem="t3F-wP-07d" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="1:3" id="IT2-1L-2WM"/>
                 <constraint firstItem="eNl-Oe-6R3" firstAttribute="leading" secondItem="t3F-wP-07d" secondAttribute="leading" id="Lb3-kc-olS"/>
                 <constraint firstItem="eNl-Oe-6R3" firstAttribute="trailing" secondItem="t3F-wP-07d" secondAttribute="trailing" id="f1M-89-n0f"/>
@@ -70,7 +70,7 @@
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="eNl-Oe-6R3" secondAttribute="bottom" constant="70" id="ixD-Gv-4sz"/>
                 <constraint firstItem="ZT0-GX-sZg" firstAttribute="top" secondItem="t3F-wP-07d" secondAttribute="bottom" constant="20" id="j9h-K3-USx"/>
                 <constraint firstItem="ZT0-GX-sZg" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="jaq-Ix-6kB"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="t3F-wP-07d" secondAttribute="trailing" constant="20" id="jrS-Hn-qyl"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="t3F-wP-07d" secondAttribute="trailing" constant="30" id="jrS-Hn-qyl"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>

@@ -80,13 +80,13 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VODAVODA water" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="cUs-hz-AAI">
-                                <rect key="frame" x="105" y="121.5" width="146" height="34.5"/>
+                                <rect key="frame" x="105" y="121.5" width="146" height="37.5"/>
                                 <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="18"/>
                                 <color key="textColor" name="Title"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="car-iW-Qv8">
-                                <rect key="frame" x="10" y="176" width="296" height="24"/>
+                                <rect key="frame" x="10" y="179" width="296" height="23"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="aVv-6p-Hyl">
                                         <rect key="frame" x="0.0" y="0.0" width="296" height="13"/>
@@ -105,8 +105,8 @@
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <progressView contentMode="scaleToFill" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Xi9-1j-QOS">
-                                        <rect key="frame" x="0.0" y="18" width="296" height="6"/>
+                                    <progressView contentMode="scaleToFill" progress="0.80000000000000004" translatesAutoresizingMaskIntoConstraints="NO" id="Xi9-1j-QOS">
+                                        <rect key="frame" x="0.0" y="18" width="296" height="5"/>
                                         <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="5" id="1j7-QO-BYI"/>
@@ -120,7 +120,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pxa-lV-IrP">
-                                <rect key="frame" x="10" y="220" width="296" height="47"/>
+                                <rect key="frame" x="10" y="222" width="296" height="45"/>
                                 <color key="backgroundColor" name="MainbuttonColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="Qjb-Jm-feK"/>
@@ -192,6 +192,9 @@
             <connections>
                 <outlet property="MainImage" destination="Yqb-Vm-T5D" id="wGQ-1N-3i2"/>
                 <outlet property="nameLbl" destination="cUs-hz-AAI" id="DpS-WU-YYf"/>
+                <outlet property="progress" destination="Xi9-1j-QOS" id="LG3-cV-nDG"/>
+                <outlet property="prsentageLbl" destination="Er2-Oz-uZX" id="nzt-f9-1LU"/>
+                <outlet property="soldLbl" destination="x2U-XC-GFl" id="mr0-ks-4pR"/>
                 <outlet property="subImage" destination="VhK-Jy-6dt" id="VAk-Kv-mmd"/>
             </connections>
             <point key="canvasLocation" x="89.855072463768124" y="104.12946428571428"/>
