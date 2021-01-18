@@ -18,13 +18,16 @@ class PaymentViewModel {
     private var respondData : PublishSubject<ResponseObjectModel<signUpDataModel>> = .init()
     lazy var respondDataObservable : Observable = respondData.asObservable()
     
+    var amountToPay : BehaviorRelay<String> = .init(value: "")
+    
     var errorMassage : BehaviorRelay<String> = .init(value: "")
     
-    var id : Int
-    var amount : String
-    init(opertuniteId : Int,amount: String) {
+    private var id : Int
+    private var amount : String
+    init(opertuniteId : Int, amount: String) {
         self.id = opertuniteId
         self.amount = amount
+        amountToPay.accept(amount)
     }
     
     func sebsecribeToOppertunites(){

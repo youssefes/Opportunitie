@@ -94,4 +94,20 @@ class OppertunitesRepositoryImp: OppertunitesRepository {
         }
         
     }
+    
+    func activeOppertunites(userId: Int) -> Observable<ResponseObjectModel<[OppertunitesModel]>> {
+        Observable<ResponseObjectModel<[OppertunitesModel]>>.create{[weak self] (oppertunites) -> Disposable in
+            self?.networkClient.performRequest([OppertunitesModel].self, router: OppertunitesRouter.active(userId: userId)) { (resulet) in
+                switch resulet{
+                case .success(let data):
+                    oppertunites.onNext(data)
+                    
+                case .failure(let error):
+                    oppertunites.onError(error)
+                }
+            }
+            
+            return Disposables.create()
+        }
+    }
 }

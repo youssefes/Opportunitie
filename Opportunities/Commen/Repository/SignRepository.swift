@@ -161,6 +161,23 @@ class SignRepositoryImp: SignRepository {
         }
     }
     
+    func ContectUs(parameters : Parameters ) -> Observable<ResponseObjectModel<signUpDataModel>> {
+        Observable<ResponseObjectModel<signUpDataModel>>.create { [weak self] (items) -> Disposable in
+            self?.networkClient.performRequest(signUpDataModel.self, router: SignRouter.ContectUs(parameter : parameters)) { (resulte) in
+                switch resulte{
+                case .success(let data):
+                    print(data)
+                    items.onNext(data)
+                    items.onCompleted()
+                case .failure(let error):
+                    items.onError(error)
+                }
+            }
+            return Disposables.create()
+        }
+        
+    }
+    
     
     
 }

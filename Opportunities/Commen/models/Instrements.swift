@@ -11,10 +11,10 @@ import Foundation
 // MARK: - AllInstraments
 
 struct AllInstraments: Decodable {
-    let name, amount, profit, createdAt: String
+    let name, amount, profit, createdAt, icon: String
 
     enum CodingKeys: String, CodingKey {
-        case name, amount, profit
+        case name, amount, profit, icon
         case createdAt = "created_at"
     }
 }

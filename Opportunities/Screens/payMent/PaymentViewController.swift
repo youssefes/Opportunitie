@@ -11,6 +11,7 @@ import UIKit
 class PaymentViewController: BaseWireFrame<PaymentViewModel> {
     @IBOutlet weak var knetBtn: UIButton!
     
+    @IBOutlet weak var amountToPaylbl: UILabel!
     @IBOutlet weak var masterCardBtn: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +26,10 @@ class PaymentViewController: BaseWireFrame<PaymentViewModel> {
             
         }).disposed(by: disposePag)
         
+        ViewModel.amountToPay.subscribe(onNext: { [weak self] (amount) in
+            guard let self = self else {return}
+            self.amountToPaylbl.text = "Pay \(amount) KD with:"
+        }).disposed(by: disposePag)
         ViewModel.respondDataObservable.subscribe(onNext: { [weak self]  (respond) in
             guard let self = self else {return}
             if respond.value == true{

@@ -56,11 +56,13 @@ class MenuViewController: BaseWireFrame<MenuViewModel> {
         if let userid = UserDefaults.standard.value(forKey: NetworkConstants.userIdKey) as? Int{
             sender.setTitle("login", for: .normal)
             UserDefaults.standard.removeObject(forKey: NetworkConstants.userIdKey)
-            let VC = coordinator.MainStoryBordNavigator.viewController(for: .SignInView)
-            present(VC, animated: true, completion: nil)
+            coordinator.isLogIn = false
+            coordinator.firstTimeOpen = false
+
             print(userid)
         }else{
             let VC = coordinator.MainStoryBordNavigator.viewController(for: .SignInView)
+            coordinator.tabBarController.removeFromParent()
             present(VC, animated: true, completion: nil)
         }
     }

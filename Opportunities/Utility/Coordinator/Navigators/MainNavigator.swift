@@ -27,7 +27,7 @@ class MainNavigator : Navigator {
         case OppertuniteDetailesViewController(id : Int)
         case payMent(opertuniteId : Int,amount: String)
         case CompletePayMentViewController
-        case InvestmentDetailsViewController
+        case InvestmentDetailsViewController(oppertuniteIb : OppertunitesModel)
     }
     required init(coordintor: Coordinator) {
         self.coordinator = coordintor
@@ -87,8 +87,8 @@ class MainNavigator : Navigator {
             let viewModel = CompletePayMentViewModel()
             let view = CompletePayMentViewController(ViewModel: viewModel, coordinator: coordinator)
             return view
-        case .InvestmentDetailsViewController:
-            let viewModel = InvestementViewModel()
+        case .InvestmentDetailsViewController(let oppertunites):
+            let viewModel = InvestementViewModel(oppertunitesId: oppertunites)
             let view = InvestmentDetailsViewController(ViewModel: viewModel, coordinator: coordinator)
             return view
         }

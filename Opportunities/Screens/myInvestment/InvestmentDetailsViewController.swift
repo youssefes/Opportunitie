@@ -20,6 +20,7 @@ class InvestmentDetailsViewController : BaseWireFrame<InvestementViewModel> {
         super.viewDidLoad()
         
         registerCell()
+        vieeModel.viewDidload()
         
     }
     

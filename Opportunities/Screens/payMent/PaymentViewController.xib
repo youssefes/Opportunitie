@@ -22,6 +22,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PaymentViewController" customModule="Opportunities" customModuleProvider="target">
             <connections>
+                <outlet property="amountToPaylbl" destination="fgp-SS-XNB" id="niy-fP-jPT"/>
                 <outlet property="knetBtn" destination="Our-Gb-i4x" id="8KW-yq-nSZ"/>
                 <outlet property="masterCardBtn" destination="BNF-Cy-ISj" id="val-Tv-o3h"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -40,25 +41,25 @@
                     </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payment Method" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HVw-9f-asH">
-                    <rect key="frame" x="20" y="116" width="374" height="35"/>
-                    <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="30"/>
+                    <rect key="frame" x="20" y="116" width="374" height="29.5"/>
+                    <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="25"/>
                     <color key="textColor" name="Title"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pay 1,500 KD with:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fgp-SS-XNB">
-                    <rect key="frame" x="20" y="166" width="374" height="17.5"/>
+                    <rect key="frame" x="20" y="160.5" width="374" height="17.5"/>
                     <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="15"/>
                     <color key="textColor" red="0.3411764706" green="0.88235294119999996" blue="0.69019607839999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="7QE-HF-Rvs">
-                    <rect key="frame" x="20" y="233.5" width="374" height="265"/>
+                    <rect key="frame" x="20" y="228" width="374" height="225"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cvk-ak-bb7">
-                            <rect key="frame" x="0.0" y="0.0" width="374" height="120"/>
+                            <rect key="frame" x="0.0" y="0.0" width="374" height="100"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UCw-Xj-qLE">
-                                    <rect key="frame" x="0.0" y="0.0" width="374" height="120"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="374" height="100"/>
                                     <color key="backgroundColor" name="backGroundButton"/>
                                     <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="25"/>
                                     <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -94,17 +95,17 @@
                                 <constraint firstAttribute="bottom" secondItem="UCw-Xj-qLE" secondAttribute="bottom" id="1r6-pQ-cp5"/>
                                 <constraint firstAttribute="trailing" secondItem="UCw-Xj-qLE" secondAttribute="trailing" id="EdZ-6S-wSc"/>
                                 <constraint firstItem="Our-Gb-i4x" firstAttribute="top" secondItem="cvk-ak-bb7" secondAttribute="top" constant="20" id="T5J-t7-XQl"/>
-                                <constraint firstAttribute="height" constant="120" id="f1g-S7-hJi"/>
+                                <constraint firstAttribute="height" constant="100" id="f1g-S7-hJi"/>
                                 <constraint firstItem="UCw-Xj-qLE" firstAttribute="top" secondItem="cvk-ak-bb7" secondAttribute="top" id="itf-ow-VlA"/>
                                 <constraint firstAttribute="trailing" secondItem="Our-Gb-i4x" secondAttribute="trailing" constant="20" id="lhY-92-1Xt"/>
                                 <constraint firstItem="UCw-Xj-qLE" firstAttribute="leading" secondItem="cvk-ak-bb7" secondAttribute="leading" id="osO-NI-cqo"/>
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mSz-qL-R2R">
-                            <rect key="frame" x="0.0" y="145" width="374" height="120"/>
+                            <rect key="frame" x="0.0" y="125" width="374" height="100"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q4m-IW-iob">
-                                    <rect key="frame" x="0.0" y="0.0" width="374" height="120"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="374" height="100"/>
                                     <color key="backgroundColor" name="backGroundButton"/>
                                     <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="25"/>
                                     <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -143,7 +144,6 @@
                                 <constraint firstAttribute="bottom" secondItem="Q4m-IW-iob" secondAttribute="bottom" id="Thd-Ju-02f"/>
                                 <constraint firstAttribute="trailing" secondItem="Q4m-IW-iob" secondAttribute="trailing" id="fKN-TU-5J7"/>
                                 <constraint firstItem="Q4m-IW-iob" firstAttribute="leading" secondItem="mSz-qL-R2R" secondAttribute="leading" id="kvj-Oi-dIt"/>
-                                <constraint firstAttribute="height" constant="120" id="o2l-qq-Pqd"/>
                             </constraints>
                         </view>
                     </subviews>

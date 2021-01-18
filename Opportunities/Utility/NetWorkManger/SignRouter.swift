@@ -17,6 +17,7 @@ enum SignRouter: APIRouter {
     case ChangePass(parameters : Parameters)
     case checkCodeActivEmail(parameters : Parameters)
     case profile(parameter : Parameters)
+    case ContectUs(parameter : Parameters)
     
     
     var method: HTTPMethod {
@@ -31,7 +32,7 @@ enum SignRouter: APIRouter {
             return .post
         case .checkCodeActivEmail:
             return .post
-        case .profile:
+        case .profile , .ContectUs:
             return .post
         }
     }
@@ -50,6 +51,8 @@ enum SignRouter: APIRouter {
             return "check_code_activmobile"
         case .profile:
             return "profile"
+        case .ContectUs:
+            return "contactus"
         }
     }
     
@@ -67,19 +70,21 @@ enum SignRouter: APIRouter {
             return parameters
         case .profile(let parameter):
             return parameter
+        case .ContectUs(let parameter):
+            return parameter
         }
     }
     
     var encoding: ParameterEncoding {
         switch self {
-        case .SignUp , .SignIn , .forgetPass, .ChangePass, .checkCodeActivEmail, .profile:
+        case .SignUp , .SignIn , .forgetPass, .ChangePass, .checkCodeActivEmail, .profile,.ContectUs:
             return URLEncoding.default
         }
     }
     
     var header: HTTPHeaders {
           switch self {
-          case .SignUp , .SignIn , .forgetPass, .ChangePass, .checkCodeActivEmail, .profile:
+          case .SignUp , .SignIn , .forgetPass, .ChangePass, .checkCodeActivEmail, .profile,.ContectUs:
             let header = HTTPHeaders([HTTPHeader(name: "Accept-Language", value: "en")])
               return header
           }

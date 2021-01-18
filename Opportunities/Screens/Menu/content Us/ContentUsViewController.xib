@@ -9,17 +9,22 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Cairo-SemiBold.ttf">
-            <string>Cairo-SemiBold</string>
-        </array>
         <array key="Gilroy-Bold.ttf">
             <string>Gilroy-Bold</string>
+        </array>
+        <array key="Gilroy-Medium.ttf">
+            <string>Gilroy-Medium</string>
         </array>
     </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ContentUsViewController" customModule="Opportunities" customModuleProvider="target">
             <connections>
+                <outlet property="activityIndicators" destination="F2p-vh-BXT" id="ypN-pr-ufp"/>
+                <outlet property="emailTf" destination="37d-qa-k2U" id="fIk-38-lB9"/>
+                <outlet property="fullNametf" destination="2zI-Bp-iyF" id="v11-hd-tsf"/>
+                <outlet property="massagtTv" destination="pdA-em-jbu" id="B9l-gu-C0X"/>
                 <outlet property="sendBtn" destination="y34-R4-9D0" id="lOC-ST-7S6"/>
+                <outlet property="subjectTf" destination="yD6-AS-9zD" id="JI7-1Y-uys"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -34,28 +39,35 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7DQ-Ic-F8C">
                             <rect key="frame" x="0.0" y="0.0" width="406" height="800"/>
                             <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fRE-4W-hoj">
+                                    <rect key="frame" x="30" y="20" width="10" height="22"/>
+                                    <state key="normal" image="ArrowLeft 2"/>
+                                    <connections>
+                                        <action selector="DismissBtn:" destination="-1" eventType="touchUpInside" id="2kI-ge-RpG"/>
+                                    </connections>
+                                </button>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contect us" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fbP-w7-oTa">
-                                    <rect key="frame" x="20" y="62" width="366" height="45"/>
-                                    <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="45"/>
+                                    <rect key="frame" x="30" y="62" width="316" height="30"/>
+                                    <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="30"/>
                                     <color key="textColor" name="Title"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Full Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1HF-5f-2P7">
-                                    <rect key="frame" x="20" y="127" width="346" height="40"/>
+                                    <rect key="frame" x="30" y="112" width="316" height="30"/>
                                     <constraints>
-                                        <constraint firstAttribute="height" constant="40" id="1NM-YX-olt"/>
+                                        <constraint firstAttribute="height" constant="30" id="1NM-YX-olt"/>
                                     </constraints>
-                                    <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="18"/>
+                                    <fontDescription key="fontDescription" name="Gilroy-Medium" family="Gilroy-Medium" pointSize="16"/>
                                     <color key="textColor" name="LabelColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2zI-Bp-iyF" customClass="TextField" customModule="Opportunities" customModuleProvider="target">
-                                    <rect key="frame" x="20" y="177" width="346" height="50"/>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Full Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2zI-Bp-iyF" customClass="TextField" customModule="Opportunities" customModuleProvider="target">
+                                    <rect key="frame" x="30" y="152" width="316" height="45"/>
                                     <color key="backgroundColor" name="textFieldColorBackGround"/>
                                     <constraints>
-                                        <constraint firstAttribute="height" constant="50" id="2HS-Le-4Kl"/>
+                                        <constraint firstAttribute="height" constant="45" id="2HS-Le-4Kl"/>
                                     </constraints>
-                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <fontDescription key="fontDescription" name="Gilroy-Medium" family="Gilroy-Medium" pointSize="16"/>
                                     <textInputTraits key="textInputTraits"/>
                                     <userDefinedRuntimeAttributes>
                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -64,15 +76,15 @@
                                     </userDefinedRuntimeAttributes>
                                 </textField>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vf1-qL-Qbh">
-                                    <rect key="frame" x="20" y="281" width="366" height="42"/>
-                                    <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="18"/>
+                                    <rect key="frame" x="30" y="217" width="316" height="30"/>
+                                    <fontDescription key="fontDescription" name="Gilroy-Medium" family="Gilroy-Medium" pointSize="16"/>
                                     <color key="textColor" name="LabelColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="37d-qa-k2U" customClass="TextField" customModule="Opportunities" customModuleProvider="target">
+                                <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="37d-qa-k2U" customClass="TextField" customModule="Opportunities" customModuleProvider="target">
                                     <rect key="frame" x="20" y="342" width="366" height="27"/>
                                     <color key="backgroundColor" name="textFieldColorBackGround"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <fontDescription key="fontDescription" name="Gilroy-Medium" family="Gilroy-Medium" pointSize="16"/>
                                     <textInputTraits key="textInputTraits"/>
                                     <userDefinedRuntimeAttributes>
                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -81,15 +93,15 @@
                                     </userDefinedRuntimeAttributes>
                                 </textField>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subject" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Xq-6W-fOq">
-                                    <rect key="frame" x="20" y="367" width="346" height="40"/>
-                                    <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="18"/>
+                                    <rect key="frame" x="30" y="322" width="316" height="30"/>
+                                    <fontDescription key="fontDescription" name="Gilroy-Medium" family="Gilroy-Medium" pointSize="16"/>
                                     <color key="textColor" name="LabelColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yD6-AS-9zD" customClass="TextField" customModule="Opportunities" customModuleProvider="target">
-                                    <rect key="frame" x="20" y="417" width="346" height="50"/>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Subject" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yD6-AS-9zD" customClass="TextField" customModule="Opportunities" customModuleProvider="target">
+                                    <rect key="frame" x="30" y="362" width="316" height="45"/>
                                     <color key="backgroundColor" name="textFieldColorBackGround"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <fontDescription key="fontDescription" name="Gilroy-Medium" family="Gilroy-Medium" pointSize="16"/>
                                     <textInputTraits key="textInputTraits"/>
                                     <userDefinedRuntimeAttributes>
                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -98,16 +110,32 @@
                                     </userDefinedRuntimeAttributes>
                                 </textField>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Messsage" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PiI-MX-6F3">
-                                    <rect key="frame" x="20" y="477" width="346" height="40"/>
-                                    <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="18"/>
+                                    <rect key="frame" x="30" y="417" width="316" height="30"/>
+                                    <fontDescription key="fontDescription" name="Gilroy-Medium" family="Gilroy-Medium" pointSize="16"/>
                                     <color key="textColor" name="LabelColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
+                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="pdA-em-jbu">
+                                    <rect key="frame" x="30" y="457" width="316" height="238"/>
+                                    <color key="backgroundColor" name="textFieldColorBackGround"/>
+                                    <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Enter your Massage"/>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                            <color key="value" name="LabelColor"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="20"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </textView>
                                 <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y34-R4-9D0">
-                                    <rect key="frame" x="20" y="695" width="346" height="65"/>
+                                    <rect key="frame" x="30" y="715" width="316" height="45"/>
                                     <color key="backgroundColor" name="MainbuttonColor"/>
                                     <constraints>
-                                        <constraint firstAttribute="height" constant="65" id="lQG-cn-EJG"/>
+                                        <constraint firstAttribute="height" constant="45" id="lQG-cn-EJG"/>
                                     </constraints>
                                     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <inset key="titleEdgeInsets" minX="-50" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -122,36 +150,31 @@
                                         <action selector="SendMassageBtn:" destination="-1" eventType="touchUpInside" id="zb8-xQ-oKx"/>
                                     </connections>
                                 </button>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fRE-4W-hoj">
-                                    <rect key="frame" x="20" y="20" width="10" height="22"/>
-                                    <state key="normal" image="ArrowLeft 2"/>
-                                    <connections>
-                                        <action selector="DismissBtn:" destination="-1" eventType="touchUpInside" id="2kI-ge-RpG"/>
-                                    </connections>
-                                </button>
-                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="pdA-em-jbu">
-                                    <rect key="frame" x="20" y="527" width="346" height="148"/>
-                                    <color key="backgroundColor" name="textFieldColorBackGround"/>
-                                    <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F2p-vh-BXT" customClass="NVActivityIndicatorView" customModule="NVActivityIndicatorView">
+                                    <rect key="frame" x="281" y="725" width="25" height="25"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="25" id="JX4-nv-dEQ"/>
+                                        <constraint firstAttribute="width" constant="25" id="Pu8-53-xdx"/>
+                                    </constraints>
                                     <userDefinedRuntimeAttributes>
-                                        <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Enter your Massage"/>
-                                        <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
-                                            <color key="value" name="LabelColor"/>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                            <color key="value" name="White"/>
                                         </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="typeName" value="lineScale"/>
                                     </userDefinedRuntimeAttributes>
-                                </textView>
+                                </view>
                             </subviews>
                             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             <constraints>
+                                <constraint firstAttribute="trailing" secondItem="fbP-w7-oTa" secondAttribute="trailing" constant="30" id="0yV-3K-bKg"/>
                                 <constraint firstItem="PiI-MX-6F3" firstAttribute="height" secondItem="2Xq-6W-fOq" secondAttribute="height" multiplier="1:1" id="2Oe-aw-RA0"/>
                                 <constraint firstItem="yD6-AS-9zD" firstAttribute="leading" secondItem="2zI-Bp-iyF" secondAttribute="leading" id="61p-YY-m0S"/>
                                 <constraint firstItem="vf1-qL-Qbh" firstAttribute="trailing" secondItem="2zI-Bp-iyF" secondAttribute="trailing" id="9r0-o1-8cc"/>
                                 <constraint firstItem="1HF-5f-2P7" firstAttribute="leading" secondItem="fbP-w7-oTa" secondAttribute="leading" id="AFz-yN-Hqd"/>
                                 <constraint firstItem="yD6-AS-9zD" firstAttribute="height" secondItem="2zI-Bp-iyF" secondAttribute="height" multiplier="1:1" id="B8D-e0-VXA"/>
                                 <constraint firstItem="2Xq-6W-fOq" firstAttribute="trailing" secondItem="1HF-5f-2P7" secondAttribute="trailing" id="EAP-fO-75W"/>
-                                <constraint firstItem="fRE-4W-hoj" firstAttribute="leading" secondItem="7DQ-Ic-F8C" secondAttribute="leading" constant="20" id="FEo-Tj-gKK"/>
+                                <constraint firstItem="fRE-4W-hoj" firstAttribute="leading" secondItem="7DQ-Ic-F8C" secondAttribute="leading" constant="30" id="FEo-Tj-gKK"/>
                                 <constraint firstItem="vf1-qL-Qbh" firstAttribute="leading" secondItem="2zI-Bp-iyF" secondAttribute="leading" id="Ffv-nk-ZvY"/>
                                 <constraint firstItem="fbP-w7-oTa" firstAttribute="top" secondItem="fRE-4W-hoj" secondAttribute="bottom" constant="20" id="Fx4-zG-uvW"/>
                                 <constraint firstItem="y34-R4-9D0" firstAttribute="trailing" secondItem="pdA-em-jbu" secondAttribute="trailing" id="JWN-4n-yaq"/>
@@ -166,6 +189,7 @@
                                 <constraint firstItem="2Xq-6W-fOq" firstAttribute="leading" secondItem="1HF-5f-2P7" secondAttribute="leading" id="VkX-bN-UL0"/>
                                 <constraint firstItem="vf1-qL-Qbh" firstAttribute="height" secondItem="1HF-5f-2P7" secondAttribute="height" multiplier="1:1" id="Y6X-E6-w8C"/>
                                 <constraint firstItem="1HF-5f-2P7" firstAttribute="trailing" secondItem="fbP-w7-oTa" secondAttribute="trailing" id="a7R-mH-hO8"/>
+                                <constraint firstItem="F2p-vh-BXT" firstAttribute="centerY" secondItem="y34-R4-9D0" secondAttribute="centerY" id="aYA-hq-Fcd"/>
                                 <constraint firstItem="2Xq-6W-fOq" firstAttribute="top" secondItem="37d-qa-k2U" secondAttribute="bottom" constant="20" id="apa-YH-dcH"/>
                                 <constraint firstItem="y34-R4-9D0" firstAttribute="top" secondItem="pdA-em-jbu" secondAttribute="bottom" constant="20" id="bY9-f8-qla"/>
                                 <constraint firstItem="fRE-4W-hoj" firstAttribute="top" secondItem="7DQ-Ic-F8C" secondAttribute="top" constant="20" id="bhg-fJ-zYm"/>
@@ -176,10 +200,10 @@
                                 <constraint firstItem="pdA-em-jbu" firstAttribute="leading" secondItem="PiI-MX-6F3" secondAttribute="leading" id="kTk-iR-EM8"/>
                                 <constraint firstItem="2Xq-6W-fOq" firstAttribute="height" secondItem="1HF-5f-2P7" secondAttribute="height" multiplier="1:1" id="kco-ub-QF2"/>
                                 <constraint firstItem="fbP-w7-oTa" firstAttribute="leading" secondItem="fRE-4W-hoj" secondAttribute="leading" id="lE7-KB-Guw"/>
+                                <constraint firstItem="F2p-vh-BXT" firstAttribute="trailing" secondItem="y34-R4-9D0" secondAttribute="trailing" constant="-40" id="pQG-HK-o6o"/>
                                 <constraint firstItem="PiI-MX-6F3" firstAttribute="trailing" secondItem="2Xq-6W-fOq" secondAttribute="trailing" id="pqn-ZH-pmG"/>
                                 <constraint firstItem="y34-R4-9D0" firstAttribute="leading" secondItem="pdA-em-jbu" secondAttribute="leading" id="qpt-eq-8Tv"/>
                                 <constraint firstItem="2zI-Bp-iyF" firstAttribute="leading" secondItem="1HF-5f-2P7" secondAttribute="leading" id="ryR-yE-WJw"/>
-                                <constraint firstAttribute="trailing" secondItem="fbP-w7-oTa" secondAttribute="trailing" constant="40" id="sYE-aR-JRs"/>
                                 <constraint firstItem="PiI-MX-6F3" firstAttribute="top" secondItem="yD6-AS-9zD" secondAttribute="bottom" constant="10" id="tsx-TX-J1g"/>
                                 <constraint firstItem="pdA-em-jbu" firstAttribute="trailing" secondItem="PiI-MX-6F3" secondAttribute="trailing" id="uO9-Q4-Y3l"/>
                                 <constraint firstItem="37d-qa-k2U" firstAttribute="height" secondItem="2zI-Bp-iyF" secondAttribute="height" multiplier="1:1" id="wfX-Ie-TRF"/>
@@ -216,10 +240,13 @@
             <color red="0.59600001573562622" green="0.61599999666213989" blue="0.6470000147819519" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="MainbuttonColor">
-            <color red="0.47499999403953552" green="0.0" blue="0.93300002813339233" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.48199999332427979" green="0.0" blue="0.84700000286102295" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Title">
             <color red="0.13300000131130219" green="0.20000000298023224" blue="0.2669999897480011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="White">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="textFieldColorBackGround">
             <color red="0.9649999737739563" green="0.97299998998641968" blue="0.98400002717971802" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

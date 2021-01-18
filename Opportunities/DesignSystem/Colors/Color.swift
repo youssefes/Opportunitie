@@ -25,6 +25,7 @@ extension DesignSystem {
         case loseColor = "loseColor"
         case typeTransactionCellProfile = "typeTransactionCellProfile"
         case loseColorBackground = "loseColorBackground"
+        case plachHolderColor = "plachHolderColor"
         var color : UIColor {
             switch self {
             case .Title:
@@ -56,6 +57,8 @@ extension DesignSystem {
                 return UIColor(named : self.rawValue)!
             case .loseColorBackground:
                  return UIColor(named : self.rawValue)!
+            case .plachHolderColor:
+                return UIColor(named : self.rawValue)!
             }
         }
         

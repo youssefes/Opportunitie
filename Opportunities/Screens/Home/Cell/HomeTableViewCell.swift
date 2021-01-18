@@ -58,7 +58,7 @@ class HomeTableViewCell: UITableViewCell {
         let resourseMainImage = ImageResource(downloadURL: url)
         self.MainImage.kf.setImage(with: resourseMainImage, placeholder: placeHolderImage)
         
-        let subUrlImage = "\(NetworkConstants.baseUrlImages)\(opertunity.brief)"
+        let subUrlImage = "\(NetworkConstants.baseUrlImages)\(opertunity.icon)"
         guard let SubUrlImage = URL(string: subUrlImage) else {return}
         let resourseSubImage = ImageResource(downloadURL: SubUrlImage)
         

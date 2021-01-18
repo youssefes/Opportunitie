@@ -11,4 +11,12 @@ import Foundation
 
 class InvestementViewModel {
     
+    var oppertunites : OppertunitesModel
+    init(oppertunitesId : OppertunitesModel) {
+        self.oppertunites = oppertunitesId
+    }
+    
+    func viewDidload() {
+       
+    }
 }

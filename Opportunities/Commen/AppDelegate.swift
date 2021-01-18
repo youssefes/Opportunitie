@@ -22,9 +22,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
         Coordinator = AppCoordinator(Window: window!)
+       
         if let userId = UserDefaults.standard.value(forKey: NetworkConstants.userIdKey) as? Int{
             print(userId)
             Coordinator.isLogIn = true
+            Coordinator.firstTimeOpen = false
         }
         
         Coordinator.start()

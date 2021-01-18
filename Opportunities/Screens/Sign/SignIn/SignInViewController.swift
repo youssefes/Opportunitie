@@ -28,10 +28,9 @@ class SignInViewController: BaseWireFrame<SignInViewModel> {
             self.activatyIndicator.stopAnimating()
             guard let status = resulte.code else {return}
             if status == 200{
-                 
-                let viewc = self.coordinator.tabBarController
-                viewc.modalPresentationStyle = .overFullScreen
-                self.present(viewc, animated: true, completion: nil)
+                self.coordinator.firstTimeOpen = false
+                self.coordinator.isLogIn = true
+               
             }else{
                 guard let massage = resulte.msg else {
                     return

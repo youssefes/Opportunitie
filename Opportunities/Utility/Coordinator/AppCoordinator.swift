@@ -14,10 +14,23 @@ protocol Coordinator {
     var MainStoryBordNavigator : MainStoryBordNavigator {get}
     var navigationController : UINavigationController? {get}
     var tabBarController: CustomTabBarController { get }
+    var isLogIn : Bool {get set}
+    var firstTimeOpen : Bool {get set}
     func dismiss()
 }
 class AppCoordinator : Coordinator {
-    var isLogIn = false
+    
+    var firstTimeOpen: Bool = true {
+        didSet{
+            start()
+        }
+    }
+    
+    var isLogIn : Bool = false {
+        didSet{
+            start()
+        }
+    }
     lazy var mainNavigator : MainNavigator = {
           return .init(coordintor: self)
     }()
@@ -53,11 +66,16 @@ class AppCoordinator : Coordinator {
     }
     
     var rootViewController : UIViewController {
-        if isLogIn{
-            return tabBarController
+        if firstTimeOpen{
+             return self.MainStoryBordNavigator.viewController(for: .LanguageToSpeakViewController)
         }else{
-            return self.MainStoryBordNavigator.viewController(for: .LanguageToSpeakViewController)
+            if isLogIn{
+                return tabBarController
+            }else{
+               return self.MainStoryBordNavigator.viewController(for: .SignInView)
+            }
         }
+        
         
     }
 }

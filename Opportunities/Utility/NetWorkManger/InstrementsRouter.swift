@@ -15,6 +15,7 @@ enum InstrementsRouter : APIRouter{
     case transactionThisMonth(userId : Int)
     case transactionLastMonth(userId : Int)
     case transactionAmount(parameters : Parameters)
+    
     var method: HTTPMethod{
         switch self{
         case .AllInstraments:

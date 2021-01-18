@@ -37,19 +37,19 @@
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="spA-5H-Xke">
-                                <rect key="frame" x="70" y="28" width="258" height="47.5"/>
+                                <rect key="frame" x="70" y="28.5" width="258" height="46.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="YVc-ic-Jyy">
-                                        <rect key="frame" x="0.0" y="0.0" width="97.5" height="47.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="158" height="46.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1" text="VODAVODA" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="lGp-lx-gaR">
-                                                <rect key="frame" x="0.0" y="0.0" width="97.5" height="21"/>
-                                                <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="18"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="158" height="20"/>
+                                                <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="17"/>
                                                 <color key="textColor" name="Title"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="05:24 PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="aoC-Di-tEc">
-                                                <rect key="frame" x="0.0" y="31" width="97.5" height="16.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="05:24 PM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="aoC-Di-tEc">
+                                                <rect key="frame" x="0.0" y="30" width="158" height="16.5"/>
                                                 <fontDescription key="fontDescription" name="Gilroy-Medium" family="Gilroy-Medium" pointSize="14"/>
                                                 <color key="textColor" name="SubTitle"/>
                                                 <nil key="highlightedColor"/>
@@ -57,7 +57,10 @@
                                         </subviews>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1" verticalHuggingPriority="251" text="1,250K" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zVk-C7-jcL">
-                                        <rect key="frame" x="97.5" y="0.0" width="160.5" height="47.5"/>
+                                        <rect key="frame" x="158" y="0.0" width="100" height="46.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="psh-jI-ISF"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="Gilroy-Medium" family="Gilroy-Medium" pointSize="23"/>
                                         <color key="textColor" red="0.3411764706" green="0.88235294119999996" blue="0.69019607839999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -102,6 +105,7 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="iconofInstrument" destination="D8V-Tm-XSB" id="mV7-RM-L0j"/>
                 <outlet property="namelbl" destination="lGp-lx-gaR" id="dQX-0T-0XW"/>
                 <outlet property="profilelbl" destination="zVk-C7-jcL" id="NsM-Zf-d0n"/>
                 <outlet property="timeLbl" destination="aoC-Di-tEc" id="Rmj-D9-MkI"/>

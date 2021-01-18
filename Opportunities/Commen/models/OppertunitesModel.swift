@@ -13,12 +13,13 @@ struct OppertunitesModel: Codable {
     let videoDeal: String
     let detail, brief, minimum, maximum: String
     let total, timeLeft, expected, duration: String
-    let salesDevelopments, country, projectShipment, recommendations: String
+    let salesDevelopments, country, projectShipment, recommendations, icon : String
     let shipmentDevelopments, snapshotProduct, participationReturns, createdAt: String
     
     enum CodingKeys: String, CodingKey {
         case id
         case name
+        case icon
         case videoDeal = "video_deal"
         case detail, brief, minimum, maximum, total
         case timeLeft = "time_left"

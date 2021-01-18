@@ -9,8 +9,10 @@
 import UIKit
 import RxSwift
 import RxCocoa
+import Kingfisher
 class ActiveTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var iconofInstrument: UIImageView!
     @IBOutlet weak var timeLbl: UILabel!
     @IBOutlet weak var profilelbl: UILabel!
     @IBOutlet weak var namelbl: UILabel!
@@ -35,6 +37,13 @@ class ActiveTableViewCell: UITableViewCell {
             self.namelbl.text = instremen.name
             self.profilelbl.text = "\(instremen.profit) K"
             self.timeLbl.text = instremen.createdAt
+            
+            let placeHolderImage = #imageLiteral(resourceName: "logo")
+            let iconUrlImage = "\(NetworkConstants.baseUrlImages)\(instremen.icon)"
+            guard let SubUrlImage = URL(string: iconUrlImage) else {return}
+            let resourseSubImage = ImageResource(downloadURL: SubUrlImage)
+            self.iconofInstrument.kf.setImage(with: resourseSubImage, placeholder: placeHolderImage)
+           
         }).disposed(by: dispassbag)
     }
     

@@ -634,7 +634,6 @@
 		E83EFABD257D77A30075CDF1 /* Search */ = {
 			isa = PBXGroup;
 			children = (
-				E83E6F74258592CD0017F67A /* myInvestment */,
 				E83EFABE257D77BC0075CDF1 /* SearchViewController.swift */,
 				E83EFABF257D77BC0075CDF1 /* SearchViewController.xib */,
 				E83A54F9258763F40076BDCE /* searchViewModel.swift */,
@@ -1018,6 +1017,7 @@
 				E83E6F6425857AAA0017F67A /* Active */,
 				E87EC4A72582486000003C29 /* Menu */,
 				E8E8FDFA25810B3D00FBF9C4 /* OppertunitiesDetailes */,
+				E83E6F74258592CD0017F67A /* myInvestment */,
 				E83EFABD257D77A30075CDF1 /* Search */,
 				E83EFABC257D776E0075CDF1 /* Sign */,
 				E83EFAB7257D6D770075CDF1 /* AllOpportunities */,
