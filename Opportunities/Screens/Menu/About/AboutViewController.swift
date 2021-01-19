@@ -7,24 +7,47 @@
 //
 
 import UIKit
+import youtube_ios_player_helper_swift
+import NVActivityIndicatorView
 
-class AboutViewController: BaseWireFrame<AboutViewModel> {
+class AboutViewController: BaseWireFrame<AboutViewModel>,YTPlayerViewDelegate {
     @IBOutlet weak var PhotoCollectionView: UICollectionView!
+    @IBOutlet weak var activaty: NVActivityIndicatorView!
     
+    @IBOutlet weak var visionlbl: UILabel!
+    @IBOutlet weak var massionlbl: UILabel!
     @IBOutlet weak var videoImage: UIImageView!
-    @IBOutlet weak var containerVideo: UIView!
+    @IBOutlet weak var containerVideo: YTPlayerView!
+    @IBOutlet weak var playbtn: UIButton!
     
     
     let cellIdentfier = "PhotoCollectionViewCell"
     override func viewDidLoad() {
         super.viewDidLoad()
         SetupTableView()
-        
+        vieeModel.ViewDidLoad()
         // Do any additional setup after loading the view.
     }
     
     override func bind(ViewModel: AboutViewModel) {
-        
+        ViewModel.SeccessAbsercable.subscribe(onNext: { [weak self] (respond) in
+            guard let self = self else {return}
+            if respond.value == true{
+                guard let data = respond.data else {
+                    return
+                }
+                for data in data {
+                    self.massionlbl.text = data.mission
+                    self.visionlbl.text = data.mission
+                    if data.video.contains("www.youtube.com"){
+                        self.activaty.startAnimating()
+                        guard let id =  self.getYoutubeId(youtubeUrl: data.video) else {return}
+                        self.containerVideo.load(videoId: id)
+                    }
+                }
+                
+            }
+        }).disposed(by: disposePag)
     }
     
     func SetupTableView(){
@@ -33,9 +56,16 @@ class AboutViewController: BaseWireFrame<AboutViewModel> {
         
         PhotoCollectionView.register(UINib(nibName: cellIdentfier, bundle: nil), forCellWithReuseIdentifier: cellIdentfier)
         configrationCollectionViewToThreeColum()
+        containerVideo.delegate = self
     }
     
     @IBAction func playVideo(_ sender: Any) {
+        containerVideo.playVideo()
+    }
+    
+    func playerViewDidBecomeReady(_ playerView: YTPlayerView) {
+        playbtn.isHidden = false
+        activaty.stopAnimating()
     }
     @IBAction func Dismiss(_ sender: Any) {
         
@@ -43,8 +73,8 @@ class AboutViewController: BaseWireFrame<AboutViewModel> {
     }
     
     func configrationCollectionViewToThreeColum(){
-           PhotoCollectionView.collectionViewLayout = createThreeColumnFlowLayout(in: view)
-       }
+        PhotoCollectionView.collectionViewLayout = createThreeColumnFlowLayout(in: view)
+    }
     
 }
 

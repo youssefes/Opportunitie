@@ -8,6 +8,7 @@ target 'Opportunities' do
   # Pods for Opportunities
     pod 'BubbleTabBar', '~> 0.9'
      pod 'NVActivityIndicatorView'
+     pod 'youtube-ios-player-helper-swift'
   target 'OpportunitiesTests' do
     inherit! :search_paths
 

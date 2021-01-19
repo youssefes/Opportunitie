@@ -18,3 +18,13 @@ struct AllInstraments: Decodable {
         case createdAt = "created_at"
     }
 }
+
+// MARK: - AboutModel
+struct AboutModel: Codable {
+    let video: String
+    let mission, vision: String
+    
+    enum CodingKeys: String, CodingKey {
+        case video, mission, vision
+    }
+}

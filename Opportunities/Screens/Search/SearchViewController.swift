@@ -29,7 +29,7 @@ class SearchViewController: BaseWireFrame<searchViewModel> {
     }
     
     override func bind(ViewModel: searchViewModel) {
-        
+        // bind number of result
         searchTextField.rx.text.orEmpty.bind(to: ViewModel.searchText).disposed(by: disposePag)
         ViewModel.numberOfresulteAsobservable.subscribe(onNext: { [weak self] (number) in
             guard let self = self else {return}
@@ -44,6 +44,8 @@ class SearchViewController: BaseWireFrame<searchViewModel> {
             }
             self.numberOfResulte.text = "\(number) Resulte"
         }).disposed(by: disposePag)
+        
+        // bind data resulte
         vieeModel.OppertuniteDetailesObservable.bind(to: resulteTableView.rx.items(cellIdentifier: cellIdentifier, cellType: HomeTableViewCell.self)){ [weak  self] (index,oppertunite, cell) in
             guard let self = self else {return}
             cell.searchOppertunite.onNext(oppertunite)

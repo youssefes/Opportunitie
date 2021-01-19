@@ -17,6 +17,7 @@ enum OppertunitesRouter: APIRouter {
     case OppertuniteDetailes(dealId : Int)
     case search(opertunitesName : String)
     case active(userId : Int)
+    case about
 
     var method: HTTPMethod {
         switch self {
@@ -26,6 +27,8 @@ enum OppertunitesRouter: APIRouter {
               return .get
         case .search, .active:
             return .post
+        case .about:
+            return .get
         }
     }
     
@@ -41,6 +44,8 @@ enum OppertunitesRouter: APIRouter {
            return "search"
         case .active:
             return "active"
+        case .about:
+            return "about"
         }
     }
     
@@ -63,19 +68,21 @@ enum OppertunitesRouter: APIRouter {
                 "user_id" : userId
             ]
             return parameter
+        case .about:
+            return nil
         }
     }
     
     var encoding: ParameterEncoding {
         switch self {
-        case .search, .LetestOppertunite, .allOppertunites,.OppertuniteDetailes, .active:
+        case .search,.about, .LetestOppertunite, .allOppertunites,.OppertuniteDetailes, .active:
             return URLEncoding.default
     }
     }
     
     var header: HTTPHeaders {
         switch self {
-        case .LetestOppertunite, .search, .allOppertunites,.OppertuniteDetailes, .active :
+        case .LetestOppertunite,.about, .search, .allOppertunites,.OppertuniteDetailes, .active :
             let header = HTTPHeaders([HTTPHeader(name: "Accept-Language", value: "en")])
             return header
         }

@@ -78,10 +78,8 @@ extension MenuViewController : UITableViewDelegate{
                coordinator.mainNavigator.Navigate(to: .contectUs)
             case "About":
               coordinator.mainNavigator.Navigate(to: .About)
-            case "FAQ":
-               coordinator.mainNavigator.Navigate(to: .Language)
-            case "Fatwa" :
-               coordinator.mainNavigator.Navigate(to: .Language)
+            case "FAQ", "Fatwa":
+                print("faq")
             default:
                 print("no ViewController")
             }
