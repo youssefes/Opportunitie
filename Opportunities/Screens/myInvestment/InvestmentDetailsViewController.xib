@@ -58,10 +58,24 @@
                                             <rect key="frame" x="0.0" y="0.0" width="425" height="341.5"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </view>
-                                        <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="huawei-mediapad-m6-stock-wallpaper-1024x1024_666874-mm-90" translatesAutoresizingMaskIntoConstraints="NO" id="XTk-LV-LTq">
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="huawei-mediapad-m6-stock-wallpaper-1024x1024_666874-mm-90" translatesAutoresizingMaskIntoConstraints="NO" id="XTk-LV-LTq">
                                             <rect key="frame" x="0.0" y="0.0" width="425" height="341.5"/>
                                         </imageView>
-                                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pwn-ey-rbk">
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y1p-ao-dGp" customClass="NVActivityIndicatorView" customModule="NVActivityIndicatorView">
+                                            <rect key="frame" x="200" y="158" width="25" height="25"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="25" id="84b-UU-dpw"/>
+                                                <constraint firstAttribute="height" constant="25" id="XgK-6d-9H0"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="typeName" value="lineScale"/>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                                    <color key="value" name="MainbuttonColor"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pwn-ey-rbk">
                                             <rect key="frame" x="182.5" y="141" width="60" height="60"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="60" id="4YP-8N-I2M"/>
@@ -90,20 +104,6 @@
                                                 <action selector="backBtn:" destination="-1" eventType="touchUpInside" id="4Sz-Gx-era"/>
                                             </connections>
                                         </button>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y1p-ao-dGp" customClass="NVActivityIndicatorView" customModule="NVActivityIndicatorView">
-                                            <rect key="frame" x="200" y="158.5" width="25" height="25"/>
-                                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="25" id="84b-UU-dpw"/>
-                                                <constraint firstAttribute="height" constant="25" id="XgK-6d-9H0"/>
-                                            </constraints>
-                                            <userDefinedRuntimeAttributes>
-                                                <userDefinedRuntimeAttribute type="string" keyPath="typeName" value="lineScale"/>
-                                                <userDefinedRuntimeAttribute type="color" keyPath="color">
-                                                    <color key="value" name="MainbuttonColor"/>
-                                                </userDefinedRuntimeAttribute>
-                                            </userDefinedRuntimeAttributes>
-                                        </view>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
@@ -165,7 +165,7 @@
                                     </constraints>
                                     <userDefinedRuntimeAttributes>
                                         <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
-                                            <color key="value" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                            <color key="value" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="0.2501070205479452" colorSpace="custom" customColorSpace="sRGB"/>
                                         </userDefinedRuntimeAttribute>
                                         <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
                                             <real key="value" value="0.5"/>
@@ -366,13 +366,13 @@
                                     </constraints>
                                     <userDefinedRuntimeAttributes>
                                         <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
-                                            <color key="value" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                            <color key="value" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="0.25163206335616439" colorSpace="custom" customColorSpace="sRGB"/>
                                         </userDefinedRuntimeAttribute>
                                         <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
-                                            <real key="value" value="0.10000000000000001"/>
+                                            <real key="value" value="0.5"/>
                                         </userDefinedRuntimeAttribute>
                                         <userDefinedRuntimeAttribute type="point" keyPath="shadowOffset">
-                                            <point key="value" x="0.0" y="1"/>
+                                            <point key="value" x="0.0" y="5"/>
                                         </userDefinedRuntimeAttribute>
                                         <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
                                             <real key="value" value="5"/>

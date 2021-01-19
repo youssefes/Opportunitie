@@ -87,6 +87,7 @@ class InvestmentDetailsViewController : BaseWireFrame<InvestementViewModel>,YTPl
     }
     func playerViewDidBecomeReady(_ playerView: YTPlayerView) {
         playBtn.isHidden = false
+        viedoImage.isHidden = true
         activaty.stopAnimating()
     }
     
