@@ -7,16 +7,14 @@
 //
 
 import Foundation
-
+import RxSwift
+import RxCocoa
 
 class InvestementViewModel {
     
     var oppertunites : OppertunitesModel
+    
     init(oppertunitesId : OppertunitesModel) {
         self.oppertunites = oppertunitesId
-    }
-    
-    func viewDidload() {
-       
     }
 }

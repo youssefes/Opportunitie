@@ -10,22 +10,41 @@ import UIKit
 
 class InvestmentDetailsViewController : BaseWireFrame<InvestementViewModel> {
     
+    @IBOutlet weak var porfitelbl: UILabel!
     @IBOutlet weak var containerView: UIView!
+    @IBOutlet weak var minLbl: UILabel!
+    @IBOutlet weak var timelbl: UILabel!
+    @IBOutlet weak var descriptionlbl: UILabel!
     
+    @IBOutlet weak var aboultLbl: UILabel!
+    @IBOutlet weak var progressvie: UIProgressView!
+    @IBOutlet weak var presntagelbl: UILabel!
+    @IBOutlet weak var slodLbl: UILabel!
+    @IBOutlet weak var timeLift: UILabel!
+    @IBOutlet weak var profilLbl: UILabel!
+    @IBOutlet weak var maxLbl: UILabel!
     let cellIdentfier = "PhotoCollectionViewCell"
     
     
     @IBOutlet weak var InvestementcollectionView: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         registerCell()
-        vieeModel.viewDidload()
         
     }
     
     override func bind(ViewModel: InvestementViewModel) {
-        
+        let oppertunite = ViewModel.oppertunites
+        minLbl.text = oppertunite.minimum
+        maxLbl.text = oppertunite.maximum
+        timelbl.text = oppertunite.duration
+        timeLift.text = oppertunite.timeLeft
+        descriptionlbl.text = oppertunite.detail
+        let progressPrasentage = (Int(oppertunite.total) ?? 0) / oppertunite.amount
+        progressvie.progress = Float(Float(progressPrasentage)/100.0)
+        profilLbl.text = "\(progressPrasentage)"
+        presntagelbl.text = "\(progressPrasentage) %"
+        self.slodLbl.text = "\(oppertunite.amount)KD sold"
     }
     
     func registerCell(){
