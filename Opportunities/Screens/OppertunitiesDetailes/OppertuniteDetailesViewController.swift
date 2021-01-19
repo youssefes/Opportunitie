@@ -31,7 +31,7 @@ class OppertuniteDetailesViewController: BaseWireFrame<OppertuniteDetailesViewMo
     @IBOutlet weak var playVideobtn: UIButton!
     @IBOutlet weak var activaty: NVActivityIndicatorView!
     var opertuniteId : Int = 0
-    
+    var player : AVPlayer?
     var urlVideo = ""
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -66,11 +66,11 @@ class OppertuniteDetailesViewController: BaseWireFrame<OppertuniteDetailesViewMo
                 self.viedoContainer.load(videoId: id)
             }else{
                 let videoURL = URL(string: "http://i0sa.com/OS/watch.php?v=328948890")
-                let player = AVPlayer(url: videoURL!)
-                let playerLayer = AVPlayerLayer(player: player)
+                self.player = AVPlayer(url: videoURL!)
+                let playerLayer = AVPlayerLayer(player: self.player)
                 playerLayer.frame = self.viedoContainer.bounds
                 self.view.layer.addSublayer(playerLayer)
-                player.play()
+                
             }
             self.opertuniteId = opertunite.id
             let progressPrasentage = (Int(opertunite.total) ?? 0) / opertunite.amount
@@ -96,11 +96,13 @@ class OppertuniteDetailesViewController: BaseWireFrame<OppertuniteDetailesViewMo
     
     func playerViewDidBecomeReady(_ playerView: YTPlayerView) {
         playVideobtn.isHidden = false
+        videoImage.isHidden = true
         activaty.stopAnimating()
     }
     
     @IBAction func playVideoBtn(_ sender: UIButton) {
         viedoContainer.playVideo()
+        player?.play()
     }
     
    
