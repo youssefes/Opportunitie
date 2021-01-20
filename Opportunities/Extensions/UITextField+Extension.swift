@@ -14,6 +14,7 @@ class TextField: UITextField {
     let padding = UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
 
     override open func textRect(forBounds bounds: CGRect) -> CGRect {
+        self.cornerRadius = 4
         return bounds.inset(by: padding)
     }
 
@@ -24,4 +25,5 @@ class TextField: UITextField {
     override open func editingRect(forBounds bounds: CGRect) -> CGRect {
         return bounds.inset(by: padding)
     }
+    
 }

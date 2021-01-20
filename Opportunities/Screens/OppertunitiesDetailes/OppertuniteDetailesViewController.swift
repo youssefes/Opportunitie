@@ -9,9 +9,10 @@ import UIKit
 import youtube_ios_player_helper_swift
 import NVActivityIndicatorView
 import AVKit
-
+import Kingfisher
 class OppertuniteDetailesViewController: BaseWireFrame<OppertuniteDetailesViewModel> , YTPlayerViewDelegate{
     @IBOutlet weak var videoImage: UIImageView!
+    @IBOutlet weak var mainviedocontainer: UIView!
     @IBOutlet weak var viedoContainer: YTPlayerView!
     @IBOutlet weak var containerViewToConinesBtn: UIView!
     @IBOutlet weak var progressView: UIProgressView!
@@ -31,8 +32,7 @@ class OppertuniteDetailesViewController: BaseWireFrame<OppertuniteDetailesViewMo
     @IBOutlet weak var playVideobtn: UIButton!
     @IBOutlet weak var activaty: NVActivityIndicatorView!
     var opertuniteId : Int = 0
-    var player : AVPlayer?
-    var urlVideo = ""
+    var urlVideo = "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
@@ -65,12 +65,11 @@ class OppertuniteDetailesViewController: BaseWireFrame<OppertuniteDetailesViewMo
                 guard let id =  self.getYoutubeId(youtubeUrl: self.urlVideo) else {return}
                 self.viedoContainer.load(videoId: id)
             }else{
-                let videoURL = URL(string: "http://i0sa.com/OS/watch.php?v=328948890")
-                self.player = AVPlayer(url: videoURL!)
-                let playerLayer = AVPlayerLayer(player: self.player)
-                playerLayer.frame = self.viedoContainer.bounds
-                self.view.layer.addSublayer(playerLayer)
-                
+                self.viedoContainer.removeFromSuperview()
+                let MianUrlImage = "\(NetworkConstants.baseUrlImages)\(opertunite.brief)"
+                guard let url = URL(string: MianUrlImage) else {return}
+                let resourseMainImage = ImageResource(downloadURL: url)
+                self.videoImage.kf.setImage(with: resourseMainImage)
             }
             self.opertuniteId = opertunite.id
             let progressPrasentage = (Int(opertunite.total) ?? 0) / opertunite.amount
@@ -101,8 +100,19 @@ class OppertuniteDetailesViewController: BaseWireFrame<OppertuniteDetailesViewMo
     }
     
     @IBAction func playVideoBtn(_ sender: UIButton) {
-        viedoContainer.playVideo()
-        player?.play()
+        if self.urlVideo.contains("www.youtube.com"){
+            viedoContainer.playVideo()
+        }else{
+            
+            let videoURL = URL(string: urlVideo)
+            let player = AVPlayer(url: videoURL!)
+            let playerViewController = AVPlayerViewController()
+            playerViewController.player = player
+            self.present(playerViewController, animated: true) {
+                playerViewController.player!.play()
+            }
+        }
+        
     }
     
    

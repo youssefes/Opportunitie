@@ -34,10 +34,10 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aZk-gq-ose">
-                    <rect key="frame" x="16" y="64" width="299" height="50"/>
+                    <rect key="frame" x="16" y="64" width="299" height="45"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="50" id="JBi-il-96C"/>
+                        <constraint firstAttribute="height" constant="45" id="JBi-il-96C"/>
                     </constraints>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -52,7 +52,7 @@
                     </userDefinedRuntimeAttributes>
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UWM-t0-a1o">
-                    <rect key="frame" x="325" y="72.5" width="69" height="33"/>
+                    <rect key="frame" x="325" y="70" width="69" height="33"/>
                     <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy-Regular" pointSize="18"/>
                     <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <state key="normal" title="Cancel"/>
@@ -61,23 +61,23 @@
                     </connections>
                 </button>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Search" translatesAutoresizingMaskIntoConstraints="NO" id="Map-Ti-52x">
-                    <rect key="frame" x="36" y="79" width="20" height="20"/>
+                    <rect key="frame" x="36" y="76.5" width="20" height="20"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="Map-Ti-52x" secondAttribute="height" multiplier="1:1" id="RaK-0K-uQl"/>
                         <constraint firstAttribute="width" constant="20" id="s3Z-52-uVW"/>
                     </constraints>
                 </imageView>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search Oppertunitie" textAlignment="natural" minimumFontSize="12" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="Wqa-9P-8He">
-                    <rect key="frame" x="66" y="74" width="239" height="30"/>
+                    <rect key="frame" x="66" y="74" width="239" height="25"/>
                     <color key="textColor" name="Title"/>
                     <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy-Regular" pointSize="15"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Saly-2" translatesAutoresizingMaskIntoConstraints="NO" id="RdA-sN-ubp">
-                    <rect key="frame" x="20" y="164" width="374" height="298.5"/>
+                    <rect key="frame" x="20" y="159" width="374" height="298.5"/>
                 </imageView>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="O14-Eq-7bI">
-                    <rect key="frame" x="40" y="487.5" width="334" height="82"/>
+                    <rect key="frame" x="40" y="482.5" width="334" height="82"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What are you looking for?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VYK-n7-vYz">
                             <rect key="frame" x="0.0" y="0.0" width="334" height="41"/>
@@ -94,10 +94,10 @@
                     </subviews>
                 </stackView>
                 <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="phu-Pz-zSh">
-                    <rect key="frame" x="0.0" y="134" width="414" height="748"/>
+                    <rect key="frame" x="0.0" y="129" width="414" height="753"/>
                     <subviews>
                         <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iBf-e1-66g">
-                            <rect key="frame" x="20" y="61" width="374" height="667"/>
+                            <rect key="frame" x="20" y="61" width="374" height="672"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </tableView>

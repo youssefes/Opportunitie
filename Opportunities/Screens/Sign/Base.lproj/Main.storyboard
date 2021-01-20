@@ -205,7 +205,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E1k-bu-acU">
-                                <rect key="frame" x="0.0" y="44" width="0.0" height="733"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="733"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </view>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HcC-Bm-qUL">
@@ -218,7 +218,7 @@
                                 <state key="normal" title="Get Started"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="16"/>
+                                        <real key="value" value="4"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -247,7 +247,7 @@
                                         <state key="normal" title="Next"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="16"/>
+                                                <real key="value" value="4"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
@@ -398,7 +398,7 @@
                                 <state key="normal" title="Sign In"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="16"/>
+                                        <real key="value" value="4"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -742,7 +742,7 @@
                                                 <state key="normal" title="Sign Up"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                        <real key="value" value="16"/>
+                                                        <real key="value" value="4"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
@@ -802,7 +802,7 @@
                                             <constraint firstItem="Pz4-Vf-EDP" firstAttribute="leading" secondItem="GPx-mO-swy" secondAttribute="leading" id="RRm-q9-4Pk"/>
                                             <constraint firstItem="vIb-yb-APf" firstAttribute="leading" secondItem="1Oh-Ts-4t5" secondAttribute="leading" id="THO-AJ-VU1"/>
                                             <constraint firstAttribute="height" constant="1000" id="TUO-KI-ewg"/>
-                                            <constraint firstItem="b3e-nP-TG0" firstAttribute="leading" secondItem="dNJ-iT-644" secondAttribute="leading" constant="20" id="U1N-G7-j9T"/>
+                                            <constraint firstItem="b3e-nP-TG0" firstAttribute="leading" secondItem="dNJ-iT-644" secondAttribute="leading" constant="30" id="U1N-G7-j9T"/>
                                             <constraint firstItem="btc-YJ-Klz" firstAttribute="trailing" secondItem="SnA-44-a19" secondAttribute="trailing" id="Vfk-Xi-yuE"/>
                                             <constraint firstItem="ttK-BT-Az9" firstAttribute="centerY" secondItem="ZiE-oX-rp7" secondAttribute="centerY" id="WVK-y2-s6r"/>
                                             <constraint firstItem="mwe-fJ-txZ" firstAttribute="trailing" secondItem="Pz4-Vf-EDP" secondAttribute="trailing" id="WZS-0j-FYl"/>
@@ -832,7 +832,7 @@
                                             <constraint firstItem="1Oh-Ts-4t5" firstAttribute="top" secondItem="M9h-ab-hIv" secondAttribute="bottom" constant="20" id="nIe-gR-fXI"/>
                                             <constraint firstAttribute="trailing" secondItem="XKY-Wt-qYQ" secondAttribute="trailing" constant="30" id="npx-Oa-iIL"/>
                                             <constraint firstItem="GPx-mO-swy" firstAttribute="trailing" secondItem="SnA-44-a19" secondAttribute="trailing" id="oTK-cM-fjg"/>
-                                            <constraint firstAttribute="trailing" secondItem="b3e-nP-TG0" secondAttribute="trailing" constant="20" id="oza-UE-Zcv"/>
+                                            <constraint firstAttribute="trailing" secondItem="b3e-nP-TG0" secondAttribute="trailing" constant="30" id="oza-UE-Zcv"/>
                                             <constraint firstItem="ZB3-Iw-eDu" firstAttribute="top" secondItem="mwe-fJ-txZ" secondAttribute="bottom" constant="20" id="p1G-CW-fgv"/>
                                             <constraint firstItem="ZB3-Iw-eDu" firstAttribute="height" secondItem="08M-rH-Vkl" secondAttribute="height" id="pag-at-yfK"/>
                                             <constraint firstItem="SnA-44-a19" firstAttribute="leading" secondItem="XKY-Wt-qYQ" secondAttribute="leading" id="qWA-pB-B3Q"/>
@@ -977,7 +977,7 @@
                                 <state key="normal" title="Verify"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="16"/>
+                                        <real key="value" value="4"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -1066,7 +1066,7 @@
                                 <state key="normal" title="Login"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="16"/>
+                                        <real key="value" value="4"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -1181,7 +1181,7 @@
                                 <state key="normal" title="Continue"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="16"/>
+                                        <real key="value" value="4"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -1266,7 +1266,7 @@
                                 <state key="normal" title="Login"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="16"/>
+                                        <real key="value" value="4"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -1317,19 +1317,19 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rest Pass" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GUc-YP-6vb">
-                                <rect key="frame" x="30" y="114" width="354" height="30"/>
+                                <rect key="frame" x="30" y="114" width="232" height="30"/>
                                 <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="30"/>
                                 <color key="textColor" name="Title"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your new password." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Dm-qG-mZQ">
-                                <rect key="frame" x="30" y="154" width="354" height="20"/>
+                                <rect key="frame" x="30" y="154" width="232" height="20"/>
                                 <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy-Regular" pointSize="20"/>
                                 <color key="textColor" name="SubTitle"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4B7-ZZ-ysr">
-                                <rect key="frame" x="30" y="797" width="354" height="45"/>
+                                <rect key="frame" x="30" y="797" width="232" height="45"/>
                                 <color key="backgroundColor" name="MainbuttonColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="2f8-s0-HDr"/>
@@ -1339,7 +1339,7 @@
                                 <state key="normal" title="Continue"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="16"/>
+                                        <real key="value" value="4"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -1401,7 +1401,7 @@
                                 </subviews>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eOG-Ot-jsY" customClass="NVActivityIndicatorView" customModule="NVActivityIndicatorView">
-                                <rect key="frame" x="319" y="807" width="25" height="25"/>
+                                <rect key="frame" x="197" y="807" width="25" height="25"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="H4K-6K-DxH"/>
