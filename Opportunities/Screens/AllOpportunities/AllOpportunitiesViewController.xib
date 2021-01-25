@@ -80,12 +80,12 @@
                 <constraint firstItem="N9M-lZ-2qc" firstAttribute="top" secondItem="ESV-3b-Ufq" secondAttribute="bottom" constant="15" id="1we-rA-sMo"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="N9M-lZ-2qc" secondAttribute="trailing" constant="20" id="BoR-cL-OET"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="IcF-JK-3Au" secondAttribute="bottom" id="IAg-lh-Jdt"/>
-                <constraint firstItem="IcF-JK-3Au" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="LER-fx-we7"/>
+                <constraint firstItem="IcF-JK-3Au" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="LER-fx-we7"/>
                 <constraint firstItem="ESV-3b-Ufq" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="NJ8-7N-ONk"/>
                 <constraint firstItem="haE-go-ec2" firstAttribute="centerX" secondItem="IcF-JK-3Au" secondAttribute="centerX" id="Nez-fH-cfm"/>
                 <constraint firstItem="haE-go-ec2" firstAttribute="centerY" secondItem="IcF-JK-3Au" secondAttribute="centerY" id="bBU-Q8-hrw"/>
                 <constraint firstItem="IcF-JK-3Au" firstAttribute="top" secondItem="N9M-lZ-2qc" secondAttribute="bottom" constant="20" id="kSO-To-juq"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="IcF-JK-3Au" secondAttribute="trailing" id="lNX-5O-KAv"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="IcF-JK-3Au" secondAttribute="trailing" constant="20" id="lNX-5O-KAv"/>
                 <constraint firstItem="N9M-lZ-2qc" firstAttribute="leading" secondItem="ESV-3b-Ufq" secondAttribute="leading" constant="20" id="uF1-Tn-Kmx"/>
                 <constraint firstItem="ESV-3b-Ufq" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="ySS-i5-Moc"/>
                 <constraint firstItem="ESV-3b-Ufq" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="zY9-qT-a9O"/>

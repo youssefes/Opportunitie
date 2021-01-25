@@ -165,10 +165,10 @@
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
-                    <constraint firstItem="kMv-ek-Ny3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="8Qv-5g-DAN"/>
+                    <constraint firstItem="kMv-ek-Ny3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="8Qv-5g-DAN"/>
                     <constraint firstItem="kMv-ek-Ny3" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Rpg-T2-SFO"/>
                     <constraint firstAttribute="bottom" secondItem="kMv-ek-Ny3" secondAttribute="bottom" constant="20" id="S3r-B4-dYb"/>
-                    <constraint firstAttribute="trailing" secondItem="kMv-ek-Ny3" secondAttribute="trailing" constant="20" id="jPd-NE-Jq6"/>
+                    <constraint firstAttribute="trailing" secondItem="kMv-ek-Ny3" secondAttribute="trailing" id="jPd-NE-Jq6"/>
                 </constraints>
                 <userDefinedRuntimeAttributes>
                     <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
