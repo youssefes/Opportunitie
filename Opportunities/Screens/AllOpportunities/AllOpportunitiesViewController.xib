@@ -57,15 +57,15 @@
                     </items>
                 </navigationBar>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="IcF-JK-3Au">
-                    <rect key="frame" x="0.0" y="190" width="414" height="672"/>
+                    <rect key="frame" x="20" y="190" width="374" height="672"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </tableView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="haE-go-ec2" customClass="NVActivityIndicatorView" customModule="NVActivityIndicatorView">
                     <rect key="frame" x="182" y="501" width="50" height="50"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="50" id="6tu-2T-i83"/>
-                        <constraint firstAttribute="width" constant="50" id="nUR-eI-eGH"/>
+                        <constraint firstAttribute="height" constant="30" id="6tu-2T-i83"/>
+                        <constraint firstAttribute="width" constant="30" id="nUR-eI-eGH"/>
                     </constraints>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="string" keyPath="typeName" value="lineScale"/>

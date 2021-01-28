@@ -8,7 +8,9 @@
 
 import UIKit
 import NVActivityIndicatorView
-class HomeViewController: BaseWireFrame<HomeViewModel> {
+class HomeViewController: BaseWireFrame<HomeViewModel>, headerTableViewCellDeleget {
+    
+    
 
     @IBOutlet weak var activityIndicator: NVActivityIndicatorView!
     
@@ -16,6 +18,7 @@ class HomeViewController: BaseWireFrame<HomeViewModel> {
     @IBOutlet weak var HomeTableView: UITableView!
     
     override func viewDidLoad() {
+    
         super.viewDidLoad()
         setUpUI()
         registerCell()
@@ -41,15 +44,18 @@ class HomeViewController: BaseWireFrame<HomeViewModel> {
     func registerCell(){
         HomeTableView.backgroundColor = DesignSystem.Colors.BackGround.color
         HomeTableView.register(UINib(nibName: "HomeTableViewCell", bundle: nil), forCellReuseIdentifier: "HomeTableViewCell")
+        
+        HomeTableView.register(UINib(nibName: "headerTableViewCell", bundle: nil), forCellReuseIdentifier: "headerTableViewCell")
     }
     
     func setUpUI(){
         HomeTableView.delegate = self
         HomeTableView.separatorStyle = .none
+      
     }
-    @IBAction func showAll(_ sender: Any) {
+    
+    func showAll() {
         coordinator.mainNavigator.Navigate(to: .AllOpportunitiesViewController)
-        
     }
     
     @IBAction func showMenu(_ sender: Any) {
@@ -65,6 +71,19 @@ class HomeViewController: BaseWireFrame<HomeViewModel> {
 }
 
 extension HomeViewController : UITableViewDelegate{
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "headerTableViewCell") as! headerTableViewCell
+        cell.Deleget = self
+        
+        return cell
+        
+    }
+    
+
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        200
+    }
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         cell.backgroundColor = .clear

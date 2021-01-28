@@ -62,7 +62,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="425" height="341.5"/>
                                         </imageView>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y1p-ao-dGp" customClass="NVActivityIndicatorView" customModule="NVActivityIndicatorView">
-                                            <rect key="frame" x="200" y="158" width="25" height="25"/>
+                                            <rect key="frame" x="200" y="158.5" width="25" height="25"/>
                                             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="25" id="84b-UU-dpw"/>
@@ -413,7 +413,7 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="UFr-G4-Sb8">
-                                    <rect key="frame" x="0.0" y="1058" width="465" height="288"/>
+                                    <rect key="frame" x="0.0" y="1058" width="465" height="182"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="0.0" id="lwu-bh-vxc">
                                         <size key="itemSize" width="50" height="50"/>
@@ -436,7 +436,6 @@
                                 <constraint firstItem="kUa-1c-aq0" firstAttribute="top" secondItem="GFI-yX-XtO" secondAttribute="bottom" constant="20" id="8gi-mQ-w5e"/>
                                 <constraint firstItem="VC3-IZ-NYY" firstAttribute="trailing" secondItem="kUa-1c-aq0" secondAttribute="trailing" id="DhI-vy-tLx"/>
                                 <constraint firstItem="qdJ-QE-wLH" firstAttribute="leading" secondItem="VC3-IZ-NYY" secondAttribute="leading" id="ENx-BR-npj"/>
-                                <constraint firstAttribute="bottom" secondItem="UFr-G4-Sb8" secondAttribute="bottom" constant="20" id="FXJ-1z-cll"/>
                                 <constraint firstItem="Xjl-uz-cbW" firstAttribute="trailing" secondItem="Xd3-Ud-AGH" secondAttribute="trailing" id="Hre-4o-Vf7"/>
                                 <constraint firstItem="UFr-G4-Sb8" firstAttribute="top" secondItem="qdJ-QE-wLH" secondAttribute="bottom" constant="20" id="NvF-nP-e5e"/>
                                 <constraint firstItem="kUa-1c-aq0" firstAttribute="leading" secondItem="Xjl-uz-cbW" secondAttribute="leading" id="brz-0a-cOr"/>
@@ -456,6 +455,7 @@
                         <constraint firstItem="RCE-G2-VeT" firstAttribute="top" secondItem="Z6w-rN-Sp7" secondAttribute="top" id="68a-rM-hFD"/>
                         <constraint firstItem="RCE-G2-VeT" firstAttribute="width" secondItem="Z6w-rN-Sp7" secondAttribute="width" id="AHc-Ll-YTf"/>
                         <constraint firstItem="RCE-G2-VeT" firstAttribute="leading" secondItem="Z6w-rN-Sp7" secondAttribute="leading" id="KuU-ox-ooS"/>
+                        <constraint firstAttribute="bottom" secondItem="UFr-G4-Sb8" secondAttribute="bottom" constant="126" id="UJD-Tj-9DY"/>
                         <constraint firstAttribute="bottom" secondItem="RCE-G2-VeT" secondAttribute="bottom" id="Zbs-FL-rO1"/>
                         <constraint firstItem="RCE-G2-VeT" firstAttribute="trailing" secondItem="Z6w-rN-Sp7" secondAttribute="trailing" id="p3o-qJ-jB0"/>
                     </constraints>

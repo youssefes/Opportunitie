@@ -27,10 +27,10 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kMv-ek-Ny3">
-                        <rect key="frame" x="20" y="10" width="316" height="277"/>
+                        <rect key="frame" x="0.0" y="10" width="356" height="277"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="huawei-mediapad-m6-stock-wallpaper-1024x1024_666874-mm-90" translatesAutoresizingMaskIntoConstraints="NO" id="Yqb-Vm-T5D">
-                                <rect key="frame" x="0.0" y="0.0" width="316" height="101.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="356" height="101.5"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="20"/>
@@ -80,25 +80,25 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VODAVODA water" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="cUs-hz-AAI">
-                                <rect key="frame" x="105" y="121.5" width="146" height="37.5"/>
+                                <rect key="frame" x="105" y="121.5" width="186" height="35"/>
                                 <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="18"/>
                                 <color key="textColor" name="Title"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="car-iW-Qv8">
-                                <rect key="frame" x="10" y="179" width="296" height="23"/>
+                                <rect key="frame" x="10" y="176.5" width="336" height="25.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="aVv-6p-Hyl">
-                                        <rect key="frame" x="0.0" y="0.0" width="296" height="13"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="336" height="15.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="69,500 KD sold" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x2U-XC-GFl">
-                                                <rect key="frame" x="0.0" y="0.0" width="148" height="13"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="168" height="15.5"/>
                                                 <fontDescription key="fontDescription" name="Gilroy-Medium" family="Gilroy-Medium" pointSize="13"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="300%" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Er2-Oz-uZX">
-                                                <rect key="frame" x="148" y="0.0" width="148" height="13"/>
+                                                <rect key="frame" x="168" y="0.0" width="168" height="15.5"/>
                                                 <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="13"/>
                                                 <color key="textColor" name="LabelColor"/>
                                                 <nil key="highlightedColor"/>
@@ -106,7 +106,7 @@
                                         </subviews>
                                     </stackView>
                                     <progressView contentMode="scaleToFill" progress="0.80000000000000004" translatesAutoresizingMaskIntoConstraints="NO" id="Xi9-1j-QOS">
-                                        <rect key="frame" x="0.0" y="18" width="296" height="5"/>
+                                        <rect key="frame" x="0.0" y="20.5" width="336" height="5"/>
                                         <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="5" id="1j7-QO-BYI"/>
@@ -120,7 +120,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pxa-lV-IrP">
-                                <rect key="frame" x="10" y="222" width="296" height="45"/>
+                                <rect key="frame" x="10" y="222" width="336" height="45"/>
                                 <color key="backgroundColor" name="MainbuttonColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="Qjb-Jm-feK"/>

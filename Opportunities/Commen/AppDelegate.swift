@@ -30,10 +30,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         
         Coordinator.start()
-        
-        
-        
-        
         return true
     }
     

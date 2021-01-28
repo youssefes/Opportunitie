@@ -29,6 +29,8 @@
 		E81C3E602588162D00A2D9B6 /* CompletePayMentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81C3E5E2588162D00A2D9B6 /* CompletePayMentViewController.swift */; };
 		E81C3E612588162D00A2D9B6 /* CompletePayMentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E81C3E5F2588162D00A2D9B6 /* CompletePayMentViewController.xib */; };
 		E81C3E63258816F900A2D9B6 /* CompletePayMentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81C3E62258816F900A2D9B6 /* CompletePayMentViewModel.swift */; };
+		E831910B204F334B006BFDCA /* headerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8319109204F334B006BFDCA /* headerTableViewCell.swift */; };
+		E831910C204F334B006BFDCA /* headerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E831910A204F334B006BFDCA /* headerTableViewCell.xib */; };
 		E838E916257D18E900E95553 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E838E914257D18E900E95553 /* NotificationViewController.swift */; };
 		E838E917257D18E900E95553 /* NotificationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E838E915257D18E900E95553 /* NotificationViewController.xib */; };
 		E838E91B257D1B4400E95553 /* NotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E838E919257D1B4400E95553 /* NotificationTableViewCell.swift */; };
@@ -204,6 +206,8 @@
 		E81C3E5E2588162D00A2D9B6 /* CompletePayMentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletePayMentViewController.swift; sourceTree = "<group>"; };
 		E81C3E5F2588162D00A2D9B6 /* CompletePayMentViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CompletePayMentViewController.xib; sourceTree = "<group>"; };
 		E81C3E62258816F900A2D9B6 /* CompletePayMentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletePayMentViewModel.swift; sourceTree = "<group>"; };
+		E8319109204F334B006BFDCA /* headerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = headerTableViewCell.swift; sourceTree = "<group>"; };
+		E831910A204F334B006BFDCA /* headerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = headerTableViewCell.xib; sourceTree = "<group>"; };
 		E838E914257D18E900E95553 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		E838E915257D18E900E95553 /* NotificationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationViewController.xib; sourceTree = "<group>"; };
 		E838E919257D1B4400E95553 /* NotificationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTableViewCell.swift; sourceTree = "<group>"; };
@@ -534,6 +538,8 @@
 			children = (
 				E83D718E257CEC1700716860 /* HomeTableViewCell.swift */,
 				E83D718F257CEC1700716860 /* HomeTableViewCell.xib */,
+				E8319109204F334B006BFDCA /* headerTableViewCell.swift */,
+				E831910A204F334B006BFDCA /* headerTableViewCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -1175,6 +1181,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E838E91C257D1B4400E95553 /* NotificationTableViewCell.xib in Resources */,
+				E831910C204F334B006BFDCA /* headerTableViewCell.xib in Resources */,
 				E83E6F6D258584420017F67A /* ActiveTableViewCell.xib in Resources */,
 				E8107629258969160021E749 /* StartViewOne.xib in Resources */,
 				E8B287AE2576E46E00326E02 /* OFL.txt in Resources */,
@@ -1430,6 +1437,7 @@
 				E8107634258984A00021E749 /* getStart.swift in Sources */,
 				E87E6F73258932D3005750B7 /* AppStoryboard.swift in Sources */,
 				E8F0FB67258CEE470036A877 /* SignInViewModel.swift in Sources */,
+				E831910B204F334B006BFDCA /* headerTableViewCell.swift in Sources */,
 				E83CC34025829834005163E8 /* PhotoCollectionViewCell.swift in Sources */,
 				E84EE04F25913ED1009FEAD3 /* SignRepository.swift in Sources */,
 				E83E52922587925B0023CEE3 /* NotificationViewModel.swift in Sources */,

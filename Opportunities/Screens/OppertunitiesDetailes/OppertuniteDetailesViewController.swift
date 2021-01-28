@@ -39,7 +39,7 @@ class OppertuniteDetailesViewController: BaseWireFrame<OppertuniteDetailesViewMo
     }
     
     func setupUI(){
-        amountTf.attributedPlaceholder = NSAttributedString(string:"Type amount..", attributes:[NSAttributedString.Key.foregroundColor: DesignSystem.Colors.plachHolderColor.color, NSAttributedString.Key.font : UIFont(name: "Gilroy-Medium", size: 15)!])
+        
          viedoContainer.delegate = self
     }
     
