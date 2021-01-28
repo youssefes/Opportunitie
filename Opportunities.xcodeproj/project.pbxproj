@@ -94,8 +94,8 @@
 		E84F8536258D4C0F00B8EB7E /* SeccessRestPassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84F8535258D4C0F00B8EB7E /* SeccessRestPassViewController.swift */; };
 		E84F8538258D4C2300B8EB7E /* SeccessRestPassViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84F8537258D4C2300B8EB7E /* SeccessRestPassViewModel.swift */; };
 		E852D4D22586C06E00A643AA /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E852D4D12586C06E00A643AA /* SettingViewController.swift */; };
-		E852D4D62586C3CA00A643AA /* HeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E852D4D42586C3CA00A643AA /* HeaderTableViewCell.swift */; };
-		E852D4D72586C3CA00A643AA /* HeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E852D4D52586C3CA00A643AA /* HeaderTableViewCell.xib */; };
+		E852D4D62586C3CA00A643AA /* HeaderTableViewCellTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = E852D4D42586C3CA00A643AA /* HeaderTableViewCellTransaction.swift */; };
+		E852D4D72586C3CA00A643AA /* HeaderTableViewCellTransaction.xib in Resources */ = {isa = PBXBuildFile; fileRef = E852D4D52586C3CA00A643AA /* HeaderTableViewCellTransaction.xib */; };
 		E852D4D92586C51600A643AA /* TransactionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E852D4D82586C51600A643AA /* TransactionsViewController.swift */; };
 		E852D4DF2586C7FF00A643AA /* TransactionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E852D4DD2586C7FF00A643AA /* TransactionTableViewCell.swift */; };
 		E852D4E02586C7FF00A643AA /* TransactionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E852D4DE2586C7FF00A643AA /* TransactionTableViewCell.xib */; };
@@ -272,8 +272,8 @@
 		E84F8535258D4C0F00B8EB7E /* SeccessRestPassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeccessRestPassViewController.swift; sourceTree = "<group>"; };
 		E84F8537258D4C2300B8EB7E /* SeccessRestPassViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeccessRestPassViewModel.swift; sourceTree = "<group>"; };
 		E852D4D12586C06E00A643AA /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
-		E852D4D42586C3CA00A643AA /* HeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderTableViewCell.swift; sourceTree = "<group>"; };
-		E852D4D52586C3CA00A643AA /* HeaderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderTableViewCell.xib; sourceTree = "<group>"; };
+		E852D4D42586C3CA00A643AA /* HeaderTableViewCellTransaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderTableViewCellTransaction.swift; sourceTree = "<group>"; };
+		E852D4D52586C3CA00A643AA /* HeaderTableViewCellTransaction.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderTableViewCellTransaction.xib; sourceTree = "<group>"; };
 		E852D4D82586C51600A643AA /* TransactionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsViewController.swift; sourceTree = "<group>"; };
 		E852D4DD2586C7FF00A643AA /* TransactionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionTableViewCell.swift; sourceTree = "<group>"; };
 		E852D4DE2586C7FF00A643AA /* TransactionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransactionTableViewCell.xib; sourceTree = "<group>"; };
@@ -698,8 +698,8 @@
 		E852D4DA2586C77C00A643AA /* headerCell */ = {
 			isa = PBXGroup;
 			children = (
-				E852D4D42586C3CA00A643AA /* HeaderTableViewCell.swift */,
-				E852D4D52586C3CA00A643AA /* HeaderTableViewCell.xib */,
+				E852D4D42586C3CA00A643AA /* HeaderTableViewCellTransaction.swift */,
+				E852D4D52586C3CA00A643AA /* HeaderTableViewCellTransaction.xib */,
 			);
 			path = headerCell;
 			sourceTree = "<group>";
@@ -1205,7 +1205,7 @@
 				E83E52972587976D0023CEE3 /* MenuTableViewCell.xib in Resources */,
 				E83E6F6825857AD40017F67A /* ActiveViewController.xib in Resources */,
 				E83CC33C258293E5005163E8 /* AboutViewController.xib in Resources */,
-				E852D4D72586C3CA00A643AA /* HeaderTableViewCell.xib in Resources */,
+				E852D4D72586C3CA00A643AA /* HeaderTableViewCellTransaction.xib in Resources */,
 				E83D7191257CEC1700716860 /* HomeTableViewCell.xib in Resources */,
 				E8EC0DD2257CDAE20024D395 /* Gilroy-Heavy.ttf in Resources */,
 				E83C454C258EB104003E1E1B /* NotificationHeaderTableViewCell.xib in Resources */,
@@ -1433,7 +1433,7 @@
 				E83EFAB6257D65E30075CDF1 /* Extension+ViewController.swift in Sources */,
 				E83EFABA257D6DC60075CDF1 /* AllOpportunitiesViewController.swift in Sources */,
 				E83A36E2258CF6C2002B8BDB /* comformViewModel.swift in Sources */,
-				E852D4D62586C3CA00A643AA /* HeaderTableViewCell.swift in Sources */,
+				E852D4D62586C3CA00A643AA /* HeaderTableViewCellTransaction.swift in Sources */,
 				E8107634258984A00021E749 /* getStart.swift in Sources */,
 				E87E6F73258932D3005750B7 /* AppStoryboard.swift in Sources */,
 				E8F0FB67258CEE470036A877 /* SignInViewModel.swift in Sources */,

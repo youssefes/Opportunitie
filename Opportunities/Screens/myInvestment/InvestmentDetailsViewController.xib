@@ -437,7 +437,7 @@
                                 <constraint firstItem="VC3-IZ-NYY" firstAttribute="trailing" secondItem="kUa-1c-aq0" secondAttribute="trailing" id="DhI-vy-tLx"/>
                                 <constraint firstItem="qdJ-QE-wLH" firstAttribute="leading" secondItem="VC3-IZ-NYY" secondAttribute="leading" id="ENx-BR-npj"/>
                                 <constraint firstItem="Xjl-uz-cbW" firstAttribute="trailing" secondItem="Xd3-Ud-AGH" secondAttribute="trailing" id="Hre-4o-Vf7"/>
-                                <constraint firstItem="UFr-G4-Sb8" firstAttribute="top" secondItem="qdJ-QE-wLH" secondAttribute="bottom" constant="20" id="NvF-nP-e5e"/>
+                                <constraint firstItem="UFr-G4-Sb8" firstAttribute="top" secondItem="qdJ-QE-wLH" secondAttribute="bottom" constant="10" id="NvF-nP-e5e"/>
                                 <constraint firstItem="kUa-1c-aq0" firstAttribute="leading" secondItem="Xjl-uz-cbW" secondAttribute="leading" id="brz-0a-cOr"/>
                                 <constraint firstItem="GFI-yX-XtO" firstAttribute="trailing" secondItem="Xjl-uz-cbW" secondAttribute="trailing" id="fZd-ds-gD7"/>
                                 <constraint firstItem="Xd3-Ud-AGH" firstAttribute="leading" secondItem="RCE-G2-VeT" secondAttribute="leading" constant="20" id="haa-mq-NGi"/>
@@ -455,7 +455,7 @@
                         <constraint firstItem="RCE-G2-VeT" firstAttribute="top" secondItem="Z6w-rN-Sp7" secondAttribute="top" id="68a-rM-hFD"/>
                         <constraint firstItem="RCE-G2-VeT" firstAttribute="width" secondItem="Z6w-rN-Sp7" secondAttribute="width" id="AHc-Ll-YTf"/>
                         <constraint firstItem="RCE-G2-VeT" firstAttribute="leading" secondItem="Z6w-rN-Sp7" secondAttribute="leading" id="KuU-ox-ooS"/>
-                        <constraint firstAttribute="bottom" secondItem="UFr-G4-Sb8" secondAttribute="bottom" constant="126" id="UJD-Tj-9DY"/>
+                        <constraint firstAttribute="bottom" secondItem="UFr-G4-Sb8" secondAttribute="bottom" id="UJD-Tj-9DY"/>
                         <constraint firstAttribute="bottom" secondItem="RCE-G2-VeT" secondAttribute="bottom" id="Zbs-FL-rO1"/>
                         <constraint firstItem="RCE-G2-VeT" firstAttribute="trailing" secondItem="Z6w-rN-Sp7" secondAttribute="trailing" id="p3o-qJ-jB0"/>
                     </constraints>

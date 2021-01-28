@@ -12,7 +12,7 @@ class TransactionsViewController: BaseWireFrame<TransactionsViewMode> {
     
     @IBOutlet weak var TransactionsTableView: UITableView!
     @IBOutlet weak var segmentedControl: UISegmentedControl!
-    let CellIdentifierHeader = "HeaderTableViewCell"
+    let CellIdentifierHeader = "HeaderTableViewCellTransaction"
     let cellOfItem = "TransactionTableViewCell"
     
     var arrayElement : [TransactionModel] = []
@@ -89,7 +89,7 @@ extension TransactionsViewController : UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let cell = tableView.dequeueReusableCell(withIdentifier: CellIdentifierHeader) as! HeaderTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: CellIdentifierHeader) as! HeaderTableViewCellTransaction
         return cell
     }
     

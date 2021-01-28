@@ -8,12 +8,15 @@
 import Foundation
 
 struct OppertunitesModel: Codable {
-    let id,amount,stay: Int
+    let id : Int
+    let amount,stay: Int?
     let name: String
+    let total : String?
     let videoDeal: String
+    let icon : String?
     let detail, brief, minimum, maximum: String
-    let total, timeLeft, expected, duration: String
-    let salesDevelopments, country, projectShipment, recommendations, icon : String
+    let  timeLeft, expected, duration: String
+    let salesDevelopments, country, projectShipment, recommendations : String
     let shipmentDevelopments, snapshotProduct, participationReturns, createdAt: String
     
     enum CodingKeys: String, CodingKey {

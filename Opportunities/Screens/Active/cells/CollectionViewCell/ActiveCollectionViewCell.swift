@@ -42,7 +42,7 @@ class ActiveCollectionViewCell: UICollectionViewCell {
         
        titel.text = opertunity.name
         priceLbl.text = "\(opertunity.amount) KD sold"
-        let progressPrasentage = (Int(opertunity.total) ?? 0) / opertunity.amount
+        let progressPrasentage = (Int(opertunity.total ?? "" ) ?? 0) / (opertunity.amount ?? 0)
         progressView.progress = Float(Float(progressPrasentage)/100.0)
     }
     

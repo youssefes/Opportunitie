@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HeaderTableViewCell: UITableViewCell {
+class HeaderTableViewCellTransaction: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()

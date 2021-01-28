@@ -51,7 +51,7 @@ class InvestmentDetailsViewController : BaseWireFrame<InvestementViewModel>,YTPl
         timelbl.text = oppertunite.duration
         timeLift.text = oppertunite.timeLeft
         aboultLbl.text = oppertunite.detail
-        let progressPrasentage = (Int(oppertunite.total) ?? 0) / oppertunite.amount
+        let progressPrasentage = (Int(oppertunite.total ?? "") ?? 0) / (oppertunite.amount ?? 0)
         progressvie.progress = Float(Float(progressPrasentage)/100.0)
         profilLbl.text = "\(progressPrasentage)"
         presntagelbl.text = "\(progressPrasentage) %"

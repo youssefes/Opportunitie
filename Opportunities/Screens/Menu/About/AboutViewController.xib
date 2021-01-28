@@ -178,7 +178,7 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="xJ8-MO-Wxx">
-                                    <rect key="frame" x="20" y="750" width="366" height="249.5"/>
+                                    <rect key="frame" x="20" y="750" width="366" height="269"/>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                     <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="uj3-9G-RXr">
                                         <size key="itemSize" width="50" height="50"/>
@@ -218,7 +218,7 @@
                     </subviews>
                     <constraints>
                         <constraint firstItem="2l9-OP-57K" firstAttribute="leading" secondItem="AXD-C2-z5r" secondAttribute="leading" id="KAt-Ac-73Z"/>
-                        <constraint firstAttribute="bottom" secondItem="xJ8-MO-Wxx" secondAttribute="bottom" constant="5.5" id="LuS-KW-bBl"/>
+                        <constraint firstAttribute="bottom" secondItem="xJ8-MO-Wxx" secondAttribute="bottom" id="LuS-KW-bBl"/>
                         <constraint firstAttribute="bottom" secondItem="2l9-OP-57K" secondAttribute="bottom" constant="20" symbolic="YES" id="jzi-Aq-Ytp"/>
                         <constraint firstAttribute="trailing" secondItem="2l9-OP-57K" secondAttribute="trailing" id="k2C-jm-DiW"/>
                         <constraint firstItem="2l9-OP-57K" firstAttribute="width" secondItem="AXD-C2-z5r" secondAttribute="width" multiplier="0.980676" id="oHr-az-rTy"/>

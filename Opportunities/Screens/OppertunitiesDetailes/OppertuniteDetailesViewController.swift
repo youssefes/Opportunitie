@@ -72,7 +72,8 @@ class OppertuniteDetailesViewController: BaseWireFrame<OppertuniteDetailesViewMo
                 self.videoImage.kf.setImage(with: resourseMainImage)
             }
             self.opertuniteId = opertunite.id
-            let progressPrasentage = (Int(opertunite.total) ?? 0) / opertunite.amount
+            
+            let progressPrasentage = (Int(opertunite.total ?? "") ?? 0) / (opertunite.amount ?? 0)
             self.progressView.progress = Float(Float(progressPrasentage)/100.0)
             self.amountLbl.text = "\(opertunite.amount)KD sold"
                    

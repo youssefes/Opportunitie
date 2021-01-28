@@ -277,13 +277,13 @@
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5nZ-tj-024">
-                                                <rect key="frame" x="30" y="350" width="346" height="15.5"/>
+                                                <rect key="frame" x="30" y="350" width="346" height="25"/>
                                                 <fontDescription key="fontDescription" name="Gilroy-Medium" family="Gilroy-Medium" pointSize="16"/>
                                                 <color key="textColor" name="LabelColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0oD-Fr-xle">
-                                                <rect key="frame" x="30" y="375.5" width="346" height="41.5"/>
+                                                <rect key="frame" x="30" y="385" width="346" height="41.5"/>
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="code" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Suu-Ot-psx" customClass="TextField" customModule="Opportunities" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="100" height="41.5"/>
@@ -323,13 +323,13 @@
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wHQ-cc-ZX3">
-                                                <rect key="frame" x="30" y="437" width="346" height="15.5"/>
+                                                <rect key="frame" x="30" y="446.5" width="346" height="25"/>
                                                 <fontDescription key="fontDescription" name="Gilroy-Medium" family="Gilroy-Medium" pointSize="16"/>
                                                 <color key="textColor" name="LabelColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Your email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hfD-cY-RYi" customClass="TextField" customModule="Opportunities" customModuleProvider="target">
-                                                <rect key="frame" x="30" y="462.5" width="346" height="45"/>
+                                                <rect key="frame" x="30" y="481.5" width="346" height="45"/>
                                                 <color key="backgroundColor" name="backGroundButton"/>
                                                 <fontDescription key="fontDescription" name="Gilroy-Medium" family="Gilroy-Medium" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
@@ -340,13 +340,13 @@
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="raf-3v-JeE">
-                                                <rect key="frame" x="30" y="527.5" width="346" height="15.5"/>
+                                                <rect key="frame" x="30" y="546.5" width="346" height="25"/>
                                                 <fontDescription key="fontDescription" name="Gilroy-Medium" family="Gilroy-Medium" pointSize="16"/>
                                                 <color key="textColor" name="LabelColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Account number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Iq3-qp-qal" customClass="TextField" customModule="Opportunities" customModuleProvider="target">
-                                                <rect key="frame" x="30" y="553" width="346" height="45"/>
+                                                <rect key="frame" x="30" y="581.5" width="346" height="45"/>
                                                 <color key="backgroundColor" name="backGroundButton"/>
                                                 <fontDescription key="fontDescription" name="Gilroy-Medium" family="Gilroy-Medium" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
@@ -357,13 +357,13 @@
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q1v-Lf-v5y">
-                                                <rect key="frame" x="30" y="618" width="346" height="15.5"/>
+                                                <rect key="frame" x="30" y="646.5" width="346" height="25"/>
                                                 <fontDescription key="fontDescription" name="Gilroy-Medium" family="Gilroy-Medium" pointSize="16"/>
                                                 <color key="textColor" name="LabelColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sMN-i1-QvN" customClass="TextField" customModule="Opportunities" customModuleProvider="target">
-                                                <rect key="frame" x="30" y="643.5" width="346" height="45"/>
+                                                <rect key="frame" x="30" y="681.5" width="346" height="45"/>
                                                 <color key="backgroundColor" name="backGroundButton"/>
                                                 <fontDescription key="fontDescription" name="Gilroy-Medium" family="Gilroy-Medium" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
@@ -374,7 +374,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K4O-tt-tdY">
-                                                <rect key="frame" x="30" y="708.5" width="346" height="45"/>
+                                                <rect key="frame" x="30" y="746.5" width="346" height="45"/>
                                                 <color key="backgroundColor" name="MainbuttonColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="45" id="GST-kK-cxm"/>
@@ -391,7 +391,7 @@
                                                 </connections>
                                             </button>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s2R-7f-Uaq" customClass="NVActivityIndicatorView" customModule="NVActivityIndicatorView">
-                                                <rect key="frame" x="311" y="718.5" width="25" height="25"/>
+                                                <rect key="frame" x="311" y="756.5" width="25" height="25"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="25" id="VnH-Dq-5TW"/>
