@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import MOLH
 
 protocol Coordinator {
     var mainNavigator : MainNavigator {get}
@@ -18,7 +19,8 @@ protocol Coordinator {
     var firstTimeOpen : Bool {get set}
     func dismiss()
 }
-class AppCoordinator : Coordinator {
+class AppCoordinator : Coordinator, MOLHResetable {
+    
     
     var firstTimeOpen: Bool = true {
         didSet{
@@ -48,6 +50,8 @@ class AppCoordinator : Coordinator {
         self.window = Window
     }
     
+    
+    
     func dismiss() {
         self.navigationController?.popViewController(animated: true)
     }
@@ -61,9 +65,15 @@ class AppCoordinator : Coordinator {
     }
     
     func start()  {
+        MOLH.shared.activate(true)
         window.rootViewController = rootViewController
         window.makeKeyAndVisible()
     }
+    
+    func reset() {
+          let rootController: UIWindow = ((UIApplication.shared.delegate?.window)!)!
+          rootController.rootViewController = rootViewController
+      }
     
     var rootViewController : UIViewController {
         if firstTimeOpen{

@@ -9,11 +9,11 @@ import Foundation
 
 struct OppertunitesModel: Codable {
     let id : Int
-    let amount,stay: Int?
+    let amount,stay: Int
     let name: String
-    let total : String?
+    let total : String
     let videoDeal: String
-    let icon : String?
+    let icon : String
     let detail, brief, minimum, maximum: String
     let  timeLeft, expected, duration: String
     let salesDevelopments, country, projectShipment, recommendations : String

@@ -8,7 +8,7 @@
 
 import UIKit
 import BubbleTabBar
-
+import MOLH
 class CustomTabBarController: BubbleTabBarController {
     var Coorinator : Coordinator
     
@@ -40,8 +40,15 @@ class CustomTabBarController: BubbleTabBarController {
         self.viewControllers =  TabBarItems.allCases.map({
             let viewController = viewControllerForTabBarItems($0)
             let navigationController = UINavigationController(rootViewController: viewController)
-            return navigationController
             
+//            
+//            if MOLHLanguage.currentAppleLanguage() == "en"{
+//                
+//            }else{
+//                
+//            }
+//            
+            return navigationController
         })
 
     }
@@ -73,13 +80,13 @@ class CustomTabBarController: BubbleTabBarController {
         
         switch tabBarItem {
         case .Home:
-            tab = .init(title: "Home", image: #imageLiteral(resourceName: "Vector-3"), selectedImage: #imageLiteral(resourceName: "Home"))
+            tab = .init(title: NSLocalizedString("Home", comment: "main vc"), image: #imageLiteral(resourceName: "Vector-3"), selectedImage: #imageLiteral(resourceName: "Home"))
         case .Active:
-              tab = .init(title: "Investments", image: #imageLiteral(resourceName: "Vector-5"), selectedImage: #imageLiteral(resourceName: "Vector-4"))
+              tab = .init(title: NSLocalizedString("Investments", comment: "Investments vc"), image: #imageLiteral(resourceName: "Vector-5"), selectedImage: #imageLiteral(resourceName: "Vector-4"))
         case .Search:
-            tab = .init(title: "Search", image: #imageLiteral(resourceName: "Search"), selectedImage: #imageLiteral(resourceName: "Vector-2"))
+            tab = .init(title: NSLocalizedString("Search", comment: "Search vc"), image: #imageLiteral(resourceName: "Search"), selectedImage: #imageLiteral(resourceName: "Vector-2"))
         case .Profile:
-            tab = .init(title: "Profile", image: #imageLiteral(resourceName: "Profile"), selectedImage: #imageLiteral(resourceName: "Vector-1"))
+            tab = .init(title: NSLocalizedString("Profile", comment: "Profile vc"), image: #imageLiteral(resourceName: "Profile"), selectedImage: #imageLiteral(resourceName: "Vector-1"))
         }
         
         tab.tintColor = DesignSystem.Colors.MainbuttonColor.color

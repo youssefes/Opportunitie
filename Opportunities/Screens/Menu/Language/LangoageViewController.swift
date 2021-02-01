@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MOLH
 
 class LangoageViewController: BaseWireFrame<LanguageViewModel> {
     
@@ -21,6 +22,12 @@ class LangoageViewController: BaseWireFrame<LanguageViewModel> {
         
     }
     @IBAction func containerArbicBtn(_ sender: UIButton) {
+        
+        if MOLHLanguage.currentAppleLanguage() == "ar" {
+        }else{
+            MOLH.setLanguageTo("ar")
+            MOLH.reset()
+        }
         chechBtnEnglish.backgroundColor = DesignSystem.Colors.Colorclear.color
         chechBtnEnglish.setImage(#imageLiteral(resourceName: "unselectedCheck"), for: .normal)
         checkBtnArbic.backgroundColor = DesignSystem.Colors.SelectedColor.color
@@ -28,6 +35,11 @@ class LangoageViewController: BaseWireFrame<LanguageViewModel> {
     }
     
     @IBAction func containerEnglishBtn(_ sender: Any) {
+        if MOLHLanguage.currentAppleLanguage() == "en" {
+        }else{
+            MOLH.setLanguageTo("en")
+            MOLH.reset()
+        }
         chechBtnEnglish.backgroundColor = DesignSystem.Colors.SelectedColor.color
         chechBtnEnglish.setImage(#imageLiteral(resourceName: "Vector"), for: .normal)
         checkBtnArbic.backgroundColor = DesignSystem.Colors.Colorclear.color

@@ -42,7 +42,7 @@ class SearchViewController: BaseWireFrame<searchViewModel> {
                 self.imageSearch.isHidden = false
                 self.ContainerOfResultSearch.isHidden = true
             }
-            self.numberOfResulte.text = "\(number) Resulte"
+            self.numberOfResulte.text = "\(number) \(NSLocalizedString("Resulte", comment: ""))"
         }).disposed(by: disposePag)
         
         // bind data resulte

@@ -16,7 +16,12 @@ class MenuViewController: BaseWireFrame<MenuViewModel> {
     
     
     
-    let ArrayOfMenue : [String] = ["Language","Contact Us","About","Fatwa","FAQ"]
+    let ArrayOfMenue : [String] = [
+        NSLocalizedString("Language", comment: "open language vc")
+        ,NSLocalizedString("Contact Us", comment: "open Contact Us vc"),
+         NSLocalizedString("About", comment: "open about Us vc"),
+        NSLocalizedString("Fatwa", comment: "open about Us vc")
+        ,NSLocalizedString("FAQ", comment: "open FAQ Us vc")]
     
     let CellIdentifier = "MenuTableViewCell"
     @IBOutlet weak var menuTableView: UITableView!
@@ -27,14 +32,15 @@ class MenuViewController: BaseWireFrame<MenuViewModel> {
         super.viewDidLoad()
         setupTableView()
         registerCell()
+        menuTableView.semanticContentAttribute = .unspecified
     }
     
     func setupTableView(){
         if let userid = UserDefaults.standard.value(forKey: NetworkConstants.userIdKey) as? Int{
-            loginBtn.setTitle("LogOut", for: .normal)
+            loginBtn.setTitle(NSLocalizedString("LogOut", comment: ""), for: .normal)
             print(userid)
         }else{
-           loginBtn.setTitle("LogIn", for: .normal)
+            loginBtn.setTitle(NSLocalizedString("LogIn", comment: ""), for: .normal)
         }
         menuTableView.dataSource = self
         menuTableView.delegate = self
@@ -54,7 +60,7 @@ class MenuViewController: BaseWireFrame<MenuViewModel> {
     }
     @IBAction func logOutBtn(_ sender: UIButton) {
         if let userid = UserDefaults.standard.value(forKey: NetworkConstants.userIdKey) as? Int{
-            sender.setTitle("login", for: .normal)
+            sender.setTitle(NSLocalizedString("logIn", comment: "it is title of button login or not login"), for: .normal)
             UserDefaults.standard.removeObject(forKey: NetworkConstants.userIdKey)
             coordinator.isLogIn = false
             coordinator.firstTimeOpen = false
@@ -71,14 +77,14 @@ extension MenuViewController : UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        switch ArrayOfMenue[indexPath.row] {
-            case "Language":
+        switch indexPath.row {
+            case 0:
                 coordinator.mainNavigator.Navigate(to: .Language)
-            case "Contact Us":
+            case 1:
                coordinator.mainNavigator.Navigate(to: .contectUs)
-            case "About":
+            case 2:
               coordinator.mainNavigator.Navigate(to: .About)
-            case "FAQ", "Fatwa":
+            case 3:
                 print("faq")
             default:
                 print("no ViewController")

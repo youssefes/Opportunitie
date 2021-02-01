@@ -59,7 +59,7 @@ class OppertuniteDetailesViewController: BaseWireFrame<OppertuniteDetailesViewMo
             self.timeLeftLbl.text = opertunite.timeLeft
             self.durationLbl.text = opertunite.duration
             self.urlVideo  = opertunite.videoDeal
-            self.AbuteNAmelbl.text = "About \(opertunite.name)"
+            self.AbuteNAmelbl.text = "\(NSLocalizedString("About", comment: "")) \(opertunite.name)"
             if self.urlVideo.contains("www.youtube.com"){
                 self.activaty.startAnimating()
                 guard let id =  self.getYoutubeId(youtubeUrl: self.urlVideo) else {return}
@@ -73,9 +73,9 @@ class OppertuniteDetailesViewController: BaseWireFrame<OppertuniteDetailesViewMo
             }
             self.opertuniteId = opertunite.id
             
-            let progressPrasentage = (Int(opertunite.total ?? "") ?? 0) / (opertunite.amount ?? 0)
+            let progressPrasentage = (Int(opertunite.total ) ?? 0) / (opertunite.amount )
             self.progressView.progress = Float(Float(progressPrasentage)/100.0)
-            self.amountLbl.text = "\(opertunite.amount)KD sold"
+            self.amountLbl.text = "\(opertunite.amount)KD \(NSLocalizedString("Sold", comment: ""))"
                    
             self.pressentagelbl.text = "\(progressPrasentage) %"
             }).disposed(by: disposePag)

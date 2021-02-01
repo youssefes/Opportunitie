@@ -1,0 +1,12 @@
+/* Class = "UILabel"; text = "In in faucibus enim vitae elit ipsum netus. Amet lacus id eget vel egestas."; ObjectID = "HFY-38-mIA"; */
+"HFY-38-mIA.text" = "In in faucibus enim vitae elit ipsum netus. Amet lacus id eget vel egestas.";
+
+/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "UWM-t0-a1o"; */
+"UWM-t0-a1o.normalTitle" = "ألغاء";
+
+/* Class = "UILabel"; text = "What are you looking for?"; ObjectID = "VYK-n7-vYz"; */
+"VYK-n7-vYz.text" = "عن ماذا تبحث؟";
+
+/* Class = "UITextField"; placeholder = "Search Oppertunitie"; ObjectID = "Wqa-9P-8He"; */
+"Wqa-9P-8He.placeholder" = "البحث عن فرصة";
+

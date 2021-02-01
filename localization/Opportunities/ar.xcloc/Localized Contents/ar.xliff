@@ -1,0 +1,877 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
+  <file original="Opportunities/Commen/en.lproj/InfoPlist.strings" datatype="plaintext" source-language="en" target-language="ar">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="11.3.1" build-num="11C504"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleName" xml:space="preserve">
+        <source>Opportunities</source>
+        <note>Bundle name</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Opportunities/Commen/en.lproj/Localizable.strings" source-language="en" target-language="ar" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="11.3.1" build-num="11C504"/>
+    </header>
+    <body>
+      <trans-unit id="About" xml:space="preserve">
+        <source>About</source>
+        <target>حول</target>
+        <note>open about Us vc</note>
+      </trans-unit>
+      <trans-unit id="Contact Us" xml:space="preserve">
+        <source>Contact Us</source>
+        <target>تواصل معنا</target>
+        <note>open Contact Us vc</note>
+      </trans-unit>
+      <trans-unit id="FAQ" xml:space="preserve">
+        <source>FAQ</source>
+        <target>التعليمات</target>
+        <note>open FAQ Us vc</note>
+      </trans-unit>
+      <trans-unit id="Fatwa" xml:space="preserve">
+        <source>Fatwa</source>
+        <target>فتوي</target>
+        <note>open about Us vc</note>
+      </trans-unit>
+      <trans-unit id="Home" xml:space="preserve">
+        <source>Home</source>
+        <target>الرئيسية</target>
+        <note>main vc</note>
+      </trans-unit>
+      <trans-unit id="Investments" xml:space="preserve">
+        <source>Investments</source>
+        <target>الاستثمارات</target>
+        <note>Investments vc</note>
+      </trans-unit>
+      <trans-unit id="Language" xml:space="preserve">
+        <source>Language</source>
+        <target>اللغة</target>
+        <note>open language vc</note>
+      </trans-unit>
+      <trans-unit id="LogIn" xml:space="preserve">
+        <source>LogIn</source>
+        <target>تسجيل الدخول</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="LogOut" xml:space="preserve">
+        <source>LogOut</source>
+        <target>تسجيل الخروج</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Opportunites" xml:space="preserve">
+        <source>Opportunites</source>
+        <target>فرصة</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Profile" xml:space="preserve">
+        <source>Profile</source>
+        <target>حسابي</target>
+        <note>Profile vc</note>
+      </trans-unit>
+      <trans-unit id="Resulte" xml:space="preserve">
+        <source>Resulte</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Search" xml:space="preserve">
+        <source>Search</source>
+        <target>بحث</target>
+        <note>Search vc</note>
+      </trans-unit>
+      <trans-unit id="Sold" xml:space="preserve">
+        <source>Sold</source>
+        <target>تم البيع</target>
+        <note>it is the Paid</note>
+      </trans-unit>
+      <trans-unit id="logIn" xml:space="preserve">
+        <source>logIn</source>
+        <note>it is title of button login or not login</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Opportunities/Screens/Active/Base.lproj/ActiveViewController.xib" source-language="en" target-language="ar" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="11.3.1" build-num="11C504"/>
+    </header>
+    <body>
+      <trans-unit id="9uu-mX-MGV.text" xml:space="preserve">
+        <source>0 Investments</source>
+        <target>0 الاستثمارات</target>
+        <note>Class = "UILabel"; text = "0 Investments"; ObjectID = "9uu-mX-MGV";</note>
+      </trans-unit>
+      <trans-unit id="feF-b0-Nqo.text" xml:space="preserve">
+        <source>Active</source>
+        <target>نشيط</target>
+        <note>Class = "UILabel"; text = "Active"; ObjectID = "feF-b0-Nqo";</note>
+      </trans-unit>
+      <trans-unit id="wYA-fM-I51.text" xml:space="preserve">
+        <source>All Investments</source>
+        <target>جميع الاستثمارات</target>
+        <note>Class = "UILabel"; text = "All Investments"; ObjectID = "wYA-fM-I51";</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Opportunities/Screens/AllOpportunities/Base.lproj/AllOpportunitiesViewController.xib" source-language="en" target-language="ar" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="11.3.1" build-num="11C504"/>
+    </header>
+    <body>
+      <trans-unit id="5dY-7e-Idp.title" xml:space="preserve">
+        <source>All Opportunities</source>
+        <target>كل الفرص</target>
+        <note>Class = "UINavigationItem"; title = "All Opportunities"; ObjectID = "5dY-7e-Idp";</note>
+      </trans-unit>
+      <trans-unit id="N9M-lZ-2qc.text" xml:space="preserve">
+        <source>15 Opportunites</source>
+        <note>Class = "UILabel"; text = "15 Opportunites"; ObjectID = "N9M-lZ-2qc";</note>
+      </trans-unit>
+      <trans-unit id="SVV-55-YXf.title" xml:space="preserve">
+        <source>Item</source>
+        <target/>
+        <note>Class = "UIBarButtonItem"; title = "Item"; ObjectID = "SVV-55-YXf";</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Opportunities/Screens/Home/Cell/Base.lproj/headerTableViewCell.xib" source-language="en" target-language="ar" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="11.3.1" build-num="11C504"/>
+    </header>
+    <body>
+      <trans-unit id="ReC-hJ-GbW.text" xml:space="preserve">
+        <source>Opportunities</source>
+        <target>الفرص</target>
+        <note>Class = "UILabel"; text = "Opportunities"; ObjectID = "ReC-hJ-GbW";</note>
+      </trans-unit>
+      <trans-unit id="TjL-8l-emf.normalTitle" xml:space="preserve">
+        <source>Show all</source>
+        <target>رايت الكل</target>
+        <note>Class = "UIButton"; normalTitle = "Show all"; ObjectID = "TjL-8l-emf";</note>
+      </trans-unit>
+      <trans-unit id="ZOf-ya-kcR.text" xml:space="preserve">
+        <source>Grow with us or double it.</source>
+        <target>تنمو معنا أو ضاعفها.</target>
+        <note>Class = "UILabel"; text = "Grow with us or double it."; ObjectID = "ZOf-ya-kcR";</note>
+      </trans-unit>
+      <trans-unit id="fzj-Tx-IML.text" xml:space="preserve">
+        <source>Get your investment opportunity now!</source>
+        <target>احصل علي فرصتك الان</target>
+        <note>Class = "UILabel"; text = "Get your investment opportunity now!"; ObjectID = "fzj-Tx-IML";</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Opportunities/Screens/Home/Cell/Base.lproj/HomeTableViewCell.xib" source-language="en" target-language="ar" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="11.3.1" build-num="11C504"/>
+    </header>
+    <body>
+      <trans-unit id="Er2-Oz-uZX.text" xml:space="preserve">
+        <source>300%</source>
+        <target>300%</target>
+        <note>Class = "UILabel"; text = "300%"; ObjectID = "Er2-Oz-uZX";</note>
+      </trans-unit>
+      <trans-unit id="cUs-hz-AAI.text" xml:space="preserve">
+        <source>VODAVODA water</source>
+        <target>VODAVODA water</target>
+        <note>Class = "UILabel"; text = "VODAVODA water"; ObjectID = "cUs-hz-AAI";</note>
+      </trans-unit>
+      <trans-unit id="pxa-lV-IrP.normalTitle" xml:space="preserve">
+        <source>View opportunity</source>
+        <target>عرض الفرصة</target>
+        <note>Class = "UIButton"; normalTitle = "View opportunity"; ObjectID = "pxa-lV-IrP";</note>
+      </trans-unit>
+      <trans-unit id="x2U-XC-GFl.text" xml:space="preserve">
+        <source>69,500 KD sold</source>
+        <target>69,500 KD sold</target>
+        <note>Class = "UILabel"; text = "69,500 KD sold"; ObjectID = "x2U-XC-GFl";</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Opportunities/Screens/Menu/About/Base.lproj/AboutViewController.xib" source-language="en" target-language="ar" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="11.3.1" build-num="11C504"/>
+    </header>
+    <body>
+      <trans-unit id="Ges-TO-H3B.text" xml:space="preserve">
+        <source>Vision</source>
+        <target>رؤية</target>
+        <note>Class = "UILabel"; text = "Vision"; ObjectID = "Ges-TO-H3B";</note>
+      </trans-unit>
+      <trans-unit id="Rf5-sd-HSe.text" xml:space="preserve">
+        <source>Photos</source>
+        <target>الصور</target>
+        <note>Class = "UILabel"; text = "Photos"; ObjectID = "Rf5-sd-HSe";</note>
+      </trans-unit>
+      <trans-unit id="g1h-L5-f6m.text" xml:space="preserve">
+        <source>Mission</source>
+        <target>مهمة</target>
+        <note>Class = "UILabel"; text = "Mission"; ObjectID = "g1h-L5-f6m";</note>
+      </trans-unit>
+      <trans-unit id="mI2-Ys-lj5.text" xml:space="preserve">
+        <source>About</source>
+        <target>حول</target>
+        <note>Class = "UILabel"; text = "About"; ObjectID = "mI2-Ys-lj5";</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Opportunities/Screens/Menu/menu/Base.lproj/MenuViewController.xib" source-language="en" target-language="ar" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="11.3.1" build-num="11C504"/>
+    </header>
+    <body>
+      <trans-unit id="6rz-gR-vrb.text" xml:space="preserve">
+        <source>opportunity</source>
+        <target>الفرصة</target>
+        <note>Class = "UILabel"; text = "opportunity"; ObjectID = "6rz-gR-vrb";</note>
+      </trans-unit>
+      <trans-unit id="qjh-VZ-iiP.normalTitle" xml:space="preserve">
+        <source>Logout</source>
+        <target>تسجيل الدخول</target>
+        <note>Class = "UIButton"; normalTitle = "Logout"; ObjectID = "qjh-VZ-iiP";</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Opportunities/Screens/Notification/Base.lproj/NotificationViewController.xib" source-language="en" target-language="ar" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="11.3.1" build-num="11C504"/>
+    </header>
+    <body>
+      <trans-unit id="xCH-Pf-9Tb.title" xml:space="preserve">
+        <source>Notifications</source>
+        <target>إشعارات</target>
+        <note>Class = "UINavigationItem"; title = "Notifications"; ObjectID = "xCH-Pf-9Tb";</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Opportunities/Screens/OppertunitiesDetailes/Base.lproj/OppertuniteDetailesViewController.xib" source-language="en" target-language="ar" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="11.3.1" build-num="11C504"/>
+    </header>
+    <body>
+      <trans-unit id="4bN-og-342.normalTitle" xml:space="preserve">
+        <source>Countunie</source>
+        <target>استمر</target>
+        <note>Class = "UIButton"; normalTitle = "Countunie"; ObjectID = "4bN-og-342";</note>
+      </trans-unit>
+      <trans-unit id="D41-H3-BGc.text" xml:space="preserve">
+        <source>About CARO</source>
+        <target>About</target>
+        <note>Class = "UILabel"; text = "About CARO"; ObjectID = "D41-H3-BGc";</note>
+      </trans-unit>
+      <trans-unit id="FQn-uX-8qw.text" xml:space="preserve">
+        <source>69,500 KD sold</source>
+        <target>69,500 KD sold</target>
+        <note>Class = "UILabel"; text = "69,500 KD sold"; ObjectID = "FQn-uX-8qw";</note>
+      </trans-unit>
+      <trans-unit id="K5z-Xx-cqV.placeholder" xml:space="preserve">
+        <source>Type amount..</source>
+        <target>اكتب المبلغ..</target>
+        <note>Class = "UITextField"; placeholder = "Type amount.."; ObjectID = "K5z-Xx-cqV";</note>
+      </trans-unit>
+      <trans-unit id="NhK-xp-WT1.text" xml:space="preserve">
+        <source>30%</source>
+        <note>Class = "UILabel"; text = "30%"; ObjectID = "NhK-xp-WT1";</note>
+      </trans-unit>
+      <trans-unit id="Phn-0U-V83.text" xml:space="preserve">
+        <source>Min</source>
+        <target>أقل</target>
+        <note>Class = "UILabel"; text = "Min"; ObjectID = "Phn-0U-V83";</note>
+      </trans-unit>
+      <trans-unit id="Xdz-6G-1MU.text" xml:space="preserve">
+        <source>Duration</source>
+        <target>المدة الزمنية</target>
+        <note>Class = "UILabel"; text = "Duration"; ObjectID = "Xdz-6G-1MU";</note>
+      </trans-unit>
+      <trans-unit id="ZDQ-CA-Flz.text" xml:space="preserve">
+        <source>KWD 300</source>
+        <note>Class = "UILabel"; text = "KWD 300"; ObjectID = "ZDQ-CA-Flz";</note>
+      </trans-unit>
+      <trans-unit id="bER-3T-nMZ.text" xml:space="preserve">
+        <source>Time left</source>
+        <target>الوقت المتبقي</target>
+        <note>Class = "UILabel"; text = "Time left"; ObjectID = "bER-3T-nMZ";</note>
+      </trans-unit>
+      <trans-unit id="bNJ-fL-0N1.text" xml:space="preserve">
+        <source>Max</source>
+        <target>أعلى</target>
+        <note>Class = "UILabel"; text = "Max"; ObjectID = "bNJ-fL-0N1";</note>
+      </trans-unit>
+      <trans-unit id="bbi-pK-40s.text" xml:space="preserve">
+        <source>6-10 months</source>
+        <note>Class = "UILabel"; text = "6-10 months"; ObjectID = "bbi-pK-40s";</note>
+      </trans-unit>
+      <trans-unit id="dpM-cf-5om.text" xml:space="preserve">
+        <source>300%</source>
+        <note>Class = "UILabel"; text = "300%"; ObjectID = "dpM-cf-5om";</note>
+      </trans-unit>
+      <trans-unit id="fS2-bC-VUY.text" xml:space="preserve">
+        <source>unit Description</source>
+        <target>الوصف الاساسي</target>
+        <note>Class = "UILabel"; text = "unit Description"; ObjectID = "fS2-bC-VUY";</note>
+      </trans-unit>
+      <trans-unit id="l9H-Rw-JTH.text" xml:space="preserve">
+        <source>KWD 300</source>
+        <note>Class = "UILabel"; text = "KWD 300"; ObjectID = "l9H-Rw-JTH";</note>
+      </trans-unit>
+      <trans-unit id="sOB-lY-Cs0.text" xml:space="preserve">
+        <source>Profit</source>
+        <target>الربح</target>
+        <note>Class = "UILabel"; text = "Profit"; ObjectID = "sOB-lY-Cs0";</note>
+      </trans-unit>
+      <trans-unit id="tXc-GP-FxF.text" xml:space="preserve">
+        <source>15 Days</source>
+        <note>Class = "UILabel"; text = "15 Days"; ObjectID = "tXc-GP-FxF";</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Opportunities/Screens/Profile/Base.lproj/Profile.storyboard" source-language="en" target-language="ar" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="11.3.1" build-num="11C504"/>
+    </header>
+    <body>
+      <trans-unit id="0rh-m5-cQd.text" xml:space="preserve">
+        <source>Invested</source>
+        <target>استثمر</target>
+        <note>Class = "UILabel"; text = "Invested"; ObjectID = "0rh-m5-cQd";</note>
+      </trans-unit>
+      <trans-unit id="5nZ-tj-024.text" xml:space="preserve">
+        <source>Phone Number</source>
+        <target>رقم الهاتف</target>
+        <note>Class = "UILabel"; text = "Phone Number"; ObjectID = "5nZ-tj-024";</note>
+      </trans-unit>
+      <trans-unit id="8xx-4Q-MkW.text" xml:space="preserve">
+        <source>Ahmed Ali</source>
+        <target>Ahmed Ali</target>
+        <note>Class = "UILabel"; text = "Ahmed Ali"; ObjectID = "8xx-4Q-MkW";</note>
+      </trans-unit>
+      <trans-unit id="9jx-RP-9rI.text" xml:space="preserve">
+        <source>Full Name</source>
+        <target>الاسم الكامل</target>
+        <note>Class = "UILabel"; text = "Full Name"; ObjectID = "9jx-RP-9rI";</note>
+      </trans-unit>
+      <trans-unit id="HKo-Zz-okz.placeholder" xml:space="preserve">
+        <source>Full Name</source>
+        <target>الاسم الكامل</target>
+        <note>Class = "UITextField"; placeholder = "Full Name"; ObjectID = "HKo-Zz-okz";</note>
+      </trans-unit>
+      <trans-unit id="Iq3-qp-qal.placeholder" xml:space="preserve">
+        <source>Account number</source>
+        <target>رقم حساب</target>
+        <note>Class = "UITextField"; placeholder = "Account number"; ObjectID = "Iq3-qp-qal";</note>
+      </trans-unit>
+      <trans-unit id="K4O-tt-tdY.normalTitle" xml:space="preserve">
+        <source>Get Started</source>
+        <target>أبدء</target>
+        <note>Class = "UIButton"; normalTitle = "Get Started"; ObjectID = "K4O-tt-tdY";</note>
+      </trans-unit>
+      <trans-unit id="PEG-sj-wSh.text" xml:space="preserve">
+        <source>Setting</source>
+        <target>الاعدادات</target>
+        <note>Class = "UILabel"; text = "Setting"; ObjectID = "PEG-sj-wSh";</note>
+      </trans-unit>
+      <trans-unit id="Q1v-Lf-v5y.text" xml:space="preserve">
+        <source>Password</source>
+        <target>كلمة المرور</target>
+        <note>Class = "UILabel"; text = "Password"; ObjectID = "Q1v-Lf-v5y";</note>
+      </trans-unit>
+      <trans-unit id="QX4-QP-IpY.text" xml:space="preserve">
+        <source>Profit</source>
+        <target>الربح</target>
+        <note>Class = "UILabel"; text = "Profit"; ObjectID = "QX4-QP-IpY";</note>
+      </trans-unit>
+      <trans-unit id="Suu-Ot-psx.placeholder" xml:space="preserve">
+        <source>code</source>
+        <target>كود</target>
+        <note>Class = "UITextField"; placeholder = "code"; ObjectID = "Suu-Ot-psx";</note>
+      </trans-unit>
+      <trans-unit id="T25-tf-FH7.text" xml:space="preserve">
+        <source>ahmed.hello@gmail.com</source>
+        <note>Class = "UILabel"; text = "ahmed.hello@gmail.com"; ObjectID = "T25-tf-FH7";</note>
+      </trans-unit>
+      <trans-unit id="TWt-pQ-btN.text" xml:space="preserve">
+        <source>1,350KD</source>
+        <note>Class = "UILabel"; text = "1,350KD"; ObjectID = "TWt-pQ-btN";</note>
+      </trans-unit>
+      <trans-unit id="TtL-B1-aDc.title" xml:space="preserve">
+        <source>Sign UP</source>
+        <target>سجل</target>
+        <note>Class = "UINavigationItem"; title = "Sign UP"; ObjectID = "TtL-B1-aDc";</note>
+      </trans-unit>
+      <trans-unit id="Vxc-Kp-IQx.text" xml:space="preserve">
+        <source>Your card has been added successfully.</source>
+        <target>تم إضافة بطاقتك بنجاح.</target>
+        <note>Class = "UILabel"; text = "Your card has been added successfully."; ObjectID = "Vxc-Kp-IQx";</note>
+      </trans-unit>
+      <trans-unit id="dpH-Pd-AiB.normalTitle" xml:space="preserve">
+        <source>Home</source>
+        <target>الرئيسية</target>
+        <note>Class = "UIButton"; normalTitle = "Home"; ObjectID = "dpH-Pd-AiB";</note>
+      </trans-unit>
+      <trans-unit id="fdz-R1-ufH.title" xml:space="preserve">
+        <source>Item</source>
+        <note>Class = "UIBarButtonItem"; title = "Item"; ObjectID = "fdz-R1-ufH";</note>
+      </trans-unit>
+      <trans-unit id="hfD-cY-RYi.placeholder" xml:space="preserve">
+        <source>Your email</source>
+        <target>البريد الالكتروني</target>
+        <note>Class = "UITextField"; placeholder = "Your email"; ObjectID = "hfD-cY-RYi";</note>
+      </trans-unit>
+      <trans-unit id="nmY-hu-IOL.placeholder" xml:space="preserve">
+        <source>Phone Number</source>
+        <target>رقم المحمول</target>
+        <note>Class = "UITextField"; placeholder = "Phone Number"; ObjectID = "nmY-hu-IOL";</note>
+      </trans-unit>
+      <trans-unit id="qT5-Gx-0U5.text" xml:space="preserve">
+        <source>In in faucibus enim vitae elit ipsum netus. Amet lacus id eget vel egestas.</source>
+        <target>In in faucibus enim vitae elit ipsum netus. Amet lacus id eget vel egestas.</target>
+        <note>Class = "UILabel"; text = "In in faucibus enim vitae elit ipsum netus. Amet lacus id eget vel egestas."; ObjectID = "qT5-Gx-0U5";</note>
+      </trans-unit>
+      <trans-unit id="rAP-zQ-AWL.text" xml:space="preserve">
+        <source>Setting</source>
+        <target>الاعدادات</target>
+        <note>Class = "UILabel"; text = "Setting"; ObjectID = "rAP-zQ-AWL";</note>
+      </trans-unit>
+      <trans-unit id="raf-3v-JeE.text" xml:space="preserve">
+        <source>Account number</source>
+        <target>رقم الحساب</target>
+        <note>Class = "UILabel"; text = "Account number"; ObjectID = "raf-3v-JeE";</note>
+      </trans-unit>
+      <trans-unit id="sMN-i1-QvN.placeholder" xml:space="preserve">
+        <source>Password</source>
+        <target>كلمة المرور</target>
+        <note>Class = "UITextField"; placeholder = "Password"; ObjectID = "sMN-i1-QvN";</note>
+      </trans-unit>
+      <trans-unit id="sze-Ov-v9M.text" xml:space="preserve">
+        <source>1,350KD</source>
+        <note>Class = "UILabel"; text = "1,350KD"; ObjectID = "sze-Ov-v9M";</note>
+      </trans-unit>
+      <trans-unit id="wHQ-cc-ZX3.text" xml:space="preserve">
+        <source>Your email</source>
+        <target>البريد الالكتروني</target>
+        <note>Class = "UILabel"; text = "Your email"; ObjectID = "wHQ-cc-ZX3";</note>
+      </trans-unit>
+      <trans-unit id="yGW-Uy-fyY.text" xml:space="preserve">
+        <source>Transactions</source>
+        <target>المعاملات</target>
+        <note>Class = "UILabel"; text = "Transactions"; ObjectID = "yGW-Uy-fyY";</note>
+      </trans-unit>
+      <trans-unit id="zxu-Gk-oDO.segmentTitles[0]" xml:space="preserve">
+        <source>This Month</source>
+        <target>هذا الشهر</target>
+        <note>Class = "UISegmentedControl"; zxu-Gk-oDO.segmentTitles[0] = "This Month"; ObjectID = "zxu-Gk-oDO";</note>
+      </trans-unit>
+      <trans-unit id="zxu-Gk-oDO.segmentTitles[1]" xml:space="preserve">
+        <source>Last 30 Days</source>
+        <target>آخر 30 يومًا</target>
+        <note>Class = "UISegmentedControl"; zxu-Gk-oDO.segmentTitles[1] = "Last 30 Days"; ObjectID = "zxu-Gk-oDO";</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Opportunities/Screens/Search/Base.lproj/SearchViewController.xib" source-language="en" target-language="ar" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="11.3.1" build-num="11C504"/>
+    </header>
+    <body>
+      <trans-unit id="HFY-38-mIA.text" xml:space="preserve">
+        <source>In in faucibus enim vitae elit ipsum netus. Amet lacus id eget vel egestas.</source>
+        <target>In in faucibus enim vitae elit ipsum netus. Amet lacus id eget vel egestas.</target>
+        <note>Class = "UILabel"; text = "In in faucibus enim vitae elit ipsum netus. Amet lacus id eget vel egestas."; ObjectID = "HFY-38-mIA";</note>
+      </trans-unit>
+      <trans-unit id="M9J-le-Q05.text" xml:space="preserve">
+        <source>13 Results</source>
+        <note>Class = "UILabel"; text = "13 Results"; ObjectID = "M9J-le-Q05";</note>
+      </trans-unit>
+      <trans-unit id="UWM-t0-a1o.normalTitle" xml:space="preserve">
+        <source>Cancel</source>
+        <target>ألغاء</target>
+        <note>Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "UWM-t0-a1o";</note>
+      </trans-unit>
+      <trans-unit id="VYK-n7-vYz.text" xml:space="preserve">
+        <source>What are you looking for?</source>
+        <target>عن ماذا تبحث؟</target>
+        <note>Class = "UILabel"; text = "What are you looking for?"; ObjectID = "VYK-n7-vYz";</note>
+      </trans-unit>
+      <trans-unit id="Wqa-9P-8He.placeholder" xml:space="preserve">
+        <source>Search Oppertunitie</source>
+        <target>البحث عن فرصة</target>
+        <note>Class = "UITextField"; placeholder = "Search Oppertunitie"; ObjectID = "Wqa-9P-8He";</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Opportunities/Screens/Sign/Base.lproj/Main.storyboard" source-language="en" target-language="ar" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="11.3.1" build-num="11C504"/>
+    </header>
+    <body>
+      <trans-unit id="1Oh-Ts-4t5.placeholder" xml:space="preserve">
+        <source>Confirm Password</source>
+        <target>تأكيد كلمة المرور</target>
+        <note>Class = "UITextField"; placeholder = "Confirm Password"; ObjectID = "1Oh-Ts-4t5";</note>
+      </trans-unit>
+      <trans-unit id="1eb-Cu-Ltn.normalTitle" xml:space="preserve">
+        <source>Verify</source>
+        <target>تأكيد</target>
+        <note>Class = "UIButton"; normalTitle = "Verify"; ObjectID = "1eb-Cu-Ltn";</note>
+      </trans-unit>
+      <trans-unit id="1g9-Mj-Z1k.placeholder" xml:space="preserve">
+        <source>password</source>
+        <target>كلمة المرور</target>
+        <note>Class = "UITextField"; placeholder = "password"; ObjectID = "1g9-Mj-Z1k";</note>
+      </trans-unit>
+      <trans-unit id="3fX-qe-xtX.text" xml:space="preserve">
+        <source>In in faucibus enim vitae elit ipsum netus. Amet lacus id eget vel egestas.</source>
+        <target>In in faucibus enim vitae elit ipsum netus. Amet lacus id eget vel egestas.</target>
+        <note>Class = "UILabel"; text = "In in faucibus enim vitae elit ipsum netus. Amet lacus id eget vel egestas."; ObjectID = "3fX-qe-xtX";</note>
+      </trans-unit>
+      <trans-unit id="3vP-BX-T9A.normalTitle" xml:space="preserve">
+        <source>Login</source>
+        <target>تسجيل الدخول</target>
+        <note>Class = "UIButton"; normalTitle = "Login"; ObjectID = "3vP-BX-T9A";</note>
+      </trans-unit>
+      <trans-unit id="4B7-ZZ-ysr.normalTitle" xml:space="preserve">
+        <source>Continue</source>
+        <target>أستمر</target>
+        <note>Class = "UIButton"; normalTitle = "Continue"; ObjectID = "4B7-ZZ-ysr";</note>
+      </trans-unit>
+      <trans-unit id="4Dm-qG-mZQ.text" xml:space="preserve">
+        <source>Enter your new password.</source>
+        <target>ادخل كبمة السر الجديدة </target>
+        <note>Class = "UILabel"; text = "Enter your new password."; ObjectID = "4Dm-qG-mZQ";</note>
+      </trans-unit>
+      <trans-unit id="4Jb-S1-s2g.placeholder" xml:space="preserve">
+        <source>Email address</source>
+        <note>Class = "UITextField"; placeholder = "Email address"; ObjectID = "4Jb-S1-s2g";</note>
+      </trans-unit>
+      <trans-unit id="5km-yu-O6y.normalTitle" xml:space="preserve">
+        <source>Login</source>
+        <target>تسجبل الدخول </target>
+        <note>Class = "UIButton"; normalTitle = "Login"; ObjectID = "5km-yu-O6y";</note>
+      </trans-unit>
+      <trans-unit id="6EU-Sh-dRw.text" xml:space="preserve">
+        <source>Password</source>
+        <target>كلمة السر</target>
+        <note>Class = "UILabel"; text = "Password"; ObjectID = "6EU-Sh-dRw";</note>
+      </trans-unit>
+      <trans-unit id="7bQ-9L-BvG.placeholder" xml:space="preserve">
+        <source>code</source>
+        <target>كود</target>
+        <note>Class = "UITextField"; placeholder = "code"; ObjectID = "7bQ-9L-BvG";</note>
+      </trans-unit>
+      <trans-unit id="08M-rH-Vkl.placeholder" xml:space="preserve">
+        <source>Account number</source>
+        <target>رقم الحساب</target>
+        <note>Class = "UITextField"; placeholder = "Account number"; ObjectID = "08M-rH-Vkl";</note>
+      </trans-unit>
+      <trans-unit id="9Ab-h0-42f.placeholder" xml:space="preserve">
+        <source>-</source>
+        <target>-</target>
+        <note>Class = "UITextField"; placeholder = "-"; ObjectID = "9Ab-h0-42f";</note>
+      </trans-unit>
+      <trans-unit id="58g-Ex-PFO.normalTitle" xml:space="preserve">
+        <source>Forgot Password?</source>
+        <target>نسيت كلمة السر</target>
+        <note>Class = "UIButton"; normalTitle = "Forgot Password?"; ObjectID = "58g-Ex-PFO";</note>
+      </trans-unit>
+      <trans-unit id="AhQ-JL-d97.placeholder" xml:space="preserve">
+        <source>Phone Number</source>
+        <target>رقم المحمول</target>
+        <note>Class = "UITextField"; placeholder = "Phone Number"; ObjectID = "AhQ-JL-d97";</note>
+      </trans-unit>
+      <trans-unit id="B5f-4B-EaZ.text" xml:space="preserve">
+        <source>Forget Pass</source>
+        <target>نسيت كلمة السر</target>
+        <note>Class = "UILabel"; text = "Forget Pass"; ObjectID = "B5f-4B-EaZ";</note>
+      </trans-unit>
+      <trans-unit id="BLb-xQ-bH7.placeholder" xml:space="preserve">
+        <source>-</source>
+        <target>-</target>
+        <note>Class = "UITextField"; placeholder = "-"; ObjectID = "BLb-xQ-bH7";</note>
+      </trans-unit>
+      <trans-unit id="CRx-4q-uOD.text" xml:space="preserve">
+        <source>Your password reset successfully,</source>
+        <target>لثد انشأت كلمة سر جديدة بنجاح</target>
+        <note>Class = "UILabel"; text = "Your password reset successfully,"; ObjectID = "CRx-4q-uOD";</note>
+      </trans-unit>
+      <trans-unit id="DVL-lB-6MY.text" xml:space="preserve">
+        <source>Email address</source>
+        <target>البريد الالكتروني</target>
+        <note>Class = "UILabel"; text = "Email address"; ObjectID = "DVL-lB-6MY";</note>
+      </trans-unit>
+      <trans-unit id="ES5-6O-nTw.text" xml:space="preserve">
+        <source>Sign Up</source>
+        <target>انشاء حساب</target>
+        <note>Class = "UILabel"; text = "Sign Up"; ObjectID = "ES5-6O-nTw";</note>
+      </trans-unit>
+      <trans-unit id="Fxj-PG-Zax.text" xml:space="preserve">
+        <source>Congratulations, now you have account on Opportunities.</source>
+        <target>مبروك لقد انشات الاميل بنجاح</target>
+        <note>Class = "UILabel"; text = "Congratulations, now you have account on Opportunities."; ObjectID = "Fxj-PG-Zax";</note>
+      </trans-unit>
+      <trans-unit id="GPx-mO-swy.text" xml:space="preserve">
+        <source>Your email</source>
+        <target>البريد الالكتروني</target>
+        <note>Class = "UILabel"; text = "Your email"; ObjectID = "GPx-mO-swy";</note>
+      </trans-unit>
+      <trans-unit id="GUc-YP-6vb.text" xml:space="preserve">
+        <source>Rest Pass</source>
+        <target>تعديل كلمة السر</target>
+        <note>Class = "UILabel"; text = "Rest Pass"; ObjectID = "GUc-YP-6vb";</note>
+      </trans-unit>
+      <trans-unit id="HcC-Bm-qUL.normalTitle" xml:space="preserve">
+        <source>Get Started</source>
+        <target>أبدا</target>
+        <note>Class = "UIButton"; normalTitle = "Get Started"; ObjectID = "HcC-Bm-qUL";</note>
+      </trans-unit>
+      <trans-unit id="HuG-Xa-eTG.text" xml:space="preserve">
+        <source>Incorrect Password</source>
+        <target>كلمة السر خطأ</target>
+        <note>Class = "UILabel"; text = "Incorrect Password"; ObjectID = "HuG-Xa-eTG";</note>
+      </trans-unit>
+      <trans-unit id="Jne-Ab-e3u.text" xml:space="preserve">
+        <source>Password</source>
+        <target>كلمة السر</target>
+        <note>Class = "UILabel"; text = "Password"; ObjectID = "Jne-Ab-e3u";</note>
+      </trans-unit>
+      <trans-unit id="JtH-2A-qaa.text" xml:space="preserve">
+        <source>Email address</source>
+        <target>البريد الالكتروني</target>
+        <note>Class = "UILabel"; text = "Email address"; ObjectID = "JtH-2A-qaa";</note>
+      </trans-unit>
+      <trans-unit id="KUG-9W-Rhu.placeholder" xml:space="preserve">
+        <source>Email address</source>
+        <target>البريد الالكتروني</target>
+        <note>Class = "UITextField"; placeholder = "Email address"; ObjectID = "KUG-9W-Rhu";</note>
+      </trans-unit>
+      <trans-unit id="KcF-LR-6Bi.text" xml:space="preserve">
+        <source>Welcome back!</source>
+        <target>!اهلا بعودتك</target>
+        <note>Class = "UILabel"; text = "Welcome back!"; ObjectID = "KcF-LR-6Bi";</note>
+      </trans-unit>
+      <trans-unit id="LNS-EZ-wk8.normalTitle" xml:space="preserve">
+        <source>Sign In</source>
+        <target>تسجبل الدخول </target>
+        <note>Class = "UIButton"; normalTitle = "Sign In"; ObjectID = "LNS-EZ-wk8";</note>
+      </trans-unit>
+      <trans-unit id="M9h-ab-hIv.text" xml:space="preserve">
+        <source>Confirm Password</source>
+        <target>تأكيد كلمت المرور</target>
+        <note>Class = "UILabel"; text = "Confirm Password"; ObjectID = "M9h-ab-hIv";</note>
+      </trans-unit>
+      <trans-unit id="NHP-hX-umV.placeholder" xml:space="preserve">
+        <source>Full Name</source>
+        <target>الاسم بالكامل</target>
+        <note>Class = "UITextField"; placeholder = "Full Name"; ObjectID = "NHP-hX-umV";</note>
+      </trans-unit>
+      <trans-unit id="PcJ-da-Fhb.placeholder" xml:space="preserve">
+        <source>Phone Number</source>
+        <target>رقم المحمول</target>
+        <note>Class = "UITextField"; placeholder = "Phone Number"; ObjectID = "PcJ-da-Fhb";</note>
+      </trans-unit>
+      <trans-unit id="Pz4-Vf-EDP.text" xml:space="preserve">
+        <source>Account number</source>
+        <target>رقم الحساب </target>
+        <note>Class = "UILabel"; text = "Account number"; ObjectID = "Pz4-Vf-EDP";</note>
+      </trans-unit>
+      <trans-unit id="SnA-44-a19.text" xml:space="preserve">
+        <source>Phone Number</source>
+        <target>رقم المحمول</target>
+        <note>Class = "UILabel"; text = "Phone Number"; ObjectID = "SnA-44-a19";</note>
+      </trans-unit>
+      <trans-unit id="Udw-AY-jNs.text" xml:space="preserve">
+        <source>Accept our Terms &amp; Conditions to complete registeration.</source>
+        <target>هل تقبل الشروط والاحكام لكي تستمر</target>
+        <note>Class = "UILabel"; text = "Accept our Terms &amp; Conditions to complete registeration."; ObjectID = "Udw-AY-jNs";</note>
+      </trans-unit>
+      <trans-unit id="VRa-N5-FX3.normalTitle" xml:space="preserve">
+        <source>العربية</source>
+        <note>Class = "UIButton"; normalTitle = "العربية"; ObjectID = "VRa-N5-FX3";</note>
+      </trans-unit>
+      <trans-unit id="Wpd-cw-XMR.text" xml:space="preserve">
+        <source>Phone Number</source>
+        <target>رقم المحمول</target>
+        <note>Class = "UILabel"; text = "Phone Number"; ObjectID = "Wpd-cw-XMR";</note>
+      </trans-unit>
+      <trans-unit id="Wpl-8a-ezj.placeholder" xml:space="preserve">
+        <source>Your email</source>
+        <target>البريد الالكتروني</target>
+        <note>Class = "UITextField"; placeholder = "Your email"; ObjectID = "Wpl-8a-ezj";</note>
+      </trans-unit>
+      <trans-unit id="XKY-Wt-qYQ.text" xml:space="preserve">
+        <source>Full Name</source>
+        <target>الاسم بالكامل</target>
+        <note>Class = "UILabel"; text = "Full Name"; ObjectID = "XKY-Wt-qYQ";</note>
+      </trans-unit>
+      <trans-unit id="ZB3-Iw-eDu.placeholder" xml:space="preserve">
+        <source>Password</source>
+        <target>كلمة المرور</target>
+        <note>Class = "UITextField"; placeholder = "Password"; ObjectID = "ZB3-Iw-eDu";</note>
+      </trans-unit>
+      <trans-unit id="ZBE-3d-2IJ.text" xml:space="preserve">
+        <source>Password</source>
+        <target>كلمة المرور</target>
+        <note>Class = "UILabel"; text = "Password"; ObjectID = "ZBE-3d-2IJ";</note>
+      </trans-unit>
+      <trans-unit id="ZWF-hO-tAt.normalTitle" xml:space="preserve">
+        <source>English</source>
+        <note>Class = "UIButton"; normalTitle = "English"; ObjectID = "ZWF-hO-tAt";</note>
+      </trans-unit>
+      <trans-unit id="ZiE-oX-rp7.normalTitle" xml:space="preserve">
+        <source>Sign Up</source>
+        <target>أبدا</target>
+        <note>Class = "UIButton"; normalTitle = "Sign Up"; ObjectID = "ZiE-oX-rp7";</note>
+      </trans-unit>
+      <trans-unit id="b3e-nP-TG0.text" xml:space="preserve">
+        <source>Let’s sign you up!</source>
+        <target>انشاء حساب جديد</target>
+        <note>Class = "UILabel"; text = "Let’s sign you up!"; ObjectID = "b3e-nP-TG0";</note>
+      </trans-unit>
+      <trans-unit id="bKr-45-u9x.text" xml:space="preserve">
+        <source>Language</source>
+        <target>اختيار اللغة</target>
+        <note>Class = "UILabel"; text = "Language"; ObjectID = "bKr-45-u9x";</note>
+      </trans-unit>
+      <trans-unit id="e3B-He-a81.placeholder" xml:space="preserve">
+        <source>-</source>
+        <target>-</target>
+        <note>Class = "UITextField"; placeholder = "-"; ObjectID = "e3B-He-a81";</note>
+      </trans-unit>
+      <trans-unit id="g10-DF-iDx.normalTitle" xml:space="preserve">
+        <source>Continue</source>
+        <target>استمر</target>
+        <note>Class = "UIButton"; normalTitle = "Continue"; ObjectID = "g10-DF-iDx";</note>
+      </trans-unit>
+      <trans-unit id="h6F-Su-HHS.text" xml:space="preserve">
+        <source>In in faucibus enim vitae elit ipsum netus. Amet lacus id eget vel egestas.</source>
+        <target>In in faucibus enim vitae elit ipsum netus. Amet lacus id eget vel egestas.</target>
+        <note>Class = "UILabel"; text = "In in faucibus enim vitae elit ipsum netus. Amet lacus id eget vel egestas."; ObjectID = "h6F-Su-HHS";</note>
+      </trans-unit>
+      <trans-unit id="hEj-hg-UP8.text" xml:space="preserve">
+        <source>Email address</source>
+        <target>البريد الالكتروني</target>
+        <note>Class = "UILabel"; text = "Email address"; ObjectID = "hEj-hg-UP8";</note>
+      </trans-unit>
+      <trans-unit id="kiX-gJ-byg.placeholder" xml:space="preserve">
+        <source>Password</source>
+        <target>كلمة المرور</target>
+        <note>Class = "UITextField"; placeholder = "Password"; ObjectID = "kiX-gJ-byg";</note>
+      </trans-unit>
+      <trans-unit id="mfh-mt-RUI.normalTitle" xml:space="preserve">
+        <source>Skip</source>
+        <target>تخطي</target>
+        <note>Class = "UIButton"; normalTitle = "Skip"; ObjectID = "mfh-mt-RUI";</note>
+      </trans-unit>
+      <trans-unit id="mwe-fJ-txZ.text" xml:space="preserve">
+        <source>Password</source>
+        <target>كلمة السر</target>
+        <note>Class = "UILabel"; text = "Password"; ObjectID = "mwe-fJ-txZ";</note>
+      </trans-unit>
+      <trans-unit id="nW2-x6-vbc.text" xml:space="preserve">
+        <source>Enter your phone number, so we can send you a verification code.</source>
+        <target>أدخل رقم هاتفك ، حتى نتمكن من إرسال رمز التحقق إليك.</target>
+        <note>Class = "UILabel"; text = "Enter your phone number, so we can send you a verification code."; ObjectID = "nW2-x6-vbc";</note>
+      </trans-unit>
+      <trans-unit id="p7e-So-16N.text" xml:space="preserve">
+        <source>Code Verification</source>
+        <target>كود التأكيد</target>
+        <note>Class = "UILabel"; text = "Code Verification"; ObjectID = "p7e-So-16N";</note>
+      </trans-unit>
+      <trans-unit id="pl2-um-u1N.normalTitle" xml:space="preserve">
+        <source>Next</source>
+        <target>التالي</target>
+        <note>Class = "UIButton"; normalTitle = "Next"; ObjectID = "pl2-um-u1N";</note>
+      </trans-unit>
+      <trans-unit id="qvv-4i-qrQ.normalTitle" xml:space="preserve">
+        <source>Sign Up</source>
+        <target>انشاء حساب</target>
+        <note>Class = "UIButton"; normalTitle = "Sign Up"; ObjectID = "qvv-4i-qrQ";</note>
+      </trans-unit>
+      <trans-unit id="r1U-xc-Irw.placeholder" xml:space="preserve">
+        <source>-</source>
+        <target>-</target>
+        <note>Class = "UITextField"; placeholder = "-"; ObjectID = "r1U-xc-Irw";</note>
+      </trans-unit>
+      <trans-unit id="rdO-6B-dFl.placeholder" xml:space="preserve">
+        <source>code</source>
+        <target>كود</target>
+        <note>Class = "UITextField"; placeholder = "code"; ObjectID = "rdO-6B-dFl";</note>
+      </trans-unit>
+      <trans-unit id="tRq-L1-ACq.text" xml:space="preserve">
+        <source>Which language do you speak?</source>
+        <target>ما هي اللغة التي تستطيع التحدث بها</target>
+        <note>Class = "UILabel"; text = "Which language do you speak?"; ObjectID = "tRq-L1-ACq";</note>
+      </trans-unit>
+      <trans-unit id="uGf-g3-ISj.text" xml:space="preserve">
+        <source>Enter the 4-digit code we’ve sent to your phone number.</source>
+        <target>.أدخل الرمز المكون من 4 أرقام الذي أرسلناه إلى رقم هاتفك</target>
+        <note>Class = "UILabel"; text = "Enter the 4-digit code we’ve sent to your phone number."; ObjectID = "uGf-g3-ISj";</note>
+      </trans-unit>
+      <trans-unit id="uhS-dz-l4Q.text" xml:space="preserve">
+        <source>Don’t have an account?</source>
+        <target>لا املك حساب </target>
+        <note>Class = "UILabel"; text = "Don’t have an account?"; ObjectID = "uhS-dz-l4Q";</note>
+      </trans-unit>
+      <trans-unit id="xND-jS-Dth.text" xml:space="preserve">
+        <source>Incorrect Password</source>
+        <target>كلمة السر خطا</target>
+        <note>Class = "UILabel"; text = "Incorrect Password"; ObjectID = "xND-jS-Dth";</note>
+      </trans-unit>
+      <trans-unit id="yOQ-JO-jrQ.normalTitle" xml:space="preserve">
+        <source>Forgot Password?</source>
+        <target>نسبت كلمة السر</target>
+        <note>Class = "UIButton"; normalTitle = "Forgot Password?"; ObjectID = "yOQ-JO-jrQ";</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Opportunities/Screens/Sign/StartSecrrenView/GetStart/Base.lproj/getStart.xib" source-language="en" target-language="ar" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="11.3.1" build-num="11C504"/>
+    </header>
+    <body>
+      <trans-unit id="Jdv-s9-uo3.text" xml:space="preserve">
+        <source>In in faucibus enim vitae elit ipsum netus. Amet lacus id eget vel egestas.In in faucibus enim vitae elit </source>
+        <target>In in faucibus enim vitae elit ipsum netus. Amet lacus id eget vel egestas.In in faucibus enim vitae elit </target>
+        <note>Class = "UILabel"; text = "In in faucibus enim vitae elit ipsum netus. Amet lacus id eget vel egestas.In in faucibus enim vitae elit "; ObjectID = "Jdv-s9-uo3";</note>
+      </trans-unit>
+      <trans-unit id="hAC-9X-KCe.text" xml:space="preserve">
+        <source>Enjoy growing your money with profits!</source>
+        <target>استمتع بتنمية أموالك مع الأرباح!</target>
+        <note>Class = "UILabel"; text = "Enjoy growing your money with profits!"; ObjectID = "hAC-9X-KCe";</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Opportunities/Screens/Sign/StartSecrrenView/StartOne/Base.lproj/StartViewOne.xib" source-language="en" target-language="ar" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="11.3.1" build-num="11C504"/>
+    </header>
+    <body>
+      <trans-unit id="L5t-lk-nud.text" xml:space="preserve">
+        <source>Get some nice deals directly to your account!</source>
+        <target>احصل على بعض الصفقات الرائعة مباشرة إلى حسابك!</target>
+        <note>Class = "UILabel"; text = "Get some nice deals directly to your account!"; ObjectID = "L5t-lk-nud";</note>
+      </trans-unit>
+      <trans-unit id="uG6-9w-gAN.text" xml:space="preserve">
+        <source>In in faucibus enim vitae elit ipsum netus. Amet lacus id eget vel egestastus. Amet lacus id eget vel egestas.</source>
+        <target>In in faucibus enim vitae elit ipsum netus. Amet lacus id eget vel egestastus. Amet lacus id eget vel egestas.</target>
+        <note>Class = "UILabel"; text = "In in faucibus enim vitae elit ipsum netus. Amet lacus id eget vel egestastus. Amet lacus id eget vel egestas."; ObjectID = "uG6-9w-gAN";</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Opportunities/Screens/Sign/StartSecrrenView/StartTwo/Base.lproj/StartViewTwo.xib" source-language="en" target-language="ar" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="11.3.1" build-num="11C504"/>
+    </header>
+    <body>
+      <trans-unit id="M4d-KP-0FX.text" xml:space="preserve">
+        <source>Start your investment journey with Opportunities</source>
+        <target>ابدأ رحلتك الاستثمارية مع الفرص</target>
+        <note>Class = "UILabel"; text = "Start your investment journey with Opportunities"; ObjectID = "M4d-KP-0FX";</note>
+      </trans-unit>
+      <trans-unit id="Z0Y-Ah-chG.text" xml:space="preserve">
+        <source>In in faucibus enim vitae elit ipsum netus. Amet lacus id eget vel egestas.</source>
+        <target>In in faucibus enim vitae elit ipsum netus. Amet lacus id eget vel egestas.</target>
+        <note>Class = "UILabel"; text = "In in faucibus enim vitae elit ipsum netus. Amet lacus id eget vel egestas."; ObjectID = "Z0Y-Ah-chG";</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

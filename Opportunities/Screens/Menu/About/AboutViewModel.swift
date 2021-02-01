@@ -13,7 +13,7 @@ import RxCocoa
 class AboutViewModel {
     var Repository = OppertunitesRepositoryImp()
        let disposedBag = DisposeBag()
-       private var Seccess: PublishSubject<ResponseObjectModel<[AboutModel]>> = .init()
+       private var Seccess: PublishSubject<ResponseObjectModel<AboutModel>> = .init()
        lazy var SeccessAbsercable : Observable = Seccess.asObservable()
     
     func ViewDidLoad(){

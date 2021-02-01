@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gilroy-Bold.ttf">
+            <string>Gilroy-Bold</string>
+        </array>
+        <array key="Gilroy-Regular.ttf">
+            <string>Gilroy-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchViewController" customModule="Opportunities" customModuleProvider="target">
+            <connections>
+                <outlet property="ContainerOfResultSearch" destination="phu-Pz-zSh" id="E4U-LK-vu5"/>
+                <outlet property="imageSearch" destination="RdA-sN-ubp" id="Fsz-3x-2g6"/>
+                <outlet property="numberOfResulte" destination="M9J-le-Q05" id="caG-BG-7k3"/>
+                <outlet property="resulteTableView" destination="iBf-e1-66g" id="N0c-ql-ofi"/>
+                <outlet property="searchTextField" destination="Wqa-9P-8He" id="xe1-Ns-lyi"/>
+                <outlet property="stachSearch" destination="O14-Eq-7bI" id="KtT-Pr-afd"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aZk-gq-ose">
+                    <rect key="frame" x="16" y="64" width="299" height="45"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="JBi-il-96C"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="25"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="0.5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" name="LabelColor"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UWM-t0-a1o">
+                    <rect key="frame" x="325" y="70" width="69" height="33"/>
+                    <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy-Regular" pointSize="18"/>
+                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Cancel"/>
+                    <connections>
+                        <action selector="cancelBtn:" destination="-1" eventType="touchUpInside" id="2xO-Eu-zdf"/>
+                    </connections>
+                </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Search" translatesAutoresizingMaskIntoConstraints="NO" id="Map-Ti-52x">
+                    <rect key="frame" x="36" y="76.5" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Map-Ti-52x" secondAttribute="height" multiplier="1:1" id="RaK-0K-uQl"/>
+                        <constraint firstAttribute="width" constant="20" id="s3Z-52-uVW"/>
+                    </constraints>
+                </imageView>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search Oppertunitie" textAlignment="natural" minimumFontSize="12" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="Wqa-9P-8He">
+                    <rect key="frame" x="66" y="74" width="239" height="25"/>
+                    <color key="textColor" name="Title"/>
+                    <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy-Regular" pointSize="15"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Saly-2" translatesAutoresizingMaskIntoConstraints="NO" id="RdA-sN-ubp">
+                    <rect key="frame" x="20" y="159" width="374" height="298.5"/>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="O14-Eq-7bI">
+                    <rect key="frame" x="40" y="482.5" width="334" height="82"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What are you looking for?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VYK-n7-vYz">
+                            <rect key="frame" x="0.0" y="0.0" width="334" height="41"/>
+                            <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="23"/>
+                            <color key="textColor" red="0.1333333333" green="0.20000000000000001" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In in faucibus enim vitae elit ipsum netus. Amet lacus id eget vel egestas." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HFY-38-mIA">
+                            <rect key="frame" x="0.0" y="41" width="334" height="41"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" name="Difination"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="phu-Pz-zSh">
+                    <rect key="frame" x="0.0" y="129" width="414" height="753"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iBf-e1-66g">
+                            <rect key="frame" x="20" y="61" width="374" height="672"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </tableView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="13 Results" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M9J-le-Q05">
+                            <rect key="frame" x="20" y="20" width="394" height="21"/>
+                            <fontDescription key="fontDescription" name="Gilroy-Bold" family="Gilroy-Bold" pointSize="18"/>
+                            <color key="textColor" name="LabelColor"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                    <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="iBf-e1-66g" secondAttribute="trailing" constant="20" id="2Eb-GY-CIH"/>
+                        <constraint firstItem="M9J-le-Q05" firstAttribute="leading" secondItem="phu-Pz-zSh" secondAttribute="leading" constant="20" id="9AK-V0-gMI"/>
+                        <constraint firstAttribute="bottom" secondItem="iBf-e1-66g" secondAttribute="bottom" constant="20" id="JkN-pv-Hvf"/>
+                        <constraint firstItem="iBf-e1-66g" firstAttribute="leading" secondItem="phu-Pz-zSh" secondAttribute="leading" constant="20" id="Yva-sl-ufR"/>
+                        <constraint firstItem="M9J-le-Q05" firstAttribute="top" secondItem="phu-Pz-zSh" secondAttribute="top" constant="20" id="ZFr-2O-9mO"/>
+                        <constraint firstAttribute="trailing" secondItem="M9J-le-Q05" secondAttribute="trailing" id="aRt-IA-1Ds"/>
+                        <constraint firstItem="iBf-e1-66g" firstAttribute="top" secondItem="M9J-le-Q05" secondAttribute="bottom" constant="20" id="j0t-NY-aGE"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="aZk-gq-ose" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="2px-Rd-a5q"/>
+                <constraint firstItem="RdA-sN-ubp" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="1:3" id="72G-k1-xfp"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="RdA-sN-ubp" secondAttribute="trailing" constant="20" id="8qz-wi-TrJ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="UWM-t0-a1o" secondAttribute="trailing" constant="20" id="Abe-Ou-G3h"/>
+                <constraint firstItem="aZk-gq-ose" firstAttribute="bottom" secondItem="Wqa-9P-8He" secondAttribute="bottom" constant="10" id="BxN-QH-20j"/>
+                <constraint firstItem="Wqa-9P-8He" firstAttribute="top" secondItem="aZk-gq-ose" secondAttribute="top" constant="10" id="E7z-JU-sQh"/>
+                <constraint firstItem="UWM-t0-a1o" firstAttribute="leading" secondItem="aZk-gq-ose" secondAttribute="trailing" constant="10" id="GzB-fV-6uF"/>
+                <constraint firstItem="O14-Eq-7bI" firstAttribute="top" secondItem="RdA-sN-ubp" secondAttribute="bottom" constant="25" id="MGp-sb-kaK"/>
+                <constraint firstItem="RdA-sN-ubp" firstAttribute="top" secondItem="aZk-gq-ose" secondAttribute="bottom" constant="50" id="QLz-Vz-NHE"/>
+                <constraint firstAttribute="bottom" secondItem="phu-Pz-zSh" secondAttribute="bottom" constant="14" id="Qab-vw-qaD"/>
+                <constraint firstItem="UWM-t0-a1o" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.5:3" id="Uzz-r0-VLk"/>
+                <constraint firstItem="phu-Pz-zSh" firstAttribute="top" secondItem="aZk-gq-ose" secondAttribute="bottom" constant="20" id="V3q-Ef-lcH"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="phu-Pz-zSh" secondAttribute="trailing" id="Xys-sk-vTM"/>
+                <constraint firstItem="aZk-gq-ose" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="gVc-H4-OVQ"/>
+                <constraint firstItem="phu-Pz-zSh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="iiP-sv-3EB"/>
+                <constraint firstItem="O14-Eq-7bI" firstAttribute="trailing" secondItem="RdA-sN-ubp" secondAttribute="trailing" constant="-20" id="ivn-dN-sTO"/>
+                <constraint firstItem="Map-Ti-52x" firstAttribute="centerY" secondItem="Wqa-9P-8He" secondAttribute="centerY" id="l43-AM-fzk"/>
+                <constraint firstItem="Wqa-9P-8He" firstAttribute="leading" secondItem="Map-Ti-52x" secondAttribute="trailing" constant="10" id="lWq-9q-VIZ"/>
+                <constraint firstItem="UWM-t0-a1o" firstAttribute="leading" secondItem="Wqa-9P-8He" secondAttribute="trailing" constant="20" id="m4t-oL-j2y"/>
+                <constraint firstItem="O14-Eq-7bI" firstAttribute="leading" secondItem="RdA-sN-ubp" secondAttribute="leading" constant="20" id="t64-5a-wLc"/>
+                <constraint firstItem="RdA-sN-ubp" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="tqK-jP-KPm"/>
+                <constraint firstItem="Map-Ti-52x" firstAttribute="leading" secondItem="aZk-gq-ose" secondAttribute="leading" constant="20" id="vus-01-1OC"/>
+                <constraint firstItem="UWM-t0-a1o" firstAttribute="centerY" secondItem="aZk-gq-ose" secondAttribute="centerY" id="ycR-M3-c8e"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="131.8840579710145" y="108.48214285714285"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Saly-2" width="262" height="262"/>
+        <image name="Search" width="24" height="24"/>
+        <namedColor name="Difination">
+            <color red="0.60399997234344482" green="0.6589999794960022" blue="0.72899997234344482" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="LabelColor">
+            <color red="0.59600001573562622" green="0.61599999666213989" blue="0.6470000147819519" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Title">
+            <color red="0.13300000131130219" green="0.20000000298023224" blue="0.2669999897480011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

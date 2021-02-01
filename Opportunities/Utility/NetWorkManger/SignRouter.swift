@@ -85,7 +85,7 @@ enum SignRouter: APIRouter {
     var header: HTTPHeaders {
           switch self {
           case .SignUp , .SignIn , .forgetPass, .ChangePass, .checkCodeActivEmail, .profile,.ContectUs:
-            let header = HTTPHeaders([HTTPHeader(name: "Accept-Language", value: "en")])
+            let header = HTTPHeaders([HTTPHeader(name: "Accept-Language", value: "ar")])
               return header
           }
       }

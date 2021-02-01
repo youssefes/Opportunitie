@@ -64,8 +64,8 @@ class HomeTableViewCell: UITableViewCell {
         
         self.subImage.kf.setImage(with: resourseSubImage, placeholder: placeHolderImage)
         self.nameLbl.text = opertunity.name
-        self.soldLbl.text = "\(opertunity.amount) KD sold"
-        let progressPrasentage = (Int(opertunity.total ?? "") ?? 0) / (opertunity.amount ?? 0)
+        self.soldLbl.text = "\(opertunity.amount) KD \(NSLocalizedString("Sold", comment: "it is the Paid "))"
+        let progressPrasentage = (Int(opertunity.total) ?? 0) / (opertunity.amount)
         progress.progress = Float(Float(progressPrasentage)/100.0)
         
         self.prsentageLbl.text = "\(progressPrasentage) %"

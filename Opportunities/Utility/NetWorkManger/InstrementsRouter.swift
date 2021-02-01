@@ -71,7 +71,7 @@ enum InstrementsRouter : APIRouter{
     var header: HTTPHeaders{
         switch self{
         case .AllInstraments,.transactionThisMonth,.transactionLastMonth,.transactionAmount:
-            let header = HTTPHeaders([HTTPHeader(name: "Accept-Language", value: "en")])
+            let header = HTTPHeaders([HTTPHeader(name: "Accept-Language", value: "ar")])
             return header
         }
     }

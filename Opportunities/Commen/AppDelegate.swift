@@ -19,6 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         IQKeyboardManager.shared.enable = true
+        
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
         Coordinator = AppCoordinator(Window: window!)
@@ -30,6 +31,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         
         Coordinator.start()
+     
         return true
     }
     

@@ -32,18 +32,16 @@ class AboutViewController: BaseWireFrame<AboutViewModel>,YTPlayerViewDelegate {
     override func bind(ViewModel: AboutViewModel) {
         ViewModel.SeccessAbsercable.subscribe(onNext: { [weak self] (respond) in
             guard let self = self else {return}
-            if respond.value == true{
-                guard let data = respond.data else {
+            if respond.status == true{
+                guard let data = respond.data?.about else {
                     return
                 }
-                for data in data {
-                    self.massionlbl.text = data.mission
-                    self.visionlbl.text = data.mission
-                    if data.video.contains("www.youtube.com"){
-                        self.activaty.startAnimating()
-                        guard let id =  self.getYoutubeId(youtubeUrl: data.video) else {return}
-                        self.containerVideo.load(videoId: id)
-                    }
+                self.massionlbl.text = data.mission
+                self.visionlbl.text = data.mission
+                if data.video.contains("www.youtube.com"){
+                    self.activaty.startAnimating()
+                    guard let id =  self.getYoutubeId(youtubeUrl: data.video) else {return}
+                    self.containerVideo.load(videoId: id)
                 }
                 
             }

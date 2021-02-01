@@ -83,7 +83,7 @@ enum OppertunitesRouter: APIRouter {
     var header: HTTPHeaders {
         switch self {
         case .LetestOppertunite,.about, .search, .allOppertunites,.OppertuniteDetailes, .active :
-            let header = HTTPHeaders([HTTPHeader(name: "Accept-Language", value: "en")])
+            let header = HTTPHeaders([HTTPHeader(name: "Accept-Language", value: "ar")])
             return header
         }
     }

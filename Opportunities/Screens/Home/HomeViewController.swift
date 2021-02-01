@@ -22,6 +22,7 @@ class HomeViewController: BaseWireFrame<HomeViewModel>, headerTableViewCellDeleg
         super.viewDidLoad()
         setUpUI()
         registerCell()
+        HomeTableView.semanticContentAttribute = .unspecified
         // Do any additional setup after loading the view.
     }
     
@@ -82,7 +83,7 @@ extension HomeViewController : UITableViewDelegate{
     
 
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        200
+        return 150
     }
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {

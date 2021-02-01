@@ -38,7 +38,7 @@ class AllOpportunitiesViewController: BaseWireFrame<AllOppertunitesViewModel> {
         
         ViewModel.numberOfAppartunites.subscribe(onNext: {[weak self] (numberOfOpertunites) in
             guard let self = self else {return}
-            self.numberofOppertuniteLbl.text = "\(numberOfOpertunites) Opportunites"
+            self.numberofOppertuniteLbl.text = "\(numberOfOpertunites) \(NSLocalizedString("Opportunites", comment: ""))"
         }).disposed(by: disposePag)
     }
     func registerCell(){

@@ -42,7 +42,7 @@ class ActiveViewController: BaseWireFrame<ActiveViewModel> {
         // MARK := bind number Of Instrament
         ViewModel.numberOfInstrament.subscribe(onNext: {[weak self] (number) in
             guard let self = self else {return}
-            self.numberOfInvestment.text = "\(number) Investments"
+            self.numberOfInvestment.text = "\(number) \(NSLocalizedString("Investments", comment: ""))"
         }).disposed(by: disposePag)
         
         

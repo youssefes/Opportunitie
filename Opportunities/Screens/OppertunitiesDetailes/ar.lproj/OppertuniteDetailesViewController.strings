@@ -1,0 +1,30 @@
+/* Class = "UIButton"; normalTitle = "Countunie"; ObjectID = "4bN-og-342"; */
+"4bN-og-342.normalTitle" = "استمر";
+
+/* Class = "UILabel"; text = "Time left"; ObjectID = "bER-3T-nMZ"; */
+"bER-3T-nMZ.text" = "الوقت المتبقي";
+
+/* Class = "UILabel"; text = "Max"; ObjectID = "bNJ-fL-0N1"; */
+"bNJ-fL-0N1.text" = "أعلى";
+
+/* Class = "UILabel"; text = "About CARO"; ObjectID = "D41-H3-BGc"; */
+"D41-H3-BGc.text" = "About";
+
+/* Class = "UILabel"; text = "69,500 KD sold"; ObjectID = "FQn-uX-8qw"; */
+"FQn-uX-8qw.text" = "69,500 KD sold";
+
+/* Class = "UILabel"; text = "unit Description"; ObjectID = "fS2-bC-VUY"; */
+"fS2-bC-VUY.text" = "الوصف الاساسي";
+
+/* Class = "UITextField"; placeholder = "Type amount.."; ObjectID = "K5z-Xx-cqV"; */
+"K5z-Xx-cqV.placeholder" = "اكتب المبلغ..";
+
+/* Class = "UILabel"; text = "Min"; ObjectID = "Phn-0U-V83"; */
+"Phn-0U-V83.text" = "أقل";
+
+/* Class = "UILabel"; text = "Profit"; ObjectID = "sOB-lY-Cs0"; */
+"sOB-lY-Cs0.text" = "الربح";
+
+/* Class = "UILabel"; text = "Duration"; ObjectID = "Xdz-6G-1MU"; */
+"Xdz-6G-1MU.text" = "المدة الزمنية";
+

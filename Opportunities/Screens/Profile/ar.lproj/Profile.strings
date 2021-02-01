@@ -1,0 +1,72 @@
+/* Class = "UILabel"; text = "Invested"; ObjectID = "0rh-m5-cQd"; */
+"0rh-m5-cQd.text" = "استثمر";
+
+/* Class = "UILabel"; text = "Phone Number"; ObjectID = "5nZ-tj-024"; */
+"5nZ-tj-024.text" = "رقم الهاتف";
+
+/* Class = "UILabel"; text = "Ahmed Ali"; ObjectID = "8xx-4Q-MkW"; */
+"8xx-4Q-MkW.text" = "Ahmed Ali";
+
+/* Class = "UILabel"; text = "Full Name"; ObjectID = "9jx-RP-9rI"; */
+"9jx-RP-9rI.text" = "الاسم الكامل";
+
+/* Class = "UIButton"; normalTitle = "Home"; ObjectID = "dpH-Pd-AiB"; */
+"dpH-Pd-AiB.normalTitle" = "الرئيسية";
+
+/* Class = "UITextField"; placeholder = "Your email"; ObjectID = "hfD-cY-RYi"; */
+"hfD-cY-RYi.placeholder" = "البريد الالكتروني";
+
+/* Class = "UITextField"; placeholder = "Full Name"; ObjectID = "HKo-Zz-okz"; */
+"HKo-Zz-okz.placeholder" = "الاسم الكامل";
+
+/* Class = "UITextField"; placeholder = "Account number"; ObjectID = "Iq3-qp-qal"; */
+"Iq3-qp-qal.placeholder" = "رقم حساب";
+
+/* Class = "UIButton"; normalTitle = "Get Started"; ObjectID = "K4O-tt-tdY"; */
+"K4O-tt-tdY.normalTitle" = "أبدء";
+
+/* Class = "UITextField"; placeholder = "Phone Number"; ObjectID = "nmY-hu-IOL"; */
+"nmY-hu-IOL.placeholder" = "رقم المحمول";
+
+/* Class = "UILabel"; text = "Setting"; ObjectID = "PEG-sj-wSh"; */
+"PEG-sj-wSh.text" = "الاعدادات";
+
+/* Class = "UILabel"; text = "Password"; ObjectID = "Q1v-Lf-v5y"; */
+"Q1v-Lf-v5y.text" = "كلمة المرور";
+
+/* Class = "UILabel"; text = "In in faucibus enim vitae elit ipsum netus. Amet lacus id eget vel egestas."; ObjectID = "qT5-Gx-0U5"; */
+"qT5-Gx-0U5.text" = "In in faucibus enim vitae elit ipsum netus. Amet lacus id eget vel egestas.";
+
+/* Class = "UILabel"; text = "Profit"; ObjectID = "QX4-QP-IpY"; */
+"QX4-QP-IpY.text" = "الربح";
+
+/* Class = "UILabel"; text = "Account number"; ObjectID = "raf-3v-JeE"; */
+"raf-3v-JeE.text" = "رقم الحساب";
+
+/* Class = "UILabel"; text = "Setting"; ObjectID = "rAP-zQ-AWL"; */
+"rAP-zQ-AWL.text" = "الاعدادات";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "sMN-i1-QvN"; */
+"sMN-i1-QvN.placeholder" = "كلمة المرور";
+
+/* Class = "UITextField"; placeholder = "code"; ObjectID = "Suu-Ot-psx"; */
+"Suu-Ot-psx.placeholder" = "كود";
+
+/* Class = "UINavigationItem"; title = "Sign UP"; ObjectID = "TtL-B1-aDc"; */
+"TtL-B1-aDc.title" = "سجل";
+
+/* Class = "UILabel"; text = "Your card has been added successfully."; ObjectID = "Vxc-Kp-IQx"; */
+"Vxc-Kp-IQx.text" = "تم إضافة بطاقتك بنجاح.";
+
+/* Class = "UILabel"; text = "Your email"; ObjectID = "wHQ-cc-ZX3"; */
+"wHQ-cc-ZX3.text" = "البريد الالكتروني";
+
+/* Class = "UILabel"; text = "Transactions"; ObjectID = "yGW-Uy-fyY"; */
+"yGW-Uy-fyY.text" = "المعاملات";
+
+/* Class = "UISegmentedControl"; zxu-Gk-oDO.segmentTitles[0] = "This Month"; ObjectID = "zxu-Gk-oDO"; */
+"zxu-Gk-oDO.segmentTitles[0]" = "هذا الشهر";
+
+/* Class = "UISegmentedControl"; zxu-Gk-oDO.segmentTitles[1] = "Last 30 Days"; ObjectID = "zxu-Gk-oDO"; */
+"zxu-Gk-oDO.segmentTitles[1]" = "آخر 30 يومًا";
+

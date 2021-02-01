@@ -1,0 +1,12 @@
+/* Class = "UILabel"; text = "Get your investment opportunity now!"; ObjectID = "fzj-Tx-IML"; */
+"fzj-Tx-IML.text" = "احصل علي فرصتك الان";
+
+/* Class = "UILabel"; text = "Opportunities"; ObjectID = "ReC-hJ-GbW"; */
+"ReC-hJ-GbW.text" = "الفرص";
+
+/* Class = "UIButton"; normalTitle = "Show all"; ObjectID = "TjL-8l-emf"; */
+"TjL-8l-emf.normalTitle" = "رايت الكل";
+
+/* Class = "UILabel"; text = "Grow with us or double it."; ObjectID = "ZOf-ya-kcR"; */
+"ZOf-ya-kcR.text" = "تنمو معنا أو ضاعفها.";
+

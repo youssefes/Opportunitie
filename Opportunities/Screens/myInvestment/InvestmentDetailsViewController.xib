@@ -99,7 +99,7 @@
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JlC-Kw-uM8">
                                             <rect key="frame" x="30" y="24" width="10" height="22"/>
-                                            <state key="normal" image="Arrow   Left 2"/>
+                                            <state key="normal" image="ArrowLeft 2"/>
                                             <connections>
                                                 <action selector="backBtn:" destination="-1" eventType="touchUpInside" id="4Sz-Gx-era"/>
                                             </connections>
@@ -413,7 +413,7 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="UFr-G4-Sb8">
-                                    <rect key="frame" x="0.0" y="1058" width="465" height="182"/>
+                                    <rect key="frame" x="0.0" y="1048" width="465" height="318"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="0.0" id="lwu-bh-vxc">
                                         <size key="itemSize" width="50" height="50"/>
@@ -477,7 +477,7 @@
         </view>
     </objects>
     <resources>
-        <image name="Arrow   Left 2" width="10" height="16"/>
+        <image name="ArrowLeft 2" width="10" height="16"/>
         <image name="Group 148" width="56" height="56"/>
         <image name="Group 158" width="14" height="15"/>
         <image name="huawei-mediapad-m6-stock-wallpaper-1024x1024_666874-mm-90" width="341.5" height="341.5"/>

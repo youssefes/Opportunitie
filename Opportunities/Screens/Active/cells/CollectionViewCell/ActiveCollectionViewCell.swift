@@ -41,8 +41,8 @@ class ActiveCollectionViewCell: UICollectionViewCell {
         imageCell.kf.setImage(with: resourseSubImage, placeholder: placeHolderImage)
         
        titel.text = opertunity.name
-        priceLbl.text = "\(opertunity.amount) KD sold"
-        let progressPrasentage = (Int(opertunity.total ?? "" ) ?? 0) / (opertunity.amount ?? 0)
+        priceLbl.text = "\(opertunity.amount) KD \(NSLocalizedString("Sold", comment: ""))"
+        let progressPrasentage = (Int(opertunity.total ) ?? 0) / (opertunity.amount)
         progressView.progress = Float(Float(progressPrasentage)/100.0)
     }
     

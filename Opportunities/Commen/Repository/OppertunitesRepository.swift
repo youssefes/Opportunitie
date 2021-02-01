@@ -111,9 +111,9 @@ class OppertunitesRepositoryImp: OppertunitesRepository {
         }
     }
     
-    func About() -> Observable<ResponseObjectModel<[AboutModel]>> {
-        Observable<ResponseObjectModel<[AboutModel]>>.create{[weak self] (oppertunites) -> Disposable in
-            self?.networkClient.performRequest([AboutModel].self, router: OppertunitesRouter.about) { (resulet) in
+    func About() -> Observable<ResponseObjectModel<AboutModel>> {
+        Observable<ResponseObjectModel<AboutModel>>.create{[weak self] (oppertunites) -> Disposable in
+            self?.networkClient.performRequest(AboutModel.self, router: OppertunitesRouter.about) { (resulet) in
                 switch resulet{
                 case .success(let data):
                     oppertunites.onNext(data)

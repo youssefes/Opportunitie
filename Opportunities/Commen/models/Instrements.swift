@@ -21,6 +21,11 @@ struct AllInstraments: Decodable {
 
 // MARK: - AboutModel
 struct AboutModel: Codable {
+    let about : aboutData
+   
+}
+
+struct aboutData : Codable {
     let video: String
     let mission, vision: String
     
